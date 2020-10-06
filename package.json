@@ -1,13 +1,15 @@
 {
   "name": "urban-vitaliz",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "predev": "mkdir -p _site/build && ln -f build/* _site/build",
     "dev": "npm-run-all --parallel dev:* start",
     "dev:jekyll": "bundle exec jekyll build -w --incremental --config _config.yml,_config_dev.yml",
     "dev:rollup": "rollup -c -w",
-    "start": "serve _site"
+    "start": "serve _site",
+    "start:api": "PORT=4999 node server/main.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
@@ -21,6 +23,10 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "d3-fetch": "^2.0.0"
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "d3-fetch": "^2.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2"
   }
 }
