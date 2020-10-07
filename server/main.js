@@ -20,15 +20,16 @@ app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
     console.log('/login-by-email', email)
 
-    database.getOrCreateFricheCollectionIdByEmail(email)
+    database.getOrCreateFricheCollectionByEmail(email)
     .then(fricheCollection => {
-        res.redirect(303, `${req.protocol}://${req.hostname}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`)
+        res.redirect(303, `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`)
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
 app.get(FRICHES_ROUTE_PATH, (req, res) => {
-    res.status(404).send(`TODO
+    console.log(FRICHES_ROUTE_PATH, req.query)
+    res.status(200).send(`TODO
         get FricheCollection secret
         get corresponding FricheCollection
         if found, send list with all friches data

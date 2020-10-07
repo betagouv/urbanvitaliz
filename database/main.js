@@ -1,46 +1,38 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
+import makeCapString from "../server/random-cap.js"
 
 const { MongoClient } = mongodbpackage
-const {DATABASE_NAME, MONGO_URL} = constants
+const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, FRICHES_COLLECTIONS, FRICHES}} = constants
 
-const PERSONS_COLLECTION_NAME = 'Persons';
-
-const client = new MongoClient(MONGO_URL);
+const client = new MongoClient(MONGO_URL, { useUnifiedTopology: true });
 
 await client.connect();
 
 const database = client.db(DATABASE_NAME);
-const colls = await database.collections();
-
-console.log('colls', colls.map(c => c.collectionName))
-if(!colls.find(c => c.collectionName === PERSONS_COLLECTION_NAME))
-    await database.createCollection(PERSONS_COLLECTION_NAME)
-else 
-    console.log('already a collection named', PERSONS_COLLECTION_NAME)
-
-const colls2 = await database.collections();
-
-console.log('colls2', colls2.map(c => c.collectionName))
-
-await client.close();
 
 
 export default {
-    getOrCreateFricheCollectionIdByEmail(email){
+    async getOrCreateFricheCollectionByEmail(email){
+        const [persons, friches_collections] = await Promise.all([PERSONS, FRICHES_COLLECTIONS].map(name => database.collection(name)))
+        let person = await persons.findOne({emails: email})
 
+        console.log('found person', person)
 
+        if(!person){
+            const {ops} = await persons.insertOne({emails: [email]})
+            person = ops[0]
+            console.log('inserted person', person)
+        }
 
+        let thisPersonsFricheCollection = await friches_collections.findOne({created_by: person._id})
 
-        return Promise.reject(`TODO
-            - get email from Person collection
-            - if found
-                - lookup id in FricheCollection collection
-                - return FricheCollection id
-            - if not found
-                - create Person with this email
-                - create FricheCollection with created_by as this Person's _id
-                - return corresponding FricheCollection id
-        `)
+        if(!thisPersonsFricheCollection){
+            const {ops} = await friches_collections.insertOne({created_by: person._id, friche_ids: [], edit_cap: makeCapString()})
+            thisPersonsFricheCollection = ops[0]
+            console.log('inserted thisPersonsFricheCollection', thisPersonsFricheCollection)
+        }
+
+        return thisPersonsFricheCollection
     }
 }
