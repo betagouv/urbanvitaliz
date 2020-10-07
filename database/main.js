@@ -1,12 +1,12 @@
 import mongodbpackage from "mongodb"
+import constants from "./constants.cjs"
 
 const { MongoClient } = mongodbpackage
-const mongourl = `mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb`
+const {DATABASE_NAME, MONGO_URL} = constants
 
-const DATABASE_NAME = "urban_vitaliz";
 const PERSONS_COLLECTION_NAME = 'Persons';
 
-const client = new MongoClient(mongourl);
+const client = new MongoClient(MONGO_URL);
 
 await client.connect();
 
