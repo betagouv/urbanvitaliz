@@ -21,8 +21,10 @@ app.post('/login-by-email', (req, res) => {
     console.log('/login-by-email', email)
 
     database.getOrCreateFricheCollectionByEmail(email)
-    .then(fricheCollection => {
-        res.redirect(303, `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`)
+    .then(({fricheCollection, newUser}) => {
+        res.status(newUser ? 201 : 200).send({
+            fricheCollection: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`
+        })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

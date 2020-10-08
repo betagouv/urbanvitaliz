@@ -19,10 +19,13 @@ export default {
 
         console.log('found person', person)
 
+        let newUser = false;
+
         if(!person){
             const {ops} = await persons.insertOne({emails: [email]})
             person = ops[0]
             console.log('inserted person', person)
+            newUser = true;
         }
 
         let thisPersonsFricheCollection = await friches_collections.findOne({created_by: person._id})
@@ -33,6 +36,9 @@ export default {
             console.log('inserted thisPersonsFricheCollection', thisPersonsFricheCollection)
         }
 
-        return thisPersonsFricheCollection
+        return {
+            fricheCollection: thisPersonsFricheCollection,
+            newUser
+        }
     }
 }
