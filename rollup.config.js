@@ -8,12 +8,12 @@ const production = !process.env.ROLLUP_WATCH;
 
 
 export default {
-	input: 'scripts/main.js',
+	input: 'scripts/description-friche.js',
 	output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'build/bundle.js'
+		file: 'build/description-friche.rollup.js'
 	},
 	plugins: [
 		svelte({
@@ -22,7 +22,7 @@ export default {
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
 			css: css => {
-				css.write('build/bundle.css');
+				css.write('build/description-friche.rollup.css');
 			}
 		}),
 

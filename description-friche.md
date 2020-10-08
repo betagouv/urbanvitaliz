@@ -1,12 +1,12 @@
 ---
 layout: empty
 scripts:
-    - src: "./build/bundle.js"
+    - src: "./build/description-friche.rollup.js"
       defer: true
       async: false
       crossorigin: "anonymous"
 styles:
-    - href: "./build/bundle.css"
+    - href: "./build/description-friche.rollup.css"
 ---
 
 <div class="svelte-main"></div>
