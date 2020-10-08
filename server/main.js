@@ -2,7 +2,7 @@ import express from 'express'
 import compression from 'compression'
 import cors from 'cors'
 
-import database from '../database/main.js'
+import * as database from '../database/main.js'
 
 const port = process.env.PORT
 
@@ -14,7 +14,7 @@ app.use(compression()) // enable compression
 app.use(express.raw())  
 app.use(express.json())
 
-const FRICHES_ROUTE_PATH = '/friches'
+const FRICHES_ROUTE_PATH = '/friche-collection'
 
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
@@ -23,20 +23,29 @@ app.post('/login-by-email', (req, res) => {
     database.getOrCreateFricheCollectionByEmail(email)
     .then(({fricheCollection, newUser}) => {
         res.status(newUser ? 201 : 200).send({
-            fricheCollection: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`
+            fricheCollectionCap: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
 app.get(FRICHES_ROUTE_PATH, (req, res) => {
-    console.log(FRICHES_ROUTE_PATH, req.query)
-    res.status(200).send(`TODO
-        get FricheCollection secret
-        get corresponding FricheCollection
-        if found, send list with all friches data
-        if not, 404
-    `)
+    console.log('GET', FRICHES_ROUTE_PATH, req.query)
+
+    database.getFricheCollection(req.query.secret)
+    .then(({friches, edit_cap}) => {
+        res.status(200).send({
+            friches,
+            fricheCollectionEditCap: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${edit_cap}`
+        })
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
+app.post(FRICHES_ROUTE_PATH, (req, res) => {
+    console.log('POST', FRICHES_ROUTE_PATH, req.query)
+    
+    res.status(400).send('TODO')
 })
 
 app.get('/friche', (req, res) => {
