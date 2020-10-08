@@ -3,7 +3,6 @@ layout: empty
 scripts:
     - src: "./build/description-friche.rollup.js"
       defer: true
-      async: false
       crossorigin: "anonymous"
 styles:
     - href: "./build/description-friche.rollup.css"

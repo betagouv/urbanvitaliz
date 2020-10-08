@@ -1,14 +1,11 @@
 ---
 layout: empty
+scripts:
+    - src: "./build/spa.rollup.js"
+      defer: true
+      crossorigin: "anonymous"
+styles:
+    - href: "./build/spa.rollup.css"
 ---
 
-
-<script>
-const SERVER_ORIGIN = `http://localhost:4999`
-
-fetch(`${SERVER_ORIGIN}/login-by-email?email=dav@bru.com`, {method: 'POST'})
-.then(res => ({url: res.url, body: res.text()}))
-.then(res => console.log('fetch email', res))
-.catch(res => console.error('error fetch email', res))
-
-</script>
+<div class="svelte-main"></div>
