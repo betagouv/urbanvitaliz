@@ -9,11 +9,3 @@ styles:
 ---
 
 <div class="svelte-main"></div>
-
-<style>
-    main{
-        width: 100%;
-        padding: 0 calc( max(5px, ( 100vw - 80em ) / 2 ));
-    }
-
-</style>
