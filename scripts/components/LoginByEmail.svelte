@@ -17,7 +17,7 @@
 <form on:submit="{onSubmit}">
     <label>
         <span>Email</span>
-        <input bind:value={email} type="email" placeholder="perrine@commune.fr">
+        <input bind:value={email} type="email" placeholder="perrine@commune.fr" autocomplete="email">
         <button type="submit">C'est ti-par !</button>
     </label>
 </form>

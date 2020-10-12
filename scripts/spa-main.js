@@ -1,83 +1,120 @@
 import {json} from 'd3-fetch';
+import page from 'page'
 
 import LoginByEmail from './components/LoginByEmail.svelte';
 import FricheCollection from './components/FricheCollection.svelte';
 import FricheForm from './components/FricheForm.svelte';
 
+
 const SERVER_ORIGIN = `http://localhost:4999`
+
+const FRICHE_COLLECTION_API_ROUTE_PATH = '/collection-friche'
+const COLLECTION_FRICHE_UI_PATH = '/collection-friche'
+
 
 const svelteTarget = document.querySelector('.svelte-main')
 
-const loginByEmail = new LoginByEmail({
-    target: svelteTarget,
-    props: {}
-});
+let currentComponent;
 
-loginByEmail.$on('email', event => {
-    const email = event.detail;
+function replaceComponent(newComponent){
+    if(currentComponent)
+        currentComponent.$destroy()
     
-    json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
-    // TODO bug here, there is no 'friches' prop returned
-    // set up types to catch it
-    .then(({friches, fricheCollectionCap}) => {
-        console.log('fetch email', fricheCollectionCap)
+    currentComponent = newComponent
+}
 
-        console.log('FAKE REDIRECT', '/friches')
+const state = {
+    collectionFriches : [],
+    lastCollectionFricheURL: undefined,
+    lastFricheCollectionEditCap: undefined,
+    currentEmail: undefined
+}
 
-        json(fricheCollectionCap)
-        .then(({friches, fricheCollectionEditCap}) => {
-            loginByEmail.$destroy()
+page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
-            const fricheCollectionComponent = new FricheCollection({
-                target: svelteTarget,
-                props: {
-                    email,
-                    friches,
-                    onAddFriche: fricheCollectionEditCap ? () => {
-                        fricheCollectionComponent.$destroy()
+console.log('yo')
 
-                        console.log('FAKE REDIRECT', '/friche-form')
+page('/login-by-email', ({path}) => {
+    console.log('ROUTER', path)
+    const loginByEmail = new LoginByEmail({
+        target: svelteTarget,
+        props: {}
+    });
 
-                        const fricheFormComponent = new FricheForm({
-                            target: svelteTarget,
-                            props: {}
-                        });
-
-                        fricheFormComponent.$on('new-friche', event => {
-                            const friche = event.detail;
-
-                            console.log('new friche', friche)
-
-                            json(fricheCollectionEditCap, {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify(friche)
-                            })
-                            .then(() => {
-                                friches.push(friche)
-
-                                fricheFormComponent.$destroy()
-
-                                console.log('FAKE REDIRECT', '/friches')
-
-                                const fricheCollectionComponent = new FricheCollection({
-                                    target: svelteTarget,
-                                    props: {
-                                        email,
-                                        friches
-                                    }
-                                })
-                            })
-                            .catch(err => console.error('error', err))
-
-                        })
-                    } : undefined
-                }
-            });
+    loginByEmail.$on('email', event => {
+        const email = event.detail;
+        
+        json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
+        // TODO bug here, there is no 'friches' prop returned
+        // set up types to catch it
+        .then(({friches, collectionFricheCap}) => {
+            console.log('fetch email', collectionFricheCap)
+            state.currentEmail = email;
+    
+            const url = new URL(collectionFricheCap);
+            page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
         })
+        .catch(res => console.error('error fetch email', res))
+    });
 
+    replaceComponent(loginByEmail)
+})
+
+page(COLLECTION_FRICHE_UI_PATH, ({querystring, path}) => {
+    console.log('ROUTER', path)
+    const q = new URLSearchParams(querystring)
+    const secret = q.get('secret')
+
+    const collectionFricheCap = `${SERVER_ORIGIN}${FRICHE_COLLECTION_API_ROUTE_PATH}?secret=${secret}`
+
+    json(collectionFricheCap)
+    .then(({friches, fricheCollectionEditCap}) => {
+        const fricheCollectionComponent = new FricheCollection({
+            target: svelteTarget,
+            props: {
+                email: state.currentEmail,
+                friches,
+                onAddFriche: fricheCollectionEditCap ? () => {
+                    const {searchParams} = new URL(fricheCollectionEditCap);
+                    page(`/friche-form?secret=${searchParams.get('secret')}`)
+                } : undefined
+            }
+        });
+        state.lastCollectionFricheURL = path;
+        state.collectionFriches = friches
+        state.lastFricheCollectionEditCap = fricheCollectionEditCap;
+
+        replaceComponent(fricheCollectionComponent)
     })
-    .catch(res => console.error('error fetch email', res))
-});
+})
+
+
+page('/friche-form', ({path}) => {
+    console.log('ROUTER', path)
+    const fricheFormComponent = new FricheForm({
+        target: svelteTarget,
+        props: {}
+    });
+
+    fricheFormComponent.$on('new-friche', event => {
+        const friche = event.detail;
+
+        console.log('new friche', friche)
+
+        json(state.lastFricheCollectionEditCap, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(friche)
+        })
+        .then(() => {
+            page(state.lastCollectionFricheURL)
+        })
+        .catch(err => console.error('error', err))
+    })
+
+    replaceComponent(fricheFormComponent)
+})
+
+page.start()

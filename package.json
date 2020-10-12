@@ -34,6 +34,7 @@
     "d3-fetch": "^2.0.0",
     "express": "^4.17.1",
     "migrate-mongo": "^8.1.2",
-    "mongodb": "^3.6.2"
+    "mongodb": "^3.6.2",
+    "page": "^1.11.6"
   }
 }

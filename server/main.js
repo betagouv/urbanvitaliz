@@ -25,13 +25,13 @@ app.post('/login-by-email', (req, res) => {
     database.getOrCreateFricheCollectionByEmail(email)
     .then(({fricheCollection, newUser}) => {
         res.status(newUser ? 201 : 200).send({
-            fricheCollectionCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${fricheCollection._id}`
+            collectionFricheCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${fricheCollection._id}`
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-const FRICHE_COLLECTION_ROUTE_PATH = '/friche-collection'
+const FRICHE_COLLECTION_ROUTE_PATH = '/collection-friche'
 
 app.get(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
     console.log('GET', FRICHE_COLLECTION_ROUTE_PATH, req.query)

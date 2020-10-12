@@ -6,7 +6,7 @@
     let name;
     let address;
 
-    const onSubmit = e => {
+    function onSubmit(e){
         e.preventDefault()
         // TODO typecheck friche object here
         dispatch('new-friche', {

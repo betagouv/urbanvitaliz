@@ -1,9 +1,7 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
-
     export let email;
     export let friches;
-    export let onAddFriche;
+    export let onAddFriche = undefined;
 </script>
 
 <h1>Liste des friches de {email}</h1>
