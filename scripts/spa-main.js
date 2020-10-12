@@ -32,8 +32,6 @@ const state = {
 
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
-console.log('yo')
-
 page('/login-by-email', ({path}) => {
     console.log('ROUTER', path)
     const loginByEmail = new LoginByEmail({
