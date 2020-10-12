@@ -8,13 +8,15 @@ const port = process.env.PORT
 
 const app = express()
 
+// Express configuration
+
 app.use(cors()) // enable CORS
 app.use(compression()) // enable compression
 
 app.use(express.raw())  
 app.use(express.json())
 
-const FRICHES_ROUTE_PATH = '/friche-collection'
+// ROUTES
 
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
@@ -23,32 +25,51 @@ app.post('/login-by-email', (req, res) => {
     database.getOrCreateFricheCollectionByEmail(email)
     .then(({fricheCollection, newUser}) => {
         res.status(newUser ? 201 : 200).send({
-            fricheCollectionCap: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${fricheCollection._id}`
+            fricheCollectionCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${fricheCollection._id}`
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.get(FRICHES_ROUTE_PATH, (req, res) => {
-    console.log('GET', FRICHES_ROUTE_PATH, req.query)
+const FRICHE_COLLECTION_ROUTE_PATH = '/friche-collection'
+
+app.get(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
+    console.log('GET', FRICHE_COLLECTION_ROUTE_PATH, req.query)
 
     database.getFricheCollection(req.query.secret)
     .then(({friches, edit_cap}) => {
         res.status(200).send({
             friches,
-            fricheCollectionEditCap: `${req.protocol}://${req.get('Host')}${FRICHES_ROUTE_PATH}?secret=${edit_cap}`
+            fricheCollectionEditCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${edit_cap}`
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.post(FRICHES_ROUTE_PATH, (req, res) => {
-    console.log('POST', FRICHES_ROUTE_PATH, req.query)
-    
-    res.status(400).send('TODO')
+app.post(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
+    console.log('POST', FRICHE_COLLECTION_ROUTE_PATH, req.query)
+
+    const {secret: collection_edit_cap} = req.query;
+    const {body: friche} = req;
+
+    // TODO There is no data validation for now
+    // will probably come later in the form of schema validation at the database level
+
+    database.addFricheToCollection({
+        collection_edit_cap,
+        friche
+    })
+    .then(({_id}) => {
+        res.status(201).send({
+            friche: `${req.protocol}://${req.get('Host')}${FRICHE_ROUTE_PATH}?secret=${_id}`
+        })
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.get('/friche', (req, res) => {
+const FRICHE_ROUTE_PATH = '/friche'
+
+app.get(FRICHE_ROUTE_PATH, (req, res) => {
     res.status(404).send(`TODO
         get Friche secret
         get corresponding Friche
@@ -57,31 +78,6 @@ app.get('/friche', (req, res) => {
     `)
     
 })
-
-
-
-/*
-app.post('/first-use', (req, res) => {    
-    if(storage.size === 0){
-        const origin = `${req.protocol}://${req.get('Host')}`
-        const importData = req.body.length >= 2 ? JSON.parse(req.body.toString()) : undefined;
-
-        res.status(201)
-            .set('Location', initBundle.store.add)
-            .json(initBundle)
-    }
-    else{
-        res.status(410).end()
-    }
-})
-
-app.all('*', (req, res) => {
-    const key = req.path.slice(1); // strip initial '/'
-
-    console.log('persisturl server receiving key', key)
-
-    
-})*/
 
 
 const server = app.listen(port, () => {

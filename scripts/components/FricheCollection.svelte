@@ -4,13 +4,6 @@
     export let email;
     export let friches;
     export let onAddFriche;
-
-    const dispatch = createEventDispatcher();
-
-    const onSubmit = e => {
-        e.preventDefault()
-        dispatch('email', email)
-    }
 </script>
 
 <h1>Liste des friches de {email}</h1>
@@ -37,9 +30,8 @@
 {/if}
 
 {#if onAddFriche}
-<button on:click={() => console.log('Rajouter une friche')}>Rajouter une friche</button>
+<button on:click={() => onAddFriche()}>Rajouter une friche</button>
 {/if}
-
 
 <style>
 </style>

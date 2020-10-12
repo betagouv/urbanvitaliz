@@ -52,3 +52,22 @@ export async function getFricheCollection(fricheCollectionId){
         edit_cap
     }
 }
+
+export async function addFricheToCollection({collection_edit_cap, friche}){
+    const [friches_collections, frichesMongoCollection] = await Promise.all([FRICHES_COLLECTIONS, FRICHES].map(name => database.collection(name)))
+
+    const fricheCollectionToEdit = await friches_collections.findOne({edit_cap: collection_edit_cap})
+
+    if(!fricheCollectionToEdit){
+        throw new Error(`No friche collection for edit_cap '${collection_edit_cap}'`)
+    }
+
+
+    const {ops} = await frichesMongoCollection.insertOne(friche)
+    const insertedFriche = ops[0]
+    console.log('insertedFriche', insertedFriche)
+
+    await friches_collections.updateOne({edit_cap: collection_edit_cap}, {$push: {friche_ids: insertedFriche._id}})
+
+    return insertedFriche
+}
