@@ -17,6 +17,9 @@
     "database:migrate:status": "migrate-mongo status -f database/migrate-mongo-config.cjs",
     "database:migration:create": "migrate-mongo create -f database/migrate-mongo-config.cjs"
   },
+  "engines": {
+    "node": "14"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
