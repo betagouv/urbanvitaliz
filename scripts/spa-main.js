@@ -7,7 +7,7 @@ import FricheForm from './components/FricheForm.svelte';
 
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
-    'http://app-f92a129e-7c5e-4922-97ab-66be747554dd.cleverapps.io' :
+    'https://app-f92a129e-7c5e-4922-97ab-66be747554dd.cleverapps.io' :
     `http://localhost:4999`
 
 console.log('API server origin:', SERVER_ORIGIN)
@@ -35,6 +35,8 @@ const state = {
 }
 
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
+
+console.log('page.base', page.base())
 
 page('/login-by-email', ({path}) => {
     console.log('ROUTER', path)
