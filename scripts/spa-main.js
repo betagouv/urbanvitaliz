@@ -5,8 +5,12 @@ import LoginByEmail from './components/LoginByEmail.svelte';
 import FricheCollection from './components/FricheCollection.svelte';
 import FricheForm from './components/FricheForm.svelte';
 
+const isProduction = location.hostname === 'betagouv.github.io'
+const SERVER_ORIGIN = isProduction ? 
+    'http://app-f92a129e-7c5e-4922-97ab-66be747554dd.cleverapps.io' :
+    `http://localhost:4999`
 
-const SERVER_ORIGIN = `http://localhost:4999`
+console.log('API server origin:', SERVER_ORIGIN)
 
 const FRICHE_COLLECTION_API_ROUTE_PATH = '/collection-friche'
 const COLLECTION_FRICHE_UI_PATH = '/collection-friche'
