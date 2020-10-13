@@ -227,17 +227,17 @@
 	}
 
 	h2{
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: #008080;
 	}
 
 	h3{
-		font-size: 1.8rem;
+		font-size: 1.2rem;
 	}
 
 	.row{
 		width: 100%;
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
 		display: flex;
 		flex-direction: row;
 	}
@@ -250,8 +250,8 @@
 
 	.identification, .tabs, .tab-content{
 		border: 1px solid #008080; /* TOUTDOUX créer une variable */
-		border-radius: 2em;
-		padding: 1em;
+		border-radius: 2rem;
+		padding: 1rem;
 	}
 
 	.tabs{
@@ -261,8 +261,8 @@
 	}
 
 	.tabs > *{
-		font-size: 1.1em;
-		padding: 0.5em;
+		font-size: 1.1rem;
+		padding: 0.5rem;
 	}
 
 	.tab-content{
