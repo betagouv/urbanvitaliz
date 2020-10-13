@@ -3,11 +3,19 @@
 
 @import 'ressource-layout.scss';
 @import 'saisie-site.scss';
+@import 'header.scss';
 @import 'footer.scss';
 
-.hero__container {
+
+.article__hero {
+    height: 25vh;
+
     h1 {
         text-align: center;
+        font-size: 300%;
+        font-weight: bold;
+        color:white;
+        
     }
 }
 
@@ -18,11 +26,6 @@
 .footer__logo img {
     width: 120px;
     min-height: 8em;
-}
-
-.navbar__home {
-    height: 150px;
-
 }
 
 @media (max-width: 565px) {

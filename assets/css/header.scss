@@ -1,0 +1,17 @@
+header{
+    a{
+        height: 8rem;
+
+        img{
+            height: 100%;
+        }
+
+        &:hover{
+            // reset behavior by template.beta.gouv.fr css
+            background-color: inherit;
+
+            // reset behavior by bootstrap scafolding css
+            text-decoration: none;
+        }
+    }
+}
