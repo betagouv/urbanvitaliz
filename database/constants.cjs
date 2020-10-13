@@ -6,5 +6,5 @@ module.exports = {
         FRICHES: 'friches',
     }),
     DATABASE_NAME: "urban_vitaliz",
-    MONGO_URL: `mongodb://127.0.0.1:27017`
+    MONGO_URL: process.env.MONGODB_ADDON_URI || `mongodb://127.0.0.1:27017`
 }

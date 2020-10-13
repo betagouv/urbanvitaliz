@@ -3,14 +3,11 @@
 ## Dev
 
 ```sh
-# Pour le dev (jekyll + rollup)
+# Pour le dev (jekyll + rollup + api) 
 npm run dev 
-
-# serveur API
-npm run start:api
 ```
 
-Y'a un déploiement continue en place via github actions pour le front-end (Jekyll + Svelte)
+Y'a un [déploiement continue en place via github actions](.github/workflows/publish.yml) pour le front-end (Jekyll + Svelte)
 
 L'API est hébergée chez Clever Cloud
 
