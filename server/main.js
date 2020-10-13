@@ -18,6 +18,11 @@ app.use(express.json())
 
 // ROUTES
 
+function makeReturningCapabilityURL(req, path, secret){
+    return `${req.get('X-Forwarded-Proto') || req.protocol}://${req.get('Host')}${path}?secret=${secret}`
+}
+
+
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
     console.log('/login-by-email', email)
@@ -25,7 +30,7 @@ app.post('/login-by-email', (req, res) => {
     database.getOrCreateFricheCollectionByEmail(email)
     .then(({fricheCollection, newUser}) => {
         res.status(newUser ? 201 : 200).send({
-            collectionFricheCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${fricheCollection._id}`
+            collectionFricheCap: makeReturningCapabilityURL(req, FRICHE_COLLECTION_ROUTE_PATH, fricheCollection._id)
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
@@ -40,7 +45,7 @@ app.get(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
     .then(({friches, edit_cap}) => {
         res.status(200).send({
             friches,
-            fricheCollectionEditCap: `${req.protocol}://${req.get('Host')}${FRICHE_COLLECTION_ROUTE_PATH}?secret=${edit_cap}`
+            fricheCollectionEditCap: makeReturningCapabilityURL(req, FRICHE_COLLECTION_ROUTE_PATH, edit_cap)
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
@@ -61,7 +66,7 @@ app.post(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
     })
     .then(({_id}) => {
         res.status(201).send({
-            friche: `${req.protocol}://${req.get('Host')}${FRICHE_ROUTE_PATH}?secret=${_id}`
+            friche: makeReturningCapabilityURL(req, FRICHE_ROUTE_PATH, _id)
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
