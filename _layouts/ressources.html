@@ -2,22 +2,70 @@
 layout: default
 ---
 
+<!--
 
-<h1>{{page.nom}}</h1>
+nom: Exemple
+nom_national: Exemple national
+service_concerne: Service de la désartificialisation
+adresse_bureaux: 
+    "18 rue d'ici, 
+    59000 Lille"
+numero_telephone: "0600000000"
+zone_intervention: 
+    - Métropole de Lille 
+    - rue du tondu à Bordeaux
+competences:
+    - objet: Évaluation du niveau des pollens
+      conditions: des fleurs sur la friche
+      phase: genre plutôt au début
+      dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10
+      contact: flore.duvase+pollens@example.org
+    - objet: Vérification du budget
+      conditions: avoir reçu les financements
+      phase: vers la fin, avant que les travaux ne commencent
+      dossier: budget prévisionnel
+      contact: martine.desthunes+friches@example.org
+commentaire_structure: On aime bien les fleurs et les pièces
+adresse_url: https://hauts-de-france.ademe.fr/
 
-<h3><span class="label label-info">{{ page.type }}</span></h3>
+-->
+
+<h1>{{page.nom}}{% if page.nom_national %} <small>({{page.nom_national}})</small>{% endif %}</h1>
+{%- if page.service_concerne -%}<h2>({{page.service_concerne}})</h2>{%- endif -%}
+
+<address>
+  <p><strong>Adresse bureaux&nbsp;:</strong> {{page.adresse_bureaux}}</p>
+  <p><strong>Numéro de téléphone&nbsp;:</strong> <a href="tel:{{page.numero_telephone}}">{{page.numero_telephone}}</a></p>
+</address>
+
+<h2>Compétences</h2>
+
+{%- if page.competences -%}
+<ul>
+  {%- for competence in page.competences -%}
+  <li>
+    <h3>{{competence.objet}}</h3>
+    <ul>
+      <li><strong>conditions :</strong> {{competence.conditions}}</li>
+      <li><strong>phase :</strong> {{competence.phase}}</li>
+      <li><strong>dossier :</strong> {{competence.dossier}}</li>
+      <li><strong>contact :</strong> {{competence.contact}}</li>
+    </ul>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
+
 
 <div class="panel panel-info">
   <div class="panel-body">
     {{ content }}
     <a href="{{ page.adresse_url }}">Site web</a>
+    <h4>Commentaire de la structure</h4>
+    <p>{%- if page.commentaire_structure -%}{{page.commentaire_structure}}{%- endif -%}</p>
   </div>
 </div>
 
 <div class="page-header">
-  <h4> Zone d'intervention : <strong>{{ page.zone }}</strong></h4>
+  <h4> Zone d'intervention : <strong>{{ page.zone_intervention }}</strong></h4>
 </div>
-
-<iframe frameborder="0"
-  src="//umap.openstreetmap.fr/fr/map/carte-sans-nom_487352?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false">
-</iframe>
