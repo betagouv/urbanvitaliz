@@ -61,6 +61,8 @@ adresse_url: https://hauts-de-france.ademe.fr/
   <div class="panel-body">
     {{ content }}
     <a href="{{ page.adresse_url }}">Site web</a>
+    <h4>Commentaire de la structure</h4>
+    <p>{%- if page.commentaire_structure -%}{{page.commentaire_structure}}{%- endif -%}</p>
   </div>
 </div>
 
