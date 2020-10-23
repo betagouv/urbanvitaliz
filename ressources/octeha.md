@@ -1,15 +1,14 @@
 ---
 layout: ressources
 
-nom: Octeha
-nom_national: 
-Description de la structure: L'association OC’TÉHA accompagne les collectivités locales dans leurs projets habitat et urbanisme. 
-Elle anime leurs OPAH, PIG, missions sociales, PLU, carte communale….
+nom: OC'TÉHA
+nom_national: OC'TÉHA
 service_concerne: Service urbanisme
+adresse_bureaux: 
     "31 Avenue de la Gineste,
     12000 RODEZ"
 # Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
-numero_telephone: "05 65 73 65 78" 
+numero_telephone: "0565736578" 
 zone_intervention: 
     - Aveyron
 competences:
@@ -32,4 +31,5 @@ commentaire_structure: Nous sommes l'équivalent d'un bureau d'études. Nous int
 adresse_url: http://www.octeha.fr
 ---
 
-OC'TEHA
+L'association OC’TÉHA accompagne les collectivités locales dans leurs projets habitat et urbanisme. 
+Elle anime leurs OPAH, PIG, missions sociales, PLU, carte communale….
