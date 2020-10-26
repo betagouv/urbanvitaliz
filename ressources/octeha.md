@@ -17,7 +17,7 @@ competences:
       phase: Etape 2 - Connaître le site
       dossier: 
       contact: Philippe Schaab - Directeur - pschaab@octeha.fr
-    - objet: Elaboration de scénarios d'usage du site : diagnostic de la commune ou du territoire, sondage de la population, étude des besoins etc.
+    - objet: "Elaboration de scénarios d'usage du site : diagnostic de la commune ou du territoire, sondage de la population, étude des besoins etc."
       conditions: 
       phase: Etape 3 - Identifier les besoins du territoire et le marché
       dossier: 
