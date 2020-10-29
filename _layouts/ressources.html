@@ -1,26 +1,48 @@
 ---
-layout: default
+layout: empty
 ---
+
+<style>
+  main{
+    padding: 0 calc( max(5px, ( 100vw - 60em ) / 2 ));
+  }
+
+  .interventions{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .interventions > li{
+    padding-bottom: 1rem;
+  }
+
+  .interventions li h3{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .interventions ul{
+    list-style: none;
+  }
+
+
+</style>
 
 <!--
 
 nom: Exemple
-nom_national: Exemple national
-service_concerne: Service de la désartificialisation
-adresse_bureaux: 
-    "18 rue d'ici, 
-    59000 Lille"
-numero_telephone: "0600000000"
+# Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
+numero_telephone: "0600000000" 
 zone_intervention: 
     - Métropole de Lille 
     - rue du tondu à Bordeaux
-competences:
-    - objet: Évaluation du niveau des pollens
+interventions:
+    - description: Évaluation du niveau des pollens
+      service: Service de la désartificialisation
       conditions: des fleurs sur la friche
       phase: genre plutôt au début
       dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10
       contact: flore.duvase+pollens@example.org
-    - objet: Vérification du budget
+    - description: Vérification du budget
       conditions: avoir reçu les financements
       phase: vers la fin, avant que les travaux ne commencent
       dossier: budget prévisionnel
@@ -30,26 +52,25 @@ adresse_url: https://hauts-de-france.ademe.fr/
 
 -->
 
-<h1>{{page.nom}}{% if page.nom_national %} <small>({{page.nom_national}})</small>{% endif %}</h1>
-{%- if page.service_concerne -%}<h2>({{page.service_concerne}})</h2>{%- endif -%}
+<h1>{{page.nom}}</h1>
 
 <address>
-  <p><strong>Adresse bureaux&nbsp;:</strong> {{page.adresse_bureaux}}</p>
   <p><strong>Numéro de téléphone&nbsp;:</strong> <a href="tel:{{page.numero_telephone}}">{{page.numero_telephone}}</a></p>
 </address>
 
-<h2>Compétences</h2>
+{%- if page.interventions -%}
+<h2>Interventions</h2>
 
-{%- if page.competences -%}
-<ul>
-  {%- for competence in page.competences -%}
+<ul class="interventions">
+  {%- for intervention in page.interventions -%}
   <li>
-    <h3>{{competence.objet}}</h3>
+    <h3>{{intervention.description}}</h3>
     <ul>
-      <li><strong>conditions :</strong> {{competence.conditions}}</li>
-      <li><strong>phase :</strong> {{competence.phase}}</li>
-      <li><strong>dossier :</strong> {{competence.dossier}}</li>
-      <li><strong>contact :</strong> {{competence.contact}}</li>
+      {%- if intervention.service -%}<li><strong>service :</strong> {{intervention.service}}</li>{%- endif -%}
+      <li><strong>phase :</strong> {{intervention.phase}}</li>
+      {%- if intervention.conditions -%}<li><strong>conditions :</strong> {{intervention.conditions}}</li>{%- endif -%}
+      {%- if intervention.dossier -%}<li><strong>dossier :</strong> {{intervention.dossier}}</li>{%- endif -%}
+      <li><strong>contact :</strong> {{intervention.contact}}</li>
     </ul>
   </li>
   {%- endfor -%}
