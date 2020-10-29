@@ -8,13 +8,13 @@ zone_intervention:
     - Métropole de Lille 
     - rue du tondu à Bordeaux
 interventions:
-    - objet: Évaluation du niveau des pollens
+    - description: Évaluation du niveau des pollens
       service: Service de la désartificialisation
       conditions: des fleurs sur la friche
       phase: genre plutôt au début
       dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10
       contact: flore.duvase+pollens@example.org
-    - objet: Vérification du budget
+    - description: Vérification du budget
       conditions: avoir reçu les financements
       phase: vers la fin, avant que les travaux ne commencent
       dossier: budget prévisionnel

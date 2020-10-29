@@ -42,7 +42,7 @@ adresse_url: https://hauts-de-france.ademe.fr/
 <ul>
   {%- for intervention in page.interventions -%}
   <li>
-    <h3>{{intervention.objet}}</h3>
+    <h3>{{intervention.description}}</h3>
     <ul>
       {%- if intervention.service -%}<li><strong>service :</strong> {{intervention.service}}</li>{%- endif -%}
       <li><strong>phase :</strong> {{intervention.phase}}</li>
