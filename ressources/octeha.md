@@ -2,9 +2,6 @@
 layout: ressources
 
 nom: OC'TÉHA
-adresse_bureaux: 
-    "31 Avenue de la Gineste,
-    12000 RODEZ"
 # Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
 numero_telephone: "0565736578" 
 zone_intervention: 

@@ -2,9 +2,6 @@
 layout: ressources
 
 nom: Exemple
-adresse_bureaux: 
-    "18 rue d'ici, 
-    59000 Lille"
 # Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
 numero_telephone: "0600000000" 
 zone_intervention: 
