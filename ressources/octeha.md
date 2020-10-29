@@ -2,7 +2,6 @@
 layout: ressources
 
 nom: OC'TÉHA
-nom_national: OC'TÉHA
 service_concerne: Service urbanisme
 adresse_bureaux: 
     "31 Avenue de la Gineste,

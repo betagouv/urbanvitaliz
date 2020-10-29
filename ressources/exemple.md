@@ -2,7 +2,6 @@
 layout: ressources
 
 nom: Exemple
-nom_national: Exemple national
 service_concerne: Service de la désartificialisation
 adresse_bureaux: 
     "18 rue d'ici, 
