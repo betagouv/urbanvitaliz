@@ -6,6 +6,25 @@ layout: empty
   main{
     padding: 0 calc( max(5px, ( 100vw - 60em ) / 2 ));
   }
+
+  .interventions{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .interventions > li{
+    padding-bottom: 1rem;
+  }
+
+  .interventions li h3{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .interventions ul{
+    list-style: none;
+  }
+
+
 </style>
 
 <!--
@@ -39,10 +58,10 @@ adresse_url: https://hauts-de-france.ademe.fr/
   <p><strong>Numéro de téléphone&nbsp;:</strong> <a href="tel:{{page.numero_telephone}}">{{page.numero_telephone}}</a></p>
 </address>
 
+{%- if page.interventions -%}
 <h2>Interventions</h2>
 
-{%- if page.interventions -%}
-<ul>
+<ul class="interventions">
   {%- for intervention in page.interventions -%}
   <li>
     <h3>{{intervention.description}}</h3>
