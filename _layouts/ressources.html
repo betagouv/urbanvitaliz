@@ -36,19 +36,19 @@ adresse_url: https://hauts-de-france.ademe.fr/
   <p><strong>Numéro de téléphone&nbsp;:</strong> <a href="tel:{{page.numero_telephone}}">{{page.numero_telephone}}</a></p>
 </address>
 
-<h2>Compétences</h2>
+<h2>Interventions</h2>
 
-{%- if page.competences -%}
+{%- if page.interventions -%}
 <ul>
-  {%- for competence in page.competences -%}
+  {%- for intervention in page.interventions -%}
   <li>
-    <h3>{{competence.objet}}</h3>
+    <h3>{{intervention.objet}}</h3>
     <ul>
-      {%- if competence.service -%}<li><strong>service :</strong> {{competence.service}}</li>{%- endif -%}
-      <li><strong>phase :</strong> {{competence.phase}}</li>
-      <li><strong>conditions :</strong> {{competence.conditions}}</li>
-      <li><strong>dossier :</strong> {{competence.dossier}}</li>
-      <li><strong>contact :</strong> {{competence.contact}}</li>
+      {%- if intervention.service -%}<li><strong>service :</strong> {{intervention.service}}</li>{%- endif -%}
+      <li><strong>phase :</strong> {{intervention.phase}}</li>
+      <li><strong>conditions :</strong> {{intervention.conditions}}</li>
+      <li><strong>dossier :</strong> {{intervention.dossier}}</li>
+      <li><strong>contact :</strong> {{intervention.contact}}</li>
     </ul>
   </li>
   {%- endfor -%}

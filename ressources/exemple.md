@@ -7,7 +7,7 @@ numero_telephone: "0600000000"
 zone_intervention: 
     - Métropole de Lille 
     - rue du tondu à Bordeaux
-competences:
+interventions:
     - objet: Évaluation du niveau des pollens
       service: Service de la désartificialisation
       conditions: des fleurs sur la friche

@@ -6,7 +6,7 @@ nom: OC'TÉHA
 numero_telephone: "0565736578" 
 zone_intervention: 
     - Aveyron
-competences:
+interventions:
     - objet: Etude de faisabilité d'un projet vis-à-vis des documents d'urbanisme. Evolution de ces documents si nécessaire.
       service: Service urbanisme
       conditions: 
