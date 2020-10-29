@@ -2,7 +2,6 @@
 layout: ressources
 
 nom: Exemple
-service_concerne: Service de la désartificialisation
 adresse_bureaux: 
     "18 rue d'ici, 
     59000 Lille"
@@ -13,6 +12,7 @@ zone_intervention:
     - rue du tondu à Bordeaux
 competences:
     - objet: Évaluation du niveau des pollens
+      service: Service de la désartificialisation
       conditions: des fleurs sur la friche
       phase: genre plutôt au début
       dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10

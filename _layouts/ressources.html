@@ -31,7 +31,6 @@ adresse_url: https://hauts-de-france.ademe.fr/
 -->
 
 <h1>{{page.nom}}</h1>
-{%- if page.service_concerne -%}<h2>({{page.service_concerne}})</h2>{%- endif -%}
 
 <address>
   <p><strong>Adresse bureaux&nbsp;:</strong> {{page.adresse_bureaux}}</p>
@@ -46,8 +45,9 @@ adresse_url: https://hauts-de-france.ademe.fr/
   <li>
     <h3>{{competence.objet}}</h3>
     <ul>
-      <li><strong>conditions :</strong> {{competence.conditions}}</li>
+      {%- if competence.service -%}<li><strong>service :</strong> {{competence.service}}</li>{%- endif -%}
       <li><strong>phase :</strong> {{competence.phase}}</li>
+      <li><strong>conditions :</strong> {{competence.conditions}}</li>
       <li><strong>dossier :</strong> {{competence.dossier}}</li>
       <li><strong>contact :</strong> {{competence.contact}}</li>
     </ul>
