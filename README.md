@@ -1,5 +1,5 @@
-# Ecosante
+# UrbanVitaliz
 
- Un service public numérique de recommandations d'actions pour réduire l'impact de l'environnement sur sa santé. 
+ Un service public numérique pour aiguiller les collectivités dans le lancement des projets de revitalisation des friches
 
-https://betagouv.github.io/ecosante/
+https://betagouv.github.io/urbanvitaliz/
