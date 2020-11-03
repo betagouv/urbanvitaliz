@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+---
+layout: empty
+---
 
-{%- include head.html -%}
-
-<body>
-
-  {%- include header.html -%}
-
-  <main>
-    <section class="ressource section article article__full">
-      <div class="article__content">
-        <div class="article__container">
-          {{ content }}
-        </div>
-      </div>
-    </section>
-  </main>
-
-  {%- include footer.html -%}
-
-</body>
-
-</html>
+<section class="ressource section article article__full">
+  <div class="article__content">
+    <div class="article__container">
+      {{ content }}
+    </div>
+  </div>
+</section>
