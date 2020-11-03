@@ -12,17 +12,16 @@ html, body{
 }
 
 .article__hero {
-    height: 25vh;
+    height: 11rem;
+    width: 100vw;
 
     h1 {
         text-align: center;
         font-size: 2.2rem;
         font-weight: bold;
         color:white;
-        
     }
 }
-
 
 .article-grey {
     background-color: var(--theme-background-grey);

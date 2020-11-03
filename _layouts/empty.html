@@ -6,15 +6,29 @@
 <body>
 
   <style>
-      main{
-          width: 100%;
-          padding: 0 calc( max(5px, ( 100vw - 80em ) / 2 ));
+    
+    main{
+        width: 100%;
+        /* comparing with home layout, maybe this padding is a bad idea because of the banner. To be revisited */
+        padding: 0 calc( max(5px, ( 100vw - 80rem ) / 2 ));
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width: 60rem) {
+      main > *{
+        min-width: 50rem;
       }
+    }
+
   </style>
 
   {%- include header.html -%}
 
-  <main role="main">
+  <main>
     {{ content }}
   </main>
 
