@@ -1,4 +1,6 @@
 # Des ressources stylées
 
 - [OC'TÉHA](./octeha)
-- [Exemple](./exemple)
+- [ADUGA](./aduga)
+- [CCI Averyon](./cci-aveyron)
+- [UDAP Aveyron](./udap-aveyron)
