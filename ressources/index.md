@@ -1,4 +1,4 @@
-# Des ressources stylées
+# Acteurs : étapes et interventions
 
 - [OC'TÉHA](./octeha)
 - [ADUGA](./aduga)
