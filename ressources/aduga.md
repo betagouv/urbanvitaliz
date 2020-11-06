@@ -7,14 +7,14 @@ numero_telephone: "XXXXXXXXXX"
 zone_intervention: 
     - Grand Amiénois - demander couche SIG
 interventions:
-    - description: Accompagner les communes sur un site en friche repéré lors des réflexions PLUi. Montage de scénarios d'aménagement et test : contacts avec partenaires, commande de diagnostics, facilitation du dialogue des parties prenantes.
-      service: Service urbanisme
+    - description: 
+      service: 
       conditions: 
-      phase: Etape 4 - Construire des scénarios d'aménagement pour décider
+      phase: 
       dossier: 
       contact:
 commentaire_structure: 
-adresse_url: http://www.aduga.org
+adresse_url: 
 ---
 
 Test
