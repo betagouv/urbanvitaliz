@@ -5,7 +5,7 @@ nom: ADUGA
 # Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
 numero_telephone: "XXXXXXXXXX" 
 zone_intervention: 
-    - Grand Amiénois - demander couche SIG
+    - "Grand Amiénois - demander couche SIG"
 interventions:
     - description: Accompagnement en ingéniérie à la reconversion
       service: ?
@@ -34,3 +34,4 @@ interventions:
 commentaire_structure:  "L'agence d'urbanisme fonctionne sur la base d'une convention partenariale signée par les collecticités adhérentes, l'Etat et la région. Les adhérents valident un programme de travail annuel. L'agence intervient prioritairement sur les sites qui portent un enjeu intercommunal."
 adresse_url: http://www.aduga.org
 ---
+Test
