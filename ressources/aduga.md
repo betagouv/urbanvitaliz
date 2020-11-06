@@ -13,7 +13,8 @@ interventions:
       phase: Etape 4 - Construire des scénarios d'aménagement pour décider
       dossier: 
       contact:
-commentaire_structure: L'agence d'urbanisme fonctionne sur la base d'une convention partenariale signée par les collecticités adhérentes, l'Etat et la région. Les adhérents valident un programme de travail annuel. L'agence intervient prioritairement sur les sites qui portent un enjeu intercommunal.
+commentaire_structure: 
 adresse_url: http://www.aduga.org
 ---
+
 Test
