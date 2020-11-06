@@ -9,7 +9,7 @@ zone_intervention:
 interventions:
     - description: Accompagnement en ingéniérie à la reconversion
       service: ?
-      conditions: L'élu (commune, EPCI) peut saisir l'ADUGA si le site fait partie des 13 sites pilotes identifiés en 2012 - demander source pour liste. Les sites pilotes figurent avec une étoile sur cette cartographie en ligne : http://carto.aduga.org/index.php/view/map/?repository=observatoire&project=friche_grd_amienois_383
+      conditions: L'élu (commune, EPCI) peut saisir l'ADUGA si le site fait partie des 13 sites pilotes identifiés en 2012 - demander source pour liste. Les sites pilotes figurent avec une étoile sur cette cartographie en ligne : 
       phase: Etape 2 ?? ou 5 ?
       dossier: 
       contact: Nicolas Delbouille - Directeur d'études planification et projet urbain - n.delbouille@aduga.org
