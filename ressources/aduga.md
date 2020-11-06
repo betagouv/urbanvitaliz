@@ -7,7 +7,7 @@ numero_telephone: "XXXXXXXXXX"
 zone_intervention: 
     - Grand Amiénois - demander couche SIG
 interventions:
-    - description: Accompagner les communes sur un site en friche repéré lors des réflexions PLUi. Montage de scénarios d'aménagement et test : contacts avec partenaires, commande de diagnostics, facilitation du dialogue des parties prenantes.
+    - description: "Accompagner les communes sur un site en friche repéré lors des réflexions PLUi. Montage de scénarios d'aménagement et test : contacts avec partenaires, commande de diagnostics, facilitation du dialogue des parties prenantes."
       service: Service urbanisme
       conditions: 
       phase: Etape 4 - Construire des scénarios d'aménagement pour décider
