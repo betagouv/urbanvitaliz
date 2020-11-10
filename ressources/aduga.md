@@ -1,9 +1,9 @@
 ---
 layout: ressources
 
-nom: ADUGA
+nom: ADUGA - à consolider
 # Bien garder les guillemets, sinon le numéro affiché ne sera pas le bon
-numero_telephone: "XXXXXXXXXX" 
+numero_telephone: "03 22 22 31 65" 
 zone_intervention: 
     - Grand Amiénois - demander couche SIG
 interventions:
