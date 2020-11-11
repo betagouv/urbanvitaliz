@@ -26,7 +26,6 @@ interventions:
       phase: Etape 5
       dossier: "Après sélection du dossier par le jury de l'AAP de la Région Occitanie, marche à suivre pour déposer le dossier de demande de subvention auprès de l'ADEME : https://www.occitanie.ademe.fr/lademe-en-region/demander-une-aide-lademe. Le dossier déposé au titre de l’AAP remplace le document technique type indiqué."
       contact: "En amont du dépôt de dossier : Pierre Vignaud - pierre.vignaud@ademe.fr - 04 67 99 89 73"
-
 commentaire_structure: "L’Ademe peut soutenir les projets de reconversion avec d’autres axes d’entrée : énergie, économie circulaire, dimensionnement réseau de chaleurs, etc. Découvrez toutes les aides disponibles via la plateforme : https://agirpourlatransition.ademe.fr/entreprises/recherche-projets?aap%5B0%5D=vous_etes%3ACollectivit%C3%A9%20/%20Administration"
 adresse_url: https://www.occitanie.ademe.fr/
 ---
