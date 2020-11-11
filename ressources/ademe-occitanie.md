@@ -26,12 +26,6 @@ interventions:
       phase: Etape 5
       dossier: "Après sélection du dossier par le jury de l'AAP de la Région Occitanie, marche à suivre pour déposer le dossier de demande de subvention auprès de l'ADEME : https://www.occitanie.ademe.fr/lademe-en-region/demander-une-aide-lademe. Le dossier déposé au titre de l’AAP remplace le document technique type indiqué."
       contact: "En amont du dépôt de dossier : Pierre Vignaud - pierre.vignaud@ademe.fr - 04 67 99 89 73"
-    - description: "Appel à projets national ADEME : Soutien aux opérations de recyclage des friches polluées"
-      detail:
-      conditions: "Anciens sites ICPE (industriels) ou miniers. Le responsable de la pollution n’est pas identifié ou ne peut être astreint réglementairement à supporter les coûts de dépollution, conformément au principe du “pollueur-payeur”. Les études doivent être ou avoir été conduites conformément à la méthodologie Sites et Sol Pollués (prestataires certifiés LNE). Le projet doit être déjà très mature, avec tous types de projets acceptés : usages “classiques” (renouvellement urbain, relocalisation d’activité) et usages “alternatifs” (renaturation, photovoltaïque, biomasse, etc.). Bonification d’aides si les modalités de gestion de la pollution sont exemplaires au regard de la méthode SSP. Les sites pollués par des substances radioactives, des agents pathogènes ou infectieux ainsi que par l’amiante sont exclus. La gestion des engins pyrotechniques est exclue. Les friches agricoles et anciennes décharges sont exclues."
-      phase: Etape 5
-      dossier: "Pour les projets de travaux, fournir un Plan de gestion récent et un avant-projet détaillé. Dépôt de dossier en ligne : https://agirpourlatransition.ademe.fr/entreprises/dispositif-aide/20201105/friches2021-7"
-      contact: "En amont du dépôt de dossier : Pierre Vignaud - pierre.vignaud@ademe.fr - 04 67 99 89 73"
 commentaire_structure: L’Ademe peut soutenir les projets de reconversion avec d’autres axes d’entrée : énergie, économie circulaire, dimensionnement réseau de chaleurs, etc. Découvrez toutes les aides disponibles via la plateforme : https://agirpourlatransition.ademe.fr/entreprises/recherche-projets?aap%5B0%5D=vous_etes%3ACollectivit%C3%A9%20/%20Administration
 adresse_url: https://www.occitanie.ademe.fr/
 ---
