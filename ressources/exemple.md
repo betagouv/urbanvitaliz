@@ -9,12 +9,14 @@ zone_intervention:
     - rue du tondu à Bordeaux
 interventions:
     - description: Évaluation du niveau des pollens
+      detail: tout ce que vous avez toujours voulu savoir en détail
       service: Service de la désartificialisation
       conditions: des fleurs sur la friche
       phase: genre plutôt au début
       dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10
       contact: flore.duvase+pollens@example.org
     - description: Vérification du budget
+      detail: quel type de budget exactement
       conditions: avoir reçu les financements
       phase: vers la fin, avant que les travaux ne commencent
       dossier: budget prévisionnel
