@@ -37,14 +37,14 @@ zone_intervention:
     - rue du tondu à Bordeaux
 interventions:
     - description: Évaluation du niveau des pollens
-      détail: tous ces beaux détails
+      detail: tous ces beaux détails
       service: Service de la désartificialisation
       conditions: des fleurs sur la friche
       phase: genre plutôt au début
       dossier: des photos des fleurs concernées, idéalement leur nom en latin et l'ordre de grandeur de quantité en puissance de 10
       contact: flore.duvase+pollens@example.org
     - description: Vérification du budget
-      détail: i wanna know more
+      detail: i wanna know more
       conditions: avoir reçu les financements
       phase: vers la fin, avant que les travaux ne commencent
       dossier: budget prévisionnel
@@ -68,7 +68,7 @@ adresse_url: https://hauts-de-france.ademe.fr/
   <li>
     <h3>{{intervention.description}}</h3>
     <ul>
-      {%- if intervention.détail -%}<li><strong>Précisions :</strong> {{intervention.détail}}</li>{%- endif -%}
+      {%- if intervention.detail -%}<li><strong>Précisions :</strong> {{intervention.detail}}</li>{%- endif -%}
       {%- if intervention.service -%}<li><strong>service :</strong> {{intervention.service}}</li>{%- endif -%}
       <li><strong>phase :</strong> {{intervention.phase}}</li>
       {%- if intervention.conditions -%}<li><strong>conditions :</strong> {{intervention.conditions}}</li>{%- endif -%}
