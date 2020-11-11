@@ -27,7 +27,7 @@ interventions:
       dossier: 
       contact: anthony.meutrot@epf-occitanie.fr
     - description: Conseil ou prise en charge des procédures foncières
-      detail: Appui pour les différente procédures foncières : amiable, préemption, expropriation. Réalisation possible de l'ensemble de ces procédures par l'EPF.
+      detail: "Appui pour les différente procédures foncières : amiable, préemption, expropriation. Réalisation possible de l'ensemble de ces procédures par l'EPF."
       service: Direction foncière
       conditions: La collectivité doit être liée à l'EPF par une convention foncière préalablement à toute intervention, avec portage du foncier par l'EPF par la suite.
       phase: Etape 4 ou 5
@@ -47,6 +47,6 @@ interventions:
       phase: Etape 5
       dossier: 
       contact: anthony.meutrot@epf-occitanie.fr
-commentaire_structure: Létablissement d'une convention foncière fait suite à une sollicitation de la collectivité, qui sera examinée vis-à-vis de nos axes d’intervention définis dans notre Programme Pluri-annuel d'Intervention. Pour 2019-2013, ces axes sont : développer l'offre de logements, conforter l'attractivité économique de la région, préserver l’environnement et prévenir les risques.
+commentaire_structure: "L'établissement d'une convention foncière fait suite à une sollicitation de la collectivité, qui sera examinée vis-à-vis de nos axes d’intervention définis dans notre Programme Pluri-annuel d'Intervention. Pour 2019-2013, ces axes sont : développer l'offre de logements, conforter l'attractivité économique de la région, préserver l’environnement et prévenir les risques."
 adresse_url: https://www.epf-occitanie.fr/
 ---
