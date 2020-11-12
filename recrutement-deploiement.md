@@ -31,7 +31,7 @@ On a beaucoup de travail devant nous :
 D'une manière générale, on cherche une personne enthousiaste, touche-à-tout, qui a envie de faire avancer ce sujet. Que ça implique de passer 15 coups de téléphone par jour, de rassembler et synthétiser les aides existantes sur un territoire, d'étudier le cas d'une friche spécifique pour l'orienter, ou de défendre auprès du reste de l'équipe un nouveau service que l'outil pourrait proposer pour faciliter la réhabilitation des friches.
 
 ## Le profil qu'on recherche
-- Avant tout, quelqu'un d'enthousiaste et autonome, qui a envie de faire avancer notre sujet et qui va se bouger sans attendre qu'on lui dise quoi faire.
+- Avant tout, quelqu'un d'enthousiaste et autonome, qui a envie de faire avancer notre sujet, proactif et dynamique !
 - Quelqu'un qui aime travailler en équipe, car on fait quasiment tout à plusieurs, on binôme autant que possible.
 - Quelqu'un de flexible : s'il faut changer d'orientation du produit, changer de mission etc.
 - Quelqu'un à l'aise à l'oral, à l'écrit, au téléphone, par email. Très à l'aise avec les outils numériques.
