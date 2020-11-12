@@ -1,3 +1,8 @@
+---
+layout: home
+banner_title: "UrbanVitaliz recrute un.e chargé.e de déploiement - candidatures ouvertes jusqu'au 23/11/2020"
+---
+
 # UrbanVitaliz recrute un.e chargé.e de déploiement - candidatures ouvertes jusqu'au 23/11/2020
 
 *Le 12/11/2020*
