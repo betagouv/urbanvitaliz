@@ -14,7 +14,7 @@ Réhabiliter une friche donc, cela prend des années, et beaucoup de démarches 
 
 ### La solution qu'on crée
 UrbanVitaliz est un service numérique qui appuie les petites et moyennes collectivités pour lancer leurs projets de revitalisation des friches.
-L'outil, qui est en construction depuis septembre 2020, guide les collectivités dans les étapes à suivre, propose les contacts, outils et financement pertinents en fonction du contexte et de l'usage souhaité du site. 
+L'outil, qui est en construction depuis septembre 2020 (tout récent 😊), guide les collectivités dans les étapes à suivre, propose les contacts, outils et financement pertinents en fonction du contexte et de l'usage souhaité du site. 
 
 ### Qui est derrière UrbanVitaliz ?
 Ce service est porté par le Cerema, et créé au sein de beta.gouv.fr, l'incubateur de la Direction Interministérielle du Numérique.
@@ -33,6 +33,7 @@ D'une manière générale, on cherche une personne enthousiaste, touche-à-tout,
 ## Le profil qu'on recherche
 - Avant tout, quelqu'un d'enthousiaste et autonome, qui a envie de faire avancer notre sujet et qui va se bouger sans attendre qu'on lui dise quoi faire.
 - Quelqu'un qui aime travailler en équipe, car on fait quasiment tout à plusieurs, on binôme autant que possible.
+- Quelqu'un de flexible : s'il faut changer d'orientation du produit, changer de mission etc.
 - Quelqu'un à l'aise à l'oral, à l'écrit, au téléphone, par email. Très à l'aise avec les outils numériques.
 - Idéalement, quelqu'un qui a une expérience en urbanisme ou aménagement.
 - Idéalement, quelqu'un qui comprend comment fonctionne l'administration, les collectivités (expérience ou formation)
@@ -48,8 +49,8 @@ D'une manière générale, on cherche une personne enthousiaste, touche-à-tout,
 Ce poste s'inscrit dans une 'vague' de recrutements plus large au sein de beta.gouv.fr.
 
 On te suggère de lire ces posts qui te donneront plus d'infos sur le cadre, la communauté beta.gouv.fr :
-- https://blog.beta.gouv.fr/dinsic/2020/11/10/nous-recrutons-une-brigade-numerique/
-- https://beta.gouv.fr/recrutement/2020/11/04/recrutement-bizdevs-beta.html
+- [sur la "vague de recrutement en question et la communauté betagouv](https://blog.beta.gouv.fr/dinsic/2020/11/10/nous-recrutons-une-brigade-numerique/)
+- [sur les postes "déploiement/bizdev" plus spécifiquement](https://beta.gouv.fr/recrutement/2020/11/04/recrutement-bizdevs-beta.html)
 
 
 Le dépôt de candidature doit *absolument* se faire sur [ce formulaire ici sur demarches-simplifiées](https://www.demarches-simplifiees.fr/commencer/rejoigneznous) pour être pris en compte. Date butoir pour candidater : 23/11/2020.
