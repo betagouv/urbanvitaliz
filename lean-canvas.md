@@ -17,12 +17,18 @@ Urban Vitaliz
 
 # Customer-segment
 
-Collectivités territoriales (Communes, EPCI, Département, Région) en France qui ont identifié des friches et qui ont déjà en tête des scénarios d'usages
+- Communes et intercocommunalités en France qui ont identifié au moins une friche et qui ont une volonté politique politique de la résorber et qui rencontrent un ou des blocages.
 
-1. Collectivités qui savent un peu à qui s'adresser, sont bloquées et demandent quand même de l'aide (collectivités "niveau 2")
-2. Collectivités novice qui ne sait pas comment commencer (collectivités "niveau 1")
-3. Collectivités qui s'en sortent, mais voudraient gagner en efficacité (collectivités "niveau 3")
+<!--
+Par ordre de priorité :
 
+1. Collectivités qui a déjà "fait des trucs" (recherches, contacts...) et rencontre un point de blocage spécifique à un moment donné (collectivités "niveau 2")
+2. Collectivité novice qui ne sait pas par où s'y prendre, aucune ressource ni connaissance (collectivités "niveau 1")
+3. Collectivités qui a déjà géré une ou des friches, mais voudrait gagner en efficacité (méthode, financements etc.) (collectivités "niveau 3")
+
+--> 
+
+- Etablissements publics qui accompagnement les collectivités sur leurs sujets friches ?
 
 # Channels
 
