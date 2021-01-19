@@ -1,4 +1,4 @@
-# Acteurs : étapes et interventions
+# Acteurs : Leurs interventions au service des collectivités
 
 ## Aveyron
 
@@ -11,3 +11,7 @@
 
 ## Somme
 - [ADUGA - Agence d'urbanisme du Grand Amiénois](https://docs.google.com/document/d/18UyKszS8ulE66cQalkFlDWIjgbSJeIYaGioGCUDfmv8/edit?usp=sharing)
+- [Ademe Hauts-de-France - Agence de la transition écologique](https://docs.google.com/document/d/1JRYaE0atdOFSXR_pGUR61dmrMU_9nCi0yv88gGbs_2Q/edit?usp=sharing)
+
+# Fiches stratégies de gestion d'un point blocant
+- [Propriétaire existant mais injoignable](https://docs.google.com/document/d/1w-D6r3J5VKnV_UeeMsxrHxjuC4FbwNBzFXc7euhTrTc/edit?usp=sharing)
