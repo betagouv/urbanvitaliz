@@ -22,4 +22,5 @@
 - [Guide méthodologique de gestion des friches](https://cerema.box.com/s/15boe9b2aixmduot8nwig0f4ur0v5unl)  
 Commanditaires et financeurs : EPF Lorraine/Région Lorraine/Conseil Général de Moselle  
 Prestataire : Atelier d’urbanisme Verdier-Tappia, mandataire du groupement.  
-Ce guide n’a pas fait l’objet d’une mise à jour depuis son élaboration et certains éléments réglementaires (SIS, tiers-demandeurs) ou financiers (AAP) n’y figurent pas.
+Ce guide n’a pas fait l’objet d’une mise à jour depuis son élaboration et certains éléments réglementaires (SIS, tiers-demandeurs) ou financiers (AAP) n’y figurent pas.  
+- [Guide IDFriches pour optimiser les diagnostics](https://www.idfriches-auvergnerhonealpes.fr/actualite/guide-diagnostic-sites-et-sols-pollues)
