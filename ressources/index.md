@@ -10,4 +10,4 @@
 - [Conseil Régional d'Occitanie](./region-occitanie)
 
 ## Somme
-- [ADUGA](./aduga)
+- [ADUGA - Agence d'urbanisme du Grand Amiénois](https://docs.google.com/document/d/18UyKszS8ulE66cQalkFlDWIjgbSJeIYaGioGCUDfmv8/edit?usp=sharing)
