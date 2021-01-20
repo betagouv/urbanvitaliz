@@ -13,8 +13,6 @@ Pas les zones A (agricoles), ni les UA1 (constructibles)
 
 Super cool diagramme page 4
 
-
-
 -->
 
 
@@ -50,6 +48,10 @@ C'est un levier disponible à une collectivité qui souhaite inviter à un certa
 
 La fiche contient des éléments du jurisprudence pour le détail de comment cet outil s'utilise ou pas
 
+
+## Faire évoluer le PLU
+
+https://www.epfbretagne.fr/img_ftp/608_EPFB-Fiches-BAO-180807-GEN02-V02.pdf
 
 
 # Les Orientations d’Aménagement  et de Programmation (OAP)
@@ -117,3 +119,26 @@ Diagramme ultra-stylé : https://www.epfbretagne.fr/img_ftp/2327_EPFB-FicheBAO-F
 https://www.epfbretagne.fr/img_ftp/635_EPFB-FicheBAO-FONC09-201029.pdf
 
 > Mettre fin à une situation d’abandon et, en cas d’inaction du propriétaire, acquérir la propriété, au terme d’une procédure d’expropriation simplifiée, d’un immeuble bâti ou non bâti, sans occupant et manifestement non entretenu. L’expropriation doit avoir pour but soit de construire des logements, soit de réaliser une opération d’intérêt collectif liée à la restauration, la rénovation ou l’aménagement.
+
+## Le Droit de Préemption Commercial
+
+https://www.epfbretagne.fr/img_ftp/2328_EPFB-FicheBAO-FONC10-201029.pdf
+
+> les Collectivités peuvent instituer un périmètre de sauvegarde du commerce et de l’artisanat de proximité dans lequel peut s’exercer un droit de préemption « commercial » portant sur certains types de biens
+
+>  Exercice du droit de préemption : La Commune ou l’EPCI délégataire de la compétence peut exercer le droit de préemption commercial, sur son territoire (art. L. 214-1 CU), ou en déléguer l’exercice à un Etablissement Public y ayant vocation (les Etablissements publics fonciers n’en font PAS partie), à une Société d’économie mixte ou, à un concessionnaire d’opération d’aménagement ou, au titulaire d’un contrat de revitalisation artisanale et commerciale
+
+> La Collectivité n’a pas vocation à conserver indéfiniment le bien objet de la préemption. Elle doit donc trouver un repreneur dans un délai de 2 ans à compter du transfert de propriété. Ce délai peut être porté à 3 ans en cas de mise en location-gérance du fonds de commerce ou du fonds artisanal. 
+
+## Intervention d’office sur les sols pollués
+
+https://www.epfbretagne.fr/img_ftp/1347_EPFB-Fiches-BAO-Environnement-1805224-ENV03.pdf
+
+> Faire cesser les pollutions ou risques de pollution des sols en cas d’inaction du responsable.
+> En cas de pollution des sols ou de risques de pollution des sols présentant des dangers pour la santé, la sécurité, la salubrité publiques et/ou l’environnement au regard de l’usage pris en compte sur un site.
+
+
+
+
+
+
