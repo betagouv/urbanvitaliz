@@ -1,27 +1,11 @@
 # Boîte à outils réglementaires - EPF Bretagne
 
-<!--
-
-Notes de lecture
-
-AM01 - Les zones et les destinations/sous-destinations dans les PLU
-
-https://www.epfbretagne.fr/img_ftp/315_EPFB-Fiches-BAO-AM01-190724.pdf
-
-L'équipe UrbanVitaliz ne s'intéresse qu'aux friches en zones U
-Pas les zones A (agricoles), ni les UA1 (constructibles)
-
-Super cool diagramme page 4
-
-
-
--->
-
-
 Cette page compile différents morceaux tirés de la [Boîte à outils réglementaires de l'EPF Bretagne](https://www.epfbretagne.fr/-boite-a-outils-reglementaire--1841.html)
 
 > Conçue pour les élus, la boîte à outils « règlementaires » a été réalisée par la Direction des Opérations de l’EPF pour leur présenter les outils que le législateur met à leur disposition dans le but de maîtriser l’aménagement et le foncier.
-> [Ces fiches sont] volontairement concises et didactiques, elles ne visent pas à donner une vision exhaustive des différents outils règlementaires prévus par la législation en vigueur, ni une description complète de leur instauration ou de leur fonctionnement, mais à les porter à la connaissance des élus afin qu’ils aient en main les outils possibles concourant à la réalisation de leur projet de territoire.
+> Ces fiches sont volontairement concises et didactiques, elles ne visent pas à donner une vision exhaustive des différents outils règlementaires prévus par la législation en vigueur, ni une description complète de leur instauration ou de leur fonctionnement, mais à les porter à la connaissance des élus afin qu’ils aient en main les outils possibles concourant à la réalisation de leur projet de territoire.
+
+Chaque fiche contient des éléments de jurisprudence qui apporte des détails sur comment l'outil présenté s'utilise en pratique et ce qui est possible et ce qui ne l'est pas
 
 Ce que nous restituons ici sont les morceaux spécifiquement pertinents pour la revitalisation de friches
 
@@ -46,10 +30,11 @@ Une parcelle peut se voir attribuer (ou interdire) une destination ou sous-desti
 
 https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041525837
 
-C'est un levier disponible à une collectivité qui souhaite inviter à un certain usage
+C'est un levier disponible à une collectivité qui souhaite inciter à un certain usage
 
-La fiche contient des éléments du jurisprudence pour le détail de comment cet outil s'utilise ou pas
+Dans le cas d'une friche, la destination indiquée dans le PLU pour la zone où se situe la friche peut servir à inciter un certain usage sans recourir à l'achat du foncier
 
+Une [fiche précise les différentes manières dont on peut faire évoluer le PLU](https://www.epfbretagne.fr/img_ftp/608_EPFB-Fiches-BAO-180807-GEN02-V02.pdf)
 
 
 # Les Orientations d’Aménagement  et de Programmation (OAP)
@@ -59,7 +44,6 @@ https://www.epfbretagne.fr/img_ftp/584_EPFB-Fiches-BAO-AM03-190724.pdf
 > Orienter  l’aménagement  de  façon  à  ce  que,  même  si  un  secteur  est  aménagé  par  un  opérateur  privé,  l’aménagement  respecte  les  souhaits  de la commune.
 
 Cet outil qui fait parti du PLU(i) permet de cadrer les usages possibles sur la friche
-
 
 
 ## Les zones agricoles protégées (ZAP)
@@ -91,6 +75,16 @@ https://www.epfbretagne.fr/img_ftp/618_EPFB-FicheBAO-FONC03-201029.pdf
 Permet d'instaurer un droit de préemption, pour une durée de 6 années, notamment dans les zones qui ne peuvent être soumises au droit de préemption urbain (DPU),
 
 
+### Le Droit de Préemption Commercial
+
+https://www.epfbretagne.fr/img_ftp/2328_EPFB-FicheBAO-FONC10-201029.pdf
+
+> les Collectivités peuvent instituer un périmètre de sauvegarde du commerce et de l’artisanat de proximité dans lequel peut s’exercer un droit de préemption « commercial » portant sur certains types de biens
+
+>  Exercice du droit de préemption : La Commune ou l’EPCI délégataire de la compétence peut exercer le droit de préemption commercial, sur son territoire (art. L. 214-1 CU), ou en déléguer l’exercice à un Etablissement Public y ayant vocation (les Etablissements publics fonciers n’en font PAS partie), à une Société d’économie mixte ou, à un concessionnaire d’opération d’aménagement ou, au titulaire d’un contrat de revitalisation artisanale et commerciale
+
+> La Collectivité n’a pas vocation à conserver indéfiniment le bien objet de la préemption. Elle doit donc trouver un repreneur dans un délai de 2 ans à compter du transfert de propriété. Ce délai peut être porté à 3 ans en cas de mise en location-gérance du fonds de commerce ou du fonds artisanal. 
+
 ## Expropriation
 
 https://www.epfbretagne.fr/img_ftp/623_EPFB-FicheBAO-FONC05-201029.pdf
@@ -117,3 +111,12 @@ Diagramme ultra-stylé : https://www.epfbretagne.fr/img_ftp/2327_EPFB-FicheBAO-F
 https://www.epfbretagne.fr/img_ftp/635_EPFB-FicheBAO-FONC09-201029.pdf
 
 > Mettre fin à une situation d’abandon et, en cas d’inaction du propriétaire, acquérir la propriété, au terme d’une procédure d’expropriation simplifiée, d’un immeuble bâti ou non bâti, sans occupant et manifestement non entretenu. L’expropriation doit avoir pour but soit de construire des logements, soit de réaliser une opération d’intérêt collectif liée à la restauration, la rénovation ou l’aménagement.
+
+
+## Intervention d’office sur les sols pollués
+
+https://www.epfbretagne.fr/img_ftp/1347_EPFB-Fiches-BAO-Environnement-1805224-ENV03.pdf
+
+> Faire cesser les pollutions ou risques de pollution des sols en cas d’inaction du responsable.
+> En cas de pollution des sols ou de risques de pollution des sols présentant des dangers pour la santé, la sécurité, la salubrité publiques et/ou l’environnement au regard de l’usage pris en compte sur un site.
+
