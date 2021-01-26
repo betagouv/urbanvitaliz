@@ -5,9 +5,9 @@ Cette page compile différents morceaux tirés de la [Boîte à outils réglemen
 > Conçue pour les élus, la boîte à outils « règlementaires » a été réalisée par la Direction des Opérations de l’EPF pour leur présenter les outils que le législateur met à leur disposition dans le but de maîtriser l’aménagement et le foncier.
 > Ces fiches sont volontairement concises et didactiques, elles ne visent pas à donner une vision exhaustive des différents outils règlementaires prévus par la législation en vigueur, ni une description complète de leur instauration ou de leur fonctionnement, mais à les porter à la connaissance des élus afin qu’ils aient en main les outils possibles concourant à la réalisation de leur projet de territoire.
 
-Chaque fiche contient des éléments de jurisprudence qui apporte des détails sur comment l'outil présenté s'utilise en pratique et ce qui est possible et ce qui ne l'est pas
+Chaque fiche contient des éléments de jurisprudence qui apporte des détails sur comment l'outil présenté s'utilise en pratique et ce qui est possible et ce qui ne l'est pas.
 
-Ce que nous restituons ici sont les morceaux spécifiquement pertinents pour la revitalisation de friches
+Ce que nous restituons ici sont les morceaux spécifiquement pertinents pour la revitalisation de friches.
 
 
 ## AM01 - Les zones et les destinations/sous-destinations dans les PLU
