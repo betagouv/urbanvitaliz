@@ -44,6 +44,18 @@ const watch = {
 
 export default [
 	{
+		input: 'scripts/assistant.js',
+		output: {
+			sourcemap: true,
+			format: 'iife',
+			name: 'app',
+			file: 'build/assistant.rollup.js'
+		},
+		plugins: plugins('build/assistant.rollup.css'),
+		watch
+	},
+	// legacy projects; may be removed eventually
+	/*{
 		input: 'scripts/description-friche.js',
 		output: {
 			sourcemap: true,
@@ -64,5 +76,5 @@ export default [
 		},
 		plugins: plugins('build/spa.rollup.css'),
 		watch
-	}
+	}*/
 ]
