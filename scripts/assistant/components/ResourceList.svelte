@@ -1,15 +1,15 @@
 <script>
-    export let resources;
+    export let relevantResources;
 </script>
 
 <section>
-    <h2>Liste des ressources pertinentes</h2>
+    <h2>Liste des ressources pertinentes ({relevantResources.length})</h2>
 
-    {#if resources.length === 0}
+    {#if relevantResources.length === 0}
         <p>(Pas de ressource pertinente pour le moment)</p>
     {:else}
         <ul>
-            {#each resources as resource}
+            {#each relevantResources as resource}
             <li>
                 {resource.titre}
             </li>

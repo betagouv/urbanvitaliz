@@ -7,12 +7,20 @@
     export let thématiques;
 
     export let filters;
+    export let étapeFilterChange;
+    export let thématiqueFilterChange;
 
-    export let resources;
+    export let relevantResources;
 </script>
 
-<ResourceFilters étapes={étapes} thématiques={thématiques} filters={filters} />
-<ResourceList resources={resources} />
+<ResourceFilters 
+    étapes={étapes} 
+    thématiques={thématiques} 
+    filters={filters} 
+    étapeFilterChange={étapeFilterChange} 
+    thématiqueFilterChange={thématiqueFilterChange}
+/>
+<ResourceList relevantResources={relevantResources} />
 
 <style>
 </style>
