@@ -1,0 +1,43 @@
+<script>
+    export let resource;
+</script>
+
+<article>
+    <h1>{resource.attributes.phrase_catch}</h1>
+    <footer>
+        <span class="étape">{resource.attributes.etape}</span>
+        <span class="thematique">{resource.attributes.thematique}</span>
+    </footer>
+</article>
+
+<style>
+    h1{
+        font-size: 1rem;
+        color: #073763; 
+        font-weight: bold;   
+    }
+
+    h1::after{
+        content: ' ';
+        display: block;
+        width: 30%;
+        height: 3px;
+        background-color: #073763;
+    }
+
+    footer .étape, footer .thematique{
+        font-size: 0.6rem;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+
+        white-space: nowrap;
+    }
+
+    footer .étape{
+        background-color: lightseagreen;
+    }
+    footer .thematique{
+        background-color: lightpink;
+    }
+
+</style>

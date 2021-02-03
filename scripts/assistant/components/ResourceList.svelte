@@ -1,4 +1,6 @@
 <script>
+    import Resource from './Resource.svelte';
+
     export let relevantResources;
 </script>
 
@@ -11,7 +13,7 @@
         <ul>
             {#each relevantResources as resource}
             <li>
-                {resource.attributes.phrase_catch}
+                <Resource resource={resource}/>
             </li>
             {/each}
         </ul>
@@ -19,5 +21,21 @@
 </section>
 
 <style>
-    
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+        text-align: initial;
+
+        vertical-align: top;
+        width: 15rem;
+
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
 </style>

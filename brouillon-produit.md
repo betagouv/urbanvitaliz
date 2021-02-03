@@ -14,3 +14,9 @@ styles:
 # Trouver des réponses sur les friches
 
 <div class="svelte-main"></div>
+
+<style>
+  .svelte-main{
+    max-width: 50rem;
+  }
+</style>

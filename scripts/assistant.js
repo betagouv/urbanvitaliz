@@ -68,7 +68,7 @@ const assistantUI = new Assistant({
 
 const octokit = new Octokit()
 
-const owner = 'DavidBruant';
+const owner = 'betagouv';
 const repo = 'urbanvitaliz'
 const path = '_tmp_resources'
 

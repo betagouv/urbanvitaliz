@@ -1,7 +1,7 @@
 ---
 layout: ressources
 
-phrase_catch : "Les sentiments du Prince Charles"
+phrase_catch : "La rose la plus rouge"
 etape : "12 - genre après"
 thematique : "chou"
 ---
