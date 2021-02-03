@@ -38,6 +38,10 @@
 </section>
 
 <style>
+    section.filters{
+        margin-bottom: 1rem;
+    }
+
     label{
         display: inline-block;
         cursor: pointer;
@@ -48,12 +52,11 @@
     }
 
     section label:not(:first-of-type){
-        margin: 0 1em;
+        margin-left: 1rem;
     }
 
     input{
         cursor: pointer;
-        margin-left: 0.2em;
+        margin-left: 0.2rem;
     }
-
 </style>
