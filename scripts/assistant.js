@@ -6,8 +6,8 @@ import Assistant from './Assistant.svelte';
 const Buffer = buffer.Buffer;
 
 const state = {
-    étapes: ["1 - le début", "2 - le milieu", "12 - genre après", "37 - vers la fin"],
-    thématiques: ['chou', 'patate'],
+    étapes: [],
+    thématiques: [],
     filters: {
         étapes: new Set(),
         thématiques: new Set()
@@ -15,9 +15,6 @@ const state = {
     allResources: [],
     relevantResources: []
 }
-
-state.filters.étapes = new Set(state.étapes);
-state.filters.thématiques = new Set(state.thématiques);
 
 function findRelevantResources(allResources, filters){
     return allResources.filter(r => {
@@ -95,6 +92,15 @@ octokit.repos.getContent({
     )
 })
 .then(resources => {
+    const étapesOptions = new Set(resources.map(r => r.attributes.etape))
+    const thématiquesOptions = new Set(resources.map(r => r.attributes.thematique))
+
+    state.étapes = [...étapesOptions];
+    state.thématiques = [...thématiquesOptions];
+
+    state.filters.étapes = new Set(state.étapes);
+    state.filters.thématiques = new Set(state.thématiques);
+
     state.allResources = resources;
     state.relevantResources = findRelevantResources(resources, state.filters)
 
