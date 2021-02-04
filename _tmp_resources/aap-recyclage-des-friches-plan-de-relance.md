@@ -13,7 +13,7 @@ Ici nous synthétisons les principales dispositions de l’Appel à Projet Fonds
 
 ## De quoi s'agit-il ?
 C'est une enveloppe de 300M€ à distribuer entre 2021 et 2022, dans le cadre du Plan de Relance, pour débloquer le recyclage de fonciers en friche.
-Elle est distribuée sous forme de **subventions**, via des AAP géré au niveau régional par les préfectures. 
+Elle est distribuée sous forme de **subventions**, via des AAP gérés au niveau régional par les préfectures. 
 
 ## Projets éligibles
 
@@ -50,7 +50,7 @@ Cela implique que le projet doit être “mature”, notamment les 4 éléments 
 - la programmation urbaine de l’aménagement ou le projet de revitalisation économique, 
 - le bilan économique de l’opération.
 
-Attention : l’exécution du projet ne peut commencer avant que le dossier de demande ne soit déposé et ait été instruit favorablement.
+Attention : l’exécution du projet ne doit pas commencer avant que le dossier de demande soit déposé et ait été instruit favorablement.
 
 
 ### Quel niveau d'équilibre économique doit présenter le projet ?
@@ -60,7 +60,7 @@ Le fonds friches a pour vocation d’aider à **concrétiser des projets qui ne 
 
 Il est donc nécessaire de :
 - présenter un modèle de financement qui prend en compte toutes les autres subventions nationales, et une programmation du site optimisée du point de vue financier (mixité et densité du site notamment). En bref, montrer que le maximum a été fait pour équilibrer l’équation économique,
-- faire état d’une impasse financière en l’absence de financements par le plan de relance.
+- faire état d’une impasse financière malgré tout, en l’absence de financements par le plan de relance.
 
 ## Que finance le fonds friches exactement ?
 Globalement, il peut couvrir **l’ensemble des dépenses du cycle de la réhabilitation de la friche**, y compris les études pré-opérationnelles, l'acquisition du site, les travaux de dépollution, démolition, d'aménagement et d'éventuels aléas.
@@ -74,7 +74,7 @@ En détails, les crédits du  Fonds Friches pourront financer :
 
 Le recyclage d’une friche peut s’inscrire dans une opération globale d’aménagement, dont le bilan reste déficitaire. Dans tous les cas, le candidat détaillera les dépenses éligibles relatives au recyclage des secteurs en friche, dont les montants et les échéances devront être précisées.
 
-En revanche, ne sont pas éligibles au Fonds :
+En revanche, **ne sont pas éligibles** au Fonds :
 - les opérations de simple mise en conformité à une obligation réglementaire,
 - les opérations de simple démolition, dépollution, portage ou renaturation lorsqu’elles ne s'intègrent pas dans  un projet d’aménagement avec production ou réhabilitation  de surfaces de logements, de surfaces économiques ou d’équipements publics.
 
@@ -101,7 +101,7 @@ La liste et les liens vers [tous les AAP régionaux sont consultables ici](https
 ➡️ [Présentation du dispositif sur le site de la préfecture de Région et liens vers les différentes annexes](http://www.occitanie.developpement-durable.gouv.fr/plan-de-relance-appel-a-projet-fonds-friches-en-a25345.html)
 
 #### Date limite de dépôts des dossiers
-Pour 2020-2021, les dossiers doivent être déposés au plus tard le **19 mars 2021** à minuit.
+⏱ Pour 2020-2021, les dossiers doivent être déposés au plus tard le **19 mars 2021** à minuit.
 
 #### Spécificités du dispositif en Occitanie :
 Les critères d’éligibilité sont les critères nationaux. Des critères de priorité ont par contre été ajoutés. Ils sont présentés en page 13 du règlement.
@@ -115,11 +115,11 @@ Les contacts individuels par département sont présentés en page 4 du règleme
 ➡️ [Présentation du dispositif sur le site de la préfecture de Région et liens vers les différentes annexes](http://www.bretagne.developpement-durable.gouv.fr/appel-a-projet-regional-recyclage-foncier-des-a4451.html)
 
 #### Date limite de dépôts des dossiers
-Pour 2020-2021, les dossiers doivent être déposés au plus tard le **7 mars 2021** à minuit.
+⏱ Pour 2020-2021, les dossiers doivent être déposés au plus tard le **7 mars 2021** à minuit.
 Les projets seront sélectionnés avant le 15 avril 2021.
 
 #### Spécificités du dispositif en Bretagne :
--
+
 
 #### Contacts :
 Il est recommandé de se rapprocher de la DREAL ou DDTM pour vérifier l’adéquation du projet avec le périmètre de l’Appel à Projet. Cette vérification ainsi que toute demande de renseignement sont à adresser à : fonds-friches.dreal-bretagne@developpement-durable.gouv.fr
