@@ -3,7 +3,7 @@
 </script>
 
 <article>
-    <h1>{resource.attributes.phrase_catch}</h1>
+    <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
     <footer>
         <span class="étape">{resource.attributes.etape}</span>
         <span class="thematique">{resource.attributes.thematique}</span>
@@ -11,6 +11,11 @@
 </article>
 
 <style>
+    article > a{
+        text-decoration: none;
+        color: inherit;
+    }
+
     h1{
         font-size: 1rem;
         color: #073763; 
