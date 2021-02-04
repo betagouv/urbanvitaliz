@@ -67,7 +67,7 @@ const octokit = new Octokit()
 
 const owner = 'betagouv';
 const repo = 'urbanvitaliz'
-const path = '_tmp_resources'
+const path = 'TMP_resources'
 
 octokit.repos.getContent({
     owner,
@@ -84,10 +84,10 @@ octokit.repos.getContent({
     .then(rs => rs
         .filter(r => r.status === 'fulfilled')
         .map(r => r.value)
-        .map(({name: filename, content}) => {
+        .map(({path, content}) => {
             const {body, attributes} = frontmatter( Buffer.from(content, 'base64').toString('utf-8') )
             
-            return { filename, content: body, attributes }
+            return { url: `/${repo}/${path}`, content: body, attributes }
         })
     )
 })
