@@ -94,10 +94,12 @@ Attention, à cette date limite, seuls les dossiers complets avec l’ensemble d
 
 ## Déclinaisons régionales
 
-La liste et les liens vers [tous les AAP régionaux sont consultables ici](https://www.ecologie.gouv.fr/fonds-friches) sur le site du ministère de l'écologie.
+📌 La liste et les liens vers [tous les AAP régionaux sont consultables ici](https://www.ecologie.gouv.fr/fonds-friches) sur le site du ministère de l'écologie.
+
 
 ### Occitanie
 ➡️ [Règlement de l’appel à projet Fonds friches en Occitanie](http://www.occitanie.developpement-durable.gouv.fr/IMG/pdf/reglement_aap_fonds_friches_occitanie.pdf)
+
 ➡️ [Présentation du dispositif sur le site de la préfecture de Région et liens vers les différentes annexes](http://www.occitanie.developpement-durable.gouv.fr/plan-de-relance-appel-a-projet-fonds-friches-en-a25345.html)
 
 #### Date limite de dépôts des dossiers
