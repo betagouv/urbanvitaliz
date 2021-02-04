@@ -87,7 +87,7 @@ octokit.repos.getContent({
         .map(({path, content}) => {
             const {body, attributes} = frontmatter( Buffer.from(content, 'base64').toString('utf-8') )
             
-            return { url: `/${repo}/${path}`, content: body, attributes }
+            return { url: `/${repo}/${path.replace(/\.[^/.]+$/, "")}`, content: body, attributes }
         })
     )
 })
