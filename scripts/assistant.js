@@ -67,7 +67,7 @@ const octokit = new Octokit()
 
 const owner = 'betagouv';
 const repo = 'urbanvitaliz'
-const path = '_tmp_resources'
+const path = 'TMP_resources'
 
 octokit.repos.getContent({
     owner,

@@ -1,5 +1,5 @@
 ---
-layout: ressources
+layout: ressources2
 
 phrase_catch : "Tout est à modifier"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
