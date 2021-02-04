@@ -16,7 +16,7 @@ Exemples : études sur la cartographie de friches industrielles d’un territoir
         Préférence pour les dossiers qui ciblent un usage pour le site, si on se rapproche d'une notion de projet
         Les études réglementaires (c'est-à-dire à réaliser obligatoirement pour être dans les règles) ne sont pas aidées, uniquement les études d'aide à la décision
       phase:
-      dossier: Directions régionales ou Benoit Lepesant, pour les projets portés par les Territoires d’industrie : Benoit.Lepesant@caissedesdepots.fr	
+      dossier: "Directions régionales ou Benoit Lepesant, pour les projets portés par les Territoires d’industrie : Benoit.Lepesant@caissedesdepots.fr"
    
 commentaire_structure: On aime bien les fleurs et les pièces
 adresse_url: adresse web
