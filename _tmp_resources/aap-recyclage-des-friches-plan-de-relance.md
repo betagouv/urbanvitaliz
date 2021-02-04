@@ -114,6 +114,7 @@ Les contacts individuels par département sont présentés en page 4 du règleme
 
 ### Bretagne
 ➡️ [Règlement de l’appel à projet Fonds friches en Bretagne](http://www.bretagne.developpement-durable.gouv.fr/IMG/pdf/20-12-22_aap_bretagne_fonds_friche_recyclage_foncier-v8.pdf)
+
 ➡️ [Présentation du dispositif sur le site de la préfecture de Région et liens vers les différentes annexes](http://www.bretagne.developpement-durable.gouv.fr/appel-a-projet-regional-recyclage-foncier-des-a4451.html)
 
 #### Date limite de dépôts des dossiers
