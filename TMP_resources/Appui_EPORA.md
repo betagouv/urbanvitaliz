@@ -1,12 +1,12 @@
 ---
 layout: ressources2
 
-phrase_catch : "Tout est à modifier"
-etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
-thematique : "Fiscalité et budget communal"
+phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
+etape : "3 - comment envisager le devenir du site ?"
+thematique : "Portage foncier et conseil & ingénerie"
 ---
 
-💡 Savez-vous que les communes dotées d'un PLU peuvent délibérer pour instaurer des secteurs de Taxe d'Aménagement Majorée ?
+💡 Saviez-vous que les communes dotées d'un PLU peuvent délibérer pour instaurer des secteurs de Taxe d'Aménagement Majorée ?
 La délibération doit justifier le calcul du taux en fonction des besoins supplémentaires d’équipements dans des zones à urbaniser ou des zones urbaines à densifier.
 
 ✔ Retrouvez ici un modèle de délibération proposé par la DDT de la Lozère : https://www.lozere.gouv.fr/content/download/7537/48509/file/2_-_Modeles_de_deliberations_cle53fad1-1.pdf
