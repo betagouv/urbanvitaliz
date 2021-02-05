@@ -9,7 +9,7 @@ thematique : "Portage foncier et Conseil & ingénerie"
 💡 Saviez-vous qu'il y a 10 établissements publics fonciers d’État, 23 établissements publics fonciers locaux (EPFL) et 2 établissements publics fonciers et d’aménagement (EPFA) d’État qui interviennent en France ? Leur métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités.
 Pour une période définie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas de friches, il peut commencer à le préaménager (démolition des bâtiments existants, dépollution, etc.) avant de le revendre à une collectivité ou à l’opérateur mandaté par cette collectivité.
 
-✔ Retrouvez ici la page officielle de l'EPF Auvergne Rjone Alpes, EPORA : https://www.epora.fr/
+✔ Retrouvez ici la page officielle de l'EPF Auvergne-Rhône-Alpes, EPORA : https://www.epora.fr/
 
 ✔ Retrouvez également une plaquette explicative de leurs actions : https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf
 
