@@ -14,7 +14,8 @@ Pour une période définie, l’EPF possède, gère et sécurise le foncier. Not
 ✔ Retrouvez également une plaquette explicative de leurs actions : https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf
 
 
-📞 Contacts :
+📞 Contacts
+
 Pour des renseignements généraux : Caroline Le Romain au 04 27 40 61 20 / caroline.le.romain@epora.fr
 
 Pour des renseignements spécifiques sur votre projet : Booryana Peeva au 04 77 47 47 93 / boryana.peeva@epora.fr
