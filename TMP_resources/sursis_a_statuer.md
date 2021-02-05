@@ -11,9 +11,8 @@ thematique : "Urbanisme réglementaire"
 
 ✔ Retrouvez ici une fiche explicative complète : http://outil2amenagement.cerema.fr/IMG/pdf/fiche_le_sursis_a_statuer_v2_cle58caca.pdf
 
-✔ Dans le cadre d'un PLUi, rapprochez-vous du service d'urbanisme de votre EPCI.  
-
-✔ Pour les PLU, rapprochez-vous du service urbanisme de la commune. 
+✔ N'hésitez pas à vous rapprocher du service urbanisme de l'EPCI ou de votre commune.
+ 
      
 ❓ Ressources associées :  
 Pour en savoir plus sur les permis de construire et autres autorisations et actes relatifs à l’occupation ou à l’utilisation du sol : https://www.collectivites-locales.gouv.fr/permis-construire-et-autres-autorisations-et-actes-relatifs-a-loccupation-ou-a-lutilisation-sol
