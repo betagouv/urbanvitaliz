@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: ressources
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
 etape : "3 - comment envisager le devenir du site ?"
