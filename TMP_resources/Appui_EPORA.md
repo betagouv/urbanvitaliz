@@ -3,19 +3,17 @@ layout: ressources2
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
 etape : "3 - comment envisager le devenir du site ?"
-thematique : "Portage foncier et conseil & ingénerie"
+thematique : "Portage foncier et Conseil & ingénerie"
 ---
 
-💡 Saviez-vous que les communes dotées d'un PLU peuvent délibérer pour instaurer des secteurs de Taxe d'Aménagement Majorée ?
-La délibération doit justifier le calcul du taux en fonction des besoins supplémentaires d’équipements dans des zones à urbaniser ou des zones urbaines à densifier.
+💡 Saviez-vous qu'il y a 10 établissements publics fonciers d’État, 23 établissements publics fonciers locaux (EPFL) et 2 établissements publics fonciers et d’aménagement (EPFA) d’État qui interviennent en France ? Leur métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités.
+Pour une période définie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas de friches, il peut commencer à le préaménager (démolition des bâtiments existants, dépollution, etc.) avant de le revendre à une collectivité ou à l’opérateur mandaté par cette collectivité.
 
-✔ Retrouvez ici un modèle de délibération proposé par la DDT de la Lozère : https://www.lozere.gouv.fr/content/download/7537/48509/file/2_-_Modeles_de_deliberations_cle53fad1-1.pdf
-✔ Un autre modèle proposé par la DDT du Bas-Rhin : https://www.bas-rhin.gouv.fr/content/download/41385/271478/file/Mod%C3%A8le+d%C3%A9lib%C3%A9ration+TAM.pdf
-✔ Vous pouvez faire une recherche rapide sur le web à partir des mots-clés "délibération taxe aménagement majorée" pour accéder directement à des exemples réels de délibérations communales.
+✔ Retrouvez ici la page officielle de l'EPF Auvergne Rjone Alpes, EPORA : https://www.epora.fr/
+✔ Retrouvez également une plaquette explicative de leurs actions : https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf
 
-Fiche technique plus détaillée sur l'instauration de la TAM : http://outil2amenagement.cerema.fr/taxe-d-amenagement-majoree-r551.html
 
-❓ Ressources associées :
-Pour en savoir plus sur la taxe d'aménagement en général : https://www.cohesion-territoires.gouv.fr/taxe-damenagement
-Pour trouver d'autres outils de financement des équipements publics : http://outil2amenagement.cerema.fr/fiche-outils-comparaison-des-principaux-outils-de-a2596.html
+📞 Contacts :
+Pour des renseignements généraux : Caroline Le Romain au 04 27 40 61 20 / caroline.le.romain@epora.fr
+Pour des renseignements spécifiques sur votre projet : Booryana Peeva au 04 77 47 47 93 / boryana.peeva@epora.fr
 
