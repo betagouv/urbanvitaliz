@@ -1,12 +1,18 @@
 <script>
     export let resource;
+
+    const thematiques = Array.isArray(resource.attributes.thematique) ? 
+        resource.attributes.thematique : 
+        [resource.attributes.thematique]
 </script>
 
 <article>
     <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
     <footer>
         <span class="étape">{resource.attributes.etape}</span>
-        <span class="thematique">{resource.attributes.thematique}</span>
+        {#each thematiques as thematique}
+            <span class="thematique">{thematique}</span>
+        {/each}
     </footer>
 </article>
 
