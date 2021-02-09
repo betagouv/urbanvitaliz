@@ -19,9 +19,9 @@ const state = {
 function findRelevantResources(allResources, filters){
     return allResources.filter(r => {
         return filters.étapes.has(r.attributes.etape) && 
-            Array.isArray(r.attributes.thematique) ? 
+            (Array.isArray(r.attributes.thematique) ? 
                 r.attributes.thematique.some(t => filters.thématiques.has(t)) :
-                filters.thématiques.has(r.attributes.thematique)
+                filters.thématiques.has(r.attributes.thematique))
     })
 }
 
