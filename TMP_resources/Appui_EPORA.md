@@ -3,7 +3,9 @@ layout: ressources
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
 etape : "3 - comment envisager le devenir du site ?"
-thematique : "Portage foncier et Conseil & ingénerie"
+thematique : 
+    - "Portage foncier"
+    - "Conseil & ingénerie"
 ---
 
 💡 Saviez-vous qu'il y a 10 établissements publics fonciers d’État, 23 établissements publics fonciers locaux (EPFL) et 2 établissements publics fonciers et d’aménagement (EPFA) d’État qui interviennent en France ? Leur métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités.

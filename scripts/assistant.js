@@ -18,7 +18,10 @@ const state = {
 
 function findRelevantResources(allResources, filters){
     return allResources.filter(r => {
-        return filters.étapes.has(r.attributes.etape) && filters.thématiques.has(r.attributes.thematique)
+        return filters.étapes.has(r.attributes.etape) && 
+            Array.isArray(r.attributes.thematique) ? 
+                r.attributes.thematique.some(t => filters.thématiques.has(t)) :
+                filters.thématiques.has(r.attributes.thematique)
     })
 }
 
@@ -93,7 +96,9 @@ octokit.repos.getContent({
 })
 .then(resources => {
     const étapesOptions = new Set(resources.map(r => r.attributes.etape))
-    const thématiquesOptions = new Set(resources.map(r => r.attributes.thematique))
+    const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
+
+    console.log('thématiquesOptions', thématiquesOptions)
 
     state.étapes = [...étapesOptions];
     state.thématiques = [...thématiquesOptions];
