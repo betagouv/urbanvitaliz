@@ -9,29 +9,31 @@
 </script>
 
 <section class="filters">
-    <section>
+    <section class="étapes">
         <h3>Étape</h3>
         {#each étapes.sort() as étape}
-            <label>{étape}
+            <label>
                 <input 
                     type="checkbox" 
                     name="Étape"
                     checked={filters.étapes.has(étape)}
                     on:change={e => étapeFilterChange(étape)}
                 />
+                {étape}
             </label>
         {/each}
     </section>
     <section>
         <h3>Thématique</h3>
         {#each thématiques as thematique}
-            <label>{thematique}
+            <label>
                 <input 
                     type="checkbox" 
                     name="Thématique" 
                     checked={filters.thématiques.has(thematique)}
                     on:change={e => thématiqueFilterChange(thematique)}
                 />
+                {thematique}
             </label>
         {/each}
     </section>
@@ -48,15 +50,19 @@
     }
 
     label:hover{
-        background-color: hsla(0, 0, 0, 0.1);
+        background-color: hsla(0, 0%, 0%, 0.1);
     }
 
-    section label:not(:first-of-type){
-        margin-left: 1rem;
+    .étapes label{
+        display: block;
+    }
+
+    section label{
+        margin-right: 1rem;
     }
 
     input{
         cursor: pointer;
-        margin-left: 0.2rem;
+        margin-right: 0.25rem;
     }
 </style>
