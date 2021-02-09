@@ -11,7 +11,7 @@
 <section class="filters">
     <section>
         <h3>Étape</h3>
-        {#each étapes as étape}
+        {#each étapes.sort() as étape}
             <label>{étape}
                 <input 
                     type="checkbox" 
