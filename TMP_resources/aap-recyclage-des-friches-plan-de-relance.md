@@ -6,14 +6,29 @@ etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le proje
 thematique : "Financements"
 ---
 
-# Postuler à l'Appel à projets (AAP) Recyclage des friches du Plan de relance, dit "Fonds friches"
 
 Le Fonds friches du Plan de relance est sur toutes les lèvres. 
-Ici nous synthétisons les principales dispositions de l’Appel à Projet Fonds Friches du Plan de relance. Cette page ne dispense pas d’une lecture attentive du règlement régional applicable 😬
+Ici nous synthétisons les principales dispositions de l’Appel à Projet Fonds Friches du Plan de relance. Cette page ne dispense pas d’une lecture attentive du règlement régional applicable ;)
 
-## De quoi s'agit-il ?
+## De quoi s'agit-il ? 😮
 C'est une enveloppe de 300M€ à distribuer entre 2021 et 2022, dans le cadre du Plan de Relance, pour débloquer le recyclage de fonciers en friche.
+
 Elle est distribuée sous forme de **subventions**, via des AAP gérés au niveau régional par les préfectures. 
+
+Un premier appel se clôture en mars 2021 et un deuxième au premier trimestre 2022 (mêmes enveloppes financières). Les dates exactes varient selon les régions.
+
+
+## Les principales conditions à avoir en tête 💡
+- Ce fonds friches s'adresse aux sites "prêts à sortir", c'est-à-dire suffisamment matures pour être achevés entre 2022 et 2024 (travaux compris).
+- Il a vocation a débloquer des opérations qui présentent un déficit financier, c'est-à-dire qui ne pourraient pas aboutir sinon faute de moyens financiers.
+- Il est ouvert à la plupart des typologies de maîtres d'ouvrages : collectivités, SEM, bailleurs sociaux, entreprises privées...
+- Il peut financer l'ensemble du cycle de la réhabilitation, des études aux travaux en passant pas l'acquisition du foncier, etc.
+
+
+Vous souhaitez en savoir plus ? Lisez ci-dessous et vous retrouverez en fin de page les liens vers les règlements régionaux.
+⬇️⬇️⬇️
+
+------
 
 ## Projets éligibles
 
