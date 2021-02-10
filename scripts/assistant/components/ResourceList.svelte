@@ -1,5 +1,5 @@
 <script>
-    import Resource from './Resource.svelte';
+    import ResourceOverview from './ResourceOverview.svelte';
 
     export let relevantResources;
 </script>
@@ -13,7 +13,7 @@
         <ul>
             {#each relevantResources as resource}
             <li>
-                <Resource resource={resource}/>
+                <ResourceOverview resource={resource}/>
             </li>
             {/each}
         </ul>
