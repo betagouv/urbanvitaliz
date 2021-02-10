@@ -1,5 +1,5 @@
 ---
-layout: ressources
+layout: ressources2
 
 phrase_catch : "Je souhaite acquérir un foncier qui appartient à la SNCF"
 sous_titre: "Conditions fréquentes, conseils pour et contacts"
