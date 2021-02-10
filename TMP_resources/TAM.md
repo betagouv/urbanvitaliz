@@ -13,9 +13,9 @@ La délibération doit justifier le calcul du taux en fonction des besoins suppl
 
 ✔ [Là, un autre modèle proposé par la DDT du Bas-Rhin](https://www.bas-rhin.gouv.fr/content/download/41385/271478/file/Mod%C3%A8le+d%C3%A9lib%C3%A9ration+TAM.pdf )
 
-✔ Vous pouvez faire une recherche rapide sur le web à partir des mots-clés "délibération taxe aménagement majorée" pour accéder directement à des exemples réels de délibérations communales.  
-  
-  
+✔ Vous pouvez faire une recherche rapide sur le web à partir des mots-clés "délibération taxe aménagement majorée" pour accéder directement à des exemples réels de délibérations communales.
+
+
 [Voir la fiche technique plus détaillée sur l'instauration de la TAM](http://outil2amenagement.cerema.fr/taxe-d-amenagement-majoree-r551.html)
   
   
