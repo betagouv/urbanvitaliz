@@ -20,7 +20,7 @@ styles:
     padding-top: 1rem;
   }
 
-  h1{
+  main > h1{
     margin-bottom: 2.5rem;
   }
 

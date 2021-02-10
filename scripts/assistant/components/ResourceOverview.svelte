@@ -8,13 +8,26 @@
 
 <article>
     <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
-
+    
+    {#if resource.attributes.sous_titre}
+        <section class="sous_titre">{resource.attributes.sous_titre || ''}</section>
+    {/if}
 </article>
 
 <style>
     article > a{
         text-decoration: none;
         color: inherit;
+    }
+
+    .sous_titre{
+        font-size: 0.8rem;
+        line-height: 1.2em;
+        
+        border: 2px solid grey;
+        background-color: #CCC;
+        border-radius: 1rem;
+        padding: 0.6em;
     }
 
     h1{
