@@ -32,9 +32,8 @@ Par ordre de priorité :
 
 # Channels
 
-- "niveau 2" => viennent spontanément vers nous (via communication institutionnelle)
-- "niveau 1"
-    - réseau via EPF/ DDT/ départements/ régions/ agences d'urba
+- viennent spontanément vers nous (via communication institutionnelle)
+- réseau via EPF/ DDT/ départements/ régions/ agences d'urba
 - Appel via le Cerema (communication nationale, via Twitter par exemple)
 
 
