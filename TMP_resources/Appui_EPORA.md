@@ -2,6 +2,7 @@
 layout: ressources
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
+sous_titre: "David est passé par ici et a rajouté la possibilité d'un champ libre dans la preview de la ressource"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : 
     - "Portage foncier"
