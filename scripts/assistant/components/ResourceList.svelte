@@ -21,6 +21,11 @@
 </section>
 
 <style>
+    h2{
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid grey;
+    }
+
     ul{
         list-style: none;
         padding: 0;
