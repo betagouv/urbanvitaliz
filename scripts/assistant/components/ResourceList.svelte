@@ -41,6 +41,6 @@
         border: 1px solid grey;
         border-radius: 0.5rem;
         margin: 0.5rem;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 </style>
