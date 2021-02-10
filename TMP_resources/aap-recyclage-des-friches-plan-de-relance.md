@@ -26,9 +26,10 @@ Un premier appel se clôture en mars 2021 et un deuxième au premier trimestre 2
 
 
 Vous souhaitez en savoir plus ? Lisez ci-dessous et vous retrouverez en fin de page les liens vers les règlements régionaux.
+
 ⬇️⬇️⬇️
 
-------
+---
 
 ## Projets éligibles
 
