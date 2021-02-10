@@ -10,7 +10,7 @@
 
 <section class="filters">
     <section class="étapes">
-        <h3>Étape</h3>
+        <h2>Étape</h2>
         {#each étapes.sort() as étape}
             <label>
                 <input 
@@ -24,7 +24,7 @@
         {/each}
     </section>
     <section>
-        <h3>Thématique</h3>
+        <h2>Thématique</h2>
         {#each thématiques as thematique}
             <label>
                 <input 
@@ -41,6 +41,15 @@
 
 <style>
     section.filters{
+        margin-bottom: 2rem;
+    }
+
+    section.filters > section{
+        margin-bottom: 1.75rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 

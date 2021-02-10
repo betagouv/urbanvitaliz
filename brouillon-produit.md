@@ -16,6 +16,14 @@ styles:
 <div class="svelte-main"></div>
 
 <style>
+  main{
+    padding-top: 1rem;
+  }
+
+  main > h1{
+    margin-bottom: 2.5rem;
+  }
+
   .svelte-main{
     max-width: 50rem;
   }

@@ -8,18 +8,26 @@
 
 <article>
     <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
-    <footer>
-        <span class="étape">{resource.attributes.etape}</span>
-        {#each thematiques as thematique}
-            <span class="thematique">{thematique}</span>
-        {/each}
-    </footer>
+    
+    {#if resource.attributes.sous_titre}
+        <section class="sous_titre">{resource.attributes.sous_titre || ''}</section>
+    {/if}
 </article>
 
 <style>
     article > a{
         text-decoration: none;
         color: inherit;
+    }
+
+    .sous_titre{
+        font-size: 0.8rem;
+        line-height: 1.2em;
+        
+        border: 2px solid grey;
+        background-color: #CCC;
+        border-radius: 1rem;
+        padding: 0.6em;
     }
 
     h1{
@@ -34,21 +42,6 @@
         width: 30%;
         height: 3px;
         background-color: #073763;
-    }
-
-    footer .étape, footer .thematique{
-        font-size: 0.6rem;
-        padding: 0.2rem;
-        border-radius: 0.5rem;
-
-        white-space: nowrap;
-    }
-
-    footer .étape{
-        background-color: lightseagreen;
-    }
-    footer .thematique{
-        background-color: lightpink;
     }
 
 </style>
