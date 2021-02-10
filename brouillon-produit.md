@@ -11,7 +11,7 @@ styles:
     - href: "./build/assistant.rollup.css"
 ---
 
-# Trouver des réponses sur les friches
+# Trouver des réponses pour réhabiliter mon site
 
 <div class="svelte-main"></div>
 
