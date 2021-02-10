@@ -1,5 +1,5 @@
 ---
-layout: ressources
+layout: ressources2
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
 sous_titre: "test sous titre"
