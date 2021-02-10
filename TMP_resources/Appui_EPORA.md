@@ -2,19 +2,19 @@
 layout: ressources
 
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
-sous_titre: "Comprendre le rôle d'un EPF dans l'acquisition du foncier"
+sous_titre: "David est passé par ici et a rajouté la possibilité d'un champ libre dans la preview de la ressource"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : 
     - "Portage foncier"
-    - "Conseil & ingénierie"
+    - "Conseil & ingénerie"
 ---
 
 💡 Saviez-vous qu'il y a 10 établissements publics fonciers d’État, 23 établissements publics fonciers locaux (EPFL) et 2 établissements publics fonciers et d’aménagement (EPFA) d’État qui interviennent en France ? Leur métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités.
 Pour une période définie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas de friches, il peut commencer à le préaménager (démolition des bâtiments existants, dépollution, etc.) avant de le revendre à une collectivité ou à l’opérateur mandaté par cette collectivité.
 
-✔ Retrouvez ici la page officielle de l'EPF Auvergne-Rhône-Alpes, EPORA : https://www.epora.fr/
+✔ Retrouvez ici la page officielle de l'EPF Auvergne-Rhône-Alpes, EPORA : <https://www.epora.fr/>
 
-✔ Retrouvez également une plaquette explicative de leurs actions : https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf
+✔ Retrouvez également une plaquette explicative de leurs actions [ici](https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf)
 
 
 📞 Contacts
