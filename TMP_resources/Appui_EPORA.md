@@ -14,7 +14,7 @@ thematique : Conditions et contacts
 Vous êtes dans la zone d'action de l'Etablissement Public Foncier de l'Ouest Rhône-Alpes (EPORA) ? Son métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités, après avoir étudié dans les grandes mailles l'équilibre financier du projet envisageable.  
 Pour une période définie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas de friches, il peut commencer à le préaménager (démolition des bâtiments existants, dépollution, etc.) avant de le revendre à une collectivité ou à l’opérateur choisi par cette collectivité.
 
-🚀 **Plus d'info ? c'est pas ici !**  
+🚀 **Plus d'info ? c'est par ici !**  
   
 Dans votre cas, l'EPORA peut : 
 - S'engager avec vous sur une convention de veille fonciere et d'opportunité, préempter pour vous et acquérir le foncier pour vous  
