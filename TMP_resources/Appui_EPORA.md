@@ -4,7 +4,7 @@ layout: ressources2
 phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
 sous_titre: "Vous ne possédez pas le foncier mais le propriétaire est prêt à vendre, faire appel à un Etablissement Public Foncier pour porter l'achat"
 etape : "3 - Comment envisager le devenir du site ?"
-thematique : Conditions et contacts
+thematique :
     - "Portage foncier"
     - "Conseil & ingénerie"
 ---
