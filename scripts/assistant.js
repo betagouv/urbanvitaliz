@@ -98,12 +98,9 @@ octokit.repos.getContent({
     const étapesOptions = new Set(resources.map(r => r.attributes.etape))
     const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
 
-    console.log('thématiquesOptions', thématiquesOptions)
-
     state.étapes = [...étapesOptions];
     state.thématiques = [...thématiquesOptions];
 
-    state.filters.étapes = new Set(state.étapes);
     state.filters.thématiques = new Set(state.thématiques);
 
     state.allResources = resources;
