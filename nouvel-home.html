@@ -64,9 +64,50 @@ layout: home
         text-align: center;
     }
 
-    .sectionProcess{
+   
+    .process ol{
         display: flex;
         flex-direction: row;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        justify-content: space-around;
+    }
+
+    .process li{
+        width: 23%;
+    }
+
+    .process li h1{
+        font-size: 1rem;
+        list-style-type: none;
+
+        background-color: orange;
+
+        white-space: pre;
+    }
+
+    .process li h1 .figure{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        border-radius: 50%;
+
+        background-color: #ffe4e9;
+
+        text-align: center;
+        line-height: 2rem;
+
+        transform: translateX(-50%);
+    }
+
+
+    .process li h1 .text{
+        display: inline-block;
+        transform: translateX(-0.5rem);
     }
 
     .items{
@@ -79,18 +120,7 @@ layout: home
     item{
         flex-grow: 4;
     }
-   
 
-    .process li h1{
-        list-style-type: none;
-    }
-    .process li h1 .figure{
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-
-        border-radius: 50%;
-    }
 
 </style>
 
@@ -104,29 +134,29 @@ layout: home
     <p>UrbanVitaliz s'intéresse aux terrains imperméabilisés ou pollués qui ont perdu leur usage, que la dynamique de marché ne parvient pas à renouveler sans aide.</p>
 </section>
 
-<section class="sectionProcess">
-    <ol class="article">
+<section class="process">
+    <ol>
         <li>
-            <h1><span class="item">1</span> Prise de contact</h1>
+            <h1><span class="figure">1</span><span class="text">Prise de contact</span></h1>
             <p>Remplissez le formulaire en ligne (5 à 10 minutes) en y ajoutant d'éventuels 
                 documents sur le site que vous souhaitez réhabiliter</p>
         </li>
         <li>
-            <h1><span class="item">2</span> Approfondissement</h1>
+            <h1><span class="figure">2</span><span class="text">Approfondissement</span></h1>
             <p>Nous convenons d'un appel qui permet de rentrer dans le détail de vos besoins,
                 des démarches déjà faites, etc.
                 Nous clarifions ensemble les blocages à dépasser.
             </p>
         </li>
         <li>
-            <h1><span class="item">3</span> Étude</h1>
+            <h1><span class="figure">3</span><span class="text">Étude</span></h1>
             <p>L'équipe étudie vos éléments et flèche les acteurs ressource et leurs contacts. 
                 Des procédures, des stratégies de résolutions, des financements, etc. 
                 Celà peut prendre quelques semaines (produit en construction)
             </p>
         </li>
         <li>
-            <h1><span class="item">4</span> Recommandations</h1>
+            <h1><span class="figure">4</span><span class="text">Recommandations</span></h1>
             <p>Vous retrouvez nos suggestions via l'outil UrbanVitaliz.
                 Vous êtes libres de ne pas suivre ces recommandations, et/ou de nous recontacter pour plus d'informations
                 ou d'autres demandes
@@ -136,7 +166,7 @@ layout: home
     </ol>
 </section>
 
-<section class="process">
+<section>
     <ol>
         <li>
             <h1>Par où démarrer mon projet</h1>
