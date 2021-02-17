@@ -1,54 +1,60 @@
 ---
-layout: empty
+layout: home
 ---
 
 <style>
-    .process li h1{
-        list-style-type: none;
+    main > section {
+        width: 100%;
+        padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
     }
-    .process li h1 .figure{
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
 
-        border-radius: 50%;
+    /*
+    padding: 1em;    tous les côtés
+    padding: 1em 2em;    haut-bas  -  gauche-droite
+    padding: 1em 2em 3em 4em; Top Right Bottom Left (TRouBLe)
+
+    vw : viewport width (100 = largeur totale)
+    vh : viewport height
+    rem : root (<body>) em
+    em : largeur d'un M dans la taille de l'élément actuel
+
+    */
+
+    .introduction{
+        position: relative;
+        text-align: center;
+
+        height: 15rem;
     }
-    .projet{
-        margin: 0;
-        padding: 0;
-        background: url('/assets/images/aphotofriche_1.png') no-repeat center fixed;
-        background-size: cover;
+
+    .introduction::before{
+        content: ' ';
+        width: 100%;
+        height: 100%;
         
-    }
-    .projet_title_h1{
-        text-align: center;
-        color: white;
-        justify-content: center;
-        padding-bottom: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: url('/assets/images/aphotofriche_1.png') no-repeat center;
+        background-size: cover;
+
+        opacity: 0.3;
     }
 
-    .projet_title_h2{
-        text-align: center;
-        color: white;
-        font-size: small;
-        justify-content: center;
-        padding-bottom: 20px;
+    .introduction h1{
+        position: relative;
+
+        font-weight: bold;
+
+        padding: 1rem 0;
     }
-    
-    .buttonne{
-        background-color: rgb(141, 199, 141);
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 12%;
-        padding-bottom: 20px;
-       
+
+    .introduction h2{
+        position: relative;
+
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
     }
 
     .sectionProcess{
@@ -67,12 +73,24 @@ layout: empty
         flex-grow: 4;
     }
    
-    </style>
 
-<section class="projet">
-    <h1 class="projet_title_h1">Réhabiliter vos friches plus sereinement</h1>
-    <h2 class="projet_title_h2">Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
-    <a class="buttonne">Commencer</a>
+    .process li h1{
+        list-style-type: none;
+    }
+    .process li h1 .figure{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        border-radius: 50%;
+    }
+
+</style>
+
+<section class="introduction">
+    <h1>Réhabiliter vos friches plus sereinement</h1>
+    <h2>Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
+    <a class="button">Commencer</a>
 </section>
 
 <section>
