@@ -24,7 +24,7 @@ layout: home
         position: relative;
         text-align: center;
 
-        height: 15rem;
+        height: 30rem;
     }
 
     .introduction::before{
@@ -36,7 +36,7 @@ layout: home
         top: 0;
         left: 0;
 
-        background: url('/assets/images/aphotofriche_1.png') no-repeat center;
+        background: url('/assets/images/firche.jpg') no-repeat center;
         background-size: cover;
 
         opacity: 0.3;
@@ -58,13 +58,12 @@ layout: home
     }
 
     .explanation{
-        padding-top : 1rem;
-        padding-bottom : 1rem;
+        padding-top : 2rem;
+        padding-bottom : 5rem;
 
         text-align: center;
     }
 
-   
     .process ol{
         display: flex;
         flex-direction: row;
@@ -74,6 +73,7 @@ layout: home
         padding: 0;
 
         justify-content: space-around;
+        padding-bottom: 5rem;
     }
 
     .process li{
@@ -104,21 +104,28 @@ layout: home
         transform: translateX(-50%);
     }
 
-
     .process li h1 .text{
         display: inline-block;
         transform: translateX(-0.5rem);
     }
 
-    .items{
-        justify-content: center;
-        flex: 1 200px;
-        align-items:flex-start;
-        list-style-type: none;
+    .cards ol{
+        display: flex;
+        flex-direction: row;
 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        justify-content: space-around;
+        background: #52aa9a6e;
+        background-size: cover;
     }
-    item{
-        flex-grow: 4;
+    .cards li h1{
+        text-align: center;
+        font-size: 1.2rem;
+        list-style-type: none;
+        white-space: pre;
     }
 
 
@@ -166,36 +173,36 @@ layout: home
     </ol>
 </section>
 
-<section>
+<section class="cards">
     <ol>
         <li>
             <h1>Par où démarrer mon projet</h1>
+            <img src="assets/images/Organizing projects-amico.png" height="300px" width="300px"/>
         </li>
 
         <li>
             <h1>Nos fiches ressources</h1>
+            <img src="assets/images/directory.png" height="300px" width="300px"/>
         </li>
         <li>
             <h1>Trouver le bon financement</h1>
+            <img src="assets/images/Financial data-amico.png" height="300px" width="300px"/>
         </li>
     </ol>
 </section>
 
+<section>
+    <ol>
+        <li>
+            <p>“Je profite de ce mail pour vous remercier de l’aide et l’appui fourni. En effet, Face à une problématique comme la mobilisation d’une friche, une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée “</p>
+            <strong>Sylvain GAGEAT, développeur économique</strong>
 
+            <p>“Votre étude et vos retours sont très positifs pour eux, et encourageant car ça nous a donné des idées et des pistes de déblocages”</p>
+            <strong>Sleizak, Maire de Saint-Sernin</strong>
 
+            <p><strong> Qui sommes nous</strong></p>
+            + logo beta, Cerema, France Relance
 
-
-
-
-
-
-“ Je profite de ce mail pour vous remercier de l’aide et l’appui fourni. En effet, Face à une problématique comme la mobilisation d’une friche, une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée “
-
-Sylvain GAGEAT, développeur économique
-
-“Votre étude et vos retours sont très positifs pour eux, et encourageant car ça nous a donné des idées et des pistes de déblocages”
-
-Mr Sleizak, Maire de Saint-Sernin
-
-Qui sommes nous 
-+ logo beta, Cerema, France Relance
+        </li>
+    </ol>
+</section>
