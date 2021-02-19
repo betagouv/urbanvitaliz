@@ -41,9 +41,11 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 
 **Rédiger le cahier des charges (CdC) et le règlement de consultation (RC)**
 
-- Utiliser le guide de l’Assistance à Maîtrise d'Ouvrage de CINOV pour la rédaction du cahier des charges. Le cas échéant, réaliser un sourcing auprès des bureaux d’études afin d’appréhender leurs pratiques pour ce type d’étude.
+- rRéaliser un sourcing auprès des bureaux d’études afin d’appréhender leurs pratiques pour ce type d’étude.
 
-Une autre solution peut consister à passer une première mission « flash » sans publicité ni mise en concurrence préalables (seuil de dispense fixé à 40 k€ HT). Pour un montant de 5 k€ HT (soit quelques jours et 2 réunions), un programmiste expérimenté peut réaliser une mission de « cadrage » qui permettra de réaliser les étapes 1 à 2, et de rédiger le cahier des charges.
+- Une autre solution peut consister à passer une première mission « flash » sans publicité ni mise en concurrence préalables (seuil de dispense fixé à 40 k€ HT). Pour un montant de 5 k€ HT (soit quelques jours et 2 réunions), un programmiste expérimenté peut réaliser une mission de « cadrage » qui permettra de réaliser les étapes 1 à 2, et de rédiger le cahier des charges.
+
+- Dans le cahier des charges, n'oubliez surtout pas de : 
 
     -   	Préciser les expertises spécifiques attendues dans la mission (foncier, viabilisation, dépollution des sols, financement...). 
 
