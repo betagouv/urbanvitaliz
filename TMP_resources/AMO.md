@@ -23,23 +23,27 @@ Cette étape permet de mieux connaître les besoins, identifier les freins et le
 - Analyse du contexte et du site ; Analyse des besoins ; Analyse de la capacité financière et technique
  
 **Étude de faisabilité**
+
 Cette étape permet d’ajuster les objectifs et de faire des choix éclairés
  
 - Mise en place de scénarios d’aménagement ; Pré chiffrage par ratio et avec de grands indicateurs
 
 
 **Programmation**
+
 Cette étape permet de hiérarchiser les objectifs, exprimer les besoins et susciter la créativité
 
 - Contenu du programme :  Exigences générales et organisation - Contraintes architecturales, Tableau des surfaces détaillé, un cahier des charges complet, cohérent avec des objectifs environnementaux, urbains et fonctionnels intégrés
 
  
 **Consultation et désignation de la maîtrise d’œuvre**
+
 Cette étape permet une sélection objective et encadrée, c’est une étape délicate en collaboration avec les services marchés
 
 - Mise au point du Dossier de Consultation des Concepteurs avec mise en place du règlement de la consultation ; Assistance à consultation des concepteurs par le biais de L’AAPC (Avis d’Appel Public à la Concurrence) c’est un des moments clés du projet, un travail de concertation et de communication.
  
 **Réalisation**
+
 Cette étape permet un contrôle de la conception du projet et une meilleure organisation entre les différents intervenants techniques
  
 - Contrôle de la mise en œuvre et du bon déroulement ; Commissioning ; Assistance à la réception (test et bon fonctionnement)
