@@ -1,26 +1,51 @@
 ---
 layout: ressources2
 
-phrase_catch : "Faire appel à un tiers pour acquérir le foncier et m'aider à définir mon projet"
-sous_titre: "Vous ne possédez pas le foncier mais le propriétaire est prêt à vendre, faire appel à un Etablissement Public Foncier pour porter l'achat"
-etape : "3 - comment envisager le devenir du site ?"
+phrase_catch : "Faire appel à un AMO pour m'aider à définir et gérer mon projet de A à Z"
+sous_titre: "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet, voici un éclaircissement sur ce qu'une AMO peut faire pour vous"
+etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
-    - "Portage foncier"
     - "Conseil & ingénerie"
 ---
   
 💡 **Saviez-vous que** :  
   
-Vous êtes dans la zone d'action de l'Etablissement Public Foncier de l'Ouest Rhône-Alpes (EPORA) ? Son métier consiste à porter (autrement dit à acquérir) des terrains qui serviront à la construction de logements ou d'activités, après avoir étudié dans les grandes mailles l'équilibre financier du projet envisageable.  
-Pour une période définie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas de friches, il peut commencer à le préaménager (démolition des bâtiments existants, dépollution, etc.) avant de le revendre à une collectivité ou à l’opérateur choisi par cette collectivité.
+L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.
+L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.
 
 🚀 **Plus d'info ? c'est par ici !**  
   
-Dans votre cas, l'EPORA peut : 
-- S'engager avec vous sur une convention de veille fonciere et d'opportunité, préempter pour vous et acquérir le foncier pour vous  
-- S'engager avec vous sur une convention opérationelle, en accord avec votre EPCI et à conditions d'avoir bien défini votre projet  
+Les actions de l'AMO tout au long de votre projet :  
+
+**Études préalables**
+Cette étape permet de mieux connaître les besoins, identifier les freins et les atouts, calibrer l’opération
+ 
+- Analyse du contexte et du site ; Analyse des besoins ; Analyse de la capacité financière et technique
+ 
+**Étude de faisabilité**
+Cette étape permet d’ajuster les objectifs et de faire des choix éclairés
+ 
+- Mise en place de scénarios d’aménagement ; Pré chiffrage par ratio et avec de grands indicateurs
+
+
+**Programmation**
+Cette étape permet de hiérarchiser les objectifs, exprimer les besoins et susciter la créativité
+
+- Contenu du programme :  Exigences générales et organisation - Contraintes architecturales, Tableau des surfaces détaillé, un cahier des charges complet, cohérent avec des objectifs environnementaux, urbains et fonctionnels intégrés
+
+ 
+**Consultation et désignation de la maîtrise d’œuvre**
+Cette étape permet une sélection objective et encadrée, c’est une étape délicate en collaboration avec les services marchés
+
+- Mise au point du Dossier de Consultation des Concepteurs avec mise en place du règlement de la consultation ; Assistance à consultation des concepteurs par le biais de L’AAPC (Avis d’Appel Public à la Concurrence) c’est un des moments clés du projet, un travail de concertation et de communication.
+ 
+**Réalisation**
+Cette étape permet un contrôle de la conception du projet et une meilleure organisation entre les différents intervenants techniques
+ 
+- Contrôle de la mise en œuvre et du bon déroulement ; Commissioning ; Assistance à la réception (test et bon fonctionnement)
+ 
   
-Si vous souhaitez en savoir plus, prenez contact directement avec l'EPORA : 
+Si vous souhaitez en savoir plus, prenez contact directement avec SYPAA CINOV : 
   
 📞 Contacts :    
 Pour des renseignements généraux : Caroline Le Romain au 04 27 40 61 20 / caroline.le.romain@epora.fr  
