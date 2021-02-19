@@ -13,6 +13,8 @@ thematique :
 L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.
 L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.
 
+
+
 🚀 **Plus d'info ? c'est par ici !**  
   
 Les actions de l'AMO tout au long de votre projet :  
@@ -49,7 +51,8 @@ Cette étape permet un contrôle de la conception du projet et une meilleure org
  
 - Contrôle de la mise en œuvre et du bon déroulement ; Commissioning ; Assistance à la réception (test et bon fonctionnement)
  
-  
+
+
 Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme : 
   
 📞 Contacts :    
