@@ -2,7 +2,7 @@
 layout: ressources2
 
 phrase_catch : "Faire appel à un AMO pour m'aider à définir et gérer mon projet de A à Z"
-sous_titre: "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet, voici un éclaircissement sur ce qu'une AMO peut faire pour vous"
+sous_titre: "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet? Voici un éclaircissement sur ce qu'une AMO peut faire pour vous."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Conseil & ingénerie"
