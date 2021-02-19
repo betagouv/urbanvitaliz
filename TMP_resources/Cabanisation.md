@@ -4,6 +4,7 @@ layout: ressources2
 phrase_catch : "Problème d'occupation illégale, aussi appelée phénomène de "cabanisation""
 sous_titre: "quelles actions peuvent-être mises en place par le maire"
 etape : "2 - quelles informations rassembler pour avancer ?"
+
 thematique :
     - "Urbanisme réglementaire"
 ---
