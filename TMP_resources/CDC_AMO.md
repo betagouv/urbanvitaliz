@@ -33,15 +33,15 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 
 - Préciser la finalité des études d’opportunité/faisabilité phase par phase :
 
-        - Diagnostic/enjeux : les contraintes et opportunités, la future vocation du site (équipement public, logements, locaux d’activités...)
+       - Diagnostic/enjeux : les contraintes et opportunités, la future vocation du site (équipement public, logements, locaux d’activités...)
 
-        - Scénarios contrastés /opportunité : estimation du montant de l’acquisition
+       - Scénarios contrastés /opportunité : estimation du montant de l’acquisition
 
-        - Approfondissement du scénario retenu / faisabilité : schéma de programmation et de composition urbaine, délai/planning, dépenses/recettes pour la collectivité...
+       - Approfondissement du scénario retenu / faisabilité : schéma de programmation et de composition urbaine, délai/planning, dépenses/recettes pour la collectivité...
 
 **Rédiger le cahier des charges (CdC) et le règlement de consultation (RC)**
 
-- rRéaliser un sourcing auprès des bureaux d’études afin d’appréhender leurs pratiques pour ce type d’étude.
+- Réaliser un sourcing auprès des bureaux d’études afin d’appréhender leurs pratiques pour ce type d’étude.
 
 - Une autre solution peut consister à passer une première mission « flash » sans publicité ni mise en concurrence préalables (seuil de dispense fixé à 40 k€ HT). Pour un montant de 5 k€ HT (soit quelques jours et 2 réunions), un programmiste expérimenté peut réaliser une mission de « cadrage » qui permettra de réaliser les étapes 1 à 2, et de rédiger le cahier des charges.
 
