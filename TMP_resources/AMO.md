@@ -18,6 +18,7 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 Les actions de l'AMO tout au long de votre projet :  
 
 **Études préalables**
+
 Cette étape permet de mieux connaître les besoins, identifier les freins et les atouts, calibrer l’opération
  
 - Analyse du contexte et du site ; Analyse des besoins ; Analyse de la capacité financière et technique
@@ -33,7 +34,7 @@ Cette étape permet d’ajuster les objectifs et de faire des choix éclairés
 
 Cette étape permet de hiérarchiser les objectifs, exprimer les besoins et susciter la créativité
 
-- Contenu du programme :  Exigences générales et organisation - Contraintes architecturales, Tableau des surfaces détaillé, un cahier des charges complet, cohérent avec des objectifs environnementaux, urbains et fonctionnels intégrés
+- Exigences générales et organisation ; Contraintes architecturales ; Tableau des surfaces détaillé ; un cahier des charges complet, cohérent avec des objectifs environnementaux, urbains et fonctionnels intégrés
 
  
 **Consultation et désignation de la maîtrise d’œuvre**
@@ -49,11 +50,11 @@ Cette étape permet un contrôle de la conception du projet et une meilleure org
 - Contrôle de la mise en œuvre et du bon déroulement ; Commissioning ; Assistance à la réception (test et bon fonctionnement)
  
   
-Si vous souhaitez en savoir plus, prenez contact directement avec SYPAA CINOV : 
+Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme : 
   
 📞 Contacts :    
-Pour des renseignements généraux : Caroline Le Romain au 04 27 40 61 20 / caroline.le.romain@epora.fr  
-Pour des renseignements spécifiques sur votre projet : Booryana Peeva au 04 77 47 47 93 / boryana.peeva@epora.fr  
-  
-✔ Retrouvez ici la page officielle de l'EPF Auvergne-Rhône-Alpes, EPORA : <https://www.epora.fr/>  
-✔ Retrouvez également une plaquette explicative de leurs actions [ici](https://www.epora.fr/wp-content/uploads/plaquette-epora-bat-pages-web.pdf)  
+Pour des renseignements généraux : 01 44 30 49 39 / sypaa@cinov.fr
+
+
+✔ Retrouvez ici la page officielle du SYPAA : <https://www.sypaa.org/>  
+✔ Retrouvez également le guide explicatif des 52 missions d'AMO pour vos projet : [ici](https://www.choisirsonamo.fr/)  
