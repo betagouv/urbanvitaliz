@@ -57,4 +57,4 @@ Pour des renseignements généraux : 01 44 30 49 39 / sypaa@cinov.fr
 
 
 ✔ Retrouvez ici la page officielle du SYPAA : <https://www.sypaa.org/>  
-✔ Retrouvez également le guide explicatif des 52 missions d'AMO pour vos projet : [ici](https://www.choisirsonamo.fr/)  
+✔ Retrouvez également le guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/)  
