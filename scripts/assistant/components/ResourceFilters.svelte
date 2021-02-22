@@ -1,11 +1,14 @@
 <script>
+    // Listes de toutes les étapes et thématiques disponible
     export let étapes;
     export let thématiques;
 
     export let étapeFilterChange;
     export let thématiqueFilterChange;
 
+    // Object complexe : qui contient étapes et thématiques sélectionnées par l'utilisateur.rice
     export let filters;
+
 </script>
 
 <section class="filters">

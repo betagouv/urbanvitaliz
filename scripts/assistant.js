@@ -6,8 +6,10 @@ import Assistant from './Assistant.svelte';
 const Buffer = buffer.Buffer;
 
 const state = {
+    // Listes de toutes les étapes et thématiques disponible
     étapes: [],
     thématiques: [],
+    // Etapes et thématiques sélectionnées par l'utilisateur.rice
     filters: {
         étapes: new Set(),
         thématiques: new Set()
@@ -15,7 +17,6 @@ const state = {
     allResources: [],
     relevantResources: []
 }
-
 function findRelevantResources(allResources, filters){
     return allResources.filter(r => {
         return filters.étapes.has(r.attributes.etape) && 
@@ -100,8 +101,6 @@ octokit.repos.getContent({
 
     state.étapes = [...étapesOptions];
     state.thématiques = [...thématiquesOptions];
-
-    state.filters.thématiques = new Set(state.thématiques);
 
     state.allResources = resources;
     state.relevantResources = findRelevantResources(resources, state.filters)
