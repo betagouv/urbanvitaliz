@@ -1,0 +1,263 @@
+---
+layout: home
+---
+
+<style>
+    main > section {
+        width: 100%;
+        padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
+    }
+
+    /*
+    padding: 1em;    tous les côtés
+    padding: 1em 2em;    haut-bas  -  gauche-droite
+    padding: 1em 2em 3em 4em; Top Right Bottom Left (TRouBLe)
+
+    vw : viewport width (100 = largeur totale)
+    vh : viewport height
+    rem : root (<body>) em
+    em : largeur d'un M dans la taille de l'élément actuel
+
+    */
+
+    .introduction{
+        position: relative;
+        text-align: center;
+
+        height: 30rem;
+    }
+
+    .introduction::before{
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: url('/assets/images/firche.jpg') no-repeat center;
+        background-size: cover;
+
+        opacity: 0.3;
+    }
+
+    .introduction h1{
+        position: relative;
+
+        font-weight: bold;
+
+        padding: 1rem 0;
+    }
+
+    .introduction h2{
+        position: relative;
+
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+
+    .explanation{
+        padding-top : 2rem;
+        padding-bottom : 5rem;
+
+        text-align: center;
+    }
+
+    .process ol{
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        justify-content: space-around;
+        padding-bottom: 5rem;
+    }
+
+    .process li{
+        width: 23%;
+    }
+
+    .process li h1{
+        font-size: 1rem;
+        list-style-type: none;
+
+        background-color: orange;
+
+        white-space: pre;
+    }
+
+    .process li h1 .figure{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        border-radius: 50%;
+
+        background-color: #ffe4e9;
+
+        text-align: center;
+        line-height: 2rem;
+
+        transform: translateX(-50%);
+    }
+
+    .process li h1 .text{
+        display: inline-block;
+        transform: translateX(-0.5rem);
+    }
+
+    .cards{
+        background-color:#52aa9a6e;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+   
+    .cards ul{
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        justify-content: space-around; 
+    }
+
+    .cards ul li {
+        flex: 1;
+    }
+    .cards a{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        color: black;
+        text-decoration: none;
+
+        border: 2px solid white;
+        padding: 0.5rem;
+    }
+    
+    .cards li h1{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .cards li img{
+        max-width: 100%;
+    }
+    .testimonials{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .testimonials ul{
+        list-style: none;
+        padding: 0;
+        text-align: center;
+       
+    }
+
+    .testimonials ul blockquote{
+        border: 0;
+    }
+</style>
+
+<section class="introduction">
+    <h1>Réhabiliter vos friches plus sereinement</h1>
+    <h2>Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
+    <a class="button">Commencer</a>
+</section>
+
+<section class="explanation">
+    <p>UrbanVitaliz s'intéresse aux terrains imperméabilisés ou pollués qui ont perdu leur usage, que la dynamique de marché ne parvient pas à renouveler sans aide.</p>
+</section>
+
+<section class="process">
+    <ol>
+        <li>
+            <h1><span class="figure">1</span><span class="text">Prise de contact</span></h1>
+            <p>Remplissez le formulaire en ligne (5 à 10 minutes) en y ajoutant d'éventuels 
+                documents sur le site que vous souhaitez réhabiliter</p>
+        </li>
+        <li>
+            <h1><span class="figure">2</span><span class="text">Approfondissement</span></h1>
+            <p>Nous convenons d'un appel qui permet de rentrer dans le détail de vos besoins,
+                des démarches déjà faites, etc.
+                Nous clarifions ensemble les blocages à dépasser.
+            </p>
+        </li>
+        <li>
+            <h1><span class="figure">3</span><span class="text">Étude</span></h1>
+            <p>L'équipe étudie vos éléments et flèche les acteurs ressource et leurs contacts. 
+                Des procédures, des stratégies de résolutions, des financements, etc. 
+                Celà peut prendre quelques semaines (produit en construction)
+            </p>
+        </li>
+        <li>
+            <h1><span class="figure">4</span><span class="text">Recommandations</span></h1>
+            <p>Vous retrouvez nos suggestions via l'outil UrbanVitaliz.
+                Vous êtes libres de ne pas suivre ces recommandations, et/ou de nous recontacter pour plus d'informations
+                ou d'autres demandes
+                
+            </p>
+        </li>
+    </ol>
+</section>
+
+<section class="cards">
+    <ul>
+        <li>
+            <a>
+                <h1>Par où démarrer mon projet</h1>
+                <img src="assets/images/Organizing projects-amico.png"/>
+            </a>
+        </li>
+
+        <li>
+            <a>
+                <h1>Nos fiches ressources</h1>
+                <img src="assets/images/directory.png"/>
+            </a>
+        </li>
+        <li>
+            <a>
+                <h1>Trouver le bon financement</h1>
+                <img src="assets/images/Financial data-amico.png"/>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<section class="testimonials">
+    <ul>
+        <li>
+            <blockquote>“Je profite de ce mail pour vous remercier de l’aide et l’appui fourni.
+                 En effet, Face à une problématique comme la mobilisation d’une friche, 
+                 une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée “</blockquote>
+            <strong>Sylvain GAGEAT, développeur économique</strong>
+        </li>
+        <li>
+            <blockquote>“Votre étude et vos retours sont très positifs pour eux,
+                 et encourageant car ça nous a donné des idées et des pistes de déblocages”</blockquote>
+            <strong>Sleizak, Maire de Saint-Sernin</strong>
+        </li>
+    </ul>
+</section>
+
+<section class="section section-grey">
+    <div class="container">
+      <article class="article article-grey">
+        <h1>Qui sommes nous ?</h1>
+        <p>Urban Vitaliz est un service public numérique porté par l'incubateur de la Direction Interministérielle du
+          numérique, <a href="https://beta.gouv.fr">beta.gouv.fr</a> et le <a href="https://www.cerema.fr/fr">Cerema</a>,
+          Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement.</p>
+        <p>Urban Vitaliz est développé de manière ouverte. L'ensemble du code est disponible <a href="https://github.com/betagouv/urbanvitaliz">ici</a>. Vous pouvez aussi suivre l'ensemble des avancées de
+          l'équipe <a href="./suiviprojet/index.html">ici</a>.</p>
+      </article>
+    </div>
+  </section>
