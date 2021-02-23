@@ -10,8 +10,8 @@ thematique : "Aide et subvention"
   
   La DSIL est gérée par les Préfectures et a pour but de financer les grandes priorités d’investissement des communes ou de leurs groupements. Le plan de relance « France relance » abonde d’1 milliard d’euros de crédits supplémentaires sur 2021, ces crédits étant priorisés sur la rénovation énergétique et les travaux à retour financier rapide.
 
-  [Retrouvez ici un kit pour demander la DSIL (réalisé par la FNCCR)](https://www.fnccr.asso.fr/article/le-soutien-financier-dsil-aide-au-passage-des-travaux/)
+  [Retrouvez ici un kit pour demander la DSIL (réalisé par la FNCCR)](https://www.fnccr.asso.fr/article/le-soutien-financier-dsil-aide-au-passage-des-travaux/)  
   Il est possible qu'il faille passer l'intercommunalité pour réaliser la demande auprès de la Direction Départementale des Territoires.
   
-  ❓ *Ressources associées :*
+  ❓ *Ressources associées :*  
   [Fiche DSIL sur Aides-Territoires](https://aides-territoires.beta.gouv.fr/aides/0c7d-dotation-de-soutien-a-linvestissement-local-d/)
