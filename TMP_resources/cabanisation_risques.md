@@ -5,23 +5,51 @@ phrase_catch : "Un peu d'aide pour la définition et la mise en place d’une p
 sous_titre: "Processus en 4 etapes pour conduire les études d’opportunité et de faisabilité d’un projet de réhabilitation de friche."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
-    - "Conseil & ingénerie"
+    - "Urbanisme réglementaire"
 ---
   
 💡 **Saviez-vous que** :  
 
+De plus en plus de personnes occupent des terrains sur lesquels elles installent illégalement des cabanes de différentes natures (caravanes, mobil-homes, chalets, habitations légères de loisirs, constructions en dur, bateaux …). 
+
+- **Enjeu en matière d’urbanisme** car les cabanes sont majoritairement installées sur des terrains sans autorisation de construire, parfois situées dans des zones à risques, tant pour les occupants des cabanes que leurs riverains.
+
+
+- **Enjeu environnemental** qui ne doit pas être sous-estimé, car de nombreuses situations s’accompagnent d'une pollution des sites cabanisés, d’une dégradation progressive des paysages ou d’atteintes aux espaces naturels et sites classés. 
+
+
+- **Enjeu relatif aux atteintes à l'ordre public** de plus en plus souvent relevé : la cabanisation se traduit assez souvent par des troubles manifestes et répétés à la sécurité, la tranquillité et la salubrité publiques. 
 
 
 🚀 **Plus d'info ? c'est par ici !**  
   
+Actions au titre de la sécurité des personnes
+
+Lorsqu’une installation illicite est constatée, le maire a la possibilité, en fonction de la nature de cette installation (stationnement ou construction), d’engager les démarches suivantes : 
+
+• dans un premier temps, il convient de trouver une solution à l’amiable et en parallèle, il est conseillé de dresser un procès-verbal afin de constater l'infraction ; 
+
+• si la nature de l’installation est une construction et que cette dernière se poursuit malgré l’injonction, le maire peut alors prendre en application de l'article L.480-2 du code de l'urbanisme
+
+Le code de l’environnement (CE) apporte un soutien à l’action du maire au travers des articles L 562-1 et 5 : 
+
+▪ en application de l'article L. 562-5 du CE « le fait de construire ou d'aménager un terrain dans une zone interdite par un plan de prévention des risques naturels prévisibles approuvé ou de ne pas respecter les conditions de réalisation, d'utilisation ou d'exploitation prescrites par ce plan est puni des peines 14 prévues à l'article L 480-4 du code de l'urbanisme ». Ainsi, le contrevenant peut se voir attribuer par le tribunal une amende comprise entre 1 200 € et 300 000 € avec une peine d'emprisonnement de six mois en cas de récidive. 
+
+▪ en application de l'article L. 561-1 CE, une expropriation pour cause d'utilité publique peut avoir lieu sur le fondement de la prévention des risques naturels. L'idée est de prendre des mesures de sauvegarde des populations menacées.
+
+Ainsi, le maire peut dans le cas où des «cabanes» sont implantées dans des zones à risques :  
+ordonner une évacuation des zones menacées (CE 14 mars 1958 Dame Fleury) ;  prononcer une interdiction d'habiter (CE 3 février 1989 Gatti) ; 
+prescrire des travaux sur le domaine public et privé communal (CE 8 juin 1949 Contamine) ;  
+mettre en demeure le propriétaire privé d'interrompre les travaux réalisés sans autorisation dans une zone à risques, zone rouge du PPR, et en cas de refus, prendre un 15 arrêté interruptif de travaux en application des articles L 480-2, L 123-1, L 160-1, R 111- 2 et R 111-34 du code de l'urbanisme ;  
+prendre un arrêté de démolition d'installations jugées dangereuses ;  prescrire la réalisation de travaux sur les propriétés privées ; lorsque ces travaux sont réalisés sur des propriétés privées dans l’intérêt collectif, ils doivent être exécutés par la commune et à ses frais (CE 15 juillet 2004 Mlle Geneviève). 
 
 
 
-Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme : 
+Si vous souhaitez en savoir plus, prenez contact directement : 
   
 📞 Contacts :    
-Pour des renseignements généraux : 01 44 30 49 39 / sypaa@cinov.fr
+Pour des renseignements généraux : 
 
 
-✔ Retrouvez ici la page officielle du SYPAA : <https://www.sypaa.org/>  
-✔ Retrouvez également le guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/) 
+✔ Retrouvez ici la page officielle :   
+✔ Retrouvez également le guide : [ici]() 
