@@ -3,6 +3,35 @@ layout: home
 ---
 
 <style>
+    @import url(https://fonts.googleapis.com/css?family=EB+Garamond|Droid+Serif|Playfair+Display|Open+Sans+Condensed:300);
+
+p {
+    line-height: 1.4em;
+}
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: -.7em;
+}
+
+.quote::after{
+    content: "”";
+    margin-right: -1rem;
+}
+.quote{
+    position: relative;
+    font-size: larger;
+    letter-spacing: .03em;
+    margin-bottom: .5rem;
+}
+
+.quote--author {
+    font-family: 'Open Sans Condensed';
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 300;
+}
     main > section {
         width: 100%;
         padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
@@ -24,7 +53,8 @@ layout: home
         position: relative;
         text-align: center;
 
-        height: 30rem;
+        height: 25rem;
+        padding-top: 3rem;
     }
 
     .introduction::before{
@@ -39,21 +69,22 @@ layout: home
         background: url('./assets/images/firche.jpg') no-repeat center;
         background-size: cover;
 
-        opacity: 0.3;
+        opacity: 0.6;
     }
 
     .introduction h1{
         position: relative;
-
+        
+        font-size: 3rem;
         font-weight: bold;
-
+        
         padding: 1rem 0;
     }
 
     .introduction h2{
         position: relative;
 
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-bottom: 1rem;
     }
 
@@ -62,6 +93,7 @@ layout: home
         padding-bottom : 5rem;
 
         text-align: center;
+        font-size: larger;
     }
 
     .process ol{
@@ -84,9 +116,10 @@ layout: home
         font-size: 1rem;
         list-style-type: none;
 
-        background-color: orange;
+        background-color: #52aa9a6e;
 
         white-space: pre;
+        margin-right: 1.2rem;
     }
 
     .process li h1 .figure{
@@ -96,7 +129,7 @@ layout: home
 
         border-radius: 50%;
 
-        background-color: #ffe4e9;
+        background-color: #86c4fe;
 
         text-align: center;
         line-height: 2rem;
@@ -112,8 +145,8 @@ layout: home
     .cards{
         background-color:#52aa9a6e;
 
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
    
     .cards ul{
@@ -128,6 +161,7 @@ layout: home
     }
 
     .cards ul li {
+        margin-right: 1rem;
         flex: 1;
     }
     .cards a{
@@ -138,7 +172,7 @@ layout: home
         color: black;
         text-decoration: none;
 
-        border: 2px solid white;
+        border: 4px solid white;
         padding: 0.5rem;
     }
     
@@ -162,9 +196,6 @@ layout: home
        
     }
 
-    .testimonials ul blockquote{
-        border: 0;
-    }
 </style>
 
 <section class="introduction">
@@ -235,29 +266,63 @@ layout: home
 
 <section class="testimonials">
     <ul>
-        <li>
-            <blockquote>“Je profite de ce mail pour vous remercier de l’aide et l’appui fourni.
-                 En effet, Face à une problématique comme la mobilisation d’une friche, 
-                 une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée “</blockquote>
-            <strong>Sylvain GAGEAT, développeur économique</strong>
+        <li class="quote--container">
+            <p class="quote">Je profite de ce mail pour vous remercier de l’aide et l’appui fourni.
+                En effet, Face à une problématique comme la mobilisation d’une friche, 
+                une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée &hellip;
+            </p>
+            <p class="quote--author">&ndash; Sylvain GAGEAT, développeur économique</p>
         </li>
-        <li>
-            <blockquote>“Votre étude et vos retours sont très positifs pour eux,
-                 et encourageant car ça nous a donné des idées et des pistes de déblocages”</blockquote>
-            <strong>Sleizak, Maire de Saint-Sernin</strong>
+        <li class="quote--container">
+            <p class="quote">Votre étude et vos retours sont très positifs pour eux,
+                 et encourageant car ça nous a donné des idées et des pistes de déblocages</p>
+                 <p class="quote--author">&ndash; Mr.Sleizak, Maire de Saint-Sernin</p>
         </li>
     </ul>
 </section>
 
-<section class="section section-grey">
+<footer class="footer">
     <div class="container">
-      <article class="article article-grey">
-        <h1>Qui sommes nous ?</h1>
-        <p>Urban Vitaliz est un service public numérique porté par l'incubateur de la Direction Interministérielle du
-          numérique, <a href="https://beta.gouv.fr">beta.gouv.fr</a> et le <a href="https://www.cerema.fr/fr">Cerema</a>,
-          Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement.</p>
-        <p>Urban Vitaliz est développé de manière ouverte. L'ensemble du code est disponible <a href="https://github.com/betagouv/urbanvitaliz">ici</a>. Vous pouvez aussi suivre l'ensemble des avancées de
-          l'équipe <a href="./suiviprojet/index.html">ici</a>.</p>
-      </article>
+      <div class="footer__logo">
+        <img src="https://d33wubrfki0l68.cloudfront.net/992ddb1d6775b29b1b10bab49fba4ddb891c9dae/93e38/assets/images/betagouvfr.svg" alt="beta.gouv.fr">
+        
+        <ul class="footer__social"> 
+          <li><a href="https://www.twitter.com/betagouv"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+          <li><a href="https://www.linkedin.com/company/betagouv/"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+          <li><a href="https://www.github.com/betagouv"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+          <li><a href=""><svg class="icon icon-"><use xlink:href="#icon-"></use></svg></a></li>
+          
+        </ul>
+        
+      </div>
+  
+      
+      <div class="footer__links">
+        <ul>
+            <li><a href="/apropos/">Mentions légales</a></li>
+            <li><a href="/dashboard/">Vue d'ensemble</a></li>
+            <li><a href="/content/docs/rapportannuel.pdf">En détails et en chiffres</a></li>
+            <li><a href="/communaute/">Communauté</a></li>
+            <li><a href="/contact/">Nous contacter</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__links">
+        <ul>
+            <li><a href="https://beta.gouv.fr/startups/friches.html/">Une mission de la DINUM</a></li>
+            <li><a href="https://github.com/betagouv/UrbanVitaliz/">Code source</a></li>  
+            <li><a href="/suivi/">Suivi d'audience et vie privée</a></li>
+            <li><a href="/stats/">Indicateurs &amp; mesure d'impact</a></li>
+            <li><a href="https://www.data.gouv.fr/fr/datasets/conventions-de-partenariat/">Conventions de partenariat</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">     
+        <ul>
+        
+        </ul>
+      </div>
+      
+  
+      <div></div>
     </div>
-  </section>
+  </footer>
