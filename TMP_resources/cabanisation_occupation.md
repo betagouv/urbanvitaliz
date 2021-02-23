@@ -1,7 +1,7 @@
 ---
 layout: ressources2
 
-phrase_catch : "Problème d'occupation illégale, aussi appelée phénomène de cabanisation"
+phrase_catch : "Problème d'occupation illégale ? il existe des solutions !"
 sous_titre: "Que faire lorsque des constructions se font illégalement sur des terrains privés"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
