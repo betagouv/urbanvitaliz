@@ -12,7 +12,7 @@ thematique : "Conseil & ingénerie"
   * la collectivité passe un marché de conception pour choisir un architecte (sur la base d'esquisses) qui va réaliser un avant-projet détaillé
   * puis l'architecte organise le concours des entreprises en vue de la réalisation des travaux, en divisant le marché en lots
   
-  ✔ *Il est possible de gagner une dizaine de mois sur le processus en réalisant un marché global de performance (MGP), robuste juridiquement :*
+  ✔ *Il est possible de gagner une dizaine de mois sur le processus en réalisant un marché global de performance (MGP), robuste juridiquement :*  
   Ce marché permet de regrouper la conception et la réalisation du projet, en y joignant un contrat de maintenance. La seule contrainte du marché est de mettre en place un objectif chiffré de performance, en assujettissant généralement la rémunération du mainteneur à la réalisation de l'objectif (forme de garantie). L'objectif n'est pas nécessairement hautement ambitieux, il peut s'agir d'un objectif de consommation énergétique annuelle, d'émissions de gaz à effet de serre, ou de qualité sanitaire de l'air. La maintenance peut être courte (5 ans par exemple) et peut être réalisée en low-tech, donc ce n'est pas forcément très onéreux.
   Il convient de s'entourer d'un assistant à maîtrise d'ouvrage pour la réalisation du marché avec les conditions adéquates, et l'accompagnement lors du dialogue compétitif (phase de conception du projet avec chaque candidat).
   
