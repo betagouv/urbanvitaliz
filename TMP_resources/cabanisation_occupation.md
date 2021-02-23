@@ -30,6 +30,7 @@ Les caravanes ne peuvent s'installer que sur des aires réglementées, adaptées
 Le fait de s'installer sur son propre terrain n'affranchit pas le propriétaire du respect des règles d'urbanisme. L’installation ne peut avoir lieu que si le document d’urbanisme l’autorise et que si une autorisation préalable a été délivrée par l’autorité compétente.
 
 Lorsque le stationnement est constaté depuis plusieurs années deux options peuvent être envisagées :
+
 • la première consiste à régulariser la situation. Pour que cela soit possible, une procédure de révision ou de modification du document d’urbanisme doit être conduite afin de permettre 7 la délivrance d’une autorisation d’urbanisme. 
 
 • la seconde consiste en la mise en demeure de quitter les lieux qui doit être engagée lorsque la régularisation est impossible (pour le stationnement d’une caravane les textes ne prévoient pas de prescription triennale, l’infraction est continue).
