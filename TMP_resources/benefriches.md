@@ -23,7 +23,7 @@ thematique : "Conseil & ingénerie"
 ⏱ **En prime, une proposition d'accompagnement de l'Ademe pour éclairer le choix d'implantation des projets (candidature avant le 9 avril) :**  
 L’ADEME lance cet appel à candidatures pour accompagner les premières applications de BENEFRICHES en conditions réelles (aide à la décision en phase conception). 12 opérations seront sélectionnées leur offrant un accompagnement par un assistant à maîtrise d’ouvrage afin de :  
 * Accompagner les porteurs de projets dans la prise en main et l’utilisation de l’outil,
-* Eclairer le choix d’implantation de leur projet en intégrant l’ensemble des effets qu’un tel projet peut générer ou induire localement, à court, moyen et long terme,  
+* Eclairer le choix d’implantation de leur projet en intégrant l’ensemble des effets qu’un tel projet peut générer ou induire localement, à court, moyen et long terme
 L’ADEME capitaliser sur ces retours d’expérience pour (i) bénéficier d’enseignements complémentaires en termes de comparaison bénéfices nets socio-économiques / déficit opérationnel, de principaux indicateurs à l’origine de ces bénéfices, et (ii) au besoin ajuster voire adapter l’outil et sa notice d’utilisation.  
 L’appel à candidature est ouvert jusqu’au 9 avril 2021 18h.  
 Pour toute question : laurent.chateau@ademe.fr
