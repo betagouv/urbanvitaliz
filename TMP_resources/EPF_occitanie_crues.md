@@ -23,7 +23,7 @@ L’objectif de l’EPF est de faciliter ou d’accélérer la mise en oeuvre de
   
 Si vous souhaitez en savoir plus, prenez contact directement avec l'EPF Occitanie : 
   
-📞 Contacts :    
+**📞 Contacts** :   
 
 Pour des renseignements généraux : Anthony Meutrot - anthony.meutrot@epf-occitanie.fr  
 
