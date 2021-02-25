@@ -40,9 +40,18 @@ Lorsque le stationnement est constaté depuis plusieurs années deux options peu
 
 Si vous souhaitez en savoir plus, prenez contact directement  : 
   
-📞 Contacts :    
-Pour des renseignements généraux : 
+**📞 Contacts**:    
+Division Ouest (site de Toulouse) pour les départements 09,12, 31, 32, 46, 65, 81 et 82
 
+Par mail : ae.dreal-occitanie@developpement-durable.gouv.fr
 
-✔ Retrouvez ici  : site
-✔ Retrouvez également le guide  : [ici]() 
+Par téléphone :05 61 58 50 00
+
+Division Est (site de Montpellier) pour les départements 11, 30, 34, 48 et 66
+
+Par mail : ae.dreal-occitanie@developpement-durable.gouv.fr
+
+Par téléphone : 04 34 46 64 00 
+
+✔ Retrouvez ici le site de **l’application Lucca** qui a été créée dans le cadre de la mobilisation des élus et des services de l’Etat pour lutter contre la cabanisation juste [ici](https://numeric-wave.eu/projets/lucca)
+✔ Retrouvez également le guide juste [ici](https://www.herault.gouv.fr/content/download/30343/209309/file/Fiches%20cabanisation.pdf) 
