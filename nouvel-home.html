@@ -81,13 +81,36 @@ layout: home
     }
 
     .process li h1{
-        font-size: 1rem;
-        list-style-type: none;
+        position: relative;
+
+        font-size: 0.9rem;
+        white-space: pre;
 
         background-color: #52aa9a6e;
+        color: white;
+    }
 
-        white-space: pre;
-        margin-right: 1.2rem;
+    .process li h1::before, .process li h1::after{
+        content: ' ';
+        position: absolute;
+
+        right: 0;
+
+        width: 2rem;
+        height: 2rem;
+
+        background-color: white;
+        z-index: 1;
+    }
+
+    .process li h1::before{
+        top: 0;
+        transform: translate(50%, -50%) rotate(45deg);
+    }
+
+    .process li h1::after{
+        bottom: 0;
+        transform: translate(50%, 50%) rotate(45deg);
     }
 
     .process li h1 .figure{
@@ -97,17 +120,23 @@ layout: home
 
         border-radius: 50%;
 
-        background-color: #86c4fe;
+        background-color: #33475b;
 
         text-align: center;
         line-height: 2rem;
 
-        transform: translateX(-50%);
+        transform: translateX(-40%);
+
+        z-index: 2;
+        position: relative;
     }
 
     .process li h1 .text{
         display: inline-block;
         transform: translateX(-0.5rem);
+
+        z-index: 2;
+        position: relative;
     }
 
     .cards{
