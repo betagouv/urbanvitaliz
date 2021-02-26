@@ -16,7 +16,6 @@ layout: home
     em : largeur d'un M dans la taille de l'élément actuel
 
     */
-
     .introduction{
         position: relative;
         text-align: center;
@@ -45,6 +44,7 @@ layout: home
         
         font-size: 3rem;
         font-weight: bold;
+        color: #33475b;
         
         padding: 1rem 0;
     }
@@ -54,6 +54,8 @@ layout: home
 
         font-size: 1.5rem;
         padding-bottom: 1rem;
+        font-weight: 600;
+        color: #33475b;
     }
 
     .explanation{
@@ -84,9 +86,10 @@ layout: home
         position: relative;
 
         font-size: 0.9rem;
+        font-weight: 600;
         white-space: pre;
 
-        background-color: #52aa9a6e;
+        background-color: #33475b;
         color: white;
     }
 
@@ -224,20 +227,26 @@ layout: home
             width: 100%;
             padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
     }
-    .icon {
-    display: block;
-    
-    width: 100px;
-    height: 82px;
-    background-size: 100px 82px;
+    .bottonUV{
+        display: block;
     }
+
+    .btn-info {
+        color: #fff;
+        background-color: #33475b;
+
+        font-size: 1.3rem;
+        
+        position: relative;
+}
 
 </style>
 
 <section class="introduction">
     <h1>Réhabiliter vos friches plus sereinement</h1>
     <h2>Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
-    <a class="button">Commencer</a>
+    <button type="button" class="btn btn-info mb-2" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</button>
+    
 </section>
 
 <section class="explanation">
@@ -274,25 +283,29 @@ layout: home
             </p>
         </li>
     </ol>
+        <button type="button" class="btn btn-info mb-2" style=
+        "display: block;
+        margin: auto;
+        margin-bottom: 3rem;" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</button>
 </section>
 
 <section class="cards">
     <ul>
         <li>
-            <a>
+            <a href="./etapes/index.html">
                 <h1>Par où démarrer mon projet</h1>
                 <img src="assets/images/Organizing projects-amico.png"/>
             </a>
         </li>
 
         <li>
-            <a>
+            <a href="/ressources/index.html">
                 <h1>Nos fiches ressources</h1>
                 <img src="assets/images/directory.png"/>
             </a>
         </li>
         <li>
-            <a>
+            <a href="./infographie_financements/index.html">
                 <h1>Trouver le bon financement</h1>
                 <img src="assets/images/Financial data-amico.png"/>
             </a>
