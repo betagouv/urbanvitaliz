@@ -5,38 +5,6 @@ layout: home
 <style>
     @import url(https://fonts.googleapis.com/css?family=EB+Garamond|Droid+Serif|Playfair+Display|Open+Sans+Condensed:300);
 
-p {
-    line-height: 1.4em;
-}
-
-.quote::before {
-    content: "“";
-    position: absolute;
-    left: -.7em;
-}
-
-.quote::after{
-    content: "”";
-    margin-right: -1rem;
-}
-.quote{
-    position: relative;
-    font-size: larger;
-    letter-spacing: .03em;
-    margin-bottom: .5rem;
-}
-
-.quote--author {
-    font-family: 'Open Sans Condensed';
-    font-size: 1.5rem;
-    text-align: right;
-    font-weight: 300;
-}
-    main > section {
-        width: 100%;
-        padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
-    }
-
     /*
     padding: 1em;    tous les côtés
     padding: 1em 2em;    haut-bas  -  gauche-droite
@@ -193,7 +161,46 @@ p {
         list-style: none;
         padding: 0;
         text-align: center;
-       
+    }
+
+    p {
+        line-height: 1.4em;
+    }
+
+    .quote::before {
+        content: "“";
+        position: absolute;
+        left: -.7em;
+    }
+
+    .quote::after{
+        content: "”";
+        margin-right: -1rem;
+    }
+    .quote{
+        position: relative;
+        font-size: larger;
+        letter-spacing: .03em;
+        margin-bottom: .5rem;
+    }
+
+    .quote--author {
+        font-family: 'Open Sans Condensed';
+        font-size: 1.5rem;
+        text-align: right;
+        font-weight: 300;
+        margin: 0 0 3rem;
+    }
+        main > section {
+            width: 100%;
+            padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
+    }
+    .icon {
+    display: block;
+    
+    width: 100px;
+    height: 82px;
+    background-size: 100px 82px;
     }
 
 </style>
@@ -285,18 +292,13 @@ p {
     <div class="container">
       <div class="footer__logo">
         <img src="https://d33wubrfki0l68.cloudfront.net/992ddb1d6775b29b1b10bab49fba4ddb891c9dae/93e38/assets/images/betagouvfr.svg" alt="beta.gouv.fr">
-        
         <ul class="footer__social"> 
           <li><a href="https://www.twitter.com/betagouv"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
           <li><a href="https://www.linkedin.com/company/betagouv/"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a></li>
           <li><a href="https://www.github.com/betagouv"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
           <li><a href=""><svg class="icon icon-"><use xlink:href="#icon-"></use></svg></a></li>
-          
         </ul>
-        
       </div>
-  
-      
       <div class="footer__links">
         <ul>
             <li><a href="/apropos/">Mentions légales</a></li>
@@ -306,7 +308,6 @@ p {
             <li><a href="/contact/">Nous contacter</a></li>
         </ul>
       </div>
-      
       <div class="footer__links">
         <ul>
             <li><a href="https://beta.gouv.fr/startups/friches.html/">Une mission de la DINUM</a></li>
@@ -317,12 +318,4 @@ p {
         </ul>
       </div>
       <div class="footer__links">     
-        <ul>
-        
-        </ul>
-      </div>
-      
-  
-      <div></div>
-    </div>
   </footer>
