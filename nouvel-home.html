@@ -63,12 +63,30 @@ layout: home
         color: #33475b;
     }
 
+    .introduction a.btn-info {
+        color: #fff;
+        background-color: #33475b;
+        border: 0;
+
+        text-decoration: none;
+        font-size: 1.3rem;
+        
+        position: relative;
+    }
+
     .explanation{
         padding-top : 2rem;
         padding-bottom : 5rem;
 
         text-align: center;
         font-size: larger;
+    }
+
+    .process{
+        display: flex;
+        flex-direction: column;
+
+        padding-bottom: 4rem;
     }
 
     .process ol{
@@ -80,7 +98,7 @@ layout: home
         padding: 0;
 
         justify-content: space-around;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
     }
 
     .process li{
@@ -145,6 +163,17 @@ layout: home
 
         z-index: 2;
         position: relative;
+    }
+
+    .process a.btn-info {
+        color: #fff;
+        background-color: #33475b;
+        border: 0;
+
+        text-decoration: none;
+        font-size: 1.3rem;
+
+        align-self: center;
     }
 
     .cards{
@@ -213,12 +242,14 @@ layout: home
     .testimonials blockquote::before{
         content: "“";
         position: absolute;
-        left: -.7em;
+        left: -.5em;
     }
 
     .testimonials blockquote::after{
         content: "”";
-        margin-right: -1rem;
+
+        position: absolute;
+        right: -.5em;
     }
     
     .testimonials .quote--author{
@@ -229,26 +260,13 @@ layout: home
         margin: 0 0 3rem;
     }
 
-    .bottonUV{
-        display: block;
-    }
-
-    .btn-info {
-        color: #fff;
-        background-color: #33475b;
-
-        font-size: 1.3rem;
-        
-        position: relative;
-    }
 
 </style>
 
 <section class="introduction">
     <h1>Réhabiliter vos friches plus sereinement</h1>
     <h2>Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
-    <a type="button" class="btn btn-info mb-2" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
-    
+    <a class="btn btn-info" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
 </section>
 
 <section class="explanation">
@@ -285,7 +303,7 @@ layout: home
             </p>
         </li>
     </ol>
-        <a type="button" class="btn btn-info mb-2"href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
+    <a class="btn btn-info mb-2" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
 </section>
 
 <section class="cards">
@@ -328,34 +346,3 @@ layout: home
     </ul>
 </section>
 
-<footer class="footer">
-    <div class="container">
-      <div class="footer__logo">
-        <img src="https://d33wubrfki0l68.cloudfront.net/992ddb1d6775b29b1b10bab49fba4ddb891c9dae/93e38/assets/images/betagouvfr.svg" alt="beta.gouv.fr">
-        <ul class="footer__social"> 
-          <li><a href="https://www.twitter.com/betagouv"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
-          <li><a href="https://www.linkedin.com/company/betagouv/"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></a></li>
-          <li><a href="https://www.github.com/betagouv"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
-          <li><a href=""><svg class="icon icon-"><use xlink:href="#icon-"></use></svg></a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <ul>
-            <li><a href="/apropos/">Mentions légales</a></li>
-            <li><a href="/dashboard/">Vue d'ensemble</a></li>
-            <li><a href="/content/docs/rapportannuel.pdf">En détails et en chiffres</a></li>
-            <li><a href="/communaute/">Communauté</a></li>
-            <li><a href="/contact/">Nous contacter</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <ul>
-            <li><a href="https://beta.gouv.fr/startups/friches.html/">Une mission de la DINUM</a></li>
-            <li><a href="https://github.com/betagouv/UrbanVitaliz/">Code source</a></li>  
-            <li><a href="/suivi/">Suivi d'audience et vie privée</a></li>
-            <li><a href="/stats/">Indicateurs &amp; mesure d'impact</a></li>
-            <li><a href="https://www.data.gouv.fr/fr/datasets/conventions-de-partenariat/">Conventions de partenariat</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">     
-  </footer>
