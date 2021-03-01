@@ -16,6 +16,11 @@ layout: home
     em : largeur d'un M dans la taille de l'élément actuel
 
     */
+    main > section {
+        width: 100%;
+        padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
+    }
+
     .introduction{
         position: relative;
         text-align: center;
@@ -184,6 +189,7 @@ layout: home
     .cards li img{
         max-width: 100%;
     }
+    
     .testimonials{
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -195,38 +201,34 @@ layout: home
         text-align: center;
     }
 
-    p {
+    .testimonials blockquote{
+        position: relative;
+        font-size: larger;
+        letter-spacing: .03em;
+        margin-bottom: .5rem;
+        border: 0;
         line-height: 1.4em;
     }
 
-    .quote::before {
+    .testimonials blockquote::before{
         content: "“";
         position: absolute;
         left: -.7em;
     }
 
-    .quote::after{
+    .testimonials blockquote::after{
         content: "”";
         margin-right: -1rem;
     }
-    .quote{
-        position: relative;
-        font-size: larger;
-        letter-spacing: .03em;
-        margin-bottom: .5rem;
-    }
-
-    .quote--author {
+    
+    .testimonials .quote--author{
         font-family: 'Open Sans Condensed';
         font-size: 1.5rem;
         text-align: right;
         font-weight: 300;
         margin: 0 0 3rem;
     }
-        main > section {
-            width: 100%;
-            padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
-    }
+
     .bottonUV{
         display: block;
     }
@@ -238,14 +240,14 @@ layout: home
         font-size: 1.3rem;
         
         position: relative;
-}
+    }
 
 </style>
 
 <section class="introduction">
     <h1>Réhabiliter vos friches plus sereinement</h1>
     <h2>Un outil numérique et gratuit qui aiguille les collectivités dans leur projet de réhabilitation de foncier à l’abandon</h2>
-    <button type="button" class="btn btn-info mb-2" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</button>
+    <a type="button" class="btn btn-info mb-2" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
     
 </section>
 
@@ -283,10 +285,7 @@ layout: home
             </p>
         </li>
     </ol>
-        <button type="button" class="btn btn-info mb-2" style=
-        "display: block;
-        margin: auto;
-        margin-bottom: 3rem;" href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</button>
+        <a type="button" class="btn btn-info mb-2"href="http://enqueteur.nord-picardie.cerema.fr/index.php/515215?lang=fr">Commencer</a>
 </section>
 
 <section class="cards">
@@ -315,16 +314,15 @@ layout: home
 
 <section class="testimonials">
     <ul>
-        <li class="quote--container">
-            <p class="quote">Je profite de ce mail pour vous remercier de l’aide et l’appui fourni.
+        <li>
+            <blockquote>Je profite de ce mail pour vous remercier de l’aide et l’appui fourni.
                 En effet, Face à une problématique comme la mobilisation d’une friche, 
-                une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée &hellip;
-            </p>
+                une collectivité de petite taille comme la Communauté de Communes Sauldre et Sologne est vite dépassée</blockquote>
             <p class="quote--author">&ndash; Sylvain GAGEAT, développeur économique</p>
         </li>
-        <li class="quote--container">
-            <p class="quote">Votre étude et vos retours sont très positifs pour eux,
-                 et encourageant car ça nous a donné des idées et des pistes de déblocages</p>
+        <li>
+            <blockquote>Votre étude et vos retours sont très positifs pour eux,
+                 et encourageant car ça nous a donné des idées et des pistes de déblocages</blockquote>
                  <p class="quote--author">&ndash; Mr.Sleizak, Maire de Saint-Sernin</p>
         </li>
     </ul>
