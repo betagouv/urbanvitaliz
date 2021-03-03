@@ -48,6 +48,8 @@ Le dossier de demande d’aide doit être déposé via le service en ligne *Dém
 
 Les dossiers de demande d’aides reçus sont examinés au fil de l’eau par les services de l’agence de l’eau dans l'ordre d'arrivée. Un accusé de réception sera émis par l’agence.
 
+Vous pouvez retrouver **le réglement complet** à partir de ce [lien](https://sdage-sage.eau-loire-bretagne.fr/files/live/sites/sdage-sage/files/Icono/Aides/11-prog/AAP-AAI%202020/REGL_AAP_mesures_exceptionnelles_continuite.pdf)
+
 📞 Contacts et accès au dossier :
 Pour des renseignements généraux : 02 38 51 73 73
 
