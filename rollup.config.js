@@ -65,7 +65,7 @@ export default [
 		},
 		plugins: plugins('build/description-friche.rollup.css'),
 		watch
-	},
+	},*/
 	{
 		input: 'scripts/spa-main.js',
 		output: {
@@ -76,5 +76,5 @@ export default [
 		},
 		plugins: plugins('build/spa.rollup.css'),
 		watch
-	}*/
+	}
 ]
