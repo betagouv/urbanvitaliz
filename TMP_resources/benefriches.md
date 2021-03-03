@@ -1,8 +1,8 @@
 ---
 layout: ressources2
 
-phrase_catch : "Eclairer le choix entre plusieurs scénarios d'aménagement et débloquer la décision en prenant en compte les bénéfices socio-économiques de la revitalisation d'une friche"
-sous_titre: "Estimer l'intérêt d'un projet sur les plans socio-économiques en complément de la rentabilité financière directe grâce à la méthode Bénéfriches"
+phrase_catch : "Choisir entre plusieurs scénarios d'aménagement en tenant compte des bénéfices socio-économiques"
+sous_titre: "Estimer les bénéfices socio-économiques grâce à la méthode Bénéfriches"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"
 ---
