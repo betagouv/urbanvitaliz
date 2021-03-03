@@ -22,7 +22,7 @@ Avec France Relance et son 11e programme d'intervention, l'agence mobilise une *
 - les communes et les établissements publics de coopération intercommunale (métropoles, agglomérations, communautés de communes, syndicats) ;
 
 - les associations et les fondations.
-- 
+
 **→ Actions éligibles**
 
 - Les actions financées sont les travaux d’effacement ou d’arasement d’obstacles à l’écoulement, y compris :
@@ -32,7 +32,7 @@ Avec France Relance et son 11e programme d'intervention, l'agence mobilise une *
 - les travaux collatéraux de restauration de cours d’eau et zones humides associées ;
 
 - l’acquisition des parcelles intéressant le projet (hors bâti) ;
-- 
+
 - les suivis avant et après travaux permettant de montrer rapidement des résultats ;
 et la communication associée au projet.
 
@@ -44,6 +44,15 @@ et la communication associée au projet.
 
 **→ Mode de sélection**
 
-Le dossier de demande d’aide doit être déposé via le service en ligne « Démarches simplifiées »
+Le dossier de demande d’aide doit être déposé via le service en ligne *Démarches simplifiées*
 
 Les dossiers de demande d’aides reçus sont examinés au fil de l’eau par les services de l’agence de l’eau dans l'ordre d'arrivée. Un accusé de réception sera émis par l’agence.
+
+📞 Contacts et accès au dossier :
+Pour des renseignements généraux : 02 38 51 73 73
+
+✔ Retrouvez ici le lien de connexion pour les **collectivités et associations ayant un n°SIRET** : [ici](https://www.demarches-simplifiees.fr/commencer/agence-eau-lb-aap-maq)
+
+✔ Retrouvez également le lien de connexion pour les **particuliers** : [ici](https://www.demarches-simplifiees.fr/commencer/agence-eau-lb-aap-maq-particulier)
+
+Pour avoir éventuellement plus d'information sur les actions de l'Agence de l'eau Loire-Bretagne, c'est par [ici](https://aides-redevances.eau-loire-bretagne.fr/home/aides/appels-a-projets/retablissement-de-la-continuite-ecologique.html)
