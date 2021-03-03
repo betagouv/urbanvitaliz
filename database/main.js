@@ -3,7 +3,7 @@ import constants from "./constants.cjs"
 import makeCapString from "../server/random-cap.js"
 
 const { MongoClient, ObjectID } = mongodbpackage
-const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, FRICHES_COLLECTIONS, FRICHES}} = constants
+const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
 
 const client = new MongoClient(MONGO_URL, { useUnifiedTopology: true });
 
@@ -12,8 +12,8 @@ await client.connect();
 const database = client.db(DATABASE_NAME);
 
 
-export async function getOrCreateFricheCollectionByEmail(email){
-    const [persons, friches_collections] = await Promise.all([PERSONS, FRICHES_COLLECTIONS].map(name => database.collection(name)))
+export async function getOrCreateRessourcesByEmail(email){
+    const [persons, ressource_collections] = await Promise.all([PERSONS, RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
     let person = await persons.findOne({emails: email})
 
     console.log('found person', person)
@@ -27,16 +27,16 @@ export async function getOrCreateFricheCollectionByEmail(email){
         newUser = true;
     }
 
-    let thisPersonsFricheCollection = await friches_collections.findOne({created_by: ObjectID(person._id)})
+    let thisPersonsRessourceCollection = await ressource_collections.findOne({created_by: ObjectID(person._id)})
 
-    if(!thisPersonsFricheCollection){
-        const {ops} = await friches_collections.insertOne({created_by: ObjectID(person._id), friche_ids: [], edit_cap: makeCapString()})
-        thisPersonsFricheCollection = ops[0]
-        console.log('inserted thisPersonsFricheCollection', thisPersonsFricheCollection)
+    if(!thisPersonsRessourceCollection){
+        const {ops} = await ressource_collections.insertOne({created_by: ObjectID(person._id), friche_ids: [], edit_cap: makeCapString()})
+        thisPersonsRessourceCollection = ops[0]
+        console.log('inserted thisPersonsFricheCollection', thisPersonsRessourceCollection)
     }
 
     return {
-        fricheCollection: thisPersonsFricheCollection,
+        fricheCollection: thisPersonsRessourceCollection,
         newUser
     }
 }
