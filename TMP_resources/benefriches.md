@@ -28,6 +28,14 @@ L’ADEME capitaliser sur ces retours d’expérience pour (i) bénéficier d’
   
 L’appel à candidature est ouvert jusqu’au 9 avril 2021 18h.  
 [Lien vers l'appel d'offre](https://partage.ademe.fr/public/appel-candidatures-benefriches)
-Pour toute question : laurent.chateau@ademe.fr
+Pour toute question : laurent.chateau@ademe.fr  
+  
+🎁 *Ressource associée*  
+Retrouvez ici le [guide d'IDFriches](https://www.idfriches-auvergnerhonealpes.fr/actualite/usages-alternatifs-et-transitoires-des-friches-le-guide-est-sorti) qui encourage les porteurs de sites à **porter un « regard alternatif » sur ces fonciers**. En effet, si la recherche d’un équilibre économique (ou du moins la réduction des déficits) reste une clé pour leur redéveloppement, l’évolution du contexte sociétal conduit à valoriser de manière croissante les externalités directes et indirectes liées à leur réutilisation parmi lesquelles :
+* les bénéfices socio-économiques (création d’emplois…) ;
+* les bénéfices sociétaux (bien-être, santé…) ;
+* les bénéfices environnementaux (gestion sanitaire, biodiversité…) ;
+* les services écosystémiques générées
+
   
 
