@@ -17,7 +17,7 @@ L'Ademe, agence pour la transition écologique, peut vous accompagner pour la r�
 * Réaliser d'éventuels diagnostics de pollution associés à un scénario de reconversion
 * Réaliser le plan de gestion de la pollution associé au scénario envisagé : plan pour prévoir l’action sur l’état initial du site avec priorité à la suppression des sources de pollution (par ex : quelles techniques de traitement des eaux et sols ?), adapter l’usage du site à l’état des eaux et sols.
 
-## 🚀 Comment lancer les études et les faire financer ?
+## 🚀 Comment lancer les études et les financer ?
 L'accompagnement de l'Ademe est :
 * technique : appui à la rédaction de cahiers des charges et accompagnement dans la relation avec les bureaux d’études (attention, la collectivité reste la maîtrise d'ouvrage et doit y dédier du temps, ou alors se faire aider par un Assistant à Maîtrise d'Ouvrage)
 * financier : **co-financement jusqu'à 70%**, plafond d’assiette à 100k€ (montant maximum du devis accepté)
