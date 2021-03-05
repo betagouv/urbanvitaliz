@@ -55,7 +55,7 @@ Cette étape permet un contrôle de la conception du projet et une meilleure org
 
 Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme : 
   
-**A propos :**  
+**-> A propos :**  
 Cette ressource a été créée en collaboration avec le **Syndicat des programmistes en architecture et urbanisme**
 
 ✔ Vous pouvez retrouver leur guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/)   
