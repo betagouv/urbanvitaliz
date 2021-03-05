@@ -67,13 +67,8 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 
 - Mettre au point le marché avec le candidat de l’offre répondant le mieux à vos critères
 
-
-
-Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme : 
   
-📞 Contacts :    
-Pour des renseignements généraux : 01 44 30 49 39 / sypaa@cinov.fr
+**A propos :**  
+Cette ressource a été créée en collaboration avec le **Syndicat des programmistes en architecture et urbanisme**
 
-
-✔ Retrouvez ici la page officielle du SYPAA : <https://www.sypaa.org/>  
-✔ Retrouvez également le guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/)  
+✔ Vous pouvez retrouver leur guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/)  
