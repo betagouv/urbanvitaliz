@@ -31,16 +31,18 @@ app.post('/login-by-email', (req, res) => {
     console.log('/login-by-email', email)
 
     database.getOrCreateRessourcesByEmail(email)
-    .then(({fricheCollection, newUser}) => {
-        res.status(newUser ? 201 : 200).send({
-            collectionFricheCap: makeReturningCapabilityURL(req, MES_RESSOURCES_ROUTE_PATH, fricheCollection._id)
-        })
+    .then((result) => {
+        const newUser = result.newUser;
+        const person = result.person;
+        const ressourceCollection = result.ressourceCollection;
+        res.status(newUser ? 201 : 200).send({person, ressourceCollection})
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
 
 const server = app.listen(port, () => {
+    // @ts-ignore
     const {port} = server.address()
     console.log(`App listening on port ${port}!`)
 

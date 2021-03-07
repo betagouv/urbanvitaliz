@@ -40,14 +40,12 @@ page('/login-by-email', ({path}) => {
         const email = event.detail;
         
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
-        // TODO bug here, there is no 'friches' prop returned
-        // set up types to catch it
-        .then(({friches, collectionFricheCap}) => {
-            console.log('fetch email', collectionFricheCap)
-            state.currentEmail = email;
+        .then(({person, ressourceCollection}) => {
+            console.log('login succesful', person, ressourceCollection)
+            // state.currentEmail = email;
     
-            const url = new URL(collectionFricheCap);
-            page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
+            // const url = new URL(collectionFricheCap);
+            // page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
         })
         .catch(res => console.error('error fetch email', res))
     });

@@ -1,6 +1,6 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
-import makeCapString from "../server/random-cap.js"
+import makeCapabilityString from "../server/random-cap.js"
 
 const { MongoClient, ObjectID } = mongodbpackage
 const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
@@ -30,44 +30,14 @@ export async function getOrCreateRessourcesByEmail(email){
     let thisPersonsRessourceCollection = await ressource_collections.findOne({created_by: ObjectID(person._id)})
 
     if(!thisPersonsRessourceCollection){
-        const {ops} = await ressource_collections.insertOne({created_by: ObjectID(person._id), friche_ids: [], edit_cap: makeCapString()})
+        const {ops} = await ressource_collections.insertOne({created_by: ObjectID(person._id), ressources_ids: [] , edit_capability: makeCapabilityString()})
         thisPersonsRessourceCollection = ops[0]
-        console.log('inserted thisPersonsFricheCollection', thisPersonsRessourceCollection)
+        console.log('inserted thisPersonsRessourceCollection', thisPersonsRessourceCollection)
     }
 
     return {
-        fricheCollection: thisPersonsRessourceCollection,
-        newUser
+        ressourceCollection: thisPersonsRessourceCollection,
+        newUser,
+        person
     }
-}
-
-
-export async function getFricheCollection(fricheCollectionId){
-    const [friches_collections, frichesMongoCollection] = await Promise.all([FRICHES_COLLECTIONS, FRICHES].map(name => database.collection(name)))
-    const {friche_ids, edit_cap} = await friches_collections.findOne({_id: ObjectID(fricheCollectionId)})
-    const friches = await frichesMongoCollection.find({_id: {$in: friche_ids}}).toArray()
-    
-    return {
-        friches,
-        edit_cap
-    }
-}
-
-export async function addFricheToCollection({collection_edit_cap, friche}){
-    const [friches_collections, frichesMongoCollection] = await Promise.all([FRICHES_COLLECTIONS, FRICHES].map(name => database.collection(name)))
-
-    const fricheCollectionToEdit = await friches_collections.findOne({edit_cap: collection_edit_cap})
-
-    if(!fricheCollectionToEdit){
-        throw new Error(`No friche collection for edit_cap '${collection_edit_cap}'`)
-    }
-
-
-    const {ops} = await frichesMongoCollection.insertOne(friche)
-    const insertedFriche = ops[0]
-    console.log('insertedFriche', insertedFriche)
-
-    await friches_collections.updateOne({edit_cap: collection_edit_cap}, {$push: {friche_ids: insertedFriche._id}})
-
-    return insertedFriche
 }
