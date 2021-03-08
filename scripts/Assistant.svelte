@@ -13,6 +13,8 @@
     export let relevantResources;
 </script>
 
+<h1>Trouver des réponses pour réhabiliter mon site</h1> 
+
 <ResourceFilters 
     étapes={étapes} 
     thématiques={thématiques} 
@@ -23,4 +25,7 @@
 <ResourceList relevantResources={relevantResources} />
 
 <style>
+    h1{
+        margin-bottom: 2.5rem;
+    }
 </style>

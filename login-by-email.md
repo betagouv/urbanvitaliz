@@ -1,6 +1,11 @@
 ---
 layout: empty
+redirect_from:
+    - /brouillon-produit
 scripts:
+    - src: "./scripts/dependencies/buffer.js"
+      defer: true
+      crossorigin: "anonymous"
     - src: "./build/spa.rollup.js"
       defer: true
       crossorigin: "anonymous"
