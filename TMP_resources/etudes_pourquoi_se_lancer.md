@@ -7,8 +7,15 @@ etape : "3 - comment envisager le devenir du site ?"
 thematique :
     - "Conseil & ingénerie"
 ---
-  
-💡 **Quelques liens utiles** :  
+Réaliser des études préalables est primordial avant de se lancer dans un projet d'aménagement ou d'acheter un foncier
+Eviter certains écueils
+études de connaissance
+Envisager différents scénarios d'usage, avec leur faisabilité financière et opportunité par rapport aux besoins du territoire
+-> en cas de site pollué, aide financière possible Ademe
+
+avant travaux : Consolider le projet envisagé avec un plan d'aménagement affiné et les éléments de consolidation technique et financière
+
+💡 **Ressources en lien** :  
   
 [Faire appel à un Assistant à Maitrise d'Ouvrage pour m'aider à faire avancer mon projet de A à Z](https://betagouv.github.io/urbanvitaliz/TMP_resources/AMO)  
 [Un peu d'aide pour la mise en place d'une mission d'Assistance à Maitrise d'Ouvrage](https://betagouv.github.io/urbanvitaliz/TMP_resources/CDC_AMO)  
