@@ -1,18 +1,20 @@
 ---
 layout: ressources2
 
-phrase_catch : "Faire appel à un AMO pour m'aider à définir et gérer mon projet de A à Z"
-sous_titre: "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet? Voici un éclaircissement sur ce qu'une AMO peut faire pour vous."
-etape : "2 - quelles informations rassembler pour avancer ?"
+phrase_catch : "Est-ce que ça vaut le coup d'investir dans des études ?"
+sous_titre: "Comment débloquer la décision de payer des études pour concevoir un projet sur la friche, en pressentant son opportunité et sa faisabilité technique et financière ?"
+etape : "3 - comment envisager le devenir du site ?"
 thematique :
     - "Conseil & ingénerie"
 ---
   
-💡 **Saviez-vous que** :  
+💡 **Quelques liens utiles** :  
   
-L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.
-L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.
-
+[Faire appel à un Assistant à Maitrise d'Ouvrage pour m'aider à faire avancer mon projet de A à Z](https://betagouv.github.io/urbanvitaliz/TMP_resources/AMO)  
+[Un peu d'aide pour la mise en place d'une mission d'Assistance à Maitrise d'Ouvrage](https://betagouv.github.io/urbanvitaliz/TMP_resources/CDC_AMO)  
+[Aides aux études pour la revitalisation des friches polluées via l'Ademe](https://betagouv.github.io/urbanvitaliz/TMP_resources/ademe_plan_gestion)  
+  
+  
 ![Image](./static/schema_etudes_projet.png?raw=true)
 
 
