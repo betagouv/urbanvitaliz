@@ -54,8 +54,7 @@ page('/login-by-email', context => {
             }else {
                 page('/brouillon-produit');
             }
-            
-    
+
             // const url = new URL(collectionFricheCap);
             // page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
         })
