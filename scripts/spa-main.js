@@ -8,6 +8,8 @@ import page from 'page'
 import Assistant from './Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 
+import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js'
+
 const Buffer = buffer.Buffer;
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
@@ -28,15 +30,26 @@ function replaceComponent(newComponent){
 }
 
 const state = {
-    currentEmail: undefined
+    // Listes de toutes les étapes et thématiques disponible
+    étapes: [],
+    thématiques: [],
+    // Etapes et thématiques sélectionnées par l'utilisateur.rice
+    filters: {
+        étapes: new Set(),
+        thématiques: new Set()
+    },
+    allResources: [],
+    relevantResources: [],
+
+    currentPerson: undefined,
+    currentRessourceCollection: undefined
 }
 
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-page('/login-by-email', context => {
-    console.log(context);
+page('/login-by-email', () => {
     const loginByEmail = new LoginByEmail({
         target: svelteTarget,
         props: {}
@@ -49,14 +62,19 @@ page('/login-by-email', context => {
         .then(({person, ressourceCollection}) => {
             console.log('login succesful', person, ressourceCollection)
 
+            const {edit_capability} = ressourceCollection;
+            const editCapURL = new URL(edit_capability);
+
+            state.currentPerson = person;
+            state.currentRessourceCollection = ressourceCollection;
+
             if(ressourceCollection.ressources_ids.length >= 1){
-                page('/liste-ressources?secret=47');
-            }else {
+                page(`${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`)
+            }
+            else {
                 page('/brouillon-produit');
             }
 
-            // const url = new URL(collectionFricheCap);
-            // page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
         })
         .catch(res => console.error('error fetch email', res))
     });
@@ -65,20 +83,7 @@ page('/login-by-email', context => {
 })
 
 page('/brouillon-produit', ({path:route}) => {
-    console.log('ROUTER', route);
 
-    const state = {
-        // Listes de toutes les étapes et thématiques disponible
-        étapes: [],
-        thématiques: [],
-        // Etapes et thématiques sélectionnées par l'utilisateur.rice
-        filters: {
-            étapes: new Set(),
-            thématiques: new Set()
-        },
-        allResources: [],
-        relevantResources: []
-    }
     function findRelevantResources(allResources, filters){
         return allResources.filter(r => {
             return filters.étapes.has(r.attributes.etape) && 
@@ -110,11 +115,27 @@ page('/brouillon-produit', ({path:route}) => {
         render()
     }
 
+    function bookmarkResourceById(editCapability){
+        return function bookmarkResource(resourceId){
+            return function bookmarkResource(){
+                console.log('Azy, bookmark', resourceId, 'avec la cap', editCapability, '(genre en POST)')
+
+                return /*json(editCapability, {
+                    method: 'POST', 
+                    body: JSON.stringify({id: resourceId})
+                })*/
+            }
+        }
+    }
+
     function render(){
         assistantUI.$set({
             ...state, 
             étapeFilterChange, 
-            thématiqueFilterChange
+            thématiqueFilterChange,
+            bookmarkResourceById: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
+                undefined
         })
     }
 
@@ -123,7 +144,10 @@ page('/brouillon-produit', ({path:route}) => {
         props: {
             ...state, 
             étapeFilterChange, 
-            thématiqueFilterChange
+            thématiqueFilterChange,
+            bookmarkResourceById: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
+                undefined
         }
     });
 
@@ -153,7 +177,12 @@ page('/brouillon-produit', ({path:route}) => {
             .map(({path, content}) => {
                 const {body, attributes} = frontmatter( Buffer.from(content, 'base64').toString('utf-8') )
                 
-                return { url: `/${repo}/${path.replace(/\.[^/.]+$/, "")}`, content: body, attributes }
+                return {
+                    url: `/${repo}/${path.replace(/\.[^/.]+$/, "")}`, 
+                    content: body, 
+                    attributes, 
+                    id: path
+                }
             })
         )
     })
@@ -172,7 +201,7 @@ page('/brouillon-produit', ({path:route}) => {
 
 });
 
-page('/liste-ressources', context => {
+page(LISTE_RESSOURCES_ROUTE, context => {
     const params = new URLSearchParams(context.querystring);
     console.log('secret :',params.get('secret'));
 });

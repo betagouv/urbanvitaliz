@@ -1,14 +1,12 @@
 <script>
     export let resource;
 
-    function bookmarkResource(){
-        console.log(resource.attributes.phrase_catch);
-    }
+    export let bookmarkResource;
 </script>
 
 <article>
     <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
-    {#if resource.attributes.phrase_catch.startsWith('A')}
+    {#if typeof bookmarkResource === 'function'}
         <button on:click={bookmarkResource}>☆★</button>
     {/if}
     {#if resource.attributes.sous_titre}

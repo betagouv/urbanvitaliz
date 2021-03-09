@@ -6,6 +6,8 @@ import cors from 'cors'
 
 import * as database from '../database/main.js'
 
+import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js'
+
 const port = process.env.PORT || 4999
 
 const app = express()
@@ -18,11 +20,14 @@ app.use(compression()) // enable compression
 app.use(express.raw())
 app.use(express.json())
 
-// ROUTES
 
 function makeReturningCapabilityURL(req, path, secret){
     return `${req.get('X-Forwarded-Proto') || req.protocol}://${req.get('Host')}${path}?secret=${secret}`
 }
+
+
+
+// ROUTES
 
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
@@ -32,8 +37,14 @@ app.post('/login-by-email', (req, res) => {
     .then((result) => {
         const newUser = result.newUser;
         const person = result.person;
-        const ressourceCollection = result.ressourceCollection;
-        res.status(newUser ? 201 : 200).send({person, ressourceCollection})
+        const {edit_capability, ressources_ids} = result.ressourceCollection;
+        res.status(newUser ? 201 : 200).send({
+            person, 
+            ressourceCollection: {
+                edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, edit_capability), 
+                ressources_ids
+            }
+        })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

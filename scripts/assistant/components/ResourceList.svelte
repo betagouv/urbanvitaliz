@@ -2,6 +2,7 @@
     import ResourceOverview from './ResourceOverview.svelte';
 
     export let relevantResources;
+    export let bookmarkResourceById;
 </script>
 
 <section>
@@ -13,7 +14,7 @@
         <ul>
             {#each relevantResources as resource}
             <li>
-                <ResourceOverview resource={resource}/>
+                <ResourceOverview resource={resource} bookmarkResource={bookmarkResourceById && bookmarkResourceById(resource.id)}/>
             </li>
             {/each}
         </ul>
