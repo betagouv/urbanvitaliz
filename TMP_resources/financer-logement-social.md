@@ -3,7 +3,7 @@ layout: ressources2
 
 phrase_catch : "Financer du logement social"
 sous_titre: "Tour d'horizon des financements disponibles"
-etape : " 2 - quelles informations rassembler pour avancer ?"
+etape : "2 - quelles informations rassembler pour avancer ?"
 thematique : "Aide et subvention"
 ---
 
