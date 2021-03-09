@@ -24,8 +24,6 @@ function makeReturningCapabilityURL(req, path, secret){
     return `${req.get('X-Forwarded-Proto') || req.protocol}://${req.get('Host')}${path}?secret=${secret}`
 }
 
-const MES_RESSOURCES_ROUTE_PATH = `/mes-ressources`
-
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
     console.log('/login-by-email', email)

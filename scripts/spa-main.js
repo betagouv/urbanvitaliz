@@ -1,3 +1,4 @@
+//@ts-check
 import {json} from 'd3-fetch';
 import { Octokit } from '@octokit/rest';
 
@@ -34,8 +35,8 @@ page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-page('/login-by-email', ({path}) => {
-    console.log('ROUTER', path)
+page('/login-by-email', context => {
+    console.log(context);
     const loginByEmail = new LoginByEmail({
         target: svelteTarget,
         props: {}
@@ -47,7 +48,13 @@ page('/login-by-email', ({path}) => {
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
         .then(({person, ressourceCollection}) => {
             console.log('login succesful', person, ressourceCollection)
-            page('/brouillon-produit');
+
+            if(ressourceCollection.ressources_ids.length >= 1){
+                page('/liste-ressources?secret=47');
+            }else {
+                page('/brouillon-produit');
+            }
+            
     
             // const url = new URL(collectionFricheCap);
             // page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
@@ -164,6 +171,11 @@ page('/brouillon-produit', ({path:route}) => {
         render()
     })
 
+});
+
+page('/liste-ressources', context => {
+    const params = new URLSearchParams(context.querystring);
+    console.log('secret :',params.get('secret'));
 });
 
 page.start()
