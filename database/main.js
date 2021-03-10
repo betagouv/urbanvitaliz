@@ -44,5 +44,5 @@ export async function getOrCreateRessourcesByEmail(email){
 
 export async function addResourceToCollection(resourceId, edit_capability){
     const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
-    await ressource_collections.updateOne({edit_capability}, {$push: {ressources_ids: resourceId}})
+    await ressource_collections.updateOne({edit_capability}, {$addToSet: {ressources_ids: resourceId}})
 }
