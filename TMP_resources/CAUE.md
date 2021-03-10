@@ -12,6 +12,7 @@ Il a pour objectif de promouvoir la qualité de l’architecture, de l’urbanis
 Le CAUE est créé à l'initiative des responsables locaux et présidé par un élu local. C’est un organe de concertation entre les acteurs impliqués dans la production et la gestion de l’espace rural et urbain.  
  
 🚀 **Plus d'info ? c'est par ici !** 
+
 **Conseiller, former et informer/sensibiliser** constituent les missions d’intérêt public du CAUE. Tout acte d’aménagement — depuis le document de planification territoriale jusqu’à la construction d’une maison — est créateur d’un cadre de vie qui s’impose à tous.
 
 À tous les niveaux et à tous les stades de l’élaboration de ce cadre de vie, le CAUE promeut la qualité. Il intervient en aidant chaque acteur à assumer ses responsabilités. Toute son action est donc sous-tendue par une approche pédagogique.
@@ -27,5 +28,5 @@ Pour des renseignements généraux :  01 43 22 07 82 / https://www.fncaue.com/
 
 ✔ Retrouvez ici le CAUE en 30 questions par *Le Moniteur* : [ici](https://www.fncaue.com/wp-content/uploads/2015/08/Le-CAUE-en-30-questions-Le-Moniteur.pdf)
 
-✔ Retrouvez également une plaquette informative : [ici](https://www.fncaue.com/wp-content/uploads/2015/08/plaquette-3-volets-CAUE-basse-def.pdf)
+✔ Retrouvez également la plaquette informative de la FN CAUE d'où sont tirées les informations de cette fiche : [ici](https://www.fncaue.com/wp-content/uploads/2015/08/plaquette-3-volets-CAUE-basse-def.pdf)
 
