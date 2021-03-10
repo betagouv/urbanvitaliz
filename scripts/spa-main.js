@@ -7,6 +7,7 @@ import page from 'page'
 
 import Assistant from './Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
+import BookmarkList from './components/BookmarkList.svelte';
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js'
 
@@ -204,7 +205,28 @@ page('/brouillon-produit', ({path:route}) => {
 
 page(LISTE_RESSOURCES_ROUTE, context => {
     const params = new URLSearchParams(context.querystring);
-    console.log('secret :',params.get('secret'));
+    console.log('secret :', params.get('secret'));
+
+    console.log('allressources, currentressurcecol', state.allResources, state.currentRessourceCollection)
+
+    
+
+    const bookmarkedResources = state.allResources && state.currentRessourceCollection ?
+        state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
+        undefined;
+
+    console.log('bookmarkedResources', bookmarkedResources)
+
+    const bookmarkList = new BookmarkList({
+        target: svelteTarget,
+        props: {
+            bookmarkedResources
+        }
+    });
+
+    replaceComponent(bookmarkList)
+
+
 });
 
 page.start()
