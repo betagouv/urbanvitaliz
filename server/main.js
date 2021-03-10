@@ -49,6 +49,16 @@ app.post('/login-by-email', (req, res) => {
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
+app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
+    const edit_capability = req.query.secret;
+
+    database.getResourceCollection(edit_capability)
+    .then((ressourceCollection) => {
+        res.status(200).send(ressourceCollection);
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
 app.post(LISTE_RESSOURCES_ROUTE, (req, res) => {
     const edit_capability = req.query.secret;
     const resourceId = req.body.id;

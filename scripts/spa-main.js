@@ -1,17 +1,15 @@
 //@ts-check
 import {json, text} from 'd3-fetch';
-import { Octokit } from '@octokit/rest';
 
-import frontmatter from 'front-matter';
 import page from 'page'
 
 import Assistant from './Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 
-import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js'
+import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
+import getAllResources from './getAllResources.js';
 
-const Buffer = buffer.Buffer;
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
     'https://app-f92a129e-7c5e-4922-97ab-66be747554dd.cleverapps.io' :
@@ -155,39 +153,7 @@ page('/brouillon-produit', ({path:route}) => {
 
     replaceComponent(assistantUI);
 
-    const octokit = new Octokit()
-
-    const owner = 'betagouv';
-    const repo = 'urbanvitaliz'
-    const path = 'TMP_resources'
-
-    octokit.repos.getContent({
-        owner,
-        repo,
-        path,
-    }).then(({data}) => {
-        const relevantFiles = data.filter(
-            ({name, type}) => type === "file" && name.endsWith('.md')
-        );
-
-        return Promise.allSettled(
-            relevantFiles.map( f => fetch(f.url).then(r => r.json()) )
-        )
-        .then(rs => rs
-            .filter(r => r.status === 'fulfilled')
-            .map(r => r.value)
-            .map(({path, content}) => {
-                const {body, attributes} = frontmatter( Buffer.from(content, 'base64').toString('utf-8') )
-                
-                return {
-                    url: `/${repo}/${path.replace(/\.[^/.]+$/, "")}`, 
-                    content: body, 
-                    attributes, 
-                    id: path
-                }
-            })
-        )
-    })
+    getAllResources()
     .then(resources => {
         const étapesOptions = new Set(resources.map(r => r.attributes.etape))
         const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
@@ -205,10 +171,15 @@ page('/brouillon-produit', ({path:route}) => {
 
 page(LISTE_RESSOURCES_ROUTE, context => {
     const params = new URLSearchParams(context.querystring);
-    console.log('secret :', params.get('secret'));
+    const secret = params.get('secret');
+    
 
     console.log('allressources, currentressurcecol', state.allResources, state.currentRessourceCollection)
 
+    json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
+    .then((ressourceCollection) => {
+       console.log('ressourceCollection:', ressourceCollection);
+    });
     
 
     const bookmarkedResources = state.allResources && state.currentRessourceCollection ?

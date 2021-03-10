@@ -1,6 +1,7 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
 import makeCapabilityString from "../server/random-cap.js"
+import { async } from "crypto-random-string"
 
 const { MongoClient, ObjectID } = mongodbpackage
 const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
@@ -43,6 +44,11 @@ export async function getOrCreateRessourcesByEmail(email){
 }
 
 export async function addResourceToCollection(resourceId, edit_capability){
-    const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
+    const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)));
     await ressource_collections.updateOne({edit_capability}, {$addToSet: {ressources_ids: resourceId}})
+}
+
+export async function getResourceCollection(edit_capability){
+    const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)));
+    return await ressource_collections.findOne({edit_capability});
 }
