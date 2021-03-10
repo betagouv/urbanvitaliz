@@ -49,6 +49,16 @@ app.post('/login-by-email', (req, res) => {
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
+app.post(LISTE_RESSOURCES_ROUTE, (req, res) => {
+    const edit_capability = req.query.secret;
+    const resourceId = req.body.id;
+
+    database.addResourceToCollection(resourceId, edit_capability)
+    .then((result) => {
+        res.status(200).end();
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
 
 const server = app.listen(port, () => {
     // @ts-ignore

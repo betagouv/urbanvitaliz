@@ -1,5 +1,5 @@
 //@ts-check
-import {json} from 'd3-fetch';
+import {json, text} from 'd3-fetch';
 import { Octokit } from '@octokit/rest';
 
 import frontmatter from 'front-matter';
@@ -115,15 +115,16 @@ page('/brouillon-produit', ({path:route}) => {
         render()
     }
 
-    function bookmarkResourceById(editCapability){
+    function bookmarkResourceById(editCapabilityUrl){
         return function bookmarkResource(resourceId){
             return function bookmarkResource(){
-                console.log('Azy, bookmark', resourceId, 'avec la cap', editCapability, '(genre en POST)')
-
-                return /*json(editCapability, {
-                    method: 'POST', 
+                return text(editCapabilityUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
                     body: JSON.stringify({id: resourceId})
-                })*/
+                })
             }
         }
     }
