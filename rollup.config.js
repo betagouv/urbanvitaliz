@@ -30,7 +30,7 @@ const plugins = cssFileName => [
 
 	// Watch the `_site` directory and refresh the
 	// browser on changes when not in production
-	!production && livereload('_site'),
+	// !production && livereload('_site'),
 
 	// If we're building for production (npm run build
 	// instead of npm run dev), minify
