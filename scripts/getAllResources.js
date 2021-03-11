@@ -3,7 +3,7 @@ import frontmatter from 'front-matter';
 
 const Buffer = buffer.Buffer;
 
-/*export default function getAllResources(){
+export default function getAllResources(){
     
     const octokit = new Octokit()
 
@@ -39,9 +39,9 @@ const Buffer = buffer.Buffer;
         )
     })
 
-}*/
+}
 
-export default function fakeGetAllResources(){
+/*export default function fakeGetAllResources(){
     console.warn(`ATTONTION !! C'est pas la bonne fonction getAllResources !!1!!!!`)
 
     return Promise.resolve([
@@ -88,4 +88,4 @@ export default function fakeGetAllResources(){
             id: 'id_4'
         }
     ])
-}
+}*/
