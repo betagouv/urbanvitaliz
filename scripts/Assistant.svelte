@@ -11,9 +11,10 @@
     export let thématiqueFilterChange;
 
     export let relevantResources;
- 
-    export let makeBookmarkResource;
     export let bookmarkedResourceIdSet;
+
+    export let makeBookmarkResource;
+    export let makeUnbookmarkResource;
 </script>
 
 <h1>Trouver des réponses pour réhabiliter mon site</h1> 
@@ -28,7 +29,9 @@
 <ResourceList 
     relevantResources={relevantResources} 
     makeBookmarkResource={makeBookmarkResource}
-    bookmarkedResourceIdSet={bookmarkedResourceIdSet} />
+    makeUnbookmarkResource={makeUnbookmarkResource}
+    bookmarkedResourceIdSet={bookmarkedResourceIdSet}
+/>
 
 <style>
     h1{

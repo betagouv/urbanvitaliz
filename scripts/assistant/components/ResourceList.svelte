@@ -3,6 +3,7 @@
 
     export let relevantResources;
     export let makeBookmarkResource;
+    export let makeUnbookmarkResource;
     export let bookmarkedResourceIdSet;
 </script>
 
@@ -16,9 +17,10 @@
             {#each relevantResources as resource}
             <li>
                 <ResourceOverview 
-                    resource={resource} 
-                    bookmarkResource={makeBookmarkResource && makeBookmarkResource(resource.id)}
-                    isBookmarked={bookmarkedResourceIdSet.has(resource.id)} />
+                    resource={resource}
+                    bookmarkResource={makeBookmarkResource && !bookmarkedResourceIdSet.has(resource.id) && makeBookmarkResource(resource.id)}
+                    unbookmarkResource={makeUnbookmarkResource && bookmarkedResourceIdSet.has(resource.id) && makeUnbookmarkResource(resource.id)}
+                />
             </li>
             {/each}
         </ul>

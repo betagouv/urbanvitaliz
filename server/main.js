@@ -62,13 +62,16 @@ app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.post(LISTE_RESSOURCES_ROUTE, (req, res) => {
+app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
     const edit_capability = req.query.secret;
-    const resourceId = req.body.id;
+    const {add, delete: _delete} = req.body
 
-    database.addResourceToCollection(resourceId, edit_capability)
-    .then((result) => {
-        res.status(200).end();
+    Promise.all([
+        add ? database.addResourceToCollection(add, edit_capability) : Promise.resolve(),
+        _delete ? database.removeResourceFromCollection(_delete, edit_capability) : Promise.resolve(),
+    ])
+    .then(() => {
+        res.status(204).end();
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

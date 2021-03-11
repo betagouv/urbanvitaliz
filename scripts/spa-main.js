@@ -129,18 +129,36 @@ page('/brouillon-produit', ({path:route}) => {
         render()
     }
 
-    function bookmarkResourceById(editCapabilityUrl){
+    function makeBookmarkResourceFromCap(editCapabilityUrl){
         return function makeBookmarkResource(resourceId){
             return function bookmarkResource(){
                 state.currentRessourceCollection.ressources_ids.push(resourceId)
                 render()
 
                 return text(editCapabilityUrl, {
-                    method: 'POST',
+                    method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({id: resourceId})
+                    body: JSON.stringify({add: resourceId})
+                })
+            }
+        }
+    }
+
+    function makeUnbookmarkResourceFromCap(editCapabilityUrl){
+        return resourceId => {
+            return () => {
+                state.currentRessourceCollection.ressources_ids = state.currentRessourceCollection.ressources_ids
+                    .filter( id => id !== resourceId)
+                render()
+
+                return text(editCapabilityUrl, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({delete: resourceId})
                 })
             }
         }
@@ -152,7 +170,10 @@ page('/brouillon-produit', ({path:route}) => {
             étapeFilterChange, 
             thématiqueFilterChange,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
-                bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
+                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
             bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
         })
@@ -165,7 +186,10 @@ page('/brouillon-produit', ({path:route}) => {
             étapeFilterChange, 
             thématiqueFilterChange,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
-                bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
+                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
             bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
         }

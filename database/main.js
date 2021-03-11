@@ -48,6 +48,11 @@ export async function addResourceToCollection(resourceId, edit_capability){
     await ressource_collections.updateOne({edit_capability}, {$addToSet: {ressources_ids: resourceId}})
 }
 
+export async function removeResourceFromCollection(resourceId, edit_capability){
+    const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)));
+    await ressource_collections.updateOne({edit_capability}, {$pull: {ressources_ids: resourceId}})
+}
+
 export async function getResourceCollection(edit_capability){
     const [ressource_collections] = await Promise.all([RESSOURCE_COLLECTIONS].map(name => database.collection(name)));
     return await ressource_collections.findOne({edit_capability});

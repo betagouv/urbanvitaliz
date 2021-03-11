@@ -2,17 +2,16 @@
     export let resource;
 
     export let bookmarkResource;
-    export let isBookmarked;
+    export let unbookmarkResource;
 </script>
 
 <article>
     <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
-    {#if isBookmarked}
-        <button>🌟</button>
-    {:else}
-        {#if typeof bookmarkResource === 'function'}
-            <button on:click={bookmarkResource}>☆</button>
-        {/if}
+    {#if typeof unbookmarkResource === 'function'}
+        <button on:click={unbookmarkResource}>🌟</button>
+    {/if}
+    {#if typeof bookmarkResource === 'function'}
+        <button on:click={bookmarkResource}>☆</button>
     {/if}
     {#if resource.attributes.sous_titre}
         <section class="sous_titre">{resource.attributes.sous_titre || ''}</section>
