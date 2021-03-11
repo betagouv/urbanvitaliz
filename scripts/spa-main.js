@@ -48,6 +48,30 @@ page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
+function findRelevantResources(allResources, filters){
+    return allResources.filter(r => {
+        return filters.étapes.has(r.attributes.etape) && 
+            (Array.isArray(r.attributes.thematique) ? 
+                r.attributes.thematique.some(t => filters.thématiques.has(t)) :
+                filters.thématiques.has(r.attributes.thematique))
+    })
+}
+
+function initializeStateWithResources(){
+    return getAllResources()
+    .then(resources => {
+        const étapesOptions = new Set(resources.map(r => r.attributes.etape))
+        const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
+
+        state.étapes = [...étapesOptions];
+        state.thématiques = [...thématiquesOptions];
+
+        state.allResources = resources; 
+        state.relevantResources = findRelevantResources(resources, state.filters)
+    });
+}
+
+
 page('/login-by-email', () => {
     const loginByEmail = new LoginByEmail({
         target: svelteTarget,
@@ -82,15 +106,6 @@ page('/login-by-email', () => {
 })
 
 page('/brouillon-produit', ({path:route}) => {
-
-    function findRelevantResources(allResources, filters){
-        return allResources.filter(r => {
-            return filters.étapes.has(r.attributes.etape) && 
-                (Array.isArray(r.attributes.thematique) ? 
-                    r.attributes.thematique.some(t => filters.thématiques.has(t)) :
-                    filters.thématiques.has(r.attributes.thematique))
-        })
-    }
 
     function étapeFilterChange(étape){
         if(state.filters.étapes.has(étape))
@@ -127,7 +142,7 @@ page('/brouillon-produit', ({path:route}) => {
             }
         }
     }
-
+    
     function render(){
         assistantUI.$set({
             ...state, 
@@ -151,51 +166,50 @@ page('/brouillon-produit', ({path:route}) => {
         }
     });
 
+    initializeStateWithResources()
+    .then(render);
+
     replaceComponent(assistantUI);
-
-    getAllResources()
-    .then(resources => {
-        const étapesOptions = new Set(resources.map(r => r.attributes.etape))
-        const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
-
-        state.étapes = [...étapesOptions];
-        state.thématiques = [...thématiquesOptions];
-
-        state.allResources = resources;
-        state.relevantResources = findRelevantResources(resources, state.filters)
-
-        render()
-    })
 
 });
 
 page(LISTE_RESSOURCES_ROUTE, context => {
     const params = new URLSearchParams(context.querystring);
     const secret = params.get('secret');
-    
-
-    console.log('allressources, currentressurcecol', state.allResources, state.currentRessourceCollection)
-
-    json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
-    .then((ressourceCollection) => {
-       console.log('ressourceCollection:', ressourceCollection);
-    });
-    
-
-    const bookmarkedResources = state.allResources && state.currentRessourceCollection ?
-        state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
-        undefined;
-
-    console.log('bookmarkedResources', bookmarkedResources)
+   
+    function makeBookmarkedResources(){ 
+        console.log('almakeBookmarkedResourcesl :',state.allResources, state.currentRessourceCollection);
+        return state.allResources && state.currentRessourceCollection ?
+            state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
+            undefined;
+    }
 
     const bookmarkList = new BookmarkList({
         target: svelteTarget,
-        props: {
-            bookmarkedResources
+        props: {  
+            bookmarkedResources: makeBookmarkedResources()
         }
     });
-
+    
     replaceComponent(bookmarkList)
+
+    function render(){
+        bookmarkList.$set({
+            bookmarkedResources: makeBookmarkedResources() 
+        })
+    }
+
+    const resourceCollectionReceivedP = json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
+    .then((ressourceCollection) => {
+        state.currentRessourceCollection = ressourceCollection;
+    });
+
+    const allResourcesReadyP = initializeStateWithResources();
+    
+    Promise.all([resourceCollectionReceivedP, allResourcesReadyP])
+    .then(render);
+
+    
 
 
 });
