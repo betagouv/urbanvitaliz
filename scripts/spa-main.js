@@ -130,8 +130,11 @@ page('/brouillon-produit', ({path:route}) => {
     }
 
     function bookmarkResourceById(editCapabilityUrl){
-        return function bookmarkResource(resourceId){
+        return function makeBookmarkResource(resourceId){
             return function bookmarkResource(){
+                state.currentRessourceCollection.ressources_ids.push(resourceId)
+                render()
+
                 return text(editCapabilityUrl, {
                     method: 'POST',
                     headers: {
@@ -148,9 +151,10 @@ page('/brouillon-produit', ({path:route}) => {
             ...state, 
             étapeFilterChange, 
             thématiqueFilterChange,
-            bookmarkResourceById: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
-                undefined
+                undefined,
+            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
         })
     }
 
@@ -160,10 +164,10 @@ page('/brouillon-produit', ({path:route}) => {
             ...state, 
             étapeFilterChange, 
             thématiqueFilterChange,
-            bookmarkResourceById: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
                 undefined,
-            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection.ressources_ids)
+            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
         }
     });
 

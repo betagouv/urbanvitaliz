@@ -2,7 +2,7 @@
     import ResourceOverview from './ResourceOverview.svelte';
 
     export let relevantResources;
-    export let bookmarkResourceById;
+    export let makeBookmarkResource;
     export let bookmarkedResourceIdSet;
 </script>
 
@@ -17,7 +17,7 @@
             <li>
                 <ResourceOverview 
                     resource={resource} 
-                    bookmarkResource={bookmarkResourceById && bookmarkResourceById(resource.id)}
+                    bookmarkResource={makeBookmarkResource && makeBookmarkResource(resource.id)}
                     isBookmarked={bookmarkedResourceIdSet.has(resource.id)} />
             </li>
             {/each}

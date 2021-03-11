@@ -12,7 +12,7 @@
 
     export let relevantResources;
  
-    export let bookmarkResourceById;
+    export let makeBookmarkResource;
     export let bookmarkedResourceIdSet;
 </script>
 
@@ -27,7 +27,7 @@
 />
 <ResourceList 
     relevantResources={relevantResources} 
-    bookmarkResourceById={bookmarkResourceById}
+    makeBookmarkResource={makeBookmarkResource}
     bookmarkedResourceIdSet={bookmarkedResourceIdSet} />
 
 <style>
