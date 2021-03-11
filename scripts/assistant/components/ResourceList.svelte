@@ -3,6 +3,7 @@
 
     export let relevantResources;
     export let bookmarkResourceById;
+    export let bookmarkedResourceIdSet;
 </script>
 
 <section>
@@ -14,7 +15,10 @@
         <ul>
             {#each relevantResources as resource}
             <li>
-                <ResourceOverview resource={resource} bookmarkResource={bookmarkResourceById && bookmarkResourceById(resource.id)}/>
+                <ResourceOverview 
+                    resource={resource} 
+                    bookmarkResource={bookmarkResourceById && bookmarkResourceById(resource.id)}
+                    isBookmarked={bookmarkedResourceIdSet.has(resource.id)} />
             </li>
             {/each}
         </ul>

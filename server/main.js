@@ -54,7 +54,10 @@ app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
 
     database.getResourceCollection(edit_capability)
     .then((ressourceCollection) => {
-        res.status(200).send(ressourceCollection);
+        res.status(200).send({
+            edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, ressourceCollection.edit_capability),
+            ressources_ids: ressourceCollection.ressources_ids
+        });
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

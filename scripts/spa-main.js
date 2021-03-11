@@ -162,7 +162,8 @@ page('/brouillon-produit', ({path:route}) => {
             thématiqueFilterChange,
             bookmarkResourceById: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 bookmarkResourceById(state.currentRessourceCollection.edit_capability) :
-                undefined
+                undefined,
+            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection.ressources_ids)
         }
     });
 
@@ -178,7 +179,6 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     const secret = params.get('secret');
    
     function makeBookmarkedResources(){ 
-        console.log('almakeBookmarkedResourcesl :',state.allResources, state.currentRessourceCollection);
         return state.allResources && state.currentRessourceCollection ?
             state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
             undefined;
@@ -190,7 +190,7 @@ page(LISTE_RESSOURCES_ROUTE, context => {
             bookmarkedResources: makeBookmarkedResources()
         }
     });
-    
+
     replaceComponent(bookmarkList)
 
     function render(){

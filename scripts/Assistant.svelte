@@ -11,8 +11,9 @@
     export let thématiqueFilterChange;
 
     export let relevantResources;
-
+ 
     export let bookmarkResourceById;
+    export let bookmarkedResourceIdSet;
 </script>
 
 <h1>Trouver des réponses pour réhabiliter mon site</h1> 
@@ -24,7 +25,10 @@
     étapeFilterChange={étapeFilterChange} 
     thématiqueFilterChange={thématiqueFilterChange}
 />
-<ResourceList relevantResources={relevantResources} bookmarkResourceById={bookmarkResourceById}/>
+<ResourceList 
+    relevantResources={relevantResources} 
+    bookmarkResourceById={bookmarkResourceById}
+    bookmarkedResourceIdSet={bookmarkedResourceIdSet} />
 
 <style>
     h1{
