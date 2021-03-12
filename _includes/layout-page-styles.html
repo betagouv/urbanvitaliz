@@ -1,0 +1,15 @@
+{% comment %} 
+Styles are added based on the page.styles variable
+This variable is defined in front-matter with:
+
+---
+styles:
+    - href: "./yo.css"
+    - href: "./font-maybe.css"
+---
+
+{% endcomment %}
+
+{%- if page.styles -%} {%- for style in page.styles -%}
+<link crossorigin="anonymous" rel="stylesheet" href="{{ style.href }}">
+{%- endfor -%} {%- endif -%}
