@@ -167,48 +167,40 @@ page('/login-by-email', () => {
     replaceComponent(loginByEmail, () => {})
 })
 
+function makeBookmarkResourceFromCap(editCapabilityUrl){
+    return function makeBookmarkResource(resourceId){
+        return function bookmarkResource(){
+            store.mutations.addResourceIdToCurrentRessourceCollection(resourceId)
+
+            return text(editCapabilityUrl, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({add: resourceId})
+            })
+        }
+    }
+}
+
+function makeUnbookmarkResourceFromCap(editCapabilityUrl){
+    return resourceId => {
+        return () => {
+            store.mutations.removeResourceIdFromCurrentRessourceCollection(resourceId)
+
+            return text(editCapabilityUrl, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({delete: resourceId})
+            })
+        }
+    }
+}
+
 page('/brouillon-produit', () => {
 
-    function étapeFilterChange(étape){
-        store.mutations.toggleÉtapeFilter(étape)
-    }
-
-    function thématiqueFilterChange(thématique){
-        store.mutations.toggleThématiquesFilter(thématique)
-    }
-
-    function makeBookmarkResourceFromCap(editCapabilityUrl){
-        return function makeBookmarkResource(resourceId){
-            return function bookmarkResource(){
-                store.mutations.addResourceIdToCurrentRessourceCollection(resourceId)
-
-                return text(editCapabilityUrl, {
-                    method: 'PATCH',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({add: resourceId})
-                })
-            }
-        }
-    }
-
-    function makeUnbookmarkResourceFromCap(editCapabilityUrl){
-        return resourceId => {
-            return () => {
-                store.mutations.removeResourceIdFromCurrentRessourceCollection(resourceId)
-
-                return text(editCapabilityUrl, {
-                    method: 'PATCH',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({delete: resourceId})
-                })
-            }
-        }
-    }
-    
     function mapStateToProps(state){
         const {étapes, thématiques, filters, relevantResources} = state;
 
@@ -217,8 +209,8 @@ page('/brouillon-produit', () => {
             thématiques, 
             filters, 
             relevantResources, 
-            étapeFilterChange, 
-            thématiqueFilterChange,
+            étapeFilterChange: store.mutations.toggleÉtapeFilter, 
+            thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
@@ -247,7 +239,10 @@ page(LISTE_RESSOURCES_ROUTE, context => {
         return {  
             bookmarkedResources: state.allResources && state.currentRessourceCollection ?
                 state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
-                undefined
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
         }
     }
 
