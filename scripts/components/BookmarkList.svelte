@@ -2,19 +2,23 @@
     import ResourceOverview from '../assistant/components/ResourceOverview.svelte';
 
     export let bookmarkedResources;
+    export let makeUnbookmarkResource;
 </script>
 
 <h1>Liste des ressources favorites</h1>
 
+{#if bookmarkedResources}
 <ul>
-    {#if bookmarkedResources}
     {#each bookmarkedResources as resource}
     <li>
-        <ResourceOverview resource={resource}/>
+        <ResourceOverview 
+            resource={resource}
+            unbookmarkResource={makeUnbookmarkResource && makeUnbookmarkResource(resource.id)}    
+        />
     </li>
     {/each}
-    {/if}
 </ul>
+{/if}
 
 <a href="/brouillon-produit">Chercher d'autres ressources</a>
 
