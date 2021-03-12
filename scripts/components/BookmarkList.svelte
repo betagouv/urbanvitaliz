@@ -20,7 +20,7 @@
 </ul>
 {/if}
 
-<a href="/brouillon-produit">Chercher d'autres ressources</a>
+<a href="./brouillon-produit">Chercher d'autres ressources</a>
 
 <style>
     ul{
