@@ -1,6 +1,6 @@
 <script>
-    import ResourceFilters from './assistant/components/ResourceFilters.svelte';
-    import ResourceList from './assistant/components/ResourceList.svelte';
+    import ResourceFilters from './ResourceFilters.svelte';
+    import ResourceList from './ResourceList.svelte';
 
 
     export let étapes;

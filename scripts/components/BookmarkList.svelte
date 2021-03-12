@@ -1,5 +1,5 @@
 <script>
-    import ResourceOverview from '../assistant/components/ResourceOverview.svelte';
+    import ResourceOverview from './ResourceOverview.svelte';
 
     export let bookmarkedResources = undefined;
     export let makeUnbookmarkResource = undefined;
