@@ -2,6 +2,7 @@
 import {json, text} from 'd3-fetch';
 
 import page from 'page'
+import Store from 'baredux'
 
 import Assistant from './Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
@@ -17,37 +18,6 @@ const SERVER_ORIGIN = isProduction ?
 
 console.log('API server origin:', SERVER_ORIGIN)
 
-const svelteTarget = document.querySelector('.svelte-main')
-
-let currentComponent;
-
-function replaceComponent(newComponent){
-    if(currentComponent)
-        currentComponent.$destroy()
-    
-    currentComponent = newComponent
-}
-
-const state = {
-    // Listes de toutes les étapes et thématiques disponible
-    étapes: [],
-    thématiques: [],
-    // Etapes et thématiques sélectionnées par l'utilisateur.rice
-    filters: {
-        étapes: new Set(),
-        thématiques: new Set()
-    },
-    allResources: [],
-    relevantResources: [],
-
-    currentPerson: undefined,
-    currentRessourceCollection: undefined
-}
-
-page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
-
-console.log('page.base', page.base())
-
 function findRelevantResources(allResources, filters){
     return allResources.filter(r => {
         return filters.étapes.has(r.attributes.etape) && 
@@ -57,20 +27,111 @@ function findRelevantResources(allResources, filters){
     })
 }
 
+// @ts-ignore
+const store = new Store({
+    state: {
+        // Listes de toutes les étapes et thématiques disponible
+        étapes: [],
+        thématiques: [],
+        // Etapes et thématiques sélectionnées par l'utilisateur.rice
+        filters: {
+            étapes: new Set(),
+            thématiques: new Set()
+        },
+        allResources: [],
+        relevantResources: [],
+    
+        currentPerson: undefined,
+        currentRessourceCollection: undefined
+    }, 
+    mutations: {
+        setÉtapes(state, étapes){
+            state.étapes = étapes
+        },
+        setThématiques(state, thématiques){
+            state.thématiques = thématiques
+        },
+        setRelevantResources(state, relevantResources){
+            state.relevantResources = relevantResources
+        },
+        setAllResources(state, allResources){
+            state.allResources = allResources
+        },
+        setCurrentPerson(state, currentPerson){
+            state.currentPerson = currentPerson
+        },
+        setCurrentRessourceCollection(state, currentRessourceCollection){
+            state.currentRessourceCollection = currentRessourceCollection
+        },
+        toggleÉtapeFilter(state, étape){
+            if(state.filters.étapes.has(étape))
+                state.filters.étapes.delete(étape)
+            else
+                state.filters.étapes.add(étape)
+
+            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+        },
+        toggleThématiquesFilter(state, thématique){
+            if(state.filters.thématiques.has(thématique))
+                state.filters.thématiques.delete(thématique)
+            else
+                state.filters.thématiques.add(thématique)
+
+            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+        },
+        addResourceIdToCurrentRessourceCollection(state, resourceId){
+            state.currentRessourceCollection.ressources_ids.push(resourceId)
+        },
+        removeResourceIdFromCurrentRessourceCollection(state, resourceId){
+            state.currentRessourceCollection.ressources_ids = state.currentRessourceCollection.ressources_ids
+            .filter( id => id !== resourceId)        
+        }
+    }
+})
+
+const svelteTarget = document.querySelector('.svelte-main')
+
+let currentComponent;
+let mapStateToProps;
+
+function replaceComponent(newComponent, _mapStateToProps){
+    if(!_mapStateToProps){
+        throw new Error('Missing _mapStateToProps in replaceComponent')
+    }
+
+    if(currentComponent)
+        currentComponent.$destroy()
+    
+    currentComponent = newComponent
+    mapStateToProps = _mapStateToProps
+}
+
+function render(state){
+    const props = mapStateToProps(state);
+    currentComponent.$set(props)
+}
+
+store.subscribe(render)
+
+
 function initializeStateWithResources(){
     return getAllResources()
     .then(resources => {
         const étapesOptions = new Set(resources.map(r => r.attributes.etape))
         const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
 
-        state.étapes = [...étapesOptions];
-        state.thématiques = [...thématiquesOptions];
+        store.mutations.setÉtapes([...étapesOptions]);
+        store.mutations.setThématiques([...thématiquesOptions]);
 
-        state.allResources = resources; 
-        state.relevantResources = findRelevantResources(resources, state.filters)
+        store.mutations.setAllResources(resources); 
+        store.mutations.setRelevantResources(findRelevantResources(resources, store.state.filters))
     });
 }
 
+
+page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
+
+console.log('page.base', page.base())
 
 page('/login-by-email', () => {
     const loginByEmail = new LoginByEmail({
@@ -82,14 +143,15 @@ page('/login-by-email', () => {
         const email = event.detail;
         
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
+        // @ts-ignore
         .then(({person, ressourceCollection}) => {
             console.log('login succesful', person, ressourceCollection)
 
             const {edit_capability} = ressourceCollection;
             const editCapURL = new URL(edit_capability);
 
-            state.currentPerson = person;
-            state.currentRessourceCollection = ressourceCollection;
+            store.mutations.setCurrentPerson(person);
+            store.mutations.setCurrentRessourceCollection(ressourceCollection)
 
             if(ressourceCollection.ressources_ids.length >= 1){
                 page(`${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`)
@@ -102,38 +164,23 @@ page('/login-by-email', () => {
         .catch(res => console.error('error fetch email', res))
     });
 
-    replaceComponent(loginByEmail)
+    replaceComponent(loginByEmail, () => {})
 })
 
 page('/brouillon-produit', ({path:route}) => {
 
     function étapeFilterChange(étape){
-        if(state.filters.étapes.has(étape))
-            state.filters.étapes.delete(étape)
-        else
-            state.filters.étapes.add(étape)
-
-        state.relevantResources = findRelevantResources(state.allResources, state.filters)
-
-        render()
+        store.mutations.toggleÉtapeFilter(étape)
     }
 
     function thématiqueFilterChange(thématique){
-        if(state.filters.thématiques.has(thématique))
-            state.filters.thématiques.delete(thématique)
-        else
-            state.filters.thématiques.add(thématique)
-
-        state.relevantResources = findRelevantResources(state.allResources, state.filters)
-
-        render()
+        store.mutations.toggleThématiquesFilter(thématique)
     }
 
     function makeBookmarkResourceFromCap(editCapabilityUrl){
         return function makeBookmarkResource(resourceId){
             return function bookmarkResource(){
-                state.currentRessourceCollection.ressources_ids.push(resourceId)
-                render()
+                store.mutations.addResourceIdToCurrentRessourceCollection(resourceId)
 
                 return text(editCapabilityUrl, {
                     method: 'PATCH',
@@ -149,9 +196,7 @@ page('/brouillon-produit', ({path:route}) => {
     function makeUnbookmarkResourceFromCap(editCapabilityUrl){
         return resourceId => {
             return () => {
-                state.currentRessourceCollection.ressources_ids = state.currentRessourceCollection.ressources_ids
-                    .filter( id => id !== resourceId)
-                render()
+                store.mutations.removeResourceIdFromCurrentRessourceCollection(resourceId)
 
                 return text(editCapabilityUrl, {
                     method: 'PATCH',
@@ -164,25 +209,14 @@ page('/brouillon-produit', ({path:route}) => {
         }
     }
     
-    function render(){
-        assistantUI.$set({
-            ...state, 
-            étapeFilterChange, 
-            thématiqueFilterChange,
-            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
-                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
-                undefined,
-            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
-                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
-                undefined,
-            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
-        })
-    }
+    function mapStateToProps(state){
+        const {étapes, thématiques, filters, relevantResources} = state;
 
-    const assistantUI = new Assistant({
-        target: document.querySelector('.svelte-main'),
-        props: {
-            ...state, 
+        return {
+            étapes, 
+            thématiques, 
+            filters, 
+            relevantResources, 
             étapeFilterChange, 
             thématiqueFilterChange,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
@@ -193,53 +227,44 @@ page('/brouillon-produit', ({path:route}) => {
                 undefined,
             bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
         }
+    }
+
+    const assistantUI = new Assistant({
+        target: document.querySelector('.svelte-main'),
+        props: mapStateToProps(store.state)
     });
 
     initializeStateWithResources()
-    .then(render);
 
-    replaceComponent(assistantUI);
-
+    replaceComponent(assistantUI, mapStateToProps);
 });
 
 page(LISTE_RESSOURCES_ROUTE, context => {
     const params = new URLSearchParams(context.querystring);
     const secret = params.get('secret');
-   
-    function makeBookmarkedResources(){ 
-        return state.allResources && state.currentRessourceCollection ?
-            state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
-            undefined;
+
+    function mapStateToProps(state){
+        return {  
+            bookmarkedResources: state.allResources && state.currentRessourceCollection ?
+                state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
+                undefined
+        }
     }
 
     const bookmarkList = new BookmarkList({
         target: svelteTarget,
-        props: {  
-            bookmarkedResources: makeBookmarkedResources()
-        }
+        props: mapStateToProps(store.state)
     });
 
-    replaceComponent(bookmarkList)
+    replaceComponent(bookmarkList, mapStateToProps)
 
-    function render(){
-        bookmarkList.$set({
-            bookmarkedResources: makeBookmarkedResources() 
-        })
-    }
 
     const resourceCollectionReceivedP = json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
-        state.currentRessourceCollection = ressourceCollection;
+        store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
 
     const allResourcesReadyP = initializeStateWithResources();
-    
-    Promise.all([resourceCollectionReceivedP, allResourcesReadyP])
-    .then(render);
-
-    
-
-
 });
 
 page.start()

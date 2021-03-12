@@ -1,8 +1,8 @@
 <script>
     export let resource;
 
-    export let bookmarkResource;
-    export let unbookmarkResource;
+    export let bookmarkResource = undefined;
+    export let unbookmarkResource = undefined;
 </script>
 
 <article>

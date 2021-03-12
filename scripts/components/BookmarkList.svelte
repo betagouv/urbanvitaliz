@@ -1,8 +1,8 @@
 <script>
     import ResourceOverview from '../assistant/components/ResourceOverview.svelte';
 
-    export let bookmarkedResources;
-    export let makeUnbookmarkResource;
+    export let bookmarkedResources = undefined;
+    export let makeUnbookmarkResource = undefined;
 </script>
 
 <h1>Liste des ressources favorites</h1>
