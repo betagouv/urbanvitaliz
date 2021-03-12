@@ -6,15 +6,15 @@
 </script>
 
 <article>
-    <a href={resource.url} target="_blank"><h1>{resource.attributes.phrase_catch}</h1></a>
+    <a href={resource.url} target="_blank"><h1>{resource.phrase_catch}</h1></a>
     {#if typeof unbookmarkResource === 'function'}
         <button on:click={unbookmarkResource}>🌟</button>
     {/if}
     {#if typeof bookmarkResource === 'function'}
         <button on:click={bookmarkResource}>☆</button>
     {/if}
-    {#if resource.attributes.sous_titre}
-        <section class="sous_titre">{resource.attributes.sous_titre || ''}</section>
+    {#if resource.sous_titre}
+        <section class="sous_titre">{resource.sous_titre || ''}</section>
     {/if}
 </article>
 
