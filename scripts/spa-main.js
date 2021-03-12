@@ -167,7 +167,7 @@ page('/login-by-email', () => {
     replaceComponent(loginByEmail, () => {})
 })
 
-page('/brouillon-produit', ({path:route}) => {
+page('/brouillon-produit', () => {
 
     function étapeFilterChange(étape){
         store.mutations.toggleÉtapeFilter(étape)
@@ -259,12 +259,12 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     replaceComponent(bookmarkList, mapStateToProps)
 
 
-    const resourceCollectionReceivedP = json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
+    json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
         store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
 
-    const allResourcesReadyP = initializeStateWithResources();
+    initializeStateWithResources();
 });
 
 page.start()
