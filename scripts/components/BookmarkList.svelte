@@ -1,5 +1,5 @@
 <script>
-    import ResourceOverview from '../assistant/components/ResourceOverview.svelte';
+    import ResourceOverview from './ResourceOverview.svelte';
 
     export let bookmarkedResources = undefined;
     export let makeUnbookmarkResource = undefined;
@@ -20,7 +20,7 @@
 </ul>
 {/if}
 
-<a href="/brouillon-produit">Chercher d'autres ressources</a>
+<a href="./brouillon-produit">Chercher d'autres ressources</a>
 
 <style>
     ul{

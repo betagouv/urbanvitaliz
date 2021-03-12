@@ -4,7 +4,7 @@ import {json, text} from 'd3-fetch';
 import page from 'page'
 import Store from 'baredux'
 
-import Assistant from './Assistant.svelte';
+import Assistant from './components/Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 
