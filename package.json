@@ -11,6 +11,7 @@
     "dev:jekyll": "bundle exec jekyll build -w --incremental --config _config.yml,_config_dev.yml",
     "dev:rollup": "rollup -c -w",
     "dev:serve": "serve _site",
+    "dev:api": "nodemon server/main.js",
     "database:migrate:up": "migrate-mongo up -f database/migrate-mongo-config.cjs",
     "database:migrate:down": "migrate-mongo down -f database/migrate-mongo-config.cjs",
     "database:migrate:status": "migrate-mongo status -f database/migrate-mongo-config.cjs",
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^18.1.0",
+    "baredux": "github:DavidBruant/baredux",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "crypto-random-string": "^3.3.0",

@@ -1,45 +1,139 @@
-import {json} from 'd3-fetch';
-import page from 'page'
+//@ts-check
+import {json, text} from 'd3-fetch';
 
+import page from 'page'
+import Store from 'baredux'
+
+import Assistant from './Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
-import FricheCollection from './components/FricheCollection.svelte';
-import FricheForm from './components/FricheForm.svelte';
+import BookmarkList from './components/BookmarkList.svelte';
+
+import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
+import getAllResources from './getAllResources.js';
 
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
-    'https://app-f92a129e-7c5e-4922-97ab-66be747554dd.cleverapps.io' :
+    'https://app-20420772-6ed7-40ca-978c-f360edf8941c.cleverapps.io' :
     `http://localhost:4999`
 
 console.log('API server origin:', SERVER_ORIGIN)
 
-const FRICHE_COLLECTION_API_ROUTE_PATH = '/collection-friche'
-const COLLECTION_FRICHE_UI_PATH = '/collection-friche'
+function findRelevantResources(allResources, filters){
+    return allResources.filter(r => {
+        return filters.étapes.has(r.attributes.etape) && 
+            (Array.isArray(r.attributes.thematique) ? 
+                r.attributes.thematique.some(t => filters.thématiques.has(t)) :
+                filters.thématiques.has(r.attributes.thematique))
+    })
+}
 
+// @ts-ignore
+const store = new Store({
+    state: {
+        // Listes de toutes les étapes et thématiques disponible
+        étapes: [],
+        thématiques: [],
+        // Etapes et thématiques sélectionnées par l'utilisateur.rice
+        filters: {
+            étapes: new Set(),
+            thématiques: new Set()
+        },
+        allResources: [],
+        relevantResources: [],
+    
+        currentPerson: undefined,
+        currentRessourceCollection: undefined
+    }, 
+    mutations: {
+        setÉtapes(state, étapes){
+            state.étapes = étapes
+        },
+        setThématiques(state, thématiques){
+            state.thématiques = thématiques
+        },
+        setRelevantResources(state, relevantResources){
+            state.relevantResources = relevantResources
+        },
+        setAllResources(state, allResources){
+            state.allResources = allResources
+        },
+        setCurrentPerson(state, currentPerson){
+            state.currentPerson = currentPerson
+        },
+        setCurrentRessourceCollection(state, currentRessourceCollection){
+            state.currentRessourceCollection = currentRessourceCollection
+        },
+        toggleÉtapeFilter(state, étape){
+            if(state.filters.étapes.has(étape))
+                state.filters.étapes.delete(étape)
+            else
+                state.filters.étapes.add(étape)
+
+            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+        },
+        toggleThématiquesFilter(state, thématique){
+            if(state.filters.thématiques.has(thématique))
+                state.filters.thématiques.delete(thématique)
+            else
+                state.filters.thématiques.add(thématique)
+
+            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+        },
+        addResourceIdToCurrentRessourceCollection(state, resourceId){
+            state.currentRessourceCollection.ressources_ids.push(resourceId)
+        },
+        removeResourceIdFromCurrentRessourceCollection(state, resourceId){
+            state.currentRessourceCollection.ressources_ids = state.currentRessourceCollection.ressources_ids
+            .filter( id => id !== resourceId)        
+        }
+    }
+})
 
 const svelteTarget = document.querySelector('.svelte-main')
 
 let currentComponent;
+let mapStateToProps;
 
-function replaceComponent(newComponent){
+function replaceComponent(newComponent, _mapStateToProps){
+    if(!_mapStateToProps){
+        throw new Error('Missing _mapStateToProps in replaceComponent')
+    }
+
     if(currentComponent)
         currentComponent.$destroy()
     
     currentComponent = newComponent
+    mapStateToProps = _mapStateToProps
 }
 
-const state = {
-    collectionFriches : [],
-    lastCollectionFricheURL: undefined,
-    lastFricheCollectionEditCap: undefined,
-    currentEmail: undefined
+function render(state){
+    const props = mapStateToProps(state);
+    currentComponent.$set(props)
 }
+
+store.subscribe(render)
+
+
+function initializeStateWithResources(){
+    return getAllResources()
+    .then(resources => {
+        const étapesOptions = new Set(resources.map(r => r.attributes.etape))
+        const thématiquesOptions = new Set( resources.map(r => r.attributes.thematique).flat() )
+
+        store.mutations.setÉtapes([...étapesOptions]);
+        store.mutations.setThématiques([...thématiquesOptions]);
+
+        store.mutations.setAllResources(resources); 
+        store.mutations.setRelevantResources(findRelevantResources(resources, store.state.filters))
+    });
+}
+
 
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-page('/login-by-email', ({path}) => {
-    console.log('ROUTER', path)
+page('/login-by-email', () => {
     const loginByEmail = new LoginByEmail({
         target: svelteTarget,
         props: {}
@@ -49,76 +143,123 @@ page('/login-by-email', ({path}) => {
         const email = event.detail;
         
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
-        // TODO bug here, there is no 'friches' prop returned
-        // set up types to catch it
-        .then(({friches, collectionFricheCap}) => {
-            console.log('fetch email', collectionFricheCap)
-            state.currentEmail = email;
-    
-            const url = new URL(collectionFricheCap);
-            page(`${COLLECTION_FRICHE_UI_PATH}?secret=${url.searchParams.get('secret')}`)
+        // @ts-ignore
+        .then(({person, ressourceCollection}) => {
+            console.log('login succesful', person, ressourceCollection)
+
+            const {edit_capability} = ressourceCollection;
+            const editCapURL = new URL(edit_capability);
+
+            store.mutations.setCurrentPerson(person);
+            store.mutations.setCurrentRessourceCollection(ressourceCollection)
+
+            if(ressourceCollection.ressources_ids.length >= 1){
+                page(`${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`)
+            }
+            else {
+                page('/brouillon-produit');
+            }
+
         })
         .catch(res => console.error('error fetch email', res))
     });
 
-    replaceComponent(loginByEmail)
+    replaceComponent(loginByEmail, () => {})
 })
 
-page(COLLECTION_FRICHE_UI_PATH, ({querystring, path}) => {
-    console.log('ROUTER', path)
-    const q = new URLSearchParams(querystring)
-    const secret = q.get('secret')
+function makeBookmarkResourceFromCap(editCapabilityUrl){
+    return function makeBookmarkResource(resourceId){
+        return function bookmarkResource(){
+            store.mutations.addResourceIdToCurrentRessourceCollection(resourceId)
 
-    const collectionFricheCap = `${SERVER_ORIGIN}${FRICHE_COLLECTION_API_ROUTE_PATH}?secret=${secret}`
+            return text(editCapabilityUrl, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({add: resourceId})
+            })
+        }
+    }
+}
 
-    json(collectionFricheCap)
-    .then(({friches, fricheCollectionEditCap}) => {
-        const fricheCollectionComponent = new FricheCollection({
-            target: svelteTarget,
-            props: {
-                email: state.currentEmail,
-                friches,
-                onAddFriche: fricheCollectionEditCap ? () => {
-                    const {searchParams} = new URL(fricheCollectionEditCap);
-                    page(`/friche-form?secret=${searchParams.get('secret')}`)
-                } : undefined
-            }
-        });
-        state.lastCollectionFricheURL = path;
-        state.collectionFriches = friches
-        state.lastFricheCollectionEditCap = fricheCollectionEditCap;
+function makeUnbookmarkResourceFromCap(editCapabilityUrl){
+    return resourceId => {
+        return () => {
+            store.mutations.removeResourceIdFromCurrentRessourceCollection(resourceId)
 
-        replaceComponent(fricheCollectionComponent)
-    })
-})
+            return text(editCapabilityUrl, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({delete: resourceId})
+            })
+        }
+    }
+}
 
+page('/brouillon-produit', () => {
 
-page('/friche-form', ({path}) => {
-    console.log('ROUTER', path)
-    const fricheFormComponent = new FricheForm({
-        target: svelteTarget,
-        props: {}
+    function mapStateToProps(state){
+        const {étapes, thématiques, filters, relevantResources} = state;
+
+        return {
+            étapes, 
+            thématiques, 
+            filters, 
+            relevantResources, 
+            étapeFilterChange: store.mutations.toggleÉtapeFilter, 
+            thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
+            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids)
+        }
+    }
+
+    const assistantUI = new Assistant({
+        target: document.querySelector('.svelte-main'),
+        props: mapStateToProps(store.state)
     });
 
-    fricheFormComponent.$on('new-friche', event => {
-        const friche = event.detail;
+    initializeStateWithResources()
 
-        console.log('new friche', friche)
+    replaceComponent(assistantUI, mapStateToProps);
+});
 
-        json(state.lastFricheCollectionEditCap, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(friche)
-        })
-        .then(() => {
-            page(state.lastCollectionFricheURL)
-        })
-        .catch(err => console.error('error', err))
-    })
+page(LISTE_RESSOURCES_ROUTE, context => {
+    const params = new URLSearchParams(context.querystring);
+    const secret = params.get('secret');
 
-    replaceComponent(fricheFormComponent)
-})
+    function mapStateToProps(state){
+        return {  
+            bookmarkedResources: state.allResources && state.currentRessourceCollection ?
+                state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+        }
+    }
+
+    const bookmarkList = new BookmarkList({
+        target: svelteTarget,
+        props: mapStateToProps(store.state)
+    });
+
+    replaceComponent(bookmarkList, mapStateToProps)
+
+
+    json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
+    .then((ressourceCollection) => {
+        store.mutations.setCurrentRessourceCollection(ressourceCollection);
+    });
+
+    initializeStateWithResources();
+});
 
 page.start()

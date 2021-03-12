@@ -1,10 +1,14 @@
+//@ts-check
+
 import express from 'express'
 import compression from 'compression'
 import cors from 'cors'
 
 import * as database from '../database/main.js'
 
-const port = process.env.PORT
+import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js'
+
+const port = process.env.PORT || 4999
 
 const app = express()
 
@@ -13,79 +17,67 @@ const app = express()
 app.use(cors()) // enable CORS
 app.use(compression()) // enable compression
 
-app.use(express.raw())  
+app.use(express.raw())
 app.use(express.json())
 
-// ROUTES
 
 function makeReturningCapabilityURL(req, path, secret){
     return `${req.get('X-Forwarded-Proto') || req.protocol}://${req.get('Host')}${path}?secret=${secret}`
 }
 
 
+
+// ROUTES
+
 app.post('/login-by-email', (req, res) => {
     const {email} = req.query;
     console.log('/login-by-email', email)
 
-    database.getOrCreateFricheCollectionByEmail(email)
-    .then(({fricheCollection, newUser}) => {
+    database.getOrCreateRessourcesByEmail(email)
+    .then((result) => {
+        const newUser = result.newUser;
+        const person = result.person;
+        const {edit_capability, ressources_ids} = result.ressourceCollection;
         res.status(newUser ? 201 : 200).send({
-            collectionFricheCap: makeReturningCapabilityURL(req, FRICHE_COLLECTION_ROUTE_PATH, fricheCollection._id)
+            person, 
+            ressourceCollection: {
+                edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, edit_capability), 
+                ressources_ids
+            }
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-const FRICHE_COLLECTION_ROUTE_PATH = '/collection-friche'
+app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
+    const edit_capability = req.query.secret;
 
-app.get(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
-    console.log('GET', FRICHE_COLLECTION_ROUTE_PATH, req.query)
-
-    database.getFricheCollection(req.query.secret)
-    .then(({friches, edit_cap}) => {
+    database.getResourceCollection(edit_capability)
+    .then((ressourceCollection) => {
         res.status(200).send({
-            friches,
-            fricheCollectionEditCap: makeReturningCapabilityURL(req, FRICHE_COLLECTION_ROUTE_PATH, edit_cap)
-        })
+            edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, ressourceCollection.edit_capability),
+            ressources_ids: ressourceCollection.ressources_ids
+        });
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.post(FRICHE_COLLECTION_ROUTE_PATH, (req, res) => {
-    console.log('POST', FRICHE_COLLECTION_ROUTE_PATH, req.query)
+app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
+    const edit_capability = req.query.secret;
+    const {add, delete: _delete} = req.body
 
-    const {secret: collection_edit_cap} = req.query;
-    const {body: friche} = req;
-
-    // TODO There is no data validation for now
-    // will probably come later in the form of schema validation at the database level
-
-    database.addFricheToCollection({
-        collection_edit_cap,
-        friche
-    })
-    .then(({_id}) => {
-        res.status(201).send({
-            friche: makeReturningCapabilityURL(req, FRICHE_ROUTE_PATH, _id)
-        })
+    Promise.all([
+        add ? database.addResourceToCollection(add, edit_capability) : Promise.resolve(),
+        _delete ? database.removeResourceFromCollection(_delete, edit_capability) : Promise.resolve(),
+    ])
+    .then(() => {
+        res.status(204).end();
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
-
-const FRICHE_ROUTE_PATH = '/friche'
-
-app.get(FRICHE_ROUTE_PATH, (req, res) => {
-    res.status(404).send(`TODO
-        get Friche secret
-        get corresponding Friche
-        if found, send all data for this friche
-        if not, 404
-    `)
-    
-})
-
 
 const server = app.listen(port, () => {
+    // @ts-ignore
     const {port} = server.address()
     console.log(`App listening on port ${port}!`)
 

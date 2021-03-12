@@ -30,7 +30,7 @@ const plugins = cssFileName => [
 
 	// Watch the `_site` directory and refresh the
 	// browser on changes when not in production
-	!production && livereload('_site'),
+	// !production && livereload('_site'),
 
 	// If we're building for production (npm run build
 	// instead of npm run dev), minify
@@ -44,29 +44,6 @@ const watch = {
 
 export default [
 	{
-		input: 'scripts/assistant.js',
-		output: {
-			sourcemap: true,
-			format: 'iife',
-			name: 'app',
-			file: 'build/assistant.rollup.js'
-		},
-		plugins: plugins('build/assistant.rollup.css'),
-		watch
-	},
-	// legacy projects; may be removed eventually
-	/*{
-		input: 'scripts/description-friche.js',
-		output: {
-			sourcemap: true,
-			format: 'iife',
-			name: 'app',
-			file: 'build/description-friche.rollup.js'
-		},
-		plugins: plugins('build/description-friche.rollup.css'),
-		watch
-	},
-	{
 		input: 'scripts/spa-main.js',
 		output: {
 			sourcemap: true,
@@ -76,5 +53,5 @@ export default [
 		},
 		plugins: plugins('build/spa.rollup.css'),
 		watch
-	}*/
+	}
 ]

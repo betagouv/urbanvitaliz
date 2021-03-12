@@ -2,6 +2,9 @@
     import ResourceOverview from './ResourceOverview.svelte';
 
     export let relevantResources;
+    export let makeBookmarkResource;
+    export let makeUnbookmarkResource;
+    export let bookmarkedResourceIdSet;
 </script>
 
 <section>
@@ -13,7 +16,11 @@
         <ul>
             {#each relevantResources as resource}
             <li>
-                <ResourceOverview resource={resource}/>
+                <ResourceOverview 
+                    resource={resource}
+                    bookmarkResource={makeBookmarkResource && !bookmarkedResourceIdSet.has(resource.id) && makeBookmarkResource(resource.id)}
+                    unbookmarkResource={makeUnbookmarkResource && bookmarkedResourceIdSet.has(resource.id) && makeUnbookmarkResource(resource.id)}
+                />
             </li>
             {/each}
         </ul>
@@ -38,9 +45,6 @@
         vertical-align: top;
         width: 15rem;
 
-        border: 1px solid grey;
-        border-radius: 0.5rem;
         margin: 0.5rem;
-        padding: 1rem;
     }
 </style>
