@@ -117,8 +117,8 @@ store.subscribe(render)
 function initializeStateWithResources(){
     return getAllResources()
     .then(resources => {
-        const étapesOptions = new Set(resources.map(r => r.etape))
-        const thématiquesOptions = new Set( resources.map(r => r.thematique).flat() )
+        const étapesOptions = new Set(resources.map(r => r.etape).sort())
+        const thématiquesOptions = new Set( resources.map(r => r.thematique).flat().sort() )
 
         store.mutations.setÉtapes([...étapesOptions]);
         store.mutations.setThématiques([...thématiquesOptions]);

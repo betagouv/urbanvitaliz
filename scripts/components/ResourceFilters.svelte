@@ -17,7 +17,7 @@
             <fieldset class="rf-fieldset">
                 <legend class="rf-fieldset__legend">Étape</legend>
                 <div class="rf-fieldset__content">
-                {#each étapes.sort() as étape}
+                {#each étapes as étape}
                     <div class="NOT-rf-checkbox-group">
                         <label>
                             <input 
