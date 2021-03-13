@@ -13,3 +13,7 @@ optional_front_matter:
 
 sass:
     sass_dir: assets/css
+
+collections:
+  ressources:
+    output: true

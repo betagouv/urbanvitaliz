@@ -1,0 +1,23 @@
+---
+---
+
+[
+{% assign unwantedKeys = "collection,excerpt,previous,next,output" | split: "," %}
+{% assign isFirstRessource = true %}
+{% for ressource in site.ressources %}
+    {% unless isFirstRessource %},{% endunless %}
+    {% assign isFirstRessource = false %}
+    {
+        {% assign isFirstKey = true %}
+        {% for key in ressource %}
+            {% if unwantedKeys contains key %}{% continue %}{% endif %}
+            {% unless isFirstKey %},{% endunless %}
+            {% assign isFirstKey = false %}
+        
+            {{ key | jsonify }}: {{ ressource[key] | jsonify }}
+        
+        {% endfor %}
+    }
+{% endfor %}
+]
+
