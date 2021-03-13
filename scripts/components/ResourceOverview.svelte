@@ -32,6 +32,13 @@
         right: 0;
         border: none;
         background-color: transparent;
+
+        width: 2rem;
+        height: 2rem;
+        padding: 0em;
+        font-size: 1.2em;
+
+        cursor: pointer;
     }
 
     article > a{
