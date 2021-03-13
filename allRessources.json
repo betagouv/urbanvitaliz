@@ -14,7 +14,12 @@
             {% unless isFirstKey %},{% endunless %}
             {% assign isFirstKey = false %}
         
-            {{ key | jsonify }}: {{ ressource[key] | jsonify }}
+            {% if key == "url" %}
+                {{ key | jsonify }}: {{ ressource[key] | relative_url | jsonify }}             
+            {% else %}
+                {{ key | jsonify }}: {{ ressource[key] | jsonify }}
+            {% endif %}
+
         
         {% endfor %}
     }
