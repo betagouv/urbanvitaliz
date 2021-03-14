@@ -13,7 +13,7 @@
         Idéalement, ces textes décrivent le blocage vous rencontrez actuellement, et ce n'est pas grave si ce n'est pas le cas
     </p>
 
-    <textarea bind:value={text}></textarea>
+    <textarea class="rf-input" bind:value={text}></textarea>
 </section>
 
 <section>
