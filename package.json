@@ -39,6 +39,8 @@
     "crypto-random-string": "^3.3.0",
     "d3-fetch": "^2.0.0",
     "express": "^4.17.1",
+    "lunr": "^2.3.9",
+    "lunr-languages": "^1.4.0",
     "migrate-mongo": "^8.1.2",
     "mongodb": "^3.6.2",
     "page": "^1.11.6"

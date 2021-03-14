@@ -12,6 +12,14 @@ import TextSearch from './components/TextSearch.svelte'
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import getAllResources from './getAllResources.js';
 
+import lunr from "lunr"
+import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
+import lunrfr from 'lunr-languages/lunr.fr'
+
+stemmerSupport(lunr)
+lunrfr(lunr)
+
+
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
     'https://app-20420772-6ed7-40ca-978c-f360edf8941c.cleverapps.io' :
@@ -264,8 +272,6 @@ page(LISTE_RESSOURCES_ROUTE, context => {
 });
 
 page('/recherche-textuelle', context => {
-    
-    console.log('typeof lunr', typeof lunr)
 
     function mapStateToProps(state){
         // @ts-ignore
