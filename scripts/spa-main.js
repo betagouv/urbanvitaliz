@@ -7,9 +7,18 @@ import Store from 'baredux'
 import Assistant from './components/Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
+import TextSearch from './components/TextSearch.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import getAllResources from './getAllResources.js';
+
+import lunr from "lunr"
+import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
+import lunrfr from 'lunr-languages/lunr.fr'
+
+stemmerSupport(lunr)
+lunrfr(lunr)
+
 
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
@@ -258,6 +267,43 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     .then((ressourceCollection) => {
         store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
+
+    initializeStateWithResources();
+});
+
+page('/recherche-textuelle', context => {
+
+    function mapStateToProps(state){
+        // @ts-ignore
+        const index = lunr(function () {
+            this.field('content')
+            this.field('phrase_catch')
+            this.field('etape')
+            this.field('thematique')
+            this.ref('id')
+          
+            for(const ressource of store.state.allResources){
+                this.add(ressource)
+            }
+        })
+
+        return {
+            findRelevantRessources(text){
+                const lunrResults = index.search(text.replace(new RegExp(':', 'g'), ''))
+
+                console.log('lunrResults', lunrResults)
+
+                return lunrResults.map(r => store.state.allResources.find(ressource => ressource.id === r.ref))
+            }
+        }
+    }
+
+    const textSearch = new TextSearch({
+        target: svelteTarget,
+        props: mapStateToProps(store.state)
+    });
+
+    replaceComponent(textSearch, mapStateToProps)
 
     initializeStateWithResources();
 });
