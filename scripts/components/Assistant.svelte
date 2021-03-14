@@ -34,7 +34,4 @@
 />
 
 <style>
-    h1{
-        margin-bottom: 2.5rem;
-    }
 </style>

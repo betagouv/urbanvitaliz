@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}" data-rf-reset>
 
 {%- include head.html -%}
 
@@ -10,7 +10,7 @@
     main{
         width: 100%;
         /* comparing with home layout, maybe this padding is a bad idea because of the banner. To be revisited */
-        padding: 0 calc( max(5px, ( 100vw - 60rem ) / 2 ));
+        padding: 1rem calc( max(5px, ( 100vw - 60rem ) / 2 ));
 
         display: flex;
         flex-direction: column;

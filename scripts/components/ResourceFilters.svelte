@@ -13,32 +13,48 @@
 
 <section class="filters">
     <section class="étapes">
-        <h2>Étape</h2>
-        {#each étapes.sort() as étape}
-            <label>
-                <input 
-                    type="checkbox" 
-                    name="Étape"
-                    checked={filters.étapes.has(étape)}
-                    on:change={e => étapeFilterChange(étape)}
-                />
-                {étape}
-            </label>
-        {/each}
+        <div class="rf-form-group">
+            <fieldset class="rf-fieldset">
+                <legend class="rf-fieldset__legend">Étape</legend>
+                <div class="rf-fieldset__content">
+                {#each étapes as étape}
+                    <div class="NOT-rf-checkbox-group">
+                        <label>
+                            <input 
+                                type="checkbox" 
+                                name="Étape"
+                                checked={filters.étapes.has(étape)}
+                                on:change={e => étapeFilterChange(étape)}
+                            />
+                            {étape}
+                        </label>
+                    </div>
+                {/each}
+                </div>
+            </fieldset>
+        </div>
     </section>
     <section>
-        <h2>Thématique</h2>
-        {#each thématiques as thematique}
-            <label>
-                <input 
-                    type="checkbox" 
-                    name="Thématique" 
-                    checked={filters.thématiques.has(thematique)}
-                    on:change={e => thématiqueFilterChange(thematique)}
-                />
-                {thematique}
-            </label>
-        {/each}
+        <div class="rf-form-group">
+            <fieldset class="rf-fieldset rf-fieldset--inline">
+                <legend class="rf-fieldset__legend">Thématique</legend>
+                <div class="rf-fieldset__content">
+                {#each thématiques as thematique}
+
+                <div class="NOT-rf-checkbox-group">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="Thématique" 
+                            checked={filters.thématiques.has(thematique)}
+                            on:change={e => thématiqueFilterChange(thematique)}
+                        />
+                        {thematique}
+                    </label>
+                </div>
+                {/each}
+            </fieldset>
+        </div>
     </section>
 </section>
 
@@ -49,11 +65,6 @@
 
     section.filters > section{
         margin-bottom: 1.75rem;
-    }
-
-    h2{
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
     }
 
     label{

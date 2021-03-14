@@ -6,7 +6,7 @@
 </script>
 
 <article>
-    <a href={resource.url} target="_blank"><h1>{resource.phrase_catch}</h1></a>
+    <a href={resource.url}><h1>{resource.phrase_catch}</h1></a>
     {#if typeof unbookmarkResource === 'function'}
         <button on:click={unbookmarkResource}>🌟</button>
     {/if}
@@ -32,6 +32,13 @@
         right: 0;
         border: none;
         background-color: transparent;
+
+        width: 2rem;
+        height: 2rem;
+        padding: 0em;
+        font-size: 1.2em;
+
+        cursor: pointer;
     }
 
     article > a{
@@ -51,8 +58,9 @@
 
     h1{
         font-size: 1rem;
+        line-height: 1rem;
         color: #073763; 
-        font-weight: bold;   
+        font-weight: bold;  
     }
 
     h1::after{
@@ -60,7 +68,8 @@
         display: block;
         width: 30%;
         height: 3px;
-        background-color: #073763;
+        background-color: #073763; 
+        margin-top: 4px;
     }
 
 </style>
