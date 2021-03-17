@@ -7,6 +7,7 @@ etape : "3 - comment envisager le devenir du site ?"
 thematique :
     - "Portage foncier"
     - "Conseil & ingénerie"
+keywords : EPF, Etablissement Public Foncier, foncier, acheter, acquérir, acquisition
 ---
   
 💡 **Saviez-vous que** :  
