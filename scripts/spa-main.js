@@ -8,6 +8,7 @@ import Assistant from './components/Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 import TextSearch from './components/TextSearch.svelte'
+import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import getAllResources from './getAllResources.js';
@@ -309,5 +310,21 @@ page('/recherche-textuelle', context => {
 
     initializeStateWithResources();
 });
+
+page('/envoi-recommandation', context => {
+    function mapStateToProps(){}
+    const sendRecommandation = new SendRecommandation({
+        target: svelteTarget,
+    });
+
+    json(`${SERVER_ORIGIN}/person-emails`)
+    .then((emails) => {
+        console.log("emails :", emails)
+    });
+    
+    replaceComponent(sendRecommandation, mapStateToProps)
+
+    initializeStateWithResources();
+})
 
 page.start()
