@@ -6,6 +6,7 @@ sous_titre: "Conditions fréquentes, conseils et contacts"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique : 
     - "Portage foncier"
+    - "Acquérir un foncier"
 keywords : SNCF, ferroviaire, gare, rails, trains, SNCF immobilier,
 ---
 
