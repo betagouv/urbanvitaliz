@@ -6,6 +6,7 @@ sous_titre: "Conditions fréquentes, conseils et contacts"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique : 
     - "Portage foncier"
+keywords : SNCF, ferroviaire, gare, rails, trains, SNCF immobilier,
 ---
 
 ## Est-ce que je peux acheter un terrain qui appartient à la SNCF et qui semble peu ou pas utilisé ?
