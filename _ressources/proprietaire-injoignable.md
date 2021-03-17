@@ -5,6 +5,7 @@ phrase_catch : "Joindre un propriétaire de foncier qui ne répond pas"
 sous_titre: "Le propriétaire du site paie ses impôts mais est injoignable, que faire ?"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
 thematique : "Acquérir un foncier"
+keywords : propriétaire, injoignable, contact, contacter, répond pas, pas de réponse
 ---
 
 ## 💡 Le propriétaire paie ses impôts mais ne répond pas aux sollicitations... que faire ?
@@ -19,6 +20,6 @@ Vous pouvez tenter les éléments suivants, par ordre de priorité :
   
 ## ❓ Ressources associées :
 
-[Fiche informative Les emplacements réservés, version courte](http://outil2amenagement.cerema.fr/les-emplacements-reserves-er-r344.html)
-[Fiche informative Les emplacements réservés, version longue](http://outil2amenagement.cerema.fr/IMG/pdf/fiche_emplacements_reserves_v1_cle74ea8f.pdf)
+✔ [Fiche informative Les emplacements réservés, version courte](http://outil2amenagement.cerema.fr/les-emplacements-reserves-er-r344.html)
+✔ [Fiche informative Les emplacements réservés, version longue](http://outil2amenagement.cerema.fr/IMG/pdf/fiche_emplacements_reserves_v1_cle74ea8f.pdf)
 Si vous n'avez pas déjà accès aux Fichiers Fonciers non anonymisés pour votre territoire, rapprochez-vous de l'équipe UrbanVitaliz : friches@beta.gouv.fr
