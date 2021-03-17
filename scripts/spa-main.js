@@ -279,17 +279,19 @@ page('/recherche-textuelle', context => {
             this.field('content')
             this.field('phrase_catch')
             this.field('etape')
-            this.field('thematique')
+            this.field('thematique', {boost: 2})
+            this.field('keywords', {boost: 5})
             this.ref('id')
           
             for(const ressource of store.state.allResources){
                 this.add(ressource)
+                console.log("ressouces", ressource)
             }
         })
 
         return {
             findRelevantRessources(text){
-                const lunrResults = index.search(text.replace(new RegExp(':', 'g'), ''))
+                const lunrResults = index.search(text.replaceAll(':', ''))
 
                 console.log('lunrResults', lunrResults)
 
