@@ -5,7 +5,7 @@ phrase_catch : "Accélérer la phase de conception du projet pour démarrer les 
 sous_titre: "Besoin de coller à une échéance particulière ? Pensez au marché MGP pour regrouper la conception et la réalisation"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Conseil & ingénerie"
-keywords : Marchés Globaux de Performance, maintenance, rénovation thermique, rénovation énergétique, accélérer, conception-réalisation, regroupement
+keywords : Marchés Globaux de Performance, maintenance, rénovation thermique, rénovation énergétique, accélérer, conception-réalisation, regroupement, mgp, marché public, appel d'offres
 ---
 
 💡 **Savez-vous que les communes peuvent regrouper la conception du projet et la réalisation des travaux dans un unique marché, avec les Marchés Globaux de Performance ?**
