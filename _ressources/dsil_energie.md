@@ -4,7 +4,7 @@ layout: ressources2
 phrase_catch : "Financer les travaux pour les projets d'équipement de la commune avec la DSIL"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Aide et subvention"
-keywords : dotation, équipements, équipements publics, rénovation thermique, rénovation énergiétique, mise aux normes, logement, mobilité, transports, numérique, école, scolaire, hébergements, contrat de ruralité,
+keywords : dotation, équipements, équipements publics, rénovation thermique, rénovation énergétique, mise aux normes, logement, mobilité, transports, numérique, école, scolaire, hébergements, contrat de ruralité,
 ---
 
 💡 **Savez-vous que les communes peuvent demander la Dotation de Soutien à l'Investissement Local pour leurs projets d'équipement ?**
