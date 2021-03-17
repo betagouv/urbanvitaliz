@@ -76,6 +76,15 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
+app.get('/person-emails', (req, res) =>{
+    database.getAllPersonEmails()
+    .then((emails) => {
+        console.log("emails :", emails)
+        res.status(200).send(emails);
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
 const server = app.listen(port, () => {
     // @ts-ignore
     const {port} = server.address()
