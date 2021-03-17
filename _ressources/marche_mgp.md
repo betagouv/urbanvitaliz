@@ -5,6 +5,7 @@ phrase_catch : "Accélérer la phase de conception du projet pour démarrer les 
 sous_titre: "Besoin de coller à une échéance particulière ? Pensez au marché MGP pour regrouper la conception et la réalisation"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Conseil & ingénerie"
+keywords : Marchés Globaux de Performance, maintenance, rénovation thermique, rénovation énergétique, accélérer, conception-réalisation, regroupement
 ---
 
 💡 **Savez-vous que les communes peuvent regrouper la conception du projet et la réalisation des travaux dans un unique marché, avec les Marchés Globaux de Performance ?**
@@ -19,7 +20,7 @@ thematique : "Conseil & ingénerie"
   Il convient de s'entourer d'un assistant à maîtrise d'ouvrage pour la réalisation du marché avec les conditions adéquates, et l'accompagnement lors du dialogue compétitif (phase de conception du projet avec chaque candidat).
   
   ❓ *Quelques infos complémentaires*
-  * Il existe également la possibilité pour la commune de passer un marché de conception réalisation, mais ce type de marché est soumis à une condition très contraingnante et peu robuste juridiquement : il faut pouvoir démontrer la difficulté technique ou organisationnelle nécessitant le regroupement de la conception et de la réalisation. En général, il est utilisé pour concevoir des bâtiments "techniques" tels que des piscines, des incinérateurs etc.
+  * Il existe également la possibilité pour la commune de passer un marché de conception réalisation, mais ce type de marché est soumis à une condition très contraignante et peu robuste juridiquement : il faut pouvoir démontrer la difficulté technique ou organisationnelle nécessitant le regroupement de la conception et de la réalisation. En général, il est utilisé pour concevoir des bâtiments "techniques" tels que des piscines, des incinérateurs etc.
   * Regrouper conception et réalisation en un seul marché a pour conséquence de recevoir des candidatures de grosses entreprises, au détriment de l'emploi local.
   
   ❓ *Ressources associées :*
