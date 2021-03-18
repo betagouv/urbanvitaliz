@@ -25,6 +25,7 @@
             {/each}
         </ul>
     {/if}
+    <a href="./liste-ressources">Revenir à la liste de ressource bookmarker</a>
 </section>
 
 <style>
