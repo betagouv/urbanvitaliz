@@ -36,7 +36,7 @@
     bookmarkedResourceIdSet={bookmarkedResourceIdSet}
 />
 {#if urlSecret}
-    <!-- <a href="">Revenir à la liste de ressource bookmarker</a> -->
+    <a href="{urlSecret}">Revenir à la liste de ressource bookmarker</a>
 {/if}
 <style>
 </style>
