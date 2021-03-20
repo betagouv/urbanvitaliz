@@ -16,8 +16,6 @@
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     export let urlSecret;
-    
-    $: console.log("urlSecret: ",urlSecret)
 </script>
 
 <h1>Trouver des réponses pour réhabiliter mon site</h1> 

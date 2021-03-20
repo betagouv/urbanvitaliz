@@ -155,13 +155,12 @@ page('/login-by-email', () => {
         // @ts-ignore
         .then(({person, ressourceCollection}) => {
             console.log('login succesful', person, ressourceCollection)
-            const test = makeBookmarkListURLFromRessourceCollection(ressourceCollection);
             
             store.mutations.setCurrentPerson(person);
             store.mutations.setCurrentRessourceCollection(ressourceCollection);
             
             if (ressourceCollection.ressources_ids.length >= 1) {
-                page(test);
+                page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
             }
             else {
                 page('/brouillon-produit');
@@ -180,7 +179,6 @@ page('/login-by-email', () => {
  */
 function makeBookmarkListURLFromRessourceCollection(ressourceCollection) {
     const { edit_capability } = ressourceCollection;
-    console.log("edit_capability", edit_capability)
     const editCapURL = new URL(edit_capability);
     return `${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
 }
