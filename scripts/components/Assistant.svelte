@@ -15,6 +15,7 @@
 
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
+    export let urlSecret;
 </script>
 
 <h1>Trouver des réponses pour réhabiliter mon site</h1> 
@@ -32,6 +33,8 @@
     makeUnbookmarkResource={makeUnbookmarkResource}
     bookmarkedResourceIdSet={bookmarkedResourceIdSet}
 />
-
+{#if urlSecret}
+    <a href="{urlSecret}">Revenir à la liste de ressource bookmarker</a>
+{/if}
 <style>
 </style>
