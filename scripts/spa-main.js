@@ -258,6 +258,11 @@ page(LISTE_RESSOURCES_ROUTE, context => {
             makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
+            recommendations: state.allResources && state.currentRessourceCollection && state.currentRessourceCollection.recommendations?
+                state.currentRessourceCollection.recommendations.map(
+                    ({ressourceId, message}) => ({resource: state.allResources.find(r => r.id === ressourceId), message})
+                ) : 
+                undefined
         }
     }
 
