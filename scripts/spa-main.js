@@ -324,7 +324,7 @@ page('/envoi-recommandation', context => {
             ressources: state.allResources,
             sendRecommandation(person, ressource, message){
                 console.log('sendRecommandation', person, ressource, message)
-                text(`${SERVER_ORIGIN}/recommend`, {
+                return text(`${SERVER_ORIGIN}/recommend`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
