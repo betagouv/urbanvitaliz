@@ -1,17 +1,11 @@
 <script>
-    export let persons = [
-        {emails: ['a@a.a']},
-        {emails: ['b@b.b']},
-        {emails: ['c@c.c']}
-    ];
+    export let persons = undefined;
 
-    let emails = persons.map( p => p.emails ).flat()
+    let emails;
 
-    export const ressources = [
-        {phrase_catch: 'yo'},
-        {phrase_catch: 'ahah'},
-        {phrase_catch: 'lol'},
-    ]
+    $: emails = persons.map( p => p.emails ).flat()
+
+    export let ressources = undefined;
 
     let chosenEmail = '';
     let chosenPerson = undefined;
@@ -19,17 +13,17 @@
 
     let chosenResourcePhraseCatch = '';
     let chosenResource = undefined;
-    $: chosenResource = ressources.find(r => r.phrase_catch === chosenResourcePhraseCatch)
+    $: chosenResource = ressources && ressources.find(r => r.phrase_catch === chosenResourcePhraseCatch)
 
     let message = '';
 
-    function sendRecommandation(e){
-        e.preventDefault()
-        console.log('Sending recommandation to', chosenPerson, 'ressource', chosenResource, 'with message', message)
-    }
+    export let sendRecommandation
 </script>
 
-<form on:submit={sendRecommandation}>
+<form on:submit={e => {
+    e.preventDefault()
+    sendRecommandation(chosenPerson, chosenResource, message)
+}}>
 
     <h1>Envoi de recommandation</h1>
 
@@ -62,7 +56,7 @@
         <textarea class="rf-input" bind:value={message}></textarea>
     </section>
 
-    <button type="submit">Envoyer</button>
+    <button class="rf-btn" type="submit">Envoyer</button>
 
 </form>
 
