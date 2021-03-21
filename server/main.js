@@ -76,11 +76,11 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
-app.get('/person-emails', (req, res) =>{
-    database.getAllPersonEmails()
-    .then((emails) => {
-        console.log("emails :", emails)
-        res.status(200).send(emails);
+app.get('/persons', (req, res) =>{
+    database.getAllPersons()
+    .then(persons => {
+        console.log("persons :", persons)
+        res.status(200).send(persons);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

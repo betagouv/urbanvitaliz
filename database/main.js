@@ -58,7 +58,7 @@ export async function getResourceCollection(edit_capability){
     return await ressource_collections.findOne({edit_capability});
 }
 
-export async function getAllPersonEmails(){
-    const [persons] = await Promise.all([PERSONS].map(email => database.collection(email)));
+export async function getAllPersons(){
+    const persons = await database.collection(PERSONS);
     return await persons.find().toArray();
 }

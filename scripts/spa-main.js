@@ -52,7 +52,9 @@ const store = new Store({
         relevantResources: [],
     
         currentPerson: undefined,
-        currentRessourceCollection: undefined
+        currentRessourceCollection: undefined,
+
+        allPersons: []
     }, 
     mutations: {
         setÉtapes(state, étapes){
@@ -72,6 +74,9 @@ const store = new Store({
         },
         setCurrentRessourceCollection(state, currentRessourceCollection){
             state.currentRessourceCollection = currentRessourceCollection
+        },
+        setAllPersons(state, allPersons){
+            state.allPersons = allPersons;
         },
         toggleÉtapeFilter(state, étape){
             if(state.filters.étapes.has(étape))
@@ -313,18 +318,30 @@ page('/recherche-textuelle', context => {
 
 page('/envoi-recommandation', context => {
     
-    function mapStateToProps(){
-        return {}
+    function mapStateToProps(state){
+        return {
+            persons: state.allPersons,
+            ressources: state.allResources,
+            sendRecommandation(person, ressource, message){
+                console.log('sendRecommandation', person, ressource, message)
+                text(`${SERVER_ORIGIN}/recommend`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({personId: person._id, ressourceId: ressource.id, message})
+                })
+            }
+        }
     }
 
     const sendRecommandation = new SendRecommandation({
         target: svelteTarget,
+        props: mapStateToProps(store.state)
     });
 
-    json(`${SERVER_ORIGIN}/person-emails`)
-    .then((emails) => {
-        console.log("emails :", emails)
-    });
+    json(`${SERVER_ORIGIN}/persons`)
+    .then(persons => { store.mutations.setAllPersons(persons) });
     
     replaceComponent(sendRecommandation, mapStateToProps)
 
