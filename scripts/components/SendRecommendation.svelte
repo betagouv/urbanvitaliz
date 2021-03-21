@@ -1,33 +1,70 @@
 <script>
+    export let persons = [
+        {emails: ['a@a.a']},
+        {emails: ['b@b.b']},
+        {emails: ['c@c.c']}
+    ];
 
+    let emails = persons.map( p => p.emails ).flat()
+
+    export const ressources = [
+        {phrase_catch: 'yo'},
+        {phrase_catch: 'ahah'},
+        {phrase_catch: 'lol'},
+    ]
+
+    let chosenEmail = '';
+    let chosenPerson = undefined;
+    $: chosenPerson = persons.find(p => p.emails.includes(chosenEmail))
+
+    let chosenResourcePhraseCatch = '';
+    let chosenResource = undefined;
+    $: chosenResource = ressources.find(r => r.phrase_catch === chosenResourcePhraseCatch)
+
+    let message = '';
+
+    function sendRecommandation(e){
+        e.preventDefault()
+        console.log('Sending recommandation to', chosenPerson, 'ressource', chosenResource, 'with message', message)
+    }
 </script>
 
-<section>
-    <h1>Envoi de recommendation:</h1>
-    
-    <label for="emailCollectivitee">choisir l'émail de la collectivitée:</label>
-    <input list="emails" id="emailCollectivitee" name="emailCollectivitee" />
-    <datalist id="emails">
-    
-    </datalist>
+<form on:submit={sendRecommandation}>
 
+    <h1>Envoi de recommandation</h1>
 
+    <section>
+        <h2>À quelle collectivité ?</h2>
+        
+        <input list="emails" bind:value={chosenEmail} />
 
-</section>
-    <h2>Pousser une recommandation pour les collectivitée </h2>
+        <datalist id="emails">
+            {#each emails as email}
+            <option value="{email}"></option>
+            {/each}
+        </datalist>
+    </section>
 
-    <label for="listeRessource">Liste des ressources:</label>
-    <input list="listeRessources" id="listeRessource" name="listeRessource" />
+    <section>
+        <h2>Recommander quelle ressource ?</h2>
 
-    <datalist id="listeRessource">
-    
-    </datalist>
+        <input list="listeRessources" bind:value={chosenResourcePhraseCatch} />
 
-<section>
-    <h2>Commentaire de l'équipe Urban Vitaliz:</h2>
-    <textarea class="rf-input"></textarea>
-</section>
+        <datalist id="listeRessources">
+            {#each ressources as ressource}
+            <option value="{ressource.phrase_catch}"></option>
+            {/each}
+        </datalist>
+    </section>
 
+    <section>
+        <h2>Commentaire de l'équipe Urban Vitaliz</h2>
+        <textarea class="rf-input" bind:value={message}></textarea>
+    </section>
+
+    <button type="submit">Envoyer</button>
+
+</form>
 
 <style>
 </style>

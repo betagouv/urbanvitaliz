@@ -322,7 +322,11 @@ page('/recherche-textuelle', context => {
 });
 
 page('/envoi-recommandation', context => {
-    function mapStateToProps(){}
+    
+    function mapStateToProps(){
+        return {}
+    }
+
     const sendRecommandation = new SendRecommandation({
         target: svelteTarget,
     });
