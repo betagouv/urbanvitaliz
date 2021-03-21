@@ -33,7 +33,7 @@
             <ResourceOverview 
                 resource={reco.resource}    
             />
-            <strong>Message de l'équipe UrbanVitaiz</strong>
+            <strong>Message de l'équipe UrbanVitaiz&nbsp;:</strong>
             <p>{reco.message}</p>
         </li>
         {/each}
@@ -64,7 +64,6 @@
         display: block;
         text-align: initial;
 
-        vertical-align: top;
         width: 15rem;
     }
 </style>
