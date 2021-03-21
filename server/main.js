@@ -85,6 +85,17 @@ app.get('/persons', (req, res) =>{
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
+app.post('/recommend', (req, res) =>{
+    const {personId, ressourceId, message} = req.body
+
+    database.addRecommendation({personId, ressourceId, message})
+    .then(persons => {
+        console.log("persons :", persons)
+        res.status(200).send(persons);
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
 const server = app.listen(port, () => {
     // @ts-ignore
     const {port} = server.address()
