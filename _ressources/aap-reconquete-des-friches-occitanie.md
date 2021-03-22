@@ -4,7 +4,7 @@ layout: ressources2
 phrase_catch : "Appel à projets Reconquête des friches en Occitanie"
 sous_titre: "Vous ne possédez pas le foncier mais le propriétaire est prêt à vendre, faire appel à un Etablissement Public Foncier pour porter l'achat"
 etape : "3 - Comment envisager le devenir du site ?"
-thematique : "Aide et subvention"
+thematique : "Financements, subventions et fiscalité"
 keywords : Occitanie, financement, AAP, appel à projets, conseil régional
 ---
 
