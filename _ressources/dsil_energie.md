@@ -3,11 +3,11 @@ layout: ressources2
 
 phrase_catch : "Financer les travaux pour les projets d'équipement de la commune avec la DSIL"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
-thematique : "Aide et subvention"
+thematique : "Financements, subventions et fiscalité"
 keywords : dotation, équipements, équipements publics, rénovation thermique, rénovation énergétique, mise aux normes, logement, mobilité, transports, numérique, école, scolaire, hébergements, contrat de ruralité,
 ---
 
-💡 **Savez-vous que les communes peuvent demander la Dotation de Soutien à l'Investissement Local pour leurs projets d'équipement ?**
+💡 **Les communes peuvent demander la Dotation de Soutien à l'Investissement Local pour leurs projets d'équipement**
   
   La DSIL est gérée par les Préfectures et a pour but de financer les grandes priorités d’investissement des communes ou de leurs groupements. Le plan de relance « France relance » abonde d’1 milliard d’euros de crédits supplémentaires sur 2021, ces crédits étant priorisés sur la rénovation énergétique et les travaux à retour financier rapide.
 
