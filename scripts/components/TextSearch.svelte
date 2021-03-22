@@ -1,5 +1,6 @@
 <script>
-    export let findRelevantRessources = undefined;
+    export let findRelevantRessources = () => {};
+    
 
     let text = '';
 

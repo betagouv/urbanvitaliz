@@ -28,7 +28,7 @@ const SERVER_ORIGIN = isProduction ?
 
 console.log('API server origin:', SERVER_ORIGIN)
 
-function findRelevantResources(allResources, filters){
+function findRelevantResources(allResources = [], filters){
     return allResources.filter(r => {
         return filters.étapes.has(r.etape) && 
             (Array.isArray(r.thematique) ? 
@@ -48,7 +48,7 @@ const store = new Store({
             étapes: new Set(),
             thématiques: new Set()
         },
-        allResources: [],
+        allResources: undefined,
         relevantResources: [],
     
         currentPerson: undefined,
@@ -296,28 +296,32 @@ page('/recherche-textuelle', context => {
 
     function mapStateToProps(state){
         // @ts-ignore
-        const index = lunr(function () {
-            this.field('content')
-            this.field('phrase_catch')
-            this.field('etape')
-            this.field('thematique', {boost: 2})
-            this.field('keywords', {boost: 5})
-            this.ref('id')
-          
-            for(const ressource of store.state.allResources){
-                this.add(ressource)
-                console.log("ressouces", ressource)
+        if(state.allResources){
+            const index = lunr(function () {
+                this.field('content')
+                this.field('phrase_catch')
+                this.field('etape')
+                this.field('thematique', {boost: 2})
+                this.field('keywords', {boost: 5})
+                this.ref('id')
+        
+                for(const ressource of state.allResources){
+                    this.add(ressource)
+                    console.log("ressouces", ressource)
+                }
+            })
+
+            return {
+                findRelevantRessources(text){
+                    const lunrResults = index.search(text.replaceAll(':', ''))
+
+                    console.log('lunrResults', lunrResults)
+
+                    return lunrResults.map(r => state.allResources.find(ressource => ressource.id === r.ref))
+                }
             }
-        })
-
-        return {
-            findRelevantRessources(text){
-                const lunrResults = index.search(text.replaceAll(':', ''))
-
-                console.log('lunrResults', lunrResults)
-
-                return lunrResults.map(r => store.state.allResources.find(ressource => ressource.id === r.ref))
-            }
+        } else {
+            return {};
         }
     }
 

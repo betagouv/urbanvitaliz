@@ -5,7 +5,7 @@
 
     $: emails = persons.map( p => p.emails ).flat()
 
-    export let ressources = undefined;
+    export let ressources = [];
 
     let chosenEmail = '';
     let chosenPerson = undefined;

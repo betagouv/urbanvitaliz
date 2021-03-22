@@ -31,7 +31,7 @@
         {#each recommendations as reco}
         <li>
             <ResourceOverview 
-                resource={reco.resource}    
+                resource={reco.resource}   
             />
             <strong>Message de l'équipe UrbanVitaiz&nbsp;:</strong>
             <p>{reco.message}</p>
