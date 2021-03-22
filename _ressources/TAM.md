@@ -3,8 +3,8 @@ layout: ressources2
 
 phrase_catch : "Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
-thematique : "Fiscalité et budget communal"
-keywords : équipement, équipements publics, taxe d'aménagement, voirie, réseaux
+thematique : "Financements, subventions et fiscalité"
+keywords : équipement, équipements publics, taxe d'aménagement, voirie, réseaux, fiscalité
 ---
 
 ## 💡 Savez-vous que les communes dotées d'un PLU peuvent délibérer pour instaurer des secteurs de Taxe d'Aménagement Majorée ?   
