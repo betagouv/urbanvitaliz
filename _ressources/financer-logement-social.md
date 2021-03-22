@@ -4,7 +4,8 @@ layout: ressources2
 phrase_catch : "Financer du logement social"
 sous_titre: "Tour d'horizon des financements disponibles"
 etape : "2 - quelles informations rassembler pour avancer ?"
-thematique : "Aide et subvention"
+thematique : "Financements, subventions et fiscalité"
+keywords : logement social, hlm, bailleur social, revenus modestes, hébergement, locatif social, OPH, SEM, APL
 ---
 
 💡 **La création de logements sociaux peut être financée par :**
