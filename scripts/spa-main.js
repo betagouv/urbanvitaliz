@@ -8,6 +8,7 @@ import Assistant from './components/Assistant.svelte';
 import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 import TextSearch from './components/TextSearch.svelte'
+import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import getAllResources from './getAllResources.js';
@@ -27,7 +28,7 @@ const SERVER_ORIGIN = isProduction ?
 
 console.log('API server origin:', SERVER_ORIGIN)
 
-function findRelevantResources(allResources, filters){
+function findRelevantResources(allResources = [], filters){
     return allResources.filter(r => {
         return filters.étapes.has(r.etape) && 
             (Array.isArray(r.thematique) ? 
@@ -47,11 +48,13 @@ const store = new Store({
             étapes: new Set(),
             thématiques: new Set()
         },
-        allResources: [],
+        allResources: undefined,
         relevantResources: [],
     
         currentPerson: undefined,
-        currentRessourceCollection: undefined
+        currentRessourceCollection: undefined,
+
+        allPersons: []
     }, 
     mutations: {
         setÉtapes(state, étapes){
@@ -71,6 +74,9 @@ const store = new Store({
         },
         setCurrentRessourceCollection(state, currentRessourceCollection){
             state.currentRessourceCollection = currentRessourceCollection
+        },
+        setAllPersons(state, allPersons){
+            state.allPersons = allPersons;
         },
         toggleÉtapeFilter(state, étape){
             if(state.filters.étapes.has(étape))
@@ -262,6 +268,11 @@ page(LISTE_RESSOURCES_ROUTE, context => {
             makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
+            recommendations: state.allResources && state.currentRessourceCollection && state.currentRessourceCollection.recommendations?
+                state.currentRessourceCollection.recommendations.map(
+                    ({ressourceId, message}) => ({resource: state.allResources.find(r => r.id === ressourceId), message})
+                ) : 
+                undefined
         }
     }
 
@@ -285,28 +296,32 @@ page('/recherche-textuelle', context => {
 
     function mapStateToProps(state){
         // @ts-ignore
-        const index = lunr(function () {
-            this.field('content')
-            this.field('phrase_catch')
-            this.field('etape')
-            this.field('thematique', {boost: 2})
-            this.field('keywords', {boost: 5})
-            this.ref('id')
-          
-            for(const ressource of store.state.allResources){
-                this.add(ressource)
-                console.log("ressouces", ressource)
+        if(state.allResources){
+            const index = lunr(function () {
+                this.field('content')
+                this.field('phrase_catch')
+                this.field('etape')
+                this.field('thematique', {boost: 2})
+                this.field('keywords', {boost: 5})
+                this.ref('id')
+        
+                for(const ressource of state.allResources){
+                    this.add(ressource)
+                    console.log("ressouces", ressource)
+                }
+            })
+
+            return {
+                findRelevantRessources(text){
+                    const lunrResults = index.search(text.replaceAll(':', ''))
+
+                    console.log('lunrResults', lunrResults)
+
+                    return lunrResults.map(r => state.allResources.find(ressource => ressource.id === r.ref))
+                }
             }
-        })
-
-        return {
-            findRelevantRessources(text){
-                const lunrResults = index.search(text.replaceAll(':', ''))
-
-                console.log('lunrResults', lunrResults)
-
-                return lunrResults.map(r => store.state.allResources.find(ressource => ressource.id === r.ref))
-            }
+        } else {
+            return {};
         }
     }
 
@@ -319,5 +334,37 @@ page('/recherche-textuelle', context => {
 
     initializeStateWithResources();
 });
+
+page('/envoi-recommandation', context => {
+    
+    function mapStateToProps(state){
+        return {
+            persons: state.allPersons,
+            ressources: state.allResources,
+            sendRecommandation(person, ressource, message){
+                console.log('sendRecommandation', person, ressource, message)
+                return text(`${SERVER_ORIGIN}/recommend`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({personId: person._id, ressourceId: ressource.id, message})
+                })
+            }
+        }
+    }
+
+    const sendRecommandation = new SendRecommandation({
+        target: svelteTarget,
+        props: mapStateToProps(store.state)
+    });
+
+    json(`${SERVER_ORIGIN}/persons`)
+    .then(persons => { store.mutations.setAllPersons(persons) });
+    
+    replaceComponent(sendRecommandation, mapStateToProps)
+
+    initializeStateWithResources();
+})
 
 page.start()

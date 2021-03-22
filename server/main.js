@@ -25,7 +25,15 @@ function makeReturningCapabilityURL(req, path, secret){
     return `${req.get('X-Forwarded-Proto') || req.protocol}://${req.get('Host')}${path}?secret=${secret}`
 }
 
-
+function makeClientSideRessourceCollection(databaseRessourceCollection, req){
+    const {edit_capability, ressources_ids, recommendations} = databaseRessourceCollection;
+    
+    return {
+        edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, edit_capability), 
+        ressources_ids,
+        recommendations
+    }
+}
 
 // ROUTES
 
@@ -37,13 +45,9 @@ app.post('/login-by-email', (req, res) => {
     .then((result) => {
         const newUser = result.newUser;
         const person = result.person;
-        const {edit_capability, ressources_ids} = result.ressourceCollection;
         res.status(newUser ? 201 : 200).send({
             person, 
-            ressourceCollection: {
-                edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, edit_capability), 
-                ressources_ids
-            }
+            ressourceCollection: makeClientSideRessourceCollection(result.ressourceCollection, req)
         })
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
@@ -54,10 +58,7 @@ app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
 
     database.getResourceCollection(edit_capability)
     .then((ressourceCollection) => {
-        res.status(200).send({
-            edit_capability: makeReturningCapabilityURL(req, LISTE_RESSOURCES_ROUTE, ressourceCollection.edit_capability),
-            ressources_ids: ressourceCollection.ressources_ids
-        });
+        res.status(200).send( makeClientSideRessourceCollection(ressourceCollection, req) );
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
@@ -72,6 +73,26 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
     ])
     .then(() => {
         res.status(204).end();
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
+app.get('/persons', (req, res) =>{
+    database.getAllPersons()
+    .then(persons => {
+        console.log("persons :", persons)
+        res.status(200).send(persons);
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
+app.post('/recommend', (req, res) =>{
+    const {personId, ressourceId, message} = req.body
+
+    database.addRecommendation({personId, ressourceId, message})
+    .then(persons => {
+        console.log("persons :", persons)
+        res.status(200).send(persons);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
