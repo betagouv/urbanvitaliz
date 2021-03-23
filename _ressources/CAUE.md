@@ -8,7 +8,9 @@ thematique : "Conseil & ingénerie"
 ### 💡 Le CAUE est présent dans chaque département, il appuie tous les publics sur les sujets d'architecture et d'urbanisme :
 
 Le CAUE est **un service public d’intérêt général qui aide tous les maîtres d'ouvrage et encourage la qualité de l'architecture, de l'urbanisme et des paysages.**
+
 Il a pour objectif de promouvoir la qualité de l’architecture, de l’urbanisme et de l’environnement dans le territoire départemental. L’architecture, les paysages et le patrimoine sont d’intérêt public.
+
 Le CAUE est créé à l'initiative des responsables locaux et présidé par un élu local. C’est un organe de concertation entre les acteurs impliqués dans la production et la gestion de l’espace rural et urbain. Tous les publics, notamment les collectivités, peuvent recourir à l’appui du CAUE de leur département.
 
  
@@ -21,7 +23,6 @@ Par exemple, parmi les interventions du CAUE 80, on trouve :
 - la convention d’accompagnement. La Maîtrise d’Ouvrage (par exemple la collectivité) souhaite recruter un professionnel, le CAUE peut aider à : éclaircir le cadre législatif applicable, définir les objectifs du projet et les orientations du programme, identifier les documents-cadres, recruter et sélectionner un AMO (assistant à maîtrise d’ouvrage)...
 
 Le CAUE ne peux pas se substituer à un bureau d'étude ou un AMO, ni réaliser de diagnostics techniques.
-
 
 ### 📞 Contacts :
 Pour des renseignements généraux :  01 43 22 07 82 / https://www.fncaue.com/
