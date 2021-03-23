@@ -292,6 +292,25 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     initializeStateWithResources();
 });
 
+// This processing is a workaround to a limitation of lunr-languages
+// https://github.com/MihaiValentin/lunr-languages/issues/71
+function makeIndexableRessource(ressource){
+    const {content, phrase_catch, etape, thematique, keywords, id} = ressource;
+
+    return {
+        content: removeAccents(content), 
+        phrase_catch: removeAccents(phrase_catch), 
+        etape: removeAccents(etape), 
+        thematique: removeAccents( Array.isArray(thematique) ? thematique.join(', ') : thematique ), 
+        keywords: removeAccents(keywords), 
+        id
+    }
+}
+
+function removeAccents(str){
+    return typeof str === 'string' ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "") : undefined;
+}
+
 page('/recherche-textuelle', context => {
 
     function mapStateToProps(state){
@@ -306,14 +325,13 @@ page('/recherche-textuelle', context => {
                 this.ref('id')
         
                 for(const ressource of state.allResources){
-                    this.add(ressource)
-                    console.log("ressouces", ressource)
+                    this.add( makeIndexableRessource(ressource) )
                 }
             })
 
             return {
                 findRelevantRessources(text){
-                    const lunrResults = index.search(text.replaceAll(':', ''))
+                    const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
 
                     console.log('lunrResults', lunrResults)
 
