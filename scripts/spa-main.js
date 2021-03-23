@@ -186,7 +186,7 @@ page('/login-by-email', () => {
 function makeBookmarkListURLFromRessourceCollection(ressourceCollection) {
     const { edit_capability } = ressourceCollection;
     const editCapURL = new URL(edit_capability);
-    return `${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
+    return `${page.base()}${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
 }
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
