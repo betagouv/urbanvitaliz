@@ -8,8 +8,8 @@ etape :
 - "2 - Quelles informations rassembler pour avancer ?"
 - "3 - Comment envisager le devenir du site ?"
 thematique :
-    - "Portage foncier"
     - "Conseil & ingénerie"
+    - "Acquérir un foncier"
 keywords : agricole, agriculture, agriculteur, agricultrice, ferme, paysan, paysanne, maraîcher, maraîchage, paysage, paysager, sylvicuture, sylvicole, viticulture, viticole, vigne
 ---
   
