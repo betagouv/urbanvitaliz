@@ -3,7 +3,7 @@ layout: ressources2
 
 phrase_catch : "Subvention pour aménager les espaces publics et valoriser les communes de moins de 3000 habitants"
 sous_titre: "Vous souhaitez être aider pour établir une stratégie de redynamisation de votre centre-bourg ?"
-etape : "4 - Comment envisager le devenir du site ? ?"
+etape : "3 - Comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"
 keywords : revitalisation, centre-ville, centre-bourg, redynamisation, revitaliser, redynamiser, 
 ---
