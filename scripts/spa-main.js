@@ -30,10 +30,8 @@ console.log('API server origin:', SERVER_ORIGIN)
 
 function findRelevantResources(allResources = [], filters){
     return allResources.filter(r => {
-        return filters.étapes.has(r.etape) && 
-            (Array.isArray(r.thematique) ? 
-                r.thematique.some(t => filters.thématiques.has(t)) :
-                filters.thématiques.has(r.thematique))
+        return r.etape.some(e => filters.étapes.has(e)) && 
+            r.thematique.some(t => filters.thématiques.has(t))
     })
 }
 
@@ -132,7 +130,7 @@ store.subscribe(render)
 function initializeStateWithResources(){
     return getAllResources()
     .then(resources => {
-        const étapesOptions = new Set(resources.map(r => r.etape).sort())
+        const étapesOptions = new Set(resources.map(r => r.etape).flat().sort())
         const thématiquesOptions = new Set( resources.map(r => r.thematique).flat().sort() )
 
         store.mutations.setÉtapes([...étapesOptions]);
