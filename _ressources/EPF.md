@@ -42,5 +42,5 @@ Il peut s'agir de prestations spécifiques ou d'axes prioritaires d'intervention
 **📞 Contacts et plus d'infos**
 
 ✔ [Plus d'infos ici sur le site du Ministère de la Cohésion des Territoires](https://www.cohesion-territoires.gouv.fr/les-etablissements-publics-fonciers-epf)
-✔ Retrouvez ici les **contacts directs** pour les EPF avec lesquels nous sommes déjà en relation
+✔ [Retrouvez ici les **contacts directs** pour les EPF avec lesquels nous sommes déjà en relation](epf-contacts.html)
 
