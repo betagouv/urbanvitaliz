@@ -3,10 +3,7 @@ layout: ressources2
 
 phrase_catch : "Enjeux agricoles ou écologiques - Etre accompagné.e par la SAFER"
 sous_titre: "En territoire rural, la SAFER peut intervenir de la veille foncière à la définition d'un projet, l'acquisition et l'animation du foncier..."
-etape : 
-- "1 - J’ai repéré un site à revitaliser, que dois-je faire ?"
-- "2 - Quelles informations rassembler pour avancer ?"
-- "3 - Comment envisager le devenir du site ?"
+etape : "1 - J’ai repéré un site à revitaliser, que dois-je faire ?"
 thematique :
     - "Conseil & ingénerie"
     - "Acquérir un foncier"
