@@ -8,17 +8,16 @@
 </script>
 
 <section>
-    <h1>Recherche textuelle</h1>
+    <h1>Recherche textuelle de ressources pertinentes</h1>
     <p>
-        Dans la boîte ci-dessous, vous pouvez copier-coller tout texte qui concerne votre friche. 
-        Idéalement, ces textes décrivent le blocage vous rencontrez actuellement, et ce n'est pas grave si ce n'est pas le cas
+        Décrivez en quelques phrases votre friche, votre projet et vos difficultés éventuelles :
     </p>
 
     <textarea class="rf-input" bind:value={text}></textarea>
 </section>
 
 <section>
-    <h2>Ressources sûrement pertinentes</h2>
+    <h2>Ressources proposées par rapport à ce que vous avez saisi :</h2>
     {#if Array.isArray(ressources) && ressources.length >= 1}
         <ul>
             {#each ressources as ressource}
