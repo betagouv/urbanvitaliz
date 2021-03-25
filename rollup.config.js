@@ -48,10 +48,19 @@ export default [
 		output: {
 			sourcemap: true,
 			format: 'iife',
-			name: 'app',
 			file: 'build/spa.rollup.js'
 		},
 		plugins: plugins('build/spa.rollup.css'),
+		watch
+	},
+	{
+		input: 'scripts/header-login.js',
+		output: {
+			sourcemap: true,
+			format: 'iife',
+			file: 'build/header-login.rollup.js'
+		},
+		plugins: plugins('build/header-login.rollup.css'),
 		watch
 	}
 ]

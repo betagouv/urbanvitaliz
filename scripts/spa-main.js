@@ -146,36 +146,34 @@ page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-page('/login-by-email', () => {
-    const loginByEmail = new LoginByEmail({
-        target: svelteTarget,
-        props: {}
-    });
+console.log("BONJOIR 🦄 ")
+const loginByEmail = new LoginByEmail({
+    target: document.querySelector("dialog#rf-modal-login .rf-modal__body"),
+    props: {}
+});
 
-    loginByEmail.$on('email', event => {
-        const email = event.detail;
+loginByEmail.$on('email', event => {
+    const email = event.detail;
+    
+    json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
+    // @ts-ignore
+    .then(({person, ressourceCollection}) => {
+        console.log('login succesful', person, ressourceCollection)
         
-        json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
-        // @ts-ignore
-        .then(({person, ressourceCollection}) => {
-            console.log('login succesful', person, ressourceCollection)
-            
-            store.mutations.setCurrentPerson(person);
-            store.mutations.setCurrentRessourceCollection(ressourceCollection);
-            
-            if (ressourceCollection.ressources_ids.length >= 1) {
-                page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
-            }
-            else {
-                page('/brouillon-produit');
-            }
+        store.mutations.setCurrentPerson(person);
+        store.mutations.setCurrentRessourceCollection(ressourceCollection);
         
-        })
-        .catch(res => console.error('error fetch email', res))
-    });
+        if (ressourceCollection.ressources_ids.length >= 1) {
+            page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
+        }
+        else {
+            page('/brouillon-produit');
+        }
+    
+    })
+    .catch(res => console.error('error fetch email', res))
+});
 
-    replaceComponent(loginByEmail, () => {})
-})
 
 /**
  * Cette fonction prend en argument un objet de type RessourceCollection
