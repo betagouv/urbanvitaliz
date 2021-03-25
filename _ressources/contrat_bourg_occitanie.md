@@ -10,15 +10,12 @@ keywords : financement, Occitanie, valorisation, développement, bourg, centre, 
 
 ## 💡 La région Occitanie peut financer ou cofinancer de nombreux projets des collectivités du territoire
 
-Cette politique se traduit par la mise à disposition de dispositifs qui pourront être mobilisés sur mesure en fonction des spécificités et du projet global de chaque Bourg Centre. Les candidatures seront examinées en fonction de leur pertinence et dans le respect des modalités fixées par la Région Occitanie.
+Cet appel à candidatures se traduit par la mise à disposition de dispositifs qui pourront être mobilisés sur mesure en fonction des spécificités et du projet global de chaque Bourg Centre. Les candidatures seront examinées en fonction de leur pertinence et dans le respect des modalités fixées par la Région Occitanie.
 
 ## 📞 Contact et liens utiles
 
-Nous n'avons pas connaissance de la liste exhaustive de ces dispositifs, voilà plusieurs pistes cependant pour y accéder :
+✔ Toutes les informations sont disponibles [ici sur le site du Conseil Régional Occitanie](https://www.laregion.fr/appelsacandidatures-bourgscentres-occitanie)
 
-✔ Vous pouvez vous rapprocher de vos interlocuteurs habituels au Conseil Régional si vous en avez déjà.
+Ou encore [ici sur le site d'Aides Territoires](https://aides-territoires.beta.gouv.fr/aides/4205-appel-a-candidatures-bourgs-centres-occitanie/)
 
-✔ Vous pouvez également contacter Etienne Florentin, Chargé de mission sur l'AAP Reconquête des friches qui vous réorientera en interne : etienne.florentin@laregion.fr | 05 61 33 56 49
-
-✔ Vous pouvez également retrouver une bonne partie des aides aux collectivités du Conseil Régional Occitanie [ici sur aides-territoires](https://aides-territoires.beta.gouv.fr/aides/?integration=&apply_before=&perimeter=70972&backers=91-region-occitanie&text=&order_by=relevance&action=search-filter).
-
+✔ Pour tout contact et demande de renseignement : bourgscentresoccitanie@laregion.fr
