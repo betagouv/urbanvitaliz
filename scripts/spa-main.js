@@ -5,7 +5,6 @@ import page from 'page'
 import Store from 'baredux'
 
 import Assistant from './components/Assistant.svelte';
-import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
@@ -18,6 +17,7 @@ import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFro
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
 import lunrfr from 'lunr-languages/lunr.fr'
+import prepareLoginHearder from './prepareLoginHearder';
 
 stemmerSupport(lunr)
 lunrfr(lunr)
@@ -139,33 +139,26 @@ function initializeStateWithResources(){
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
+//TODO = changer la logique pour une redirection sur la liste ressource
 
-const loginByEmail = new LoginByEmail({
-    target: document.querySelector("dialog#rf-modal-login .rf-modal__body"),
-    props: {}
-});
-
-loginByEmail.$on('email', event => {
-    const email = event.detail;
+const onLogin = ({person, ressourceCollection}) => {
+    console.log('login succesful', person, ressourceCollection)
     
-    json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
+    store.mutations.setCurrentPerson(person);
+    store.mutations.setCurrentRessourceCollection(ressourceCollection);
+    
+    if (ressourceCollection.ressources_ids.length >= 1) {
+        page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
+    }
+    else {
+        page('/brouillon-produit');
+    }
+    const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
     // @ts-ignore
-    .then(({person, ressourceCollection}) => {
-        console.log('login succesful', person, ressourceCollection)
-        
-        store.mutations.setCurrentPerson(person);
-        store.mutations.setCurrentRessourceCollection(ressourceCollection);
-        
-        if (ressourceCollection.ressources_ids.length >= 1) {
-            page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
-        }
-        else {
-            page('/brouillon-produit');
-        }
-    
-    })
-    .catch(res => console.error('error fetch email', res))
-});
+    closeButton.click();
+}
+
+prepareLoginHearder(onLogin);
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
