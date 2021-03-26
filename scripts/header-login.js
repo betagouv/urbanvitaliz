@@ -1,7 +1,7 @@
 import {json} from 'd3-fetch';
 
+import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 import LoginByEmail from './components/LoginByEmail.svelte';
-import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 
 const isProduction = location.hostname === 'betagouv.github.io'
 const SERVER_ORIGIN = isProduction ? 
@@ -16,11 +16,7 @@ const loginByEmail = new LoginByEmail({
     props: {}
 });
 
-function makeBookmarkListURLFromRessourceCollection(ressourceCollection) {
-    const { edit_capability } = ressourceCollection;
-    const editCapURL = new URL(edit_capability);
-    return `${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
-}
+
 
 loginByEmail.$on('email', event => {
     const email = event.detail;

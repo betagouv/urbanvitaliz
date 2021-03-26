@@ -12,6 +12,7 @@ import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import getAllResources from './getAllResources.js';
+import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
@@ -173,17 +174,6 @@ loginByEmail.$on('email', event => {
     })
     .catch(res => console.error('error fetch email', res))
 });
-
-
-/**
- * Cette fonction prend en argument un objet de type RessourceCollection
- * genre {edit_capability: string (url), ressource_ids: string[]}
- */
-function makeBookmarkListURLFromRessourceCollection(ressourceCollection) {
-    const { edit_capability } = ressourceCollection;
-    const editCapURL = new URL(edit_capability);
-    return `${page.base()}${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
-}
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
