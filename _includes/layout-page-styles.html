@@ -11,9 +11,9 @@ styles:
 {% endcomment %}
 
 {%- if layout.styles -%} {%- for style in layout.styles -%}
-<link crossorigin="anonymous" rel="stylesheet" href="{{ style.href }}">
+<link crossorigin="anonymous" rel="stylesheet" href="{{ style.href | relative_url }}">
 {%- endfor -%} {%- endif -%}
 
 {%- if page.styles -%} {%- for style in page.styles -%}
-<link crossorigin="anonymous" rel="stylesheet" href="{{ style.href }}">
+<link crossorigin="anonymous" rel="stylesheet" href="{{ style.href | relative_url }}">
 {%- endfor -%} {%- endif -%}

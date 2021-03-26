@@ -16,7 +16,7 @@ scripts:
 {% endcomment %}
 
 {%- if layout.scripts -%} {%- for script in layout.scripts -%}
-<script src="{{ script.src }}" 
+<script src="{{ script.src | relative_url }}" 
     {% if script.type %} type="{{ script.type }}" {% endif %}
     {% if script.defer %} defer {% endif %}
     {% if script.async %} async {% endif %}
@@ -24,7 +24,7 @@ scripts:
 {%- endfor -%} {%- endif -%}
 
 {%- if page.scripts -%} {%- for script in page.scripts -%}
-<script src="{{ script.src }}" 
+<script src="{{ script.src | relative_url }}" 
     {% if script.type %} type="{{ script.type }}" {% endif %}
     {% if script.defer %} defer {% endif %}
     {% if script.async %} async {% endif %}

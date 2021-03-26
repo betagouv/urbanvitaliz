@@ -5,7 +5,7 @@
 
     $: emails = persons.map( p => p.emails ).flat()
 
-    export let ressources = [];
+    export let ressources = undefined;
 
     let chosenEmail = '';
     let chosenPerson = undefined;
@@ -18,6 +18,7 @@
     let message = '';
 
     export let sendRecommandation
+    $: console.log(ressources);
 </script>
 
 <form on:submit={e => {
@@ -44,11 +45,13 @@
 
         <input list="listeRessources" bind:value={chosenResourcePhraseCatch} />
 
-        <datalist id="listeRessources">
-            {#each ressources as ressource}
-            <option value="{ressource.phrase_catch}"></option>
-            {/each}
-        </datalist>
+        {#if ressources}
+            <datalist id="listeRessources">
+                {#each ressources as ressource}
+                <option value="{ressource.phrase_catch}"></option>
+                {/each}
+            </datalist>
+        {/if}
     </section>
 
     <section>

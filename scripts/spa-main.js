@@ -5,28 +5,22 @@ import page from 'page'
 import Store from 'baredux'
 
 import Assistant from './components/Assistant.svelte';
-import LoginByEmail from './components/LoginByEmail.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
+import SERVER_ORIGIN from './serverOrigin';
 import getAllResources from './getAllResources.js';
+import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
 import lunrfr from 'lunr-languages/lunr.fr'
+import prepareLoginHearder from './prepareLoginHearder';
 
 stemmerSupport(lunr)
 lunrfr(lunr)
-
-
-const isProduction = location.hostname === 'betagouv.github.io'
-const SERVER_ORIGIN = isProduction ? 
-    'https://app-20420772-6ed7-40ca-978c-f360edf8941c.cleverapps.io' :
-    `http://localhost:4999`
-
-console.log('API server origin:', SERVER_ORIGIN)
 
 function findRelevantResources(allResources = [], filters){
     return allResources.filter(r => {
@@ -146,46 +140,16 @@ page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-page('/login-by-email', () => {
-    const loginByEmail = new LoginByEmail({
-        target: svelteTarget,
-        props: {}
-    });
+const onLogin = ({person, ressourceCollection}) => {
+    console.log('login succesful', person, ressourceCollection)
+    
+    store.mutations.setCurrentPerson(person);
+    store.mutations.setCurrentRessourceCollection(ressourceCollection);
 
-    loginByEmail.$on('email', event => {
-        const email = event.detail;
-        
-        json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
-        // @ts-ignore
-        .then(({person, ressourceCollection}) => {
-            console.log('login succesful', person, ressourceCollection)
-            
-            store.mutations.setCurrentPerson(person);
-            store.mutations.setCurrentRessourceCollection(ressourceCollection);
-            
-            if (ressourceCollection.ressources_ids.length >= 1) {
-                page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
-            }
-            else {
-                page('/brouillon-produit');
-            }
-        
-        })
-        .catch(res => console.error('error fetch email', res))
-    });
-
-    replaceComponent(loginByEmail, () => {})
-})
-
-/**
- * Cette fonction prend en argument un objet de type RessourceCollection
- * genre {edit_capability: string (url), ressource_ids: string[]}
- */
-function makeBookmarkListURLFromRessourceCollection(ressourceCollection) {
-    const { edit_capability } = ressourceCollection;
-    const editCapURL = new URL(edit_capability);
-    return `${page.base()}${LISTE_RESSOURCES_ROUTE}?secret=${editCapURL.searchParams.get('secret')}`
+    page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
 }
+
+prepareLoginHearder(onLogin);
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
@@ -284,6 +248,10 @@ page(LISTE_RESSOURCES_ROUTE, context => {
 
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
+        console.log("ok :", ressourceCollection.ressources_ids.length);
+         if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
+            page('/brouillon-produit');
+        }
         store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
 
