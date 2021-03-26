@@ -15,9 +15,11 @@ export default function(onLogin) {
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
         // @ts-ignore
         .then(({person, ressourceCollection}) => {
+            const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
+            // @ts-ignore
+            closeButton.click();
             onLogin({person, ressourceCollection});
         })
         .catch(res => console.error('error fetch email', res))
     });
-
 }

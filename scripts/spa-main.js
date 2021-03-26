@@ -139,23 +139,14 @@ function initializeStateWithResources(){
 page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
-//TODO = changer la logique pour une redirection sur la liste ressource
 
 const onLogin = ({person, ressourceCollection}) => {
     console.log('login succesful', person, ressourceCollection)
     
     store.mutations.setCurrentPerson(person);
     store.mutations.setCurrentRessourceCollection(ressourceCollection);
-    
-    if (ressourceCollection.ressources_ids.length >= 1) {
-        page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
-    }
-    else {
-        page('/brouillon-produit');
-    }
-    const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
-    // @ts-ignore
-    closeButton.click();
+
+    page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
 }
 
 prepareLoginHearder(onLogin);
@@ -257,6 +248,10 @@ page(LISTE_RESSOURCES_ROUTE, context => {
 
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
+        console.log("ok :", ressourceCollection.ressources_ids.length);
+         if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
+            page('/brouillon-produit');
+        }
         store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
 
