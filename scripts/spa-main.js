@@ -11,6 +11,7 @@ import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
+import SERVER_ORIGIN from './serverOrigin';
 import getAllResources from './getAllResources.js';
 import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 
@@ -20,14 +21,6 @@ import lunrfr from 'lunr-languages/lunr.fr'
 
 stemmerSupport(lunr)
 lunrfr(lunr)
-
-
-const isProduction = location.hostname === 'betagouv.github.io'
-const SERVER_ORIGIN = isProduction ? 
-    'https://app-20420772-6ed7-40ca-978c-f360edf8941c.cleverapps.io' :
-    `http://localhost:4999`
-
-console.log('API server origin:', SERVER_ORIGIN)
 
 function findRelevantResources(allResources = [], filters){
     return allResources.filter(r => {
@@ -147,7 +140,6 @@ page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
 
 console.log('page.base', page.base())
 
-console.log("BONJOIR 🦄 ")
 const loginByEmail = new LoginByEmail({
     target: document.querySelector("dialog#rf-modal-login .rf-modal__body"),
     props: {}
