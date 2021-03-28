@@ -74,6 +74,8 @@ main > section {
     font-size: x-large;
 }
 
+$process-break-point: 30rem;
+
 .process{
     display: flex;
     flex-direction: column;
@@ -82,8 +84,12 @@ main > section {
 
     ol{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     
+        @media (min-width: $process-break-point) {
+            flex-direction: row;
+        }
+
         list-style: none;
         margin: 0;
         padding: 0;
@@ -92,7 +98,10 @@ main > section {
         padding-bottom: 2rem;
 
         li{
-            width: 23%;
+            @media (min-width: $process-break-point) {
+                flex: 1;
+                padding: 0 5px;
+            }
 
             h1{
                 position: relative;
@@ -104,6 +113,15 @@ main > section {
             
                 background-color: #33475b;
                 color: white;
+
+                width: 90%;
+                transform: translateX(1rem);
+
+
+                @media (min-width: $process-break-point) {
+                    width: 95%;
+                    transform: translateX(0.5rem);;
+                }
 
                 &::before, &::after{
                     content: ' ';
