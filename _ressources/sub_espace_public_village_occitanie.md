@@ -1,7 +1,7 @@
 ---
 layout: ressources2
 
-phrase_catch : "Subvention pour aménager les espaces publics et valoriser les communes de moins de 3000 habitants"
+phrase_catch : "Accompagnement de la Region Occitanie pour la requalification de vos espaces publics"
 sous_titre: "Vous avez un projet de requalification d'espace public pour votre commune ? La region occitanie peut vous aider"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Financements, subventions et fiscalité"
