@@ -41,7 +41,8 @@
 </section> 
 {/if}
 
-<a href="./brouillon-produit">Chercher d'autres ressources</a>
+<a href="./brouillon-produit">Chercher d'autres ressources par filtres</a><br>
+<a href="./recherche-textuelle">Chercher d'autres ressources par recherche textuelle</a>
 
 <style>
     .bookmarks ul, .recommendations ul{
