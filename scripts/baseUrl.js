@@ -1,0 +1,1 @@
+export default location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '';

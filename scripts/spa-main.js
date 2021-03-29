@@ -12,6 +12,7 @@ import SendRecommandation from './components/SendRecommendation.svelte'
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import SERVER_ORIGIN from './serverOrigin';
 import getAllResources from './getAllResources.js';
+import baseUrl from './baseUrl.js';
 import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 
 import lunr from "lunr"
@@ -136,7 +137,7 @@ function initializeStateWithResources(){
 }
 
 
-page.base(location.origin.includes('betagouv.github.io') ? '/urbanvitaliz' : '')
+page.base(baseUrl)
 
 console.log('page.base', page.base())
 
