@@ -25,5 +25,5 @@ Ou encore [ici sur le site d'Aides Territoires](https://aides-territoires.beta.g
 ✔ *Pour les départements : 11-12-30-34-48-66*
 Renseignements : Nicole MARIN-KHOURY / 04 67 22 97 02
 
-*Pour les départements :9-31-32-46-65-81-82*
+✔ *Pour les départements :9-31-32-46-65-81-82*
 Renseignements : Christine MERMILLIOT / 05 61 33 50 20
