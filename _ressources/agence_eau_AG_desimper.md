@@ -27,7 +27,7 @@ L'agence de l'eau peut vous conseiller dans les études à faire réaliser aupr�
 * Pour les travaux de renaturation, la sélection des projets est priorisée selon l'impact pour la collectivité, la taille du site, les problématiques locales de gestion de l'eau.
 * Pour les travaux de renaturation, la collectivité doit être propriétaire du site. Il existe d'autres aides pour les industries et entreprises qui souhaitent désimperméabiliser leur site.
 
-**A propos des études**  
+🛠 **A propos des études**  
 Il est important de privilégier les études pour permettre une vision globale et réaliser les bons choix en faveur de l'infiltration des eaux, avec le choix des matériaux et aménagements (les différents bitumes, caillebotis, mélanges pierre-terre, adapter à l’usage la conception des parkings, etc.).  
 L’étude préalable doit intégrer les tests d’infiltrabilité selon la méthode donnée par exemple dans le guide du Cerema. L’étude doit permettre de calculer le taux de désimperméabilisation du projet (recherche d'un impact significatif).  
 L’objectif est de pouvoir avoir différents scénarii techniques comparatifs (différentes alternatives et techniques classiques) notamment pour une projet important.  
