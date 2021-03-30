@@ -5,7 +5,7 @@ import SERVER_ORIGIN from './serverOrigin';
 
 export default function(onLogin) {
     const loginByEmail = new LoginByEmail({
-        target: document.querySelector("dialog#rf-modal-login .rf-modal__body"),
+        target: document.querySelector("header .rf-shortcuts__item"),
     });
 
     loginByEmail.$on('email', event => {
