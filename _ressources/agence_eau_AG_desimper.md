@@ -34,7 +34,7 @@ L’objectif est de pouvoir avoir différents scénarii techniques comparatifs (
 Il convient d’associer l’ensemble des services concernés de la collectivité : voirie, espaces, verts, urbanisme, assainissement.  
 
 💡 **Infos complémentaires**  
-* L'agence de l'eau vous conseille la lecture du [guide infiltrabilité du Cerema](./static/Guide infiltrabilite_des_sols.pdf) 
+* L'agence de l'eau vous conseille la lecture du [guide infiltrabilité du Cerema](./static/Guide_infiltrabilite_des_sols.pdf). 
 * L'agence de l'eau vous fournit ce [mémo des études préalables](./static/EP_Minimum_Etudes_pjt_amenagement_VD.PDF) à réaliser sur le sujet infiltration au sein d'un projet d'aménagement.
 * Un appel à projet sur la désimperméabilisation est prévu pour fin 2021.
 * Il existe également des aides pour favoriser le réemploi des eaux pluviales.
