@@ -6,6 +6,7 @@ import SERVER_ORIGIN from './serverOrigin';
 export default function(onLogin) {
     const loginByEmail = new LoginByEmail({
         target: document.querySelector("header .rf-shortcuts__item"),
+        props: {}
     });
 
     loginByEmail.$on('email', event => {
@@ -18,8 +19,11 @@ export default function(onLogin) {
             const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
             // @ts-ignore
             closeButton.click();
+            loginByEmail.$set({person});
+            console.log("person", {person})
             onLogin({person, ressourceCollection});
         })
         .catch(res => console.error('error fetch email', res))
     });
+   
 }
