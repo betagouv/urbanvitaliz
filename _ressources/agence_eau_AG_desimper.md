@@ -40,7 +40,7 @@ Il convient d’associer l’ensemble des services concernés de la collectivit�
 * Un appel à projet sur la désimperméabilisation est prévu pour fin 2021.
 * Il existe également des aides pour favoriser le réemploi des eaux pluviales.
 
-Vous pouvez également retrouver des [informations complémentaires ici :](https://eau-grandsudouest.fr/usages-enjeux-eau/activites-economiques-amenagements/eau-urbanisme/repenser-eau-dans-ville)  
+Vous pouvez également retrouver des [informations complémentaires ici.](https://eau-grandsudouest.fr/usages-enjeux-eau/activites-economiques-amenagements/eau-urbanisme/repenser-eau-dans-ville)  
 
 Si vous souhaitez en savoir plus, prenez contact directement avec l'agence de l'eau Adour Garonne : 
   
