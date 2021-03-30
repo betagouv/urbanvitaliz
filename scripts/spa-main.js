@@ -249,7 +249,9 @@ page(LISTE_RESSOURCES_ROUTE, context => {
 
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
+        // @ts-ignore
         console.log("ok :", ressourceCollection.ressources_ids.length);
+         // @ts-ignore
          if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
             page('/brouillon-produit');
         }

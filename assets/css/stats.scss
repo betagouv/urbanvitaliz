@@ -1,0 +1,120 @@
+--- 
+--- 
+
+@import 'header.scss';
+@import 'footer.scss';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+main > section {
+    width: 100%;
+    padding: 0 calc( max(5px, ( 100vw - 50rem ) / 2 ));
+}
+
+.introduction{
+    position: relative;
+    text-align: left;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+ 
+    h1{
+        position: relative;
+        
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #33475b;
+        
+        padding: 1rem 0;
+    }
+}
+
+$process-break-point: 30rem;
+
+.cards{
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 4rem;
+
+    ol{
+        display: flex;
+        flex-direction: column;
+    
+        @media (min-width: $process-break-point) {
+            flex-direction: row;
+        }
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+        justify-content: space-around;
+        padding-bottom: 2rem;
+
+        .colonne{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        li{
+            border: solid 1px;
+            border-radius: 5px;
+            padding: 1.3rem;
+            margin: 0.5rem;
+
+            iframe{
+                width: 100%;
+                height: 15rem;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+                font-size: 3em;
+            }
+            img{
+                max-width: 100%;
+            }
+            .information{
+                display: flex;
+                background-color: #d5ecf7;
+                flex-direction: row;
+                padding: 0.5rem;
+
+                img{
+                    object-fit: contain;
+                    width: 3rem;
+                    height: auto;
+                }
+                p{
+                    padding-left: 1rem;
+                    margin-bottom: 0;
+                }
+            }
+            .ptit_colonne{
+                display: flex;
+                flex-direction: row;
+                
+                .ptit_card{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    img{
+                        width: 70px;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }  
+    }
+}
+
+.ptit_ligne{
+    text-align: center;
+    font-size: 0.8em;
+}
