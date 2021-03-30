@@ -2,6 +2,7 @@
 layout: ressources2
 
 phrase_catch : "Financer les études et travaux de désimperméabilisation ou amélioration de l'infiltration des eaux - Solliciter l'Agence de l'eau Adour Garonne"
+sous_titre : "Pour concevoir des projets en réduisant l'imperméabilisation des sols, et pour les projets de renaturation."
 etape : 
     - "3 - comment envisager le devenir du site ?"
     - "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
