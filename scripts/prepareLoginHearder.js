@@ -1,6 +1,7 @@
 import {json} from 'd3-fetch';
 
 import LoginByEmail from './components/LoginByEmail.svelte';
+import randomCap from './randomCap';
 import SERVER_ORIGIN from './serverOrigin';
 
 export default function(onLogin) {
@@ -13,6 +14,7 @@ export default function(onLogin) {
         const email = event.detail;
         console.log("email:", email);
         
+        const randomSecret = randomCap({length: 20, type: 'url-safe'});
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
         // @ts-ignore
         .then(({person, ressourceCollection}) => {
@@ -25,5 +27,5 @@ export default function(onLogin) {
         })
         .catch(res => console.error('error fetch email', res))
     });
-   
+    
 }
