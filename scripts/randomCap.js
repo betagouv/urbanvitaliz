@@ -1,4 +1,7 @@
-
+/*
+	adapted from https://github.com/sindresorhus/crypto-random-string/blob/d78436d6d0b36029d0f54d3b6cabadc3f3872755/index.js
+	(MIT License)
+*/
 
 const urlSafeCharacters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._~'.split('');
 
