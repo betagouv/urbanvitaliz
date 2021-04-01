@@ -1,4 +1,3 @@
-import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
 import prepareLoginHearder from './prepareLoginHeader'
 
 console.log("BONJOIR 🦄 ")
@@ -6,8 +5,7 @@ console.log("BONJOIR 🦄 ")
 const onLogin = ({person}) => {
     console.log('login succesful', person)
     
-    throw 'TODO fix redirect'
-     location.assign(makeBookmarkListURLFromRessourceCollection(ressourceCollection));
+    location.assign(`/person?secret=${person.firstAccessCapability}`)
 }
 
 prepareLoginHearder(onLogin);

@@ -20,10 +20,14 @@ export default function(onLogin) {
             const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
             // @ts-ignore
             closeButton.click();
+            console.log("passe ?")
             loginByEmail.$set({person});
             onLogin({person});
         })
         .catch(res => console.error('error fetch email', res))
     });
-    
+
+    return function setPerson(person){
+        loginByEmail.$set({person});
+    }
 }

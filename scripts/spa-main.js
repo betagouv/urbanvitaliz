@@ -146,6 +146,9 @@ const onLogin = ({person}) => {
     page(`/person?secret=${person.firstAccessCapability}`)
 }
 
+const setPerson = prepareLoginHeader(onLogin);
+
+
 page(`/person`,context => {
     const params = new URLSearchParams(context.querystring);
     const firstAccessCapability = params.get('secret');
@@ -156,12 +159,10 @@ page(`/person`,context => {
         
         store.mutations.setCurrentPerson(personAndRessourceCollection.person);
         store.mutations.setCurrentRessourceCollection(personAndRessourceCollection.ressourceCollection);
-        console.log("retour func store...:", personAndRessourceCollection.ressourceCollection)
+        setPerson(personAndRessourceCollection.person)
         page(makeBookmarkListURLFromRessourceCollection(personAndRessourceCollection.ressourceCollection))
     })
 })
-
-prepareLoginHeader(onLogin);
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
