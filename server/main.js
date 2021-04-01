@@ -37,20 +37,22 @@ function makeClientSideRessourceCollection(databaseRessourceCollection, req){
 
 // ROUTES
 
-app.post('/login-by-email', (req, res) => {
-    const {email} = req.query;
-    console.log('/login-by-email', email)
+app.post('/login-by-email', (req, response) => {
+    const {email, secret} = req.query;
+    console.log('/login-by-email', email);
+    console.log('secret:', secret)
 
-    database.getOrCreateRessourcesByEmail(email)
+    database.getOrCreateRessourcesByEmail(email, secret)
     .then((result) => {
         const newUser = result.newUser;
         const person = result.person;
-        res.status(newUser ? 201 : 200).send({
+        response.status(newUser ? 201 : 200).send({
             person, 
             ressourceCollection: makeClientSideRessourceCollection(result.ressourceCollection, req)
         })
     })
-    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+    .catch(err => response.status(500).send(`Some error (${req.path}): ${err}`))
+        
 })
 
 app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {

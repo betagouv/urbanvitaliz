@@ -15,7 +15,7 @@ export default function(onLogin) {
         console.log("email:", email);
         
         const randomSecret = randomCap({length: 20, type: 'url-safe'});
-        json(`${SERVER_ORIGIN}/login-by-email?email=${email}`, {method: 'POST'})
+        json(`${SERVER_ORIGIN}/login-by-email?email=${email}&secret=${randomSecret}`, {method: 'POST'})
         // @ts-ignore
         .then(({person, ressourceCollection}) => {
             const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
