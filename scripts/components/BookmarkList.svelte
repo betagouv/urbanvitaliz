@@ -7,7 +7,7 @@
 </script>
 
 <section class="bookmarks">
-    <h1>Liste des ressources favorites</h1>
+    <h1>Mes ressources enregistrées</h1>
 
     {#if bookmarkedResources}
     <ul>
@@ -26,14 +26,14 @@
 
 {#if recommendations}
 <section class="recommendations">
-    <h1>Recommandations de l'équipe UrbanVitaiz</h1>
+    <h1>Recommandations de l'équipe UrbanVitaliz</h1>
     <ul>
         {#each recommendations as reco}
         <li>
             <ResourceOverview 
                 resource={reco.resource}   
             />
-            <strong>Message de l'équipe UrbanVitaiz&nbsp;:</strong>
+            <strong>Message de l'équipe UrbanVitaliz&nbsp;:</strong>
             <p>{reco.message}</p>
         </li>
         {/each}
