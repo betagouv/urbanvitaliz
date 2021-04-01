@@ -16,12 +16,12 @@ export default function(onLogin) {
         const randomSecret = randomCap({length: 20, type: 'url-safe'});
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}&secret=${randomSecret}`, {method: 'POST'})
         // @ts-ignore
-        .then(({person, ressourceCollection}) => {
+        .then(({person}) => {
             const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
             // @ts-ignore
             closeButton.click();
             loginByEmail.$set({person});
-            onLogin({person, ressourceCollection});
+            onLogin({person});
         })
         .catch(res => console.error('error fetch email', res))
     });

@@ -1,7 +1,6 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
 import makeCapabilityString from "../server/random-cap.js"
-import { async } from "crypto-random-string"
 
 const { MongoClient, ObjectID } = mongodbpackage
 const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
@@ -42,7 +41,6 @@ export async function getOrCreateRessourcesByEmail(email, secret){
     }
 
     return {
-        ressourceCollection: thisPersonsRessourceCollection,
         newUser,
         person
     }

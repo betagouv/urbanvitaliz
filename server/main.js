@@ -47,8 +47,7 @@ app.post('/login-by-email', (req, response) => {
         const newUser = result.newUser;
         const person = result.person;
         response.status(newUser ? 201 : 200).send({
-            person, 
-            ressourceCollection: makeClientSideRessourceCollection(result.ressourceCollection, req)
+            person,
         })
     })
     .catch(err => response.status(500).send(`Some error (${req.path}): ${err}`))
@@ -95,9 +94,9 @@ app.get('/first-access', (req, res) =>{
     .then((personAndRessourceCollection)=> {
         const person = personAndRessourceCollection.person;
         const ressourceCollection = personAndRessourceCollection.ressourceCollection;
-        
+
         console.log("person:", personAndRessourceCollection)
-        res.status(200).send({person, ressourceCollection});
+        res.status(200).send({person, ressourceCollection: makeClientSideRessourceCollection(ressourceCollection, req)});
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

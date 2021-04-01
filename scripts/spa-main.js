@@ -18,7 +18,7 @@ import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFro
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
 import lunrfr from 'lunr-languages/lunr.fr'
-import prepareLoginHearder from './prepareLoginHearder';
+import prepareLoginHeader from './prepareLoginHeader';
 
 stemmerSupport(lunr)
 lunrfr(lunr)
@@ -141,29 +141,27 @@ page.base(baseUrl)
 
 console.log('page.base', page.base())
 
-const onLogin = ({person, ressourceCollection}) => {
-    console.log('login succesful', person, ressourceCollection)
-    
-    store.mutations.setCurrentPerson(person);
-    store.mutations.setCurrentRessourceCollection(ressourceCollection);
-    
+const onLogin = ({person}) => {
+    console.log('login succesful', person)
     page(`/person?secret=${person.firstAccessCapability}`)
 }
 
 page(`/person`,context => {
     const params = new URLSearchParams(context.querystring);
     const firstAccessCapability = params.get('secret');
-    console.log("PERSON 🦄 ")
     
     json(`${SERVER_ORIGIN}/first-access?secret=${firstAccessCapability}`)
     .then((personAndRessourceCollection) => {
         console.log("person:", personAndRessourceCollection);
-        //page(makeBookmarkListURLFromRessourceCollection(ressourceCollection))
+        
+        store.mutations.setCurrentPerson(personAndRessourceCollection.person);
+        store.mutations.setCurrentRessourceCollection(personAndRessourceCollection.ressourceCollection);
+        console.log("retour func store...:", personAndRessourceCollection.ressourceCollection)
+        page(makeBookmarkListURLFromRessourceCollection(personAndRessourceCollection.ressourceCollection))
     })
-
 })
 
-prepareLoginHearder(onLogin);
+prepareLoginHeader(onLogin);
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
