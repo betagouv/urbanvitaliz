@@ -5,7 +5,7 @@
     export let makeUnbookmarkResource = undefined;
 </script>
 
-<h1>Liste des ressources favorites</h1>
+<h1>Mes ressources enregistrées</h1>
 
 {#if bookmarkedResources}
 <ul>
