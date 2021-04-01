@@ -88,6 +88,20 @@ app.get('/persons', (req, res) =>{
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
 
+app.get('/first-access', (req, res) =>{
+    const firstAccessCapability = req.query.secret;
+    
+    database.getPersonAndTheirRessourceCollection(firstAccessCapability)
+    .then((personAndRessourceCollection)=> {
+        const person = personAndRessourceCollection.person;
+        const ressourceCollection = personAndRessourceCollection.ressourceCollection;
+        
+        console.log("person:", personAndRessourceCollection)
+        res.status(200).send({person, ressourceCollection});
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
 app.post('/recommend', (req, res) =>{
     const {personId, ressourceId, message} = req.body
 

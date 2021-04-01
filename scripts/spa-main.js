@@ -146,9 +146,22 @@ const onLogin = ({person, ressourceCollection}) => {
     
     store.mutations.setCurrentPerson(person);
     store.mutations.setCurrentRessourceCollection(ressourceCollection);
-
-    page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
+    
+    page(`/person?secret=${person.firstAccessCapability}`)
 }
+
+page(`/person`,context => {
+    const params = new URLSearchParams(context.querystring);
+    const firstAccessCapability = params.get('secret');
+    console.log("PERSON 🦄 ")
+    
+    json(`${SERVER_ORIGIN}/first-access?secret=${firstAccessCapability}`)
+    .then((personAndRessourceCollection) => {
+        console.log("person:", personAndRessourceCollection);
+        //page(makeBookmarkListURLFromRessourceCollection(ressourceCollection))
+    })
+
+})
 
 prepareLoginHearder(onLogin);
 
@@ -250,7 +263,6 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
         // @ts-ignore
-        console.log("ok :", ressourceCollection.ressources_ids.length);
          // @ts-ignore
          if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
             page('/brouillon-produit');

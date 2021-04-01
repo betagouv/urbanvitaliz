@@ -12,7 +12,6 @@ export default function(onLogin) {
 
     loginByEmail.$on('email', event => {
         const email = event.detail;
-        console.log("email:", email);
         
         const randomSecret = randomCap({length: 20, type: 'url-safe'});
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}&secret=${randomSecret}`, {method: 'POST'})
@@ -22,7 +21,6 @@ export default function(onLogin) {
             // @ts-ignore
             closeButton.click();
             loginByEmail.$set({person});
-            console.log("person", {person})
             onLogin({person, ressourceCollection});
         })
         .catch(res => console.error('error fetch email', res))

@@ -1,6 +1,7 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
 import makeCapabilityString from "../server/random-cap.js"
+import { async } from "crypto-random-string"
 
 const { MongoClient, ObjectID } = mongodbpackage
 const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
@@ -61,6 +62,12 @@ export async function getResourceCollection(edit_capability){
 
 export async function getAllPersons(){
     return await persons.find().toArray();
+}
+
+export async function getPersonAndTheirRessourceCollection(firstAccessCapability){
+    const person = await persons.findOne({firstAccessCapability})
+    const ressourceCollection =  await ressource_collections.findOne({created_by: ObjectID(person._id)});
+    return {person, ressourceCollection}
 }
 
 export async function addRecommendation({personId, ressourceId, message}){

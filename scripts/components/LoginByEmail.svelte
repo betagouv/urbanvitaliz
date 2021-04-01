@@ -10,7 +10,6 @@
         e.preventDefault()
         dispatch('email', inputEmail)
     }
-    $: console.log("person", person && person.emails)
 </script>
 
 {#if person === undefined}
