@@ -14,7 +14,7 @@ const database = client.db(DATABASE_NAME);
 const [persons, ressource_collections] = await Promise.all([PERSONS, RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
 
 
-export async function getOrCreateRessourcesByEmail(email, optionalFirstAccessCapability){
+export async function getOrCreatePersonByEmail(email, optionalFirstAccessCapability){
     let person = await persons.findOne({emails: email})
 
     console.log('found person', person)
