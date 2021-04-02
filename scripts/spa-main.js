@@ -4,7 +4,7 @@ import {json, text} from 'd3-fetch';
 import page from 'page'
 import Store from 'baredux'
 
-import Assistant from './components/Assistant.svelte';
+import ToutesLesRessources from './components/ToutesLesRessources.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
 import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
@@ -226,14 +226,14 @@ page(TOUTES_LES_RESSOURCES, () => {
         }
     }
 
-    const assistantUI = new Assistant({
+    const ToutesLesRessourcesUI = new ToutesLesRessources({
         target: document.querySelector('.svelte-main'),
         props: mapStateToProps(store.state)
     });
 
     initializeStateWithResources()
 
-    replaceComponent(assistantUI, mapStateToProps);
+    replaceComponent(ToutesLesRessourcesUI, mapStateToProps);
 });
 
 page(LISTE_RESSOURCES_ROUTE, context => {
