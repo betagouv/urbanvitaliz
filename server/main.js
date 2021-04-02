@@ -40,7 +40,7 @@ function makeClientSideRessourceCollection(databaseRessourceCollection, req){
 app.post('/login-by-email', (req, response) => {
     const {email, secret} = req.query;
 
-    database.getOrCreateRessourcesByEmail(email, secret)
+    database.getOrCreatePersonByEmail(email, secret)
     .then((result) => {
         const newUser = result.newUser;
         const person = result.person;
