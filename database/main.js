@@ -14,7 +14,7 @@ const database = client.db(DATABASE_NAME);
 const [persons, ressource_collections] = await Promise.all([PERSONS, RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
 
 
-export async function getOrCreateRessourcesByEmail(email, secret){
+export async function getOrCreateRessourcesByEmail(email, optionalFirstAccessCapability){
     let person = await persons.findOne({emails: email})
 
     console.log('found person', person)
@@ -22,14 +22,14 @@ export async function getOrCreateRessourcesByEmail(email, secret){
     let newUser = false;
 
     if(!person){
-        const {ops} = await persons.insertOne({emails: [email], firstAccessCapability: secret})
+        const {ops} = await persons.insertOne({emails: [email], firstAccessCapability: optionalFirstAccessCapability})
         person = ops[0]
         console.log('inserted person', person)
         newUser = true;
     }
 
     if(!person.firstAccessCapability){
-        await persons.updateOne({emails: email}, { $set: {firstAccessCapability: secret}})
+        await persons.updateOne({emails: email}, { $set: {firstAccessCapability: optionalFirstAccessCapability}})
     }
 
     let thisPersonsRessourceCollection = await ressource_collections.findOne({created_by: ObjectID(person._id)})
