@@ -31,37 +31,15 @@ const generateForCustomCharacters = (length, characters) => {
 			stringLength++;
 		}
 	}
-
 	return string;
 };
 
-const allowedTypes = [
-	undefined,
-	'url-safe',
-];
-
-const createGenerator = (generateForCustomCharacters) => ({length, type, characters}) => {
+const createGenerator = (generateForCustomCharacters) => (length = 20) => {
 	if (!(length >= 0 && Number.isFinite(length))) {
 		throw new TypeError('Expected a `length` to be a non-negative finite number');
 	}
 
-	if (type !== undefined && characters !== undefined) {
-		throw new TypeError('Expected either `type` or `characters`');
-	}
-
-	if (characters !== undefined && typeof characters !== 'string') {
-		throw new TypeError('Expected `characters` to be string');
-	}
-
-	if (!allowedTypes.includes(type)) {
-		throw new TypeError(`Unknown type: ${type}`);
-	}
-
-	if (type === 'url-safe') {
-		return generateForCustomCharacters(length, urlSafeCharacters);
-	}
-
-	return generateForCustomCharacters(length, characters.split(''));
+	return generateForCustomCharacters(length, urlSafeCharacters);
 };
 
 export default createGenerator(generateForCustomCharacters);

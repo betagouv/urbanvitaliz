@@ -13,7 +13,7 @@ export default function(onLogin) {
     loginByEmail.$on('email', event => {
         const email = event.detail;
         
-        const randomSecret = randomCap({length: 20, type: 'url-safe'});
+        const randomSecret = randomCap();
         json(`${SERVER_ORIGIN}/login-by-email?email=${email}&secret=${randomSecret}`, {method: 'POST'})
         // @ts-ignore
         .then(({person}) => {
