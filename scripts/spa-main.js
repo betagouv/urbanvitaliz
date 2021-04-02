@@ -10,6 +10,7 @@ import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
+import {TOUTES_LES_RESSOURCES} from '../shared/routes.js';
 import SERVER_ORIGIN from './serverOrigin.js';
 import getAllResources from './getAllResources.js';
 import baseUrl from './baseUrl.js';
@@ -200,7 +201,7 @@ function makeUnbookmarkResourceFromCap(editCapabilityUrl){
     }
 }
 
-page('/brouillon-produit', () => {
+page(TOUTES_LES_RESSOURCES, () => {
 
     function mapStateToProps(state){
         const {étapes, thématiques, filters, relevantResources} = state;
@@ -265,10 +266,9 @@ page(LISTE_RESSOURCES_ROUTE, context => {
 
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
-        // @ts-ignore
          // @ts-ignore
          if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
-            page('/brouillon-produit');
+            page(TOUTES_LES_RESSOURCES);
         }
         store.mutations.setCurrentRessourceCollection(ressourceCollection);
     });
