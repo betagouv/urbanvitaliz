@@ -14,7 +14,7 @@ const database = client.db(DATABASE_NAME);
 const [persons, ressource_collections] = await Promise.all([PERSONS, RESSOURCE_COLLECTIONS].map(name => database.collection(name)))
 
 
-export async function getOrCreateRessourcesByEmail(email){
+export async function getOrCreatePersonByEmail(email, optionalFirstAccessCapability){
     let person = await persons.findOne({emails: email})
 
     console.log('found person', person)
@@ -22,10 +22,14 @@ export async function getOrCreateRessourcesByEmail(email){
     let newUser = false;
 
     if(!person){
-        const {ops} = await persons.insertOne({emails: [email]})
+        const {ops} = await persons.insertOne({emails: [email], firstAccessCapability: optionalFirstAccessCapability})
         person = ops[0]
         console.log('inserted person', person)
         newUser = true;
+    }
+
+    if(!person.firstAccessCapability){
+        await persons.updateOne({emails: email}, { $set: {firstAccessCapability: optionalFirstAccessCapability}})
     }
 
     let thisPersonsRessourceCollection = await ressource_collections.findOne({created_by: ObjectID(person._id)})
@@ -37,7 +41,6 @@ export async function getOrCreateRessourcesByEmail(email){
     }
 
     return {
-        ressourceCollection: thisPersonsRessourceCollection,
         newUser,
         person
     }
@@ -57,6 +60,12 @@ export async function getResourceCollection(edit_capability){
 
 export async function getAllPersons(){
     return await persons.find().toArray();
+}
+
+export async function getPersonAndTheirRessourceCollection(firstAccessCapability){
+    const person = await persons.findOne({firstAccessCapability})
+    const ressourceCollection =  await ressource_collections.findOne({created_by: ObjectID(person._id)});
+    return {person, ressourceCollection}
 }
 
 export async function addRecommendation({personId, ressourceId, message}){

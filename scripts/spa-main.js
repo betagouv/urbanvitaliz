@@ -10,15 +10,17 @@ import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
-import SERVER_ORIGIN from './serverOrigin';
+import SERVER_ORIGIN from './serverOrigin.js';
 import getAllResources from './getAllResources.js';
 import baseUrl from './baseUrl.js';
-import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
+import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection.js';
+import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js'
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
 import lunrfr from 'lunr-languages/lunr.fr'
-import prepareLoginHearder from './prepareLoginHearder';
+import prepareLoginHeader from './prepareLoginHeader.js';
+
 
 stemmerSupport(lunr)
 lunrfr(lunr)
@@ -141,16 +143,30 @@ page.base(baseUrl)
 
 console.log('page.base', page.base())
 
-const onLogin = ({person, ressourceCollection}) => {
-    console.log('login succesful', person, ressourceCollection)
-    
-    store.mutations.setCurrentPerson(person);
-    store.mutations.setCurrentRessourceCollection(ressourceCollection);
+const onLogin = ({person}) => {
+    console.log('login succesful', person)
 
-    page( makeBookmarkListURLFromRessourceCollection(ressourceCollection) );
+    page(makeListRessourceURLFromPerson(person));
 }
 
-prepareLoginHearder(onLogin);
+const setPerson = prepareLoginHeader(onLogin);
+
+
+page(`/person`,context => {
+    const params = new URLSearchParams(context.querystring);
+    const firstAccessCapability = params.get('secret');
+
+    json(`${SERVER_ORIGIN}/first-access?secret=${firstAccessCapability}`)
+    .then((personAndRessourceCollection) => {
+        
+        store.mutations.setCurrentPerson(personAndRessourceCollection.person);
+        store.mutations.setCurrentRessourceCollection(personAndRessourceCollection.ressourceCollection);
+        
+        setPerson(personAndRessourceCollection.person)
+        
+        page(makeBookmarkListURLFromRessourceCollection(personAndRessourceCollection.ressourceCollection))
+    })
+})
 
 function makeBookmarkResourceFromCap(editCapabilityUrl){
     return function makeBookmarkResource(resourceId){
@@ -250,7 +266,6 @@ page(LISTE_RESSOURCES_ROUTE, context => {
     json(`${SERVER_ORIGIN}${LISTE_RESSOURCES_ROUTE}?secret=${secret}`)
     .then((ressourceCollection) => {
         // @ts-ignore
-        console.log("ok :", ressourceCollection.ressources_ids.length);
          // @ts-ignore
          if(ressourceCollection.ressources_ids.length === 0 && !ressourceCollection.recommendations){
             page('/brouillon-produit');

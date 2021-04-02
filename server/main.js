@@ -37,20 +37,19 @@ function makeClientSideRessourceCollection(databaseRessourceCollection, req){
 
 // ROUTES
 
-app.post('/login-by-email', (req, res) => {
-    const {email} = req.query;
-    console.log('/login-by-email', email)
+app.post('/login-by-email', (req, response) => {
+    const {email, secret} = req.query;
 
-    database.getOrCreateRessourcesByEmail(email)
+    database.getOrCreatePersonByEmail(email, secret)
     .then((result) => {
         const newUser = result.newUser;
         const person = result.person;
-        res.status(newUser ? 201 : 200).send({
-            person, 
-            ressourceCollection: makeClientSideRessourceCollection(result.ressourceCollection, req)
+        response.status(newUser ? 201 : 200).send({
+            person,
         })
     })
-    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+    .catch(err => response.status(500).send(`Some error (${req.path}): ${err}`))
+        
 })
 
 app.get(LISTE_RESSOURCES_ROUTE, (req, res) => {
@@ -80,8 +79,20 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
 app.get('/persons', (req, res) =>{
     database.getAllPersons()
     .then(persons => {
-        console.log("persons :", persons)
         res.status(200).send(persons);
+    })
+    .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
+})
+
+app.get('/first-access', (req, res) =>{
+    const firstAccessCapability = req.query.secret;
+    
+    database.getPersonAndTheirRessourceCollection(firstAccessCapability)
+    .then((personAndRessourceCollection)=> {
+        const person = personAndRessourceCollection.person;
+        const ressourceCollection = personAndRessourceCollection.ressourceCollection;
+
+        res.status(200).send({person, ressourceCollection: makeClientSideRessourceCollection(ressourceCollection, req)});
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })
@@ -91,7 +102,6 @@ app.post('/recommend', (req, res) =>{
 
     database.addRecommendation({personId, ressourceId, message})
     .then(persons => {
-        console.log("persons :", persons)
         res.status(200).send(persons);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
