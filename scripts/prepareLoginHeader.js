@@ -1,8 +1,8 @@
 import {json} from 'd3-fetch';
 
 import LoginByEmail from './components/LoginByEmail.svelte';
-import randomCap from './randomCap';
-import SERVER_ORIGIN from './serverOrigin';
+import randomCap from './randomCap.js';
+import SERVER_ORIGIN from './serverOrigin.js';
 
 export default function(onLogin) {
     const loginByEmail = new LoginByEmail({
@@ -20,7 +20,6 @@ export default function(onLogin) {
             const closeButton = document.querySelector('dialog#rf-modal-login button[aria-controls="rf-modal-login"].rf-link--close')
             // @ts-ignore
             closeButton.click();
-            console.log("passe ?")
             loginByEmail.$set({person});
             onLogin({person});
         })

@@ -39,8 +39,6 @@ function makeClientSideRessourceCollection(databaseRessourceCollection, req){
 
 app.post('/login-by-email', (req, response) => {
     const {email, secret} = req.query;
-    console.log('/login-by-email', email);
-    console.log('secret:', secret)
 
     database.getOrCreateRessourcesByEmail(email, secret)
     .then((result) => {
@@ -81,7 +79,6 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
 app.get('/persons', (req, res) =>{
     database.getAllPersons()
     .then(persons => {
-        console.log("persons :", persons)
         res.status(200).send(persons);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
@@ -95,7 +92,6 @@ app.get('/first-access', (req, res) =>{
         const person = personAndRessourceCollection.person;
         const ressourceCollection = personAndRessourceCollection.ressourceCollection;
 
-        console.log("person:", personAndRessourceCollection)
         res.status(200).send({person, ressourceCollection: makeClientSideRessourceCollection(ressourceCollection, req)});
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
@@ -106,7 +102,6 @@ app.post('/recommend', (req, res) =>{
 
     database.addRecommendation({personId, ressourceId, message})
     .then(persons => {
-        console.log("persons :", persons)
         res.status(200).send(persons);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))

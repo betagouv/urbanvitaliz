@@ -10,15 +10,17 @@ import TextSearch from './components/TextSearch.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
-import SERVER_ORIGIN from './serverOrigin';
+import SERVER_ORIGIN from './serverOrigin.js';
 import getAllResources from './getAllResources.js';
 import baseUrl from './baseUrl.js';
-import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection';
+import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection.js';
+import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js'
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
 import lunrfr from 'lunr-languages/lunr.fr'
-import prepareLoginHeader from './prepareLoginHeader';
+import prepareLoginHeader from './prepareLoginHeader.js';
+
 
 stemmerSupport(lunr)
 lunrfr(lunr)
@@ -143,7 +145,8 @@ console.log('page.base', page.base())
 
 const onLogin = ({person}) => {
     console.log('login succesful', person)
-    page(`/person?secret=${person.firstAccessCapability}`)
+
+    page(makeListRessourceURLFromPerson(person));
 }
 
 const setPerson = prepareLoginHeader(onLogin);
@@ -152,14 +155,15 @@ const setPerson = prepareLoginHeader(onLogin);
 page(`/person`,context => {
     const params = new URLSearchParams(context.querystring);
     const firstAccessCapability = params.get('secret');
-    
+
     json(`${SERVER_ORIGIN}/first-access?secret=${firstAccessCapability}`)
     .then((personAndRessourceCollection) => {
-        console.log("person:", personAndRessourceCollection);
         
         store.mutations.setCurrentPerson(personAndRessourceCollection.person);
         store.mutations.setCurrentRessourceCollection(personAndRessourceCollection.ressourceCollection);
+        
         setPerson(personAndRessourceCollection.person)
+        
         page(makeBookmarkListURLFromRessourceCollection(personAndRessourceCollection.ressourceCollection))
     })
 })

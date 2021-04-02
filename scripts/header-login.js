@@ -1,11 +1,13 @@
-import prepareLoginHearder from './prepareLoginHeader'
+import prepareLoginHearder from './prepareLoginHeader.js'
+import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js'
+import baseUrl from './baseUrl.js';
 
 console.log("BONJOIR 🦄 ")
 
 const onLogin = ({person}) => {
     console.log('login succesful', person)
     
-    location.assign(`/person?secret=${person.firstAccessCapability}`)
+    location.assign(makeListRessourceURLFromPerson(person))
 }
 
 prepareLoginHearder(onLogin);

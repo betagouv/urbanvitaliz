@@ -18,7 +18,6 @@
     let message = '';
 
     export let sendRecommandation
-    $: console.log(ressources);
 </script>
 
 <form on:submit={e => {
