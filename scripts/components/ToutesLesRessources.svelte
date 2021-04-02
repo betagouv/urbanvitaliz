@@ -51,7 +51,7 @@
     </section>
 
     <section class="colonne-du-centre">
-        <h1>Toutes les Ressource</h1>
+        <h1>Toutes les Ressources</h1>
 
         <ResourceFilters
             {étapes}
@@ -75,7 +75,8 @@
     <section class="colonne-de-droite">je suis une colonne de droite.</section>
 </div>
 
-<style>
+<style lang="scss">
+    $blue-france: pink;
     .flex-container{
         display: flex;
         flex-direction: row;
@@ -97,6 +98,6 @@
         padding-right: 0.5rem;
     }
     h1{
-       /*color: $blue-france;*/ 
+       color: $blue-france; 
     }
 </style>

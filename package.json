@@ -23,6 +23,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
+    "node-sass": "^5.0.0",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.38.4",
@@ -30,7 +31,8 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "serve": "^11.3.2",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^4.7.0"
   },
   "dependencies": {
     "baredux": "github:DavidBruant/baredux",
