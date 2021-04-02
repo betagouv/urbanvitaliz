@@ -15,6 +15,7 @@
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     export let urlSecret;
+    
 </script>
 
 <div class="flex-container">
@@ -76,7 +77,8 @@
 </div>
 
 <style lang="scss">
-    $blue-france: pink;
+    @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
+
     .flex-container{
         display: flex;
         flex-direction: row;
@@ -98,6 +100,6 @@
         padding-right: 0.5rem;
     }
     h1{
-       color: $blue-france; 
+       color: $blue-france-500; 
     }
 </style>

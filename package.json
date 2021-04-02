@@ -18,7 +18,7 @@
     "database:migration:create": "migrate-mongo create -f database/migrate-mongo-config.cjs"
   },
   "engines": {
-    "node": "14"
+    "node": ">=14"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
@@ -35,6 +35,7 @@
     "svelte-preprocess": "^4.7.0"
   },
   "dependencies": {
+    "@gouvfr/dsfr": "^0.6.0",
     "baredux": "github:DavidBruant/baredux",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
