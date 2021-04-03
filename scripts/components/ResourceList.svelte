@@ -40,13 +40,13 @@
         margin: 0;
     }
 
-    $gutter-width: 1rem;
+    $gutter-width: 0.7rem;
     li{
         display: inline-block;
         text-align: initial;
 
         vertical-align: top;
-        width:  calc((100% - (1rem * 2)) / 3);
+        width:  calc((100% - (0.7rem * 2)) / 3);
 
         margin-left: $gutter-width;
         margin-bottom: $gutter-width;

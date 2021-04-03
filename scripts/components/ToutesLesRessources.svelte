@@ -67,10 +67,6 @@
             {makeUnbookmarkResource}
             {bookmarkedResourceIdSet}
         />
-        {#if urlSecret}
-            <a href={urlSecret}>Revenir à ma liste de ressources enregistrées</a
-            >
-        {/if}
     </section>
 
     <section class="colonne-de-droite">
@@ -90,10 +86,11 @@
         flex: 3;
     }
     .rf-sidemenu{
-        padding-right: 0;
+        padding-right: 0
     }
     .rf-sidemenu__inner{
         width: 17rem;
+        border: none;
     }
     .rf-sidemenu__link{
         font-size: 16px;
@@ -106,7 +103,7 @@
        color: $blue-france-500; 
     }
     .colonne-du-centre{
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         flex: 10;
     }
     .colonne-de-droite{

@@ -6,7 +6,7 @@
 </script>
 
 <article>
-    <a href={resource.url}><div class="title"><span class="rf-fi-file-fill" aria-hidden="true"></span><h1>{resource.phrase_catch}</h1></div></a>
+    <a href={resource.url}><div class="title"><span class="rf-fi-file-line" aria-hidden="true"></span><h1>{resource.phrase_catch}</h1></div></a>
     {#if resource.sous_titre}
         <section class="sous_titre">{resource.sous_titre || ''}</section>
     {/if}
@@ -20,10 +20,10 @@
 
 <style>
     article{
-        border: 3px solid grey;
+        border: 2px solid grey;
         border-radius: 0.5rem;
         width: 100%;
-        height: 21rem;
+        height: 17rem;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -46,7 +46,7 @@
 
     .sous_titre{
         display: flex;
-        font-size: 1rem;
+        font-size: 16px;
         line-height: 1.5em;
         padding: 0.5rem;
         margin: 0 0 1rem;
@@ -59,14 +59,15 @@
         background-color: hsla(28, 100%, 62.5%, 0.1);    
     }
     h1{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.25em;
         color: hsl(0, 0%, 11.8%);
         font-weight: 400;
         padding-top: 0.4rem;
         padding-right: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-    .rf-fi-file-fill{
+    .rf-fi-file-line{
         padding: 0.5rem;
     }
 

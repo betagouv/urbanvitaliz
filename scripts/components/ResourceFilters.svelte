@@ -59,13 +59,10 @@
 </section>
 
 <style lang="scss">
+    @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
     section.filters{
         display: flex;
         flex-direction: row;
-    }
-
-    section.filters > section{
-        margin-bottom: 1.75rem;
     }
 
     section.étapes{
@@ -92,6 +89,7 @@
     .rf-fieldset__content{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
 
     section label{
@@ -102,4 +100,11 @@
         cursor: pointer;
         margin-right: 0.25rem;
     }
+    .rf-fieldset__legend{
+        color: $grey-800;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+    }
+
+   
 </style>
