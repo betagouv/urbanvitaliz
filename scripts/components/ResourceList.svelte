@@ -39,13 +39,20 @@
         padding: 0;
         margin: 0;
     }
+
+    $gutter-width: 1rem;
     li{
         display: inline-block;
         text-align: initial;
 
         vertical-align: top;
-        width: 15rem;
+        width:  calc((100% - (1rem * 2)) / 3);
 
-        margin: 0.5rem;
+        margin-left: $gutter-width;
+        margin-bottom: $gutter-width;
+
+        &:nth-of-type(3n+1){
+            margin-left: 0;
+        }
     }
 </style>

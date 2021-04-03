@@ -23,7 +23,10 @@
         position: relative;
         border: 3px solid grey;
         border-radius: 0.5rem;
-
+        width: 100%;
+        height: 21rem;
+        display: inline-block;
+        overflow: hidden;
     }
 
     article > button{
@@ -48,7 +51,7 @@
 
     .sous_titre{
         font-size: 1rem;
-        line-height: 1.2em;
+        line-height: 1.5em;
         padding: 0.5rem;
         margin: 0 0 1rem;
     }
@@ -59,7 +62,7 @@
     }
     h1{
         font-size: 18px;
-        line-height: 1.3rem;
+        line-height: 1.25em;
         color: hsl(0, 0%, 11.8%);
         font-weight: 400;
         padding-top: 0.4rem;

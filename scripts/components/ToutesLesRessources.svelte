@@ -73,7 +73,9 @@
         {/if}
     </section>
 
-    <section class="colonne-de-droite">je suis une colonne de droite.</section>
+    <section class="colonne-de-droite">
+        
+    </section>
 </div>
 
 <style lang="scss">
@@ -85,6 +87,7 @@
     }
     .colonne-de-gauche{
         background-color: #F8F8F8;
+        flex: 3;
     }
     .rf-sidemenu{
         padding-right: 0;
@@ -104,5 +107,11 @@
     }
     .colonne-du-centre{
         padding: 0.5rem;
+        flex: 10;
+    }
+    .colonne-de-droite{
+        background-color: hsl(240, 36.8%, 96.3%);
+        flex: 3;
+
     }
 </style>
