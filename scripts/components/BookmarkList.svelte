@@ -1,5 +1,6 @@
 <script>
     import ResourceOverview from './ResourceOverview.svelte';
+    import {TOUTES_LES_RESSOURCES} from '../../shared/routes';
 
     export let bookmarkedResources = undefined;
     export let makeUnbookmarkResource = undefined;
@@ -41,7 +42,7 @@
 </section> 
 {/if}
 
-<a href="./brouillon-produit">Rechercher d’autres ressources : Par thématique</a><br>
+<a href="{TOUTES_LES_RESSOURCES}">Rechercher d’autres ressources : Par thématique</a><br>
 <a href="./recherche-textuelle">Rechercher d’autres ressources : Par analyse intelligente</a>
 
 <style>

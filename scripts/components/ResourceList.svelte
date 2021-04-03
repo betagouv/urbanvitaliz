@@ -8,7 +8,7 @@
 </script>
 
 <section>
-    <h2>Liste des ressources pertinentes ({relevantResources.length})</h2>
+    <h4>{relevantResources.length} Ressources trouvées</h4>
 
     {#if relevantResources.length === 0}
         <p>(Pas de ressource pertinente pour le moment)</p>
@@ -27,10 +27,11 @@
     {/if}
 </section>
 
-<style>
-    h2{
+<style lang="scss">
+    @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
+    h4{
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid grey;
+        color: $blue-france-500;
     }
 
     ul{
@@ -38,13 +39,20 @@
         padding: 0;
         margin: 0;
     }
+
+    $gutter-width: 0.7rem;
     li{
         display: inline-block;
         text-align: initial;
 
         vertical-align: top;
-        width: 15rem;
+        width:  calc((100% - (0.7rem * 2)) / 3);
 
-        margin: 0.5rem;
+        margin-left: $gutter-width;
+        margin-bottom: $gutter-width;
+
+        &:nth-of-type(3n+1){
+            margin-left: 0;
+        }
     }
 </style>
