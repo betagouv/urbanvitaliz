@@ -6,7 +6,7 @@
 </script>
 
 <article>
-    <a href={resource.url}><h1>{resource.phrase_catch}</h1></a>
+    <a href={resource.url}><div class="title"><span class="rf-fi-file-fill" aria-hidden="true"></span><h1>{resource.phrase_catch}</h1></div></a>
     {#if typeof unbookmarkResource === 'function'}
         <button on:click={unbookmarkResource}>🌟</button>
     {/if}
@@ -21,9 +21,9 @@
 <style>
     article{
         position: relative;
-        border: 1px solid grey;
+        border: 3px solid grey;
         border-radius: 0.5rem;
-        padding: 1rem;
+
     }
 
     article > button{
@@ -47,20 +47,26 @@
     }
 
     .sous_titre{
-        font-size: 0.8rem;
-        line-height: 1.2em;
-        
-        border: 2px solid grey;
-        background-color: #CCC;
-        border-radius: 1rem;
-        padding: 0.6em;
-    }
-
-    h1{
         font-size: 1rem;
-        line-height: 1rem;
-        color: #073763; 
-        font-weight: bold;  
+        line-height: 1.2em;
+        padding: 0.5rem;
+        margin: 0 0 1rem;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        background-color: hsla(28, 100%, 62.5%, 0.1);    
+    }
+    h1{
+        font-size: 18px;
+        line-height: 1.3rem;
+        color: hsl(0, 0%, 11.8%);
+        font-weight: 400;
+        padding-top: 0.4rem;
+        padding-right: 0.5rem;
+    }
+    .rf-fi-file-fill{
+        padding: 0.5rem;
     }
 
     h1::after{
@@ -68,8 +74,8 @@
         display: block;
         width: 30%;
         height: 3px;
-        background-color: #073763; 
         margin-top: 4px;
+        color: hsl(0, 0%, 11.8%);
     }
 
 </style>

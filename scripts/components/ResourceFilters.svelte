@@ -15,7 +15,7 @@
     <section class="étapes">
         <div class="rf-form-group">
             <fieldset class="rf-fieldset">
-                <legend class="rf-fieldset__legend">Étape</legend>
+                <legend class="rf-fieldset__legend">Filtrer par étapes</legend>
                 <div class="rf-fieldset__content">
                 {#each étapes as étape}
                     <div class="NOT-rf-checkbox-group">
@@ -34,10 +34,10 @@
             </fieldset>
         </div>
     </section>
-    <section>
+    <section class="thématiques">
         <div class="rf-form-group">
             <fieldset class="rf-fieldset rf-fieldset--inline">
-                <legend class="rf-fieldset__legend">Thématique</legend>
+                <legend class="rf-fieldset__legend">Filtrer par thématiques</legend>
                 <div class="rf-fieldset__content">
                 {#each thématiques as thematique}
 
@@ -58,13 +58,22 @@
     </section>
 </section>
 
-<style>
+<style lang="scss">
     section.filters{
-        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
     }
 
     section.filters > section{
         margin-bottom: 1.75rem;
+    }
+
+    section.étapes{
+        flex: 1;
+    }
+
+    section.thématiques{
+        flex: 1;
     }
 
     label{
@@ -78,6 +87,11 @@
 
     .étapes label{
         display: block;
+    }
+
+    .rf-fieldset__content{
+        display: flex;
+        flex-direction: column;
     }
 
     section label{

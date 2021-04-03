@@ -52,7 +52,7 @@
     </section>
 
     <section class="colonne-du-centre">
-        <h1>Toutes les Ressources</h1>
+        <h3>Toutes les Ressources</h3>
 
         <ResourceFilters
             {étapes}
@@ -99,7 +99,10 @@
     .rf-fi-file-fill{
         padding-right: 0.5rem;
     }
-    h1{
+    h3{
        color: $blue-france-500; 
+    }
+    .colonne-du-centre{
+        padding: 0.5rem;
     }
 </style>
