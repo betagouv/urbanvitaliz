@@ -7,53 +7,51 @@
 
 <article>
     <a href={resource.url}><div class="title"><span class="rf-fi-file-fill" aria-hidden="true"></span><h1>{resource.phrase_catch}</h1></div></a>
-    {#if typeof unbookmarkResource === 'function'}
-        <button on:click={unbookmarkResource}>🌟</button>
-    {/if}
-    {#if typeof bookmarkResource === 'function'}
-        <button on:click={bookmarkResource}>☆</button>
-    {/if}
     {#if resource.sous_titre}
         <section class="sous_titre">{resource.sous_titre || ''}</section>
+    {/if}
+    {#if typeof unbookmarkResource === 'function'}
+        <button class="rf-btn rf-btn--secondary" on:click={unbookmarkResource}>🌟 Supprimer</button>
+    {/if}
+    {#if typeof bookmarkResource === 'function'}
+        <button class="rf-btn rf-btn--secondary" on:click={bookmarkResource}>☆ Enregistrer</button>
     {/if}
 </article>
 
 <style>
     article{
-        position: relative;
         border: 3px solid grey;
         border-radius: 0.5rem;
         width: 100%;
         height: 21rem;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
+        justify-content: space-between;
     }
 
     article > button{
-        position: absolute;
-        top: 0;
-        right: 0;
+        align-self: center;
         border: none;
         background-color: transparent;
-
-        width: 2rem;
-        height: 2rem;
-        padding: 0em;
-        font-size: 1.2em;
-
+        margin-bottom: 1rem;
         cursor: pointer;
     }
 
     article > a{
         text-decoration: none;
         color: inherit;
+        box-shadow: none;
     }
 
     .sous_titre{
+        display: flex;
         font-size: 1rem;
         line-height: 1.5em;
         padding: 0.5rem;
         margin: 0 0 1rem;
+        flex: 1;
+        overflow: hidden;
     }
     .title{
         display: flex;
@@ -71,6 +69,8 @@
     .rf-fi-file-fill{
         padding: 0.5rem;
     }
+
+    
 
     h1::after{
         content: ' ';
