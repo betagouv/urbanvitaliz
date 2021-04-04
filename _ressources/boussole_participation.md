@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Organiser la participation et la concertation citoyenne pour mon projet avec la Boussole de la participation"
 etape : "3 - comment envisager le devenir du site ?"

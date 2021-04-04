@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Choisir entre plusieurs scénarios d'aménagement en tenant compte des bénéfices socio-économiques"
 sous_titre: "Estimer les bénéfices socio-économiques grâce à la méthode Bénéfriches"

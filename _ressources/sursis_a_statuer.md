@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Vous souhaitez controler temporairement l'usage du foncier sans l'acquérir"
 etape : "3 - comment envisager le devenir du site ?"

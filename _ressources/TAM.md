@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"

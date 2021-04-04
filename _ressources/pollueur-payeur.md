@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Acquérir un foncier pollué - le principe du pollueur payeur"
 sous_titre: "Qu'implique ce principe lors de l'achat d'un site pollué ?"

@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Enjeux agricoles ou écologiques - Etre accompagné.e par la SAFER"
 sous_titre: "En territoire rural, la SAFER peut intervenir de la veille foncière à la définition d'un projet, l'acquisition et l'animation du foncier..."

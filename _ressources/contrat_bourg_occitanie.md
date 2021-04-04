@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Signer un contrat bourg-centre avec la Région Occitanie - 31 décembre 2021"
 sous_titre: "Accompagnement des communes dans la définition et la mise en œuvre de leur projet de développement et de valorisation"

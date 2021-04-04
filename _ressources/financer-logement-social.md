@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Financer du logement social"
 sous_titre: "Tour d'horizon des financements disponibles"

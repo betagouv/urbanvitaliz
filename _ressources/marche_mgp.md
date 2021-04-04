@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Accélérer la phase de conception du projet pour démarrer les travaux au plus vite"
 sous_titre: "Besoin de coller à une échéance particulière ? Pensez au marché MGP pour regrouper la conception et la réalisation"

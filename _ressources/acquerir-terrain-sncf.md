@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Acquérir un foncier qui appartient à la SNCF"
 sous_titre: "Conditions fréquentes, conseils et contacts"

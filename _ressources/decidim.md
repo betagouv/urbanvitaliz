@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Organiser la participation et la concertation citoyenne en montant un site internet"
 etape : "3 - comment envisager le devenir du site ?"

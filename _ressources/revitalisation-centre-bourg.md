@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Faites-vous accompagner pour un projet de redynamisation de votre centre-bourg"
 sous_titre: "Vous souhaitez être aider pour établir une stratégie de redynamisation de votre centre-bourg ?"

@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Financer les études et travaux de désimperméabilisation et infiltration des eaux - Solliciter l'Agence de l'eau Adour Garonne"
 sous_titre : "Pour concevoir des projets en réduisant l'imperméabilisation des sols, et pour les projets de renaturation."

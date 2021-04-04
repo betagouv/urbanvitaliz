@@ -1,4 +1,5 @@
 import {json} from 'd3-fetch';
+import baseUrl from './baseUrl.js';
 
 function fixResource(resource){
     let {etape, thematique} = resource;
@@ -40,6 +41,6 @@ function fixThematique(thematique){
 };
 
 export default function getAllResources(){
-    return json('./allRessources.json')
+    return json(`${baseUrl}/allRessources.json`)
     .then(rs => rs.map(fixResource))
 }

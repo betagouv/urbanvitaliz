@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Appel à projets Reconquête des friches en Occitanie"
 sous_titre: "Vous ne possédez pas le foncier mais le propriétaire est prêt à vendre, faire appel à un Etablissement Public Foncier pour porter l'achat"

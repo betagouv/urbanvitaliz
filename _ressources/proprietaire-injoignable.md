@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Joindre un propriétaire de foncier qui ne répond pas"
 sous_titre: "Le propriétaire du site paie ses impôts mais est injoignable, que faire ?"

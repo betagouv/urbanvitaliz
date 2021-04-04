@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Projet d'expansion des crues - Solliciter l'EPF Occitanie"
 etape : "3 - comment envisager le devenir du site ?"

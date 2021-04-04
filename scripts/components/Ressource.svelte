@@ -25,6 +25,7 @@
 
     .markdown-container h1{
         color: $blue-france-500;
+        font-size: 28px;
     }
     .markdown-container{
         max-width: 100%;
