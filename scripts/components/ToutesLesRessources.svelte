@@ -39,6 +39,12 @@
             {bookmarkedResourceIdSet}
         />
     </svelte:fragment>
+    
+    <svelte:fragment slot="colonne-de-droite">
+        <h1>{relevantResources.length}</h1>
+        <p>Ressources pertinentes sur 98</p>
+    </svelte:fragment>
+    
 </Squelette>
 
 <style lang="scss">
@@ -46,5 +52,11 @@
 
     h3, h4{
         color: $blue-france-500;
+    }
+    h1{
+        font-size: 20rem;
+    }
+    p{
+        font-size: 36px;
     }
 </style>
