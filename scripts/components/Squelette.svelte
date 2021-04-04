@@ -65,7 +65,7 @@
         }
         .colonne-du-centre{
             flex: 10;
-
+            max-width: 50%;
             padding: 0.5rem 1rem;
         }
         .colonne-de-droite{
