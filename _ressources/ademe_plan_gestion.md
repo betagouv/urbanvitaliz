@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Site pollué - Tester différents scénarios d'aménagement au regard de la pollution du site via l'ADEME"
 etape : "3 - comment envisager le devenir du site ?"

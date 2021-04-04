@@ -30,6 +30,7 @@ export async function getOrCreatePersonByEmail(email, optionalFirstAccessCapabil
 
     if(!person.firstAccessCapability){
         await persons.updateOne({emails: email}, { $set: {firstAccessCapability: optionalFirstAccessCapability}})
+        person.firstAccessCapability = optionalFirstAccessCapability;
     }
 
     let thisPersonsRessourceCollection = await ressource_collections.findOne({created_by: ObjectID(person._id)})

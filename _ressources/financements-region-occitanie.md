@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Tiers-lieux, mobilité, culture, social... Financements Région Occitanie"
 sous_titre: "La Région propose des dispositifs de financement non spécifiques aux friches mais qui peuvent s'y appliquer"

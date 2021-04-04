@@ -30,8 +30,10 @@
             {étapeFilterChange}
             {thématiqueFilterChange}
         />
+        <h4>{relevantResources.length} Ressources trouvées</h4>
+
         <ResourceList
-            {relevantResources}
+            resources={relevantResources}
             {makeBookmarkResource}
             {makeUnbookmarkResource}
             {bookmarkedResourceIdSet}
@@ -42,7 +44,7 @@
 <style lang="scss">
     @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
 
-    h3 {
+    h3, h4{
         color: $blue-france-500;
     }
 </style>

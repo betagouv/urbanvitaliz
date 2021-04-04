@@ -1,20 +1,19 @@
 <script>
     import ResourceOverview from './ResourceOverview.svelte';
 
-    export let relevantResources;
+    export let resources;
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     export let bookmarkedResourceIdSet;
+    $: console.log(resources)
 </script>
 
 <section>
-    <h4>{relevantResources.length} Ressources trouvées</h4>
-
-    {#if relevantResources.length === 0}
-        <p>(Pas de ressource pertinente pour le moment)</p>
+    {#if resources.length === 0}
+        <p>(Pas de ressource)</p>
     {:else}
         <ul>
-            {#each relevantResources as resource}
+            {#each resources as resource}
             <li>
                 <ResourceOverview 
                     resource={resource}

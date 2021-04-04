@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Site pollué - réaliser et financer une étude d'état et d'historique du site avec l'ADEME Occitanie "
 etape : "2 - quelles informations rassembler pour avancer ?"

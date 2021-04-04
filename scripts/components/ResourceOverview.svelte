@@ -26,6 +26,7 @@
         height: 17rem;
         display: flex;
         flex-direction: column;
+        background-color: white;
         overflow: hidden;
         justify-content: space-between;
     }

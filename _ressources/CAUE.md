@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Faire appel au Conseil d'Architecture, d'Urbanisme et de l'environnement (CAUE) de votre département"
 etape : "1 - J’ai repéré un site à revitaliser, que dois-je faire ?"

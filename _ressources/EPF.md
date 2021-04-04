@@ -1,5 +1,5 @@
 ---
-layout: ressources2
+layout: single-page-app
 
 phrase_catch : "Faire acquérir temporairement le site par un EPF (Etablissement Public Foncier)"
 sous_titre: "Un EPF peut vous aider à acheter le foncier souhaité et à le réhabiliter."
