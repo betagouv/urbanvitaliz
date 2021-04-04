@@ -54,7 +54,7 @@ export default [
 			format: 'iife',
 			file: 'build/spa.rollup.js'
 		},
-		plugins: plugins('build/spa.rollup.css'),
+		plugins: plugins('spa.rollup.css'),
 		watch
 	},
 	{
@@ -64,7 +64,7 @@ export default [
 			format: 'iife',
 			file: 'build/header-login.rollup.js'
 		},
-		plugins: plugins('build/header-login.rollup.css'),
+		plugins: plugins('header-login.rollup.css'),
 		watch
 	}
 ]

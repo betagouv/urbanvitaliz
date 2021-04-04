@@ -220,7 +220,7 @@ page(TOUTES_LES_RESSOURCES, () => {
                 makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
             bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids),
-            urlSecret: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            listeRessourceURL: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeBookmarkListURLFromRessourceCollection(state.currentRessourceCollection) :
                 undefined,
         }
@@ -295,9 +295,11 @@ function removeAccents(str){
     return typeof str === 'string' ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "") : undefined;
 }
 
-page('/recherche-textuelle', context => {
+page('/recherche-ressource', context => {
 
     function mapStateToProps(state){
+        let findRelevantRessources;
+        
         // @ts-ignore
         if(state.allResources){
             const index = lunr(function () {
@@ -313,17 +315,20 @@ page('/recherche-textuelle', context => {
                 }
             })
 
-            return {
-                findRelevantRessources(text){
-                    const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
+            findRelevantRessources = function(text){
+                const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
 
-                    console.log('lunrResults', lunrResults)
+                console.log('lunrResults', lunrResults)
 
-                    return lunrResults.map(r => state.allResources.find(ressource => ressource.id === r.ref))
-                }
-            }
-        } else {
-            return {};
+                return lunrResults.map(r => state.allResources.find(ressource => ressource.id === r.ref))
+            };
+        } 
+
+        return {
+            findRelevantRessources,
+            listeRessourceURL: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkListURLFromRessourceCollection(state.currentRessourceCollection) :
+                undefined,
         }
     }
 

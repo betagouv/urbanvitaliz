@@ -1,49 +1,51 @@
 <script>
     import ResourceOverview from './ResourceOverview.svelte';
-    import {TOUTES_LES_RESSOURCES} from '../../shared/routes';
+    import Squelette from './Squelette.svelte'
 
     export let bookmarkedResources = undefined;
     export let makeUnbookmarkResource = undefined;
     export let recommendations = undefined;
 </script>
 
-<section class="bookmarks">
-    <h1>Mes ressources enregistrées</h1>
+<Squelette>
+    <svelte:fragment slot="colonne-du-centre">
+        <section class="bookmarks">
+            <h1>Mes ressources enregistrées</h1>
+        
+            {#if bookmarkedResources}
+            <ul>
+                {#each bookmarkedResources as resource}
+                <li>
+                    <ResourceOverview 
+                        resource={resource}
+                        unbookmarkResource={makeUnbookmarkResource && makeUnbookmarkResource(resource.id)}    
+                    />
+                </li>
+                {/each}
+            </ul>
+            {/if}
+        </section> 
+    </svelte:fragment>
 
-    {#if bookmarkedResources}
-    <ul>
-        {#each bookmarkedResources as resource}
-        <li>
-            <ResourceOverview 
-                resource={resource}
-                unbookmarkResource={makeUnbookmarkResource && makeUnbookmarkResource(resource.id)}    
-            />
-        </li>
-        {/each}
-    </ul>
-    {/if}
-</section> 
-
-
-{#if recommendations}
-<section class="recommendations">
-    <h1>Recommandations de l'équipe UrbanVitaliz</h1>
-    <ul>
-        {#each recommendations as reco}
-        <li>
-            <ResourceOverview 
-                resource={reco.resource}   
-            />
-            <strong>Message de l'équipe UrbanVitaliz&nbsp;:</strong>
-            <p>{reco.message}</p>
-        </li>
-        {/each}
-    </ul>
-</section> 
-{/if}
-
-<a href=".{TOUTES_LES_RESSOURCES}">Rechercher d’autres ressources : Par thématique</a><br>
-<a href="./recherche-textuelle">Rechercher d’autres ressources : Par analyse intelligente</a>
+    <svelte:fragment slot="colonne-de-droite">
+        {#if recommendations}
+        <section class="recommendations">
+            <h1>Recommandations de l'équipe UrbanVitaliz</h1>
+            <ul>
+                {#each recommendations as reco}
+                <li>
+                    <ResourceOverview 
+                        resource={reco.resource}   
+                    />
+                    <strong>Message de l'équipe UrbanVitaliz&nbsp;:</strong>
+                    <p>{reco.message}</p>
+                </li>
+                {/each}
+            </ul>
+        </section> 
+        {/if}
+    </svelte:fragment>
+</Squelette>
 
 <style>
     .bookmarks ul, .recommendations ul{
