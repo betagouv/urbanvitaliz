@@ -5,6 +5,7 @@
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     export let bookmarkedResourceIdSet;
+    $: console.log(resources)
 </script>
 
 <section>

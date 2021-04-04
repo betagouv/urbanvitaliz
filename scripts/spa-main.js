@@ -26,7 +26,7 @@ import prepareLoginHeader from './prepareLoginHeader.js';
 stemmerSupport(lunr)
 lunrfr(lunr)
 
-function findRelevantResources(allResources = [], filters){
+function findRelevantResourcesFromFilters(allResources = [], filters){
     return allResources.filter(r => {
         return r.etape.some(e => filters.étapes.has(e)) && 
             r.thematique.some(t => filters.thématiques.has(t))
@@ -80,7 +80,7 @@ const store = new Store({
             else
                 state.filters.étapes.add(étape)
 
-            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+            state.relevantResources = findRelevantResourcesFromFilters(state.allResources, state.filters)
         },
         toggleThématiquesFilter(state, thématique){
             if(state.filters.thématiques.has(thématique))
@@ -88,7 +88,7 @@ const store = new Store({
             else
                 state.filters.thématiques.add(thématique)
 
-            state.relevantResources = findRelevantResources(state.allResources, state.filters)
+            state.relevantResources = findRelevantResourcesFromFilters(state.allResources, state.filters)
         },
         addResourceIdToCurrentRessourceCollection(state, resourceId){
             state.currentRessourceCollection.ressources_ids.push(resourceId)
@@ -135,7 +135,7 @@ function initializeStateWithResources(){
         store.mutations.setThématiques([...thématiquesOptions]);
 
         store.mutations.setAllResources(resources); 
-        store.mutations.setRelevantResources(findRelevantResources(resources, store.state.filters))
+        store.mutations.setRelevantResources(findRelevantResourcesFromFilters(resources, store.state.filters))
     });
 }
 
@@ -319,10 +319,8 @@ page('/recherche-ressource', context => {
 
             findRelevantRessources = function(text){
                 const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
-
-                console.log('lunrResults', lunrResults)
-
-                return lunrResults.map(r => state.allResources.find(ressource => ressource.id === r.ref))
+                
+                return lunrResults.map(r => relevantResources.find(ressource => ressource.id === r.ref)).filter(r => r !== undefined)
             };
         } 
 
@@ -330,7 +328,6 @@ page('/recherche-ressource', context => {
             étapes, 
             thématiques, 
             filters, 
-            relevantResources, 
             étapeFilterChange: store.mutations.toggleÉtapeFilter, 
             thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
             findRelevantRessources,

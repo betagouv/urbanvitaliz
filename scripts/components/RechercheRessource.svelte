@@ -18,7 +18,7 @@
     
     let text = '';
 
-    $ : ressources = findRelevantRessources(text)
+    $ : ressources = findRelevantRessources(text) || []
 </script>
 
 <Squelette {listeRessourceURL}>
@@ -26,8 +26,8 @@
         <section>
             <h3>Rechercher une ressource</h3>
             <p>
-                J’ai une friche à réhabiliter et je rencontre les difficultés suivantes :
-                Vous pouvez décrire précisement le projet et les soucis que vous rencontrez comme dans un email.
+                J’ai une friche à réhabiliter et je rencontre les difficultés suivantes :<br>
+                <em>Vous pouvez décrire précisement le projet et les soucis que vous rencontrez comme dans un email.</em>
             </p>
             <textarea class="rf-input" bind:value={text}></textarea>
 
@@ -41,8 +41,9 @@
         </section>
 
         <section>
-            {#if Array.isArray(ressources) && ressources.length >= 1}
             <h4>{ressources.length} Ressources pertinentes</h4>
+            {#if ressources.length >= 1}
+            
             <ResourceList
                 resources={ressources}
                 {makeBookmarkResource}
@@ -62,5 +63,12 @@
 
     h3, h4{
         color: $blue-france-500;
+    }
+    p{
+        margin-bottom: 0.5rem;
+    }
+    textarea{
+        height: 12rem;
+        margin-bottom: 1rem;
     }
 </style>
