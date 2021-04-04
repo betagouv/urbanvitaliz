@@ -6,7 +6,7 @@ import Store from 'baredux'
 
 import ToutesLesRessources from './components/ToutesLesRessources.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
-import TextSearch from './components/TextSearch.svelte'
+import RechercheRessource from './components/RechercheRessource.svelte'
 import SendRecommandation from './components/SendRecommendation.svelte'
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
@@ -332,7 +332,7 @@ page('/recherche-ressource', context => {
         }
     }
 
-    const textSearch = new TextSearch({
+    const textSearch = new RechercheRessource({
         target: svelteTarget,
         props: mapStateToProps(store.state)
     });
