@@ -6,8 +6,9 @@ import Store from 'baredux'
 
 import ToutesLesRessources from './components/ToutesLesRessources.svelte';
 import BookmarkList from './components/BookmarkList.svelte';
-import RechercheRessource from './components/RechercheRessource.svelte'
-import SendRecommandation from './components/SendRecommendation.svelte'
+import RechercheRessource from './components/RechercheRessource.svelte';
+import SendRecommandation from './components/SendRecommendation.svelte';
+import Ressource from './components/Ressource.svelte';
 
 import {LISTE_RESSOURCES_ROUTE} from '../shared/routes.js';
 import {TOUTES_LES_RESSOURCES} from '../shared/routes.js';
@@ -385,6 +386,24 @@ page('/envoi-recommandation', context => {
     .then(persons => { store.mutations.setAllPersons(persons) });
     
     replaceComponent(sendRecommandation, mapStateToProps)
+
+    initializeStateWithResources();
+})
+
+page('/ressources/*', context => {
+    console.log(context);
+    function mapStateToProps(state){
+        console.log(state.allResources)
+        const ressource = state.allResources && state.allResources.find(r => r.url === context.pathname) 
+        return {ressource};
+    }
+
+    const ressource = new Ressource({
+        target: svelteTarget,
+        props: mapStateToProps(store.state)
+    });
+
+    replaceComponent(ressource, mapStateToProps)
 
     initializeStateWithResources();
 })

@@ -98,42 +98,4 @@
             border-bottom: $message-bulle-distance solid $message-bulle-color;
         }
     }
-    /*
-    #talkbubble {
-      width: 120px;
-        border: 5px solid blue;
-      height: 80px;
-      background: red;
-      position: relative;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-    }
-    #talkbubble:before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 26px;
-      width: 0;
-      height: 0;
-      border-top: 13px solid transparent;
-      border-right: 26px solid red;
-      border-bottom: 13px solid transparent;
-    }
-     #triangle-left {
-      width: 0;
-      height: 0;
-      border-top: 50px solid transparent;
-      border-right: 100px solid red;
-      border-bottom: 50px solid transparent;
-    }
-    #triangle-up {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid red;
-    }
-    */
-
 </style>

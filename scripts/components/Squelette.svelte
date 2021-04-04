@@ -1,5 +1,8 @@
 <script>
+    import baseUrl from '../baseUrl.js'
+
     export let listeRessourceURL = '';
+
 
 </script>
 
@@ -18,13 +21,13 @@
                     <a class="rf-sidemenu__link" href="#" target="_self" aria-current="page">Accès direct</a>
                 </li> -->
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="./recherche-ressource"><span class="rf-fi-file-line" aria-hidden="true"></span>Rechercher une ressource</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><span class="rf-fi-file-line" aria-hidden="true"></span>Rechercher une ressource</a>
                         </li>
                         <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{listeRessourceURL}"><span class="rf-fi-file-line" aria-hidden="true"></span>Mes ressources</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="./toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
                         </li>
                         <!--
                         <li class="rf-sidemenu__item">

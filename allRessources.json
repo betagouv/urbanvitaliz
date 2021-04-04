@@ -11,17 +11,17 @@
         {% assign isFirstKey = true %}
         {% for key in ressource %}
             {% if unwantedKeys contains key %}{% continue %}{% endif %}
-            {% unless isFirstKey %},{% endunless %}
             {% assign isFirstKey = false %}
         
             {% if key == "url" %}
-                {{ key | jsonify }}: {{ ressource[key] | relative_url | jsonify }}             
+                {{ key | jsonify }}: {{ ressource[key] | relative_url | jsonify }},            
             {% else %}
-                {{ key | jsonify }}: {{ ressource[key] | jsonify }}
+                {{ key | jsonify }}: {{ ressource[key] | jsonify }},
             {% endif %}
 
         
         {% endfor %}
+        "output": {{ ressource.content | markdownify | jsonify }} 
     }
 {% endfor %}
 ]
