@@ -67,7 +67,7 @@
         }
         .colonne-de-droite{
             flex: 3;
-
+            padding: 0.5rem 1rem;
             background-color: hsl(240, 36.8%, 96.3%);
         }
     }

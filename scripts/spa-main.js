@@ -245,6 +245,9 @@ page(LISTE_RESSOURCES_ROUTE, context => {
             bookmarkedResources: state.allResources && state.currentRessourceCollection ?
                 state.allResources.filter(r => state.currentRessourceCollection.ressources_ids.includes(r.id)) :
                 undefined,
+            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
             makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
