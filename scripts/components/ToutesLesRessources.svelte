@@ -15,10 +15,11 @@
 
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
-    //export let urlSecret;
+    
+    export let listeRessourceURL;
 </script>
 
-<Squelette>
+<Squelette {listeRessourceURL}>
     <svelte:fragment slot="colonne-du-centre">
         <h3>Toutes les Ressources</h3>
 
