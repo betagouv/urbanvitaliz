@@ -298,6 +298,8 @@ function removeAccents(str){
 page('/recherche-ressource', context => {
 
     function mapStateToProps(state){
+        const {étapes, thématiques, filters, relevantResources} = state;
+
         let findRelevantRessources;
         
         // @ts-ignore
@@ -325,7 +327,20 @@ page('/recherche-ressource', context => {
         } 
 
         return {
+            étapes, 
+            thématiques, 
+            filters, 
+            relevantResources, 
+            étapeFilterChange: store.mutations.toggleÉtapeFilter, 
+            thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
             findRelevantRessources,
+            makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            makeUnbookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+                undefined,
+            bookmarkedResourceIdSet: new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids),
             listeRessourceURL: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeBookmarkListURLFromRessourceCollection(state.currentRessourceCollection) :
                 undefined,
