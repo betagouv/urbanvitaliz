@@ -3,20 +3,50 @@
     import ResourceList from "./ResourceList.svelte";
     import Squelette from "./Squelette.svelte";
 
-    export let étapes;
-    export let thématiques;
+    import findRelevantResourcesFromFilters from '../findRelevantResourcesFromFilters.js';
 
-    export let filters;
-    export let étapeFilterChange;
-    export let thématiqueFilterChange;
 
-    export let relevantResources;
+    export let allEtapes;
+    export let allThématiques;
+    export let allResources;
+
     export let bookmarkedResourceIdSet;
 
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     
     export let listeRessourceURL;
+
+    let filters = {
+        étapes: new Set(allEtapes),
+        thématiques: new Set(allThématiques)
+    };
+    $: console.log("étapes:",allEtapes)
+    $: filters = {
+        étapes: new Set(allEtapes),
+        thématiques: new Set(allThématiques)
+    };
+
+    let étapeFilterChange = function toggleÉtapeFilter(étape){
+        console.log("étape dans filterChange: ", étape)
+        if(filters.étapes.has(étape))
+            filters.étapes.delete(étape)
+        else
+            filters.étapes.add(étape)
+        console.log(filters.étapes)
+        filters = filters;
+    };
+
+    let thématiqueFilterChange = function toggleThématiquesFilter(thématique){
+        if(filters.thématiques.has(thématique))
+            filters.thématiques.delete(thématique)
+        else
+            filters.thématiques.add(thématique)
+    };
+    $: console.log(filters)
+    let relevantResources = [];
+    $: relevantResources = findRelevantResourcesFromFilters(allResources, filters)
+    
 </script>
 
 <Squelette {listeRessourceURL}>
@@ -24,8 +54,8 @@
         <h3>Toutes les Ressources</h3>
 
         <ResourceFilters
-            {étapes}
-            {thématiques}
+            étapes={allEtapes}
+            thématiques={allThématiques}
             {filters}
             {étapeFilterChange}
             {thématiqueFilterChange}
@@ -40,10 +70,7 @@
         />
     </svelte:fragment>
     
-    <svelte:fragment slot="colonne-de-droite">
-        <h1>{relevantResources.length}</h1>
-        <p>Ressources pertinentes sur 98</p>
-    </svelte:fragment>
+    
     
 </Squelette>
 
@@ -53,10 +80,5 @@
     h3, h4{
         color: $blue-france-500;
     }
-    h1{
-        font-size: 20rem;
-    }
-    p{
-        font-size: 36px;
-    }
+    
 </style>

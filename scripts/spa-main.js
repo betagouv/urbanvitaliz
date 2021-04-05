@@ -16,7 +16,8 @@ import SERVER_ORIGIN from './serverOrigin.js';
 import getAllResources from './getAllResources.js';
 import baseUrl from './baseUrl.js';
 import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection.js';
-import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js'
+import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js';
+import findRelevantResourcesFromFilters from './findRelevantResourcesFromFilters.js';
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
@@ -26,13 +27,6 @@ import prepareLoginHeader from './prepareLoginHeader.js';
 
 stemmerSupport(lunr)
 lunrfr(lunr)
-
-function findRelevantResourcesFromFilters(allResources = [], filters){
-    return allResources.filter(r => {
-        return r.etape.some(e => filters.étapes.has(e)) && 
-            r.thematique.some(t => filters.thématiques.has(t))
-    })
-}
 
 // @ts-ignore
 const store = new Store({
@@ -205,15 +199,12 @@ function makeUnbookmarkResourceFromCap(editCapabilityUrl){
 page(TOUTES_LES_RESSOURCES, () => {
 
     function mapStateToProps(state){
-        const {étapes, thématiques, filters, relevantResources} = state;
+        const {étapes, thématiques, allResources} = state;
 
         return {
-            étapes, 
-            thématiques, 
-            filters, 
-            relevantResources, 
-            étapeFilterChange: store.mutations.toggleÉtapeFilter, 
-            thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
+            allEtapes: étapes, 
+            allThématiques: thématiques, 
+            allResources,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,

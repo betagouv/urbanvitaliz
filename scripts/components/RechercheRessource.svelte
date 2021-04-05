@@ -55,6 +55,11 @@
             {/if}
         </section>
     </svelte:fragment>
+
+    <svelte:fragment slot="colonne-de-droite">
+        <h1>{relevantResources.length}</h1>
+        <p>Ressources pertinentes sur 98</p>
+    </svelte:fragment>
 </Squelette>
 
 
@@ -70,5 +75,11 @@
     textarea{
         height: 12rem;
         margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 15rem;
+    }
+    p{
+        font-size: 36px;
     }
 </style>
