@@ -32,9 +32,6 @@
                         <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
                         </li>
-                        <!--
-                        
-                        -->
                     </ul>
                 </div>
             </div>
