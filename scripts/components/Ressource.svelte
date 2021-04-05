@@ -19,7 +19,6 @@
                 <p>{ressource.sous_titre}</p>
             {/if}
             {@html ressource.output}
-            <!-- <SvelteMarkdown source={ressource.content} /> -->
         </div>
     </svelte:fragment>
 
