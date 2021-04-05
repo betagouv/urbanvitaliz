@@ -13,9 +13,7 @@
     <svelte:fragment slot="colonne-du-centre">
         <div class="markdown-container">
             <h1>{ressource.phrase_catch}</h1>
-            {#if ressource.sous_titre === undefined}
-                <p></p>
-            {:else}
+            {#if ressource.sous_titre !== undefined}
                 <p>{ressource.sous_titre}</p>
             {/if}
             {@html ressource.output}
