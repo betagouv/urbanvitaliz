@@ -5,7 +5,6 @@
 
     import findRelevantResourcesFromFilters from '../findRelevantResourcesFromFilters.js';
 
-
     export let allEtapes;
     export let allThématiques;
     export let allResources;
@@ -17,35 +16,53 @@
     
     export let listeRessourceURL;
 
-    let filters = {
-        étapes: new Set(allEtapes),
-        thématiques: new Set(allThématiques)
-    };
-    $: console.log("étapes:",allEtapes)
-    $: filters = {
-        étapes: new Set(allEtapes),
-        thématiques: new Set(allThématiques)
+    let userFilters = {
+        étapes: new Set(),
+        thématiques: new Set()
     };
 
     let étapeFilterChange = function toggleÉtapeFilter(étape){
         console.log("étape dans filterChange: ", étape)
-        if(filters.étapes.has(étape))
-            filters.étapes.delete(étape)
+        if(userFilters.étapes.has(étape))
+            userFilters.étapes.delete(étape)
         else
-            filters.étapes.add(étape)
-        console.log(filters.étapes)
-        filters = filters;
+            userFilters.étapes.add(étape)
+        
+        userFilters = userFilters // to trigger svelte re-render
     };
 
     let thématiqueFilterChange = function toggleThématiquesFilter(thématique){
-        if(filters.thématiques.has(thématique))
-            filters.thématiques.delete(thématique)
+        if(userFilters.thématiques.has(thématique))
+            userFilters.thématiques.delete(thématique)
         else
-            filters.thématiques.add(thématique)
+            userFilters.thématiques.add(thématique)
+
+        userFilters = userFilters // to trigger svelte re-render
     };
-    $: console.log(filters)
+
+    let filters = {
+        étapes: new Set(allEtapes),
+        thématiques: new Set(allThématiques)
+    }
+
     let relevantResources = [];
-    $: relevantResources = findRelevantResourcesFromFilters(allResources, filters)
+    $: {
+        // building filters by substracting all étapes/thématiques from userFilters
+        filters = {
+            étapes: new Set(allEtapes),
+            thématiques: new Set(allThématiques)
+        };
+
+        for(const e of userFilters.étapes){
+            filters.étapes.delete(e)
+        }
+
+        for(const t of userFilters.thématiques){
+            filters.thématiques.delete(t)
+        }
+
+        relevantResources = findRelevantResourcesFromFilters(allResources, filters)
+    }
     
 </script>
 

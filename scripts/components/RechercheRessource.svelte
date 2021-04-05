@@ -57,7 +57,7 @@
     </svelte:fragment>
 
     <svelte:fragment slot="colonne-de-droite">
-        <h1>{relevantResources.length}</h1>
+        <h1>{ressources.length}</h1>
         <p>Ressources pertinentes sur 98</p>
     </svelte:fragment>
 </Squelette>
