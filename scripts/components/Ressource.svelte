@@ -6,11 +6,6 @@
 
     export let bookmarkResource;
     export let unbookmarkResource;
-    
-    let keywords = ressource.keywords;
-    $: keywords = ressource.keywords;
-    $: console.log(ressource)
-    $: console.log(keywords);
 
 </script>
 
@@ -34,17 +29,6 @@
         {/if}
         {#if typeof bookmarkResource === 'function'}
             <button class="rf-btn rf-btn--secondary" on:click={bookmarkResource}>☆ Enregistrer</button>
-        {/if}
-
-        {#if keywords}
-            <h4>Mots-clefs</h4>
-            <ul>
-                {#each keywords.split(",") as keyword}
-                <li>
-                    <span class="rf-tag">{keyword}</span>
-                </li>
-                {/each}
-            </ul>
         {/if}
 
         <h4>Êtes-vous satisfait de cette page ?</h4>
