@@ -383,7 +383,6 @@ page('/envoi-recommandation', context => {
 })
 
 page('/ressources/*', context => {
-    console.log(context);
     function mapStateToProps(state){
         console.log(state.allResources)
         const ressource = state.allResources ? state.allResources.find(r => r.url === context.pathname || r.url === context.pathname + '.html'): {};
