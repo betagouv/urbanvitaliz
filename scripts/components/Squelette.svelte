@@ -24,15 +24,16 @@
                             <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><span class="rf-fi-file-line" aria-hidden="true"></span>Rechercher une ressource</a>
                         </li>
                         <li class="rf-sidemenu__item">
+                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><span class="rf-fi-file-line" aria-hidden="true"></span>Parcours méthodologie</a>
+                        </li>
+                        <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{listeRessourceURL}"><span class="rf-fi-file-line" aria-hidden="true"></span>Mes ressources</a>
                         </li>
                         <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
                         </li>
                         <!--
-                        <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="./toute-les-ressoures"><span class="rf-fi-file-line" aria-hidden="true"></span>Méthodologie</a>
-                        </li>
+                        
                         -->
                     </ul>
                 </div>
