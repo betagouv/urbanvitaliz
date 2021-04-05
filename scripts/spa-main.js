@@ -315,7 +315,12 @@ page('/recherche-ressource', context => {
             findRelevantRessources = function(text){
                 const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
                 
-                return lunrResults.map(r => relevantResources.find(ressource => ressource.id === r.ref)).filter(r => r !== undefined)
+                let baseRessources = relevantResources
+
+                if(filters.étapes.size === 0 && filters.thématiques.size === 0)
+                    baseRessources = allResources
+
+                return lunrResults.map(r => baseRessources.find(ressource => ressource.id === r.ref)).filter(r => r !== undefined)
             };
         } 
 
