@@ -16,7 +16,8 @@ import SERVER_ORIGIN from './serverOrigin.js';
 import getAllResources from './getAllResources.js';
 import baseUrl from './baseUrl.js';
 import makeBookmarkListURLFromRessourceCollection from './makeBookmarkListURLFromRessourceCollection.js';
-import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js'
+import makeListRessourceURLFromPerson from './makeListRessourceURLFromPerson.js';
+import findRelevantResourcesFromFilters from './findRelevantResourcesFromFilters.js';
 
 import lunr from "lunr"
 import stemmerSupport from 'lunr-languages/lunr.stemmer.support'
@@ -26,13 +27,6 @@ import prepareLoginHeader from './prepareLoginHeader.js';
 
 stemmerSupport(lunr)
 lunrfr(lunr)
-
-function findRelevantResourcesFromFilters(allResources = [], filters){
-    return allResources.filter(r => {
-        return r.etape.some(e => filters.étapes.has(e)) && 
-            r.thematique.some(t => filters.thématiques.has(t))
-    })
-}
 
 // @ts-ignore
 const store = new Store({
@@ -205,15 +199,12 @@ function makeUnbookmarkResourceFromCap(editCapabilityUrl){
 page(TOUTES_LES_RESSOURCES, () => {
 
     function mapStateToProps(state){
-        const {étapes, thématiques, filters, relevantResources} = state;
+        const {étapes, thématiques, allResources} = state;
 
         return {
-            étapes, 
-            thématiques, 
-            filters, 
-            relevantResources, 
-            étapeFilterChange: store.mutations.toggleÉtapeFilter, 
-            thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
+            allEtapes: étapes, 
+            allThématiques: thématiques, 
+            allResources,
             makeBookmarkResource: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
                 makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
                 undefined,
@@ -302,8 +293,8 @@ function removeAccents(str){
 page('/recherche-ressource', context => {
 
     function mapStateToProps(state){
-        const {étapes, thématiques, filters, relevantResources} = state;
-
+        const {étapes, thématiques, filters, relevantResources, allResources} = state;
+        console.log("allResources:", allResources)
         let findRelevantRessources;
         
         // @ts-ignore
@@ -324,13 +315,19 @@ page('/recherche-ressource', context => {
             findRelevantRessources = function(text){
                 const lunrResults = index.search( removeAccents(text.replaceAll(':', '')) )
                 
-                return lunrResults.map(r => relevantResources.find(ressource => ressource.id === r.ref)).filter(r => r !== undefined)
+                let baseRessources = relevantResources
+
+                if(filters.étapes.size === 0 && filters.thématiques.size === 0)
+                    baseRessources = allResources
+
+                return lunrResults.map(r => baseRessources.find(ressource => ressource.id === r.ref)).filter(r => r !== undefined)
             };
         } 
 
         return {
             étapes, 
-            thématiques, 
+            thématiques,
+            allResources,
             filters, 
             étapeFilterChange: store.mutations.toggleÉtapeFilter, 
             thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
@@ -391,11 +388,28 @@ page('/envoi-recommandation', context => {
 })
 
 page('/ressources/*', context => {
-    console.log(context);
     function mapStateToProps(state){
         console.log(state.allResources)
         const ressource = state.allResources ? state.allResources.find(r => r.url === context.pathname || r.url === context.pathname + '.html'): {};
-        return {ressource};
+        
+        const makeBookmarkResource =  state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+            undefined;        
+        const bookmarkedResourceIdSet =  new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids);
+
+        const makeUnbookmarkResource = state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+            undefined;
+
+
+        return {
+            ressource,
+            bookmarkResource: makeBookmarkResource && !bookmarkedResourceIdSet.has(ressource.id) && makeBookmarkResource(ressource.id),
+            unbookmarkResource: makeUnbookmarkResource && bookmarkedResourceIdSet.has(ressource.id) && makeUnbookmarkResource(ressource.id),
+            listeRessourceURL: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkListURLFromRessourceCollection(state.currentRessourceCollection) :
+                undefined,
+        };
     }
 
     const ressource = new Ressource({

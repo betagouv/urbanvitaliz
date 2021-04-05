@@ -24,20 +24,23 @@
                             <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><span class="rf-fi-file-line" aria-hidden="true"></span>Rechercher une ressource</a>
                         </li>
                         <li class="rf-sidemenu__item">
+                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><span class="rf-fi-file-line" aria-hidden="true"></span>Parcours méthodologie</a>
+                        </li>
+                        <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{listeRessourceURL}"><span class="rf-fi-file-line" aria-hidden="true"></span>Mes ressources</a>
                         </li>
                         <li class="rf-sidemenu__item">
                             <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
                         </li>
-                        <!--
-                        <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="./toute-les-ressoures"><span class="rf-fi-file-line" aria-hidden="true"></span>Méthodologie</a>
-                        </li>
-                        -->
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <section class="contact">
+            <p>Vous n'avez pas trouvé de quoi faire avancer votre projet de friche ?</p>
+            <button class="rf-btn rf-btn--secondary">Contactez-nous<span class="rf-fi-mail-line" aria-hidden="true"></span></button>
+        </section>
     </section>
     <section class="colonne-du-centre">
         <slot name="colonne-du-centre"></slot>
@@ -62,10 +65,24 @@
             flex: 3;
 
             background-color: #F8F8F8;
+            
+            .contact{
+                color: $blue-france-500;
+                text-align: left;
+                padding: 1.5rem;
+                margin-top: 10rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .rf-fi-mail-line{
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                }
+            }
         }
         .colonne-du-centre{
             flex: 10;
-
+            max-width: 50%;
             padding: 0.5rem 1rem;
         }
         .colonne-de-droite{

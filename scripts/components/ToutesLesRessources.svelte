@@ -3,20 +3,67 @@
     import ResourceList from "./ResourceList.svelte";
     import Squelette from "./Squelette.svelte";
 
-    export let étapes;
-    export let thématiques;
+    import findRelevantResourcesFromFilters from '../findRelevantResourcesFromFilters.js';
 
-    export let filters;
-    export let étapeFilterChange;
-    export let thématiqueFilterChange;
+    export let allEtapes;
+    export let allThématiques;
+    export let allResources;
 
-    export let relevantResources;
     export let bookmarkedResourceIdSet;
 
     export let makeBookmarkResource;
     export let makeUnbookmarkResource;
     
     export let listeRessourceURL;
+
+    let userFilters = {
+        étapes: new Set(),
+        thématiques: new Set()
+    };
+
+    let étapeFilterChange = function toggleÉtapeFilter(étape){
+        console.log("étape dans filterChange: ", étape)
+        if(userFilters.étapes.has(étape))
+            userFilters.étapes.delete(étape)
+        else
+            userFilters.étapes.add(étape)
+        
+        userFilters = userFilters // to trigger svelte re-render
+    };
+
+    let thématiqueFilterChange = function toggleThématiquesFilter(thématique){
+        if(userFilters.thématiques.has(thématique))
+            userFilters.thématiques.delete(thématique)
+        else
+            userFilters.thématiques.add(thématique)
+
+        userFilters = userFilters // to trigger svelte re-render
+    };
+
+    let filters = {
+        étapes: new Set(allEtapes),
+        thématiques: new Set(allThématiques)
+    }
+
+    let relevantResources = [];
+    $: {
+        // building filters by substracting all étapes/thématiques from userFilters
+        filters = {
+            étapes: new Set(allEtapes),
+            thématiques: new Set(allThématiques)
+        };
+
+        for(const e of userFilters.étapes){
+            filters.étapes.delete(e)
+        }
+
+        for(const t of userFilters.thématiques){
+            filters.thématiques.delete(t)
+        }
+
+        relevantResources = findRelevantResourcesFromFilters(allResources, filters)
+    }
+    
 </script>
 
 <Squelette {listeRessourceURL}>
@@ -24,8 +71,8 @@
         <h3>Toutes les Ressources</h3>
 
         <ResourceFilters
-            {étapes}
-            {thématiques}
+            étapes={allEtapes}
+            thématiques={allThématiques}
             {filters}
             {étapeFilterChange}
             {thématiqueFilterChange}
@@ -39,6 +86,9 @@
             {bookmarkedResourceIdSet}
         />
     </svelte:fragment>
+    
+    
+    
 </Squelette>
 
 <style lang="scss">
@@ -47,4 +97,5 @@
     h3, h4{
         color: $blue-france-500;
     }
+    
 </style>

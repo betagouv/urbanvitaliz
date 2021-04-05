@@ -46,7 +46,6 @@
     "lunr-languages": "^1.4.0",
     "migrate-mongo": "^8.1.2",
     "mongodb": "^3.6.2",
-    "page": "^1.11.6",
-    "svelte-markdown": "^0.1.6"
+    "page": "^1.11.6"
   }
 }
