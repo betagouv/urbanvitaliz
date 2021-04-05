@@ -387,7 +387,25 @@ page('/ressources/*', context => {
     function mapStateToProps(state){
         console.log(state.allResources)
         const ressource = state.allResources ? state.allResources.find(r => r.url === context.pathname || r.url === context.pathname + '.html'): {};
-        return {ressource};
+        
+        const makeBookmarkResource =  state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeBookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+            undefined;        
+        const bookmarkedResourceIdSet =  new Set(state.currentRessourceCollection && state.currentRessourceCollection.ressources_ids);
+
+        const makeUnbookmarkResource = state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+            makeUnbookmarkResourceFromCap(state.currentRessourceCollection.edit_capability) :
+            undefined;
+
+
+        return {
+            ressource,
+            bookmarkResource: makeBookmarkResource && !bookmarkedResourceIdSet.has(ressource.id) && makeBookmarkResource(ressource.id),
+            unbookmarkResource: makeUnbookmarkResource && bookmarkedResourceIdSet.has(ressource.id) && makeUnbookmarkResource(ressource.id),
+            listeRessourceURL: state.currentRessourceCollection && state.currentRessourceCollection.edit_capability ?
+                makeBookmarkListURLFromRessourceCollection(state.currentRessourceCollection) :
+                undefined,
+        };
     }
 
     const ressource = new Ressource({
