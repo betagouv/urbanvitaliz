@@ -293,8 +293,8 @@ function removeAccents(str){
 page('/recherche-ressource', context => {
 
     function mapStateToProps(state){
-        const {étapes, thématiques, filters, relevantResources} = state;
-
+        const {étapes, thématiques, filters, relevantResources, allResources} = state;
+        console.log("allResources:", allResources)
         let findRelevantRessources;
         
         // @ts-ignore
@@ -321,7 +321,8 @@ page('/recherche-ressource', context => {
 
         return {
             étapes, 
-            thématiques, 
+            thématiques,
+            allResources,
             filters, 
             étapeFilterChange: store.mutations.toggleÉtapeFilter, 
             thématiqueFilterChange: store.mutations.toggleThématiquesFilter,
