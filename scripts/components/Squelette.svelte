@@ -38,6 +38,11 @@
                 </div>
             </div>
         </nav>
+
+        <section class="contact">
+            <p>Vous n'avez pas trouvé de quoi faire avancer votre projet de friche ?</p>
+            <button class="rf-btn rf-btn--secondary">Contactez-nous<span class="rf-fi-mail-line" aria-hidden="true"></span></button>
+        </section>
     </section>
     <section class="colonne-du-centre">
         <slot name="colonne-du-centre"></slot>
@@ -62,6 +67,20 @@
             flex: 3;
 
             background-color: #F8F8F8;
+            
+            .contact{
+                color: $blue-france-500;
+                text-align: left;
+                padding: 1.5rem;
+                margin-top: 10rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .rf-fi-mail-line{
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                }
+            }
         }
         .colonne-du-centre{
             flex: 10;
