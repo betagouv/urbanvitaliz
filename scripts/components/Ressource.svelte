@@ -24,15 +24,17 @@
     </svelte:fragment>
 
     <svelte:fragment slot="colonne-de-droite">
-        {#if typeof unbookmarkResource === 'function'}
-            <button class="rf-btn rf-btn--secondary" on:click={unbookmarkResource}>🌟 Supprimer</button>
-        {/if}
-        {#if typeof bookmarkResource === 'function'}
-            <button class="rf-btn rf-btn--secondary" on:click={bookmarkResource}>☆ Enregistrer</button>
-        {/if}
+        <section class="ressource-side">
+            {#if typeof unbookmarkResource === 'function'}
+                <button class="rf-btn rf-btn--secondary" on:click={unbookmarkResource}>🌟 Supprimer</button>
+            {/if}
+            {#if typeof bookmarkResource === 'function'}
+                <button class="rf-btn rf-btn--secondary" on:click={bookmarkResource}>☆ Enregistrer</button>
+            {/if}
 
-        <h4>Êtes-vous satisfait de cette page ?</h4>
-        <button class="rf-btn rf-btn--secondary">Faire une suggestion</button>
+            <h4>Êtes-vous satisfait de cette page ?</h4>
+            <button class="rf-btn rf-btn--secondary">Faire une suggestion</button>
+        </section>
     </svelte:fragment>
 </Squelette>
 
@@ -53,5 +55,18 @@
     }
     .markdown-container{
         max-width: 100%;
+    }
+
+    .ressource-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4{
+            font-size: 20px;
+            color: $blue-france-500;
+
+            margin-top: 1em;
+        }
     }
 </style>
