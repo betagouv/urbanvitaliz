@@ -27,8 +27,7 @@
         <section class="filtre-resources">
             <h3>Rechercher une ressource</h3>
             <p>
-                J’ai une friche à réhabiliter et je rencontre les difficultés suivantes :<br>
-                <em>Vous pouvez décrire précisement le projet et les soucis que vous rencontrez comme dans un email.</em>
+                Saisissez des mots-clefs ou des expressions pour décrire votre friche, votre projet, vos difficultés :
             </p>
             <textarea class="rf-input" bind:value={text}></textarea>
 
@@ -42,7 +41,7 @@
         </section>
 
         <section>
-            <h4>{ressources.length} Ressources pertinentes</h4>
+            <h4>{ressources.length} Ressources correspondantes</h4>
             {#if ressources.length >= 1}
             
             <ResourceList
