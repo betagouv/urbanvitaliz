@@ -46,9 +46,9 @@ Si vous souhaitez en savoir plus, prenez contact directement avec l'agence de l'
   
 📞 **Contacts** :   
 
-Il faut contacter l'unité territoriale et demander la personne qui intervient sur le cycle court de l'eau.  
-Sur l'unité territoriale de Rodez, votre interlocutrice est :  
-Anne Trouche   
-anne.trouche@eau-adour-garonne.fr  
-05 65 75 56 08
+Il faut contacter l'antenne locale et demander la personne qui intervient sur le cycle court de l'eau / désimperméabilisation.  
+Sur la délégation régionale de Montpellier, votre interlocuteur est :  
+Gwénolé LE ROUX  
+Gwenole.LEROUX@eaurmc.fr  
+04 26 22 32 10
 
