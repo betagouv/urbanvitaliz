@@ -2,8 +2,10 @@
 layout: single-page-app
 
 phrase_catch : "Organiser la participation et la concertation citoyenne pour mon projet avec la Boussole de la participation"
+sous_titre : "Quelle que soit l'étape du projet, l'outil vous donne des pistes à suivre et vous permet d'évaluer votre démarche."
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Aide et subvention"
+keywords: participer, citoyen, conception, partage
 ---
 
 💡 **Connaissez-vous la Boussole de la participation : une application pour organiser et suivre un processus participatif ?**
@@ -14,7 +16,7 @@ thematique : "Aide et subvention"
   
   La Boussole de la participation donne des repères à partager, voire à co-construire avec l’ensemble des participants. Elle facilite aussi le rendu compte du travail accompli et le bilan de la participation.
   
-  ✔ [Retrouvez ici une plaquette descriptive](https://www.cerema.fr/system/files/documents/2020/09/cerema_boussole_vf-5.pdf)
-  ✔ [Présentation plus complète](https://www.cerema.fr/fr/actualites/boussole-participation-application-organiser-suivre)
-  ✔ Contact : participation@cerema.fr
+  ✔ [Retrouvez ici une plaquette descriptive](https://www.cerema.fr/system/files/documents/2020/09/cerema_boussole_vf-5.pdf)  
+  ✔ [Présentation plus complète](https://www.cerema.fr/fr/actualites/boussole-participation-application-organiser-suivre)  
+  ✔ Contact : participation@cerema.fr  
   
