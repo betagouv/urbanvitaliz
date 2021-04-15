@@ -2,6 +2,7 @@
   "name": "urban-vitaliz",
   "version": "1.0.0",
   "type": "module",
+  "license" : "MIT"
   "scripts": {
     "build": "rollup -c",
     "prestart": "npm run database:migrate:up",
