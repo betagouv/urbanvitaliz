@@ -19,7 +19,7 @@ Listes des technos principales :
 - Lunr
 
 ## L'équipe, le contexte
-On est actuellement une équipe de 3-4 personnes, assez touches-à-tout.
+On est actuellement une équipe de 3-4 personnes, assez touches-à-tout. Tu seras la seule personne en dév dans l'équipe.
 On aide les petites villes et agglomération à recycler les friches de leur territoire, en les orientant vers les personnes qui peuvent les accompagner, les dispositifs qui existent, les bons financements... [En savoir plus ici](https://beta.gouv.fr/startups/urbanvitaliz.html)
 
 On travaille au sein de beta.gouv.fr, où on crée des **services publics** numériques avec des méthodes inspirées de l'agile, du lean, de *certaines* pratiques des startups...
