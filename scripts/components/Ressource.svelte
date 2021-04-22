@@ -1,6 +1,6 @@
 <script>
-    import BookmarkList from './BookmarkList.svelte';
-import Squelette from './Squelette.svelte'
+    import baseUrl from '../baseUrl.js'
+    import Squelette from './Squelette.svelte'
 
     export let listeRessourceURL;
     export let ressource = {};
@@ -32,11 +32,11 @@ import Squelette from './Squelette.svelte'
 
             <h4>Êtes-vous satisfait de cette page ?</h4>
             <section class="smiley">
-            <img src="./../assets/images/smiley-sad-1-alternate.svg" alt="personne très triste"/>
-            <img src="./../assets/images/smiley-unhappy-1-alternate.svg" alt="personne triste"/>
-            <img src="./../assets/images/smiley-indiferent-1-alternate.svg" alt="personne neutre"/>
-            <img src="./../assets/images/smiley-smirk-alternate.svg" alt="personne heureuse"/>
-            <img src="./../assets/images/smiley-smile-1-alternate-1.svg" alt="personne très heureuse"/>
+            <img src="{baseUrl}/assets/images/smiley-sad-1-alternate.svg" alt="personne très triste"/>
+            <img src="{baseUrl}/assets/images/smiley-unhappy-1-alternate.svg" alt="personne triste"/>
+            <img src="{baseUrl}/assets/images/smiley-indiferent-1-alternate.svg" alt="personne neutre"/>
+            <img src="{baseUrl}/assets/images/smiley-smirk-alternate.svg" alt="personne heureuse"/>
+            <img src="{baseUrl}/assets/images/smiley-smile-1-alternate-1.svg" alt="personne très heureuse"/>
             </section>
             <button class="rf-btn rf-btn--secondary">Faire une suggestion</button>
             
