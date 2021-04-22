@@ -21,16 +21,16 @@
                     <a class="rf-sidemenu__link" href="#" target="_self" aria-current="page">Accès direct</a>
                 </li> -->
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><img src="./../assets/images/search-bar.svg"/>Rechercher une ressource</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><img src="{baseUrl}/assets/images/search-bar.svg" alt="mage de recherche"/>Rechercher une ressource</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><img src="./../assets/images/hierarchy-6.svg"/>Parcours méthodologie</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><img src="{baseUrl}/assets/images/hierarchy-6.svg" alt="image de hierachy de fichiers"/>Parcours méthodologie</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{listeRessourceURL}"><img src="./../assets/images/common-file-star.svg"/>Mes ressources</a>
+                            <a class="rf-sidemenu__link" href="{listeRessourceURL}"><img src="{baseUrl}/assets/images/common-file-star.svg" alt="Fichier avec une étoile"/>Mes ressources</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><img src="./../assets/images/hierarchy-files-1.svg"/>Toutes les ressources</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><img src="{baseUrl}/assets/images/hierarchy-files-1.svg" alt="image de plusieurs hierachy de dossiers"/>Toutes les ressources</a>
                         </li>
                     </ul>
                 </div>

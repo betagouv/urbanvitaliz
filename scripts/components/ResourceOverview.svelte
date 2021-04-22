@@ -1,4 +1,5 @@
 <script>
+    import baseUrl from '../baseUrl.js'
     export let resource;
 
     export let bookmarkResource = undefined;
@@ -6,7 +7,7 @@
 </script>
 
 <article>
-    <a href={resource.url}><div class="title"><img src="./../assets/images/newspaper-read-woman.svg" /><h1>{resource.phrase_catch}</h1></div></a>
+    <a href={resource.url}><div class="title"><img src="{baseUrl}/assets/images/newspaper-read-woman.svg" alt="Femme qui lit un livre"/><h1>{resource.phrase_catch}</h1></div></a>
     {#if resource.sous_titre}
         <section class="sous_titre">{resource.sous_titre || ''}</section>
     {/if}
