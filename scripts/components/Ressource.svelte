@@ -1,5 +1,6 @@
 <script>
-    import Squelette from './Squelette.svelte'
+    import BookmarkList from './BookmarkList.svelte';
+import Squelette from './Squelette.svelte'
 
     export let listeRessourceURL;
     export let ressource = {};
@@ -30,7 +31,15 @@
             {/if}
 
             <h4>Êtes-vous satisfait de cette page ?</h4>
+            <section class="smiley">
+            <img src="./../assets/images/smiley-sad-1-alternate.svg" alt="personne très triste"/>
+            <img src="./../assets/images/smiley-unhappy-1-alternate.svg" alt="personne triste"/>
+            <img src="./../assets/images/smiley-indiferent-1-alternate.svg" alt="personne neutre"/>
+            <img src="./../assets/images/smiley-smirk-alternate.svg" alt="personne heureuse"/>
+            <img src="./../assets/images/smiley-smile-1-alternate-1.svg" alt="personne très heureuse"/>
+            </section>
             <button class="rf-btn rf-btn--secondary">Faire une suggestion</button>
+            
         </section>
     </svelte:fragment>
 </Squelette>
@@ -58,6 +67,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
 
         h4{
             font-size: 20px;
@@ -65,5 +75,15 @@
 
             margin-top: 1em;
         }
+        .smiley{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            img{
+                padding: 0.7rem;
+                margin-bottom: 0.6rem;
+            }
+        }
+         
     }
 </style>

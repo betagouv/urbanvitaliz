@@ -6,7 +6,7 @@
 </script>
 
 <article>
-    <a href={resource.url}><div class="title"><span class="rf-fi-file-line" aria-hidden="true"></span><h1>{resource.phrase_catch}</h1></div></a>
+    <a href={resource.url}><div class="title"><img src="./../assets/images/newspaper-read-woman.svg" /><h1>{resource.phrase_catch}</h1></div></a>
     {#if resource.sous_titre}
         <section class="sous_titre">{resource.sous_titre || ''}</section>
     {/if}
@@ -58,6 +58,11 @@
         display: flex;
         flex-direction: row;
         background-color: hsla(28, 100%, 62.5%, 0.1);    
+    }
+    img{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.3rem;
     }
     h1{
         font-size: 16px;

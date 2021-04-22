@@ -21,16 +21,16 @@
                     <a class="rf-sidemenu__link" href="#" target="_self" aria-current="page">Accès direct</a>
                 </li> -->
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><span class="rf-fi-file-line" aria-hidden="true"></span>Rechercher une ressource</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/recherche-ressource"><img src="./../assets/images/search-bar.svg"/>Rechercher une ressource</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><span class="rf-fi-file-line" aria-hidden="true"></span>Parcours méthodologie</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/bacasable_perrine/home3_choix_chapitre.html"><img src="./../assets/images/hierarchy-6.svg"/>Parcours méthodologie</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{listeRessourceURL}"><span class="rf-fi-file-line" aria-hidden="true"></span>Mes ressources</a>
+                            <a class="rf-sidemenu__link" href="{listeRessourceURL}"><img src="./../assets/images/common-file-star.svg"/>Mes ressources</a>
                         </li>
                         <li class="rf-sidemenu__item">
-                            <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><span class="rf-fi-file-line" aria-hidden="true"></span>Toutes les ressources</a>
+                            <a class="rf-sidemenu__link" href="{baseUrl}/toutes-les-ressources"><img src="./../assets/images/hierarchy-files-1.svg"/>Toutes les ressources</a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +102,11 @@
         .rf-sidemenu__link{
             font-size: 16px;
             line-height: 1.5em;
-
+            img{
+                width: 3rem;
+                height: 2rem;
+                padding-right: 0.5em;
+            }
             .rf-fi-file-line{
                 padding-right: 0.5rem;
             }
