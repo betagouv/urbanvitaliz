@@ -2,6 +2,7 @@
 import mongodbpackage from "mongodb"
 import constants from "./constants.cjs"
 import makeCapabilityString from "../server/random-cap.js"
+import "./types.js"
 
 const { MongoClient, ObjectID } = mongodbpackage
 const {DATABASE_NAME, MONGO_URL, COLLECTIONS: {PERSONS, RESSOURCE_COLLECTIONS}} = constants
@@ -18,15 +19,12 @@ const [persons, ressource_collections] = await Promise.all([PERSONS, RESSOURCE_C
 
 
 /**
- * @typedef {Object} MongoPerson
- * @property {mongodbpackage.ObjectID} _id
- * @property {string[]} emails
- * @property {string} firstAccessCapability
- */
-
-/**
  * @param {string} email
  * @param {string} optionalFirstAccessCapability
+ * @return {Promise<{
+ *  newUser: boolean
+ *  person: MongoPerson
+ * }>}
  */
 export async function getOrCreatePersonByEmail(email, optionalFirstAccessCapability){
     /** @type {MongoPerson} */
@@ -77,16 +75,24 @@ export async function getResourceCollection(edit_capability){
 }
 
 /**
- * 
  * @returns {Promise<MongoPerson[]>} 
  */
 export async function getAllPersons(){
     return await persons.find().toArray();
 }
 
+/**
+ * 
+ * @param {string} firstAccessCapability
+ * @return {Promise<{
+ *  person: MongoPerson
+ *  ressourceCollection: any
+ * }>}
+ */
 export async function getPersonAndTheirRessourceCollection(firstAccessCapability){
+    /** @type {MongoPerson} */
     const person = await persons.findOne({firstAccessCapability})
-    const ressourceCollection =  await ressource_collections.findOne({created_by: new ObjectID(person._id)});
+    const ressourceCollection =  await ressource_collections.findOne({created_by: person._id});
     return {person, ressourceCollection}
 }
 
