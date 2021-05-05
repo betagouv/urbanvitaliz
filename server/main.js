@@ -3,6 +3,7 @@
 import express from 'express'
 import compression from 'compression'
 import cors from 'cors'
+import "./types.js"
 
 import * as database from '../database/main.js'
 
@@ -79,7 +80,9 @@ app.patch(LISTE_RESSOURCES_ROUTE, (req, res) => {
 app.get('/persons', (req, res) =>{
     database.getAllPersons()
     .then(persons => {
-        res.status(200).send(persons);
+        /** @type {import('./types.js').API_persons} */
+        const toSend = persons;
+        res.status(200).send(toSend);
     })
     .catch(err => res.status(500).send(`Some error (${req.path}): ${err}`))
 })

@@ -380,7 +380,10 @@ page('/envoi-recommandation', context => {
     });
 
     json(`${SERVER_ORIGIN}/persons`)
-    .then(persons => { store.mutations.setAllPersons(persons) });
+    .then((data) => { 
+        const persons = /** @type {import('../server/types').API_persons} */ (data);
+        
+        store.mutations.setAllPersons(persons) });
     
     replaceComponent(sendRecommandation, mapStateToProps)
 
