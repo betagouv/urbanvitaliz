@@ -14,7 +14,8 @@ Vous pouvez tenter les éléments suivants, par ordre de priorité :
 
 1- Vérifier l'exactitude de l’adresse postale à partir des Fichiers fonciers non anonymisés. Ces données sont issues de l'application MAJIC de la DGFiP qui sert à aclculer l'impôt foncier. En tant que collectivité, vous avez un droit d'accès aux données de votre territoire.  
 2- Vous rapprocher de votre EPF (Etablissement Public Foncier) si vous êtes couvert par un et envisagez d'acquérir le foncier au niveau de la collectivité.  
-3- Envoyer un courrier de contact avec une "astuce" pour inciter le propriétaire foncier à réagir : expliquer que la collectivité mène une réflexion quant à mettre en place un emplacement réservé au PLU sur le terrain pour travaux. Cette procédure ouvre au propriétaire un droit de délaissement (= forcer la collectivité à racheter le bien), ce qui incite généralement le propriétaire à répondre au courrier. Clarifier dans le courrier le contact de la collectivité à joindre : nom, numéro de téléphone, adresse mail.  
+3- Envoyer un courrier de contact avec une "astuce" pour inciter le propriétaire foncier à réagir avec cet [exemple de courrier type](https://drive.google.com/file/d/1VHzeAP0m388ddZ8pvT4LhvC0vTrAQNd8/view?usp=sharing).  
+Expliquer que la collectivité mène une réflexion quant à mettre en place un emplacement réservé au PLU sur le terrain pour travaux. Cette procédure ouvre au propriétaire un droit de délaissement (= forcer la collectivité à racheter le bien), ce qui incite généralement le propriétaire à répondre au courrier. Clarifier dans le courrier le contact de la collectivité à joindre : nom, numéro de téléphone, adresse mail.  
 4- Prendre conseil auprès d’un notaire.  
 
   
