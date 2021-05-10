@@ -1,13 +1,14 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Choisir entre plusieurs scénarios d'aménagement en tenant compte des bénéfices socio-économiques"
-sous_titre: "Estimer les bénéfices socio-économiques grâce à la méthode Bénéfriches"
+phrase_catch : "Choisir un scénario d'aménagement avec ses bénéfices socio-économiques"
+sous_titre: "Découvrez la méthode Bénéfriches de l'ADEME"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"
+keywords : Bénéfriches, ADEME, scénario d'aménagement, externalités positives
 ---
 
-💡 **Savez-vous que les opérations de revitalisation des friches sont parfois bien plus rentables qu'il n'y parait au premier coup d'oeil financier ?**
+## 💡 Savez-vous que les opérations de revitalisation des friches sont parfois bien plus rentables qu'il n'y parait au premier coup d'oeil financier ?
   
   Il est très conseillé d'estimer les bénéfices socio-économiques d'un projet de reconversion de friches, afin de débloquer la décision pour :
   * enclencher de premières études de faisabilité
