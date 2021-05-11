@@ -24,6 +24,6 @@ A partir de ces estimations, l'outil vous calcule les pertes ou les bénéfices 
 - L'outil ne vous fournit pas de ratios ou de montants prévisionnels : vous devez vous-mêmes rassembler des estimations spécifiques à votre contexte (tarif de location d'un bureau, coûts des salariés éventuels etc.).
 
 ## Aller plus loin
-Vous pouvez [télécharger le modèle de business plan pour un espace de coworking ici](static/Modele_Business_Plan_simplifie_coworking.xlsx).
+Vous pouvez [télécharger le modèle de business plan pour un espace de coworking ici](https://betagouv.github.io/urbanvitaliz/ressources/static/Modele_Business_Plan_simplifie_coworking.xlsx).
 
 En cas de questions ou remarques, vous pouvez contacter l'équipe UrbanVitaliz par email à friches@beta.gouv.fr.
