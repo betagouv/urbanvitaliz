@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Faire acquérir temporairement le site par un EPF (Etablissement Public Foncier)"
+title: Faire acquérir temporairement le site par un EPF (Etablissement Public Foncier)
 sous_titre: "Un EPF peut vous aider à acheter le foncier souhaité et à le réhabiliter."
 etape : "3 - comment envisager le devenir du site ?"
 thematique :
@@ -10,7 +10,7 @@ thematique :
 keywords : EPF, Etablissement Public Foncier, acheter, acquérir, acquisition, racheter, achat, rachat
 ---
   
-**💡 Qu'est-ce qu'un Etablissement Public Foncier (EPF) ?**
+## 💡  Qu'est-ce qu'un Etablissement Public Foncier (EPF) ?
 
 Le métier de l'EPF est de porter (c'est-à-dire acquérir pour le compte d'un tiers) des terrains qui serviront à la construction de logements ou d'activités (majoritairement).
 Pendant une période prédéfinie, l’EPF possède, gère et sécurise le foncier. Notamment dans le cas d'une friche, il peut commencer à le pré-aménager (démolition des bâtiments existants, dépollution, etc.). 
@@ -28,7 +28,7 @@ La plupart des territoires de France métropolitaine sont couverts soit par un E
 4. Portage foncier : l’EPF porte le foncier durant une période définie
 5. Rétrocession du bien : revente à la collectivité ou à l’opérateur désigné
 
-**🔎 A côté de l'action "par défaut" de portage foncier, chaque EPF a ses spécificités.**
+## 🔎  A côté de l'action "par défaut" de portage foncier, chaque EPF a ses spécificités.
 
 Il peut s'agir de prestations spécifiques ou d'axes prioritaires d'intervention. Par exemple certains EPF proposent de :
 
@@ -39,8 +39,8 @@ Il peut s'agir de prestations spécifiques ou d'axes prioritaires d'intervention
 - Faire une veille foncière
 - etc.
 
-**📞 Contacts et plus d'infos**
+## 📞  Contacts et plus d'infos
 
-✔ [Plus d'infos ici sur le site du Ministère de la Cohésion des Territoires](https://www.cohesion-territoires.gouv.fr/les-etablissements-publics-fonciers-epf)
-✔ [Retrouvez ici les **contacts directs** pour les EPF avec lesquels nous sommes déjà en relation](epf-contacts.html)
+- [Plus d'infos ici sur le site du Ministère de la Cohésion des Territoires](https://www.cohesion-territoires.gouv.fr/les-etablissements-publics-fonciers-epf)
+- [Retrouvez ici les **contacts directs** pour les EPF avec lesquels nous sommes déjà en relation](epf-contacts.html)
 

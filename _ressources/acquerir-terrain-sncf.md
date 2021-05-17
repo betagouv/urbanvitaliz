@@ -1,10 +1,10 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Acquérir un foncier qui appartient à la SNCF"
+title: Acquérir un foncier qui appartient à la SNCF
 sous_titre: "Conditions fréquentes, conseils et contacts"
 etape : "2 - quelles informations rassembler pour avancer ?"
-thematique : 
+thematique :
     - "Portage foncier"
     - "Acquérir un foncier"
 keywords : SNCF, ferroviaire, gare, rails, trains, SNCF immobilier,
@@ -27,9 +27,7 @@ Pour la prise de contact, envoyez un plan qui fait apparaître le périmètre du
 ## Quelle est la procédure ? Quel délai prévoir ?
 
 1. Suite à votre demande, SNCF Immobilier s’assure auprès de l’ensemble des interlocuteurs SNCF (SNCF réseau et SNCF voyageurs notamment) que le terrain est mutable : qu’il n’est pas essentiel au ferroviaire de demain ou aujourd’hui et qu’il peut donc être cédé.
-
 2. S’il l’est, des discussions et études s’engagent entre vous et SNCF Immobilier. Elles portent sur la détermination du prix, sur le projet de la collectivité, l’état environnemental et le chiffrage des éventuels coûts de libération (déplacement d’équipements qui sont souvent à la charge de la collectivité).
-
 3. En cas de grosse complexité ferroviaire (équipements ou équipes à déplacer), les études amont et les travaux peuvent prendre jusqu’à plusieurs années.
 Quand l’accord est trouvé, s'ensuit une série de démarches administratives : déclassement des biens auprès de l’Etat, droit d’opposition à purger auprès du Ministère des transports, avis de France Domaines…  **Cela prend entre 6 et 10 mois après l'accord SNCF-collectivité.**
 

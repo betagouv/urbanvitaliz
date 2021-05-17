@@ -23,3 +23,4 @@ La délibération doit justifier le calcul du taux en fonction des besoins suppl
 
 [Pour en savoir plus sur la taxe d'aménagement en général](https://www.cohesion-territoires.gouv.fr/taxe-damenagement)
 [Pour trouver d'autres outils de financement des équipements publics](http://outil2amenagement.cerema.fr/fiche-outils-comparaison-des-principaux-outils-de-a2596.html)
+

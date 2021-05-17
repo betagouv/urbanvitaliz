@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Modèle de budget prévisionnel pour un espace de coworking"
+title: Modèle de budget prévisionnel pour un espace de coworking
 sous_titre: "Calculer votre dépenses et recettes prévisionnelles avec ce modèle simplifié"
 etape : "3 - comment envisager le devenir du site ?"
 thematique :
@@ -9,7 +9,7 @@ thematique :
     - "Définir son projet"
 keywords : cowork, coworking, co-work, co-working, tiers lieu, tiers-lieu, tiers-lieux, bureaux, indépendants, startups, startup, business plan, budget prévisionnel
 ---
-  
+
 ## 💡 Estimez facilement si votre projet d'espace de coworking est financièrement viable
 
 Si vous envisagez de transformer un site en espace de coworking et de le gérer vous-même, vous devez vous assurer en amont que le projet est viable : qu'il générera suffisamment de recettes pour couvrir l'ensemble de ses coûts.
@@ -24,6 +24,7 @@ A partir de ces estimations, l'outil vous calcule les pertes ou les bénéfices 
 - L'outil ne vous fournit pas de ratios ou de montants prévisionnels : vous devez vous-mêmes rassembler des estimations spécifiques à votre contexte (tarif de location d'un bureau, coûts des salariés éventuels etc.).
 
 ## Aller plus loin
+
 Vous pouvez [télécharger le modèle de business plan pour un espace de coworking ici](https://betagouv.github.io/urbanvitaliz/ressources/static/Modele_Business_Plan_simplifie_coworking.xlsx).
 
 En cas de questions ou remarques, vous pouvez contacter l'équipe UrbanVitaliz par email à friches@beta.gouv.fr.
