@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Aménager et qualifier des espaces publics pour embellir et valoriser les communes de moins de 3000 habitants
+phrase_catch : "Aménager et qualifier des espaces publics pour embellir et valoriser les communes de moins de 3000 habitants"
 sous_titre: "Vous avez un projet de requalification d'espace public pour votre commune ? La region occitanie peut vous aider"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Financements, subventions et fiscalité"

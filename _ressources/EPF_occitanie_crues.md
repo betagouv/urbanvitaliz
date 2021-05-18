@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Projet d'expansion des crues - Solliciter l'EPF Occitanie
+phrase_catch : "Projet d'expansion des crues - Solliciter l'EPF Occitanie"
 etape : "3 - comment envisager le devenir du site ?"
 thematique :
     - "Portage foncier"

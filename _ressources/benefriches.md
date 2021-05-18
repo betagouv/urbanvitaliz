@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Choisir un scénario d'aménagement avec ses bénéfices socio-économiques
+phrase_catch : "Choisir un scénario d'aménagement avec ses bénéfices socio-économiques"
 sous_titre: "Découvrez la méthode Bénéfriches de l'ADEME"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"

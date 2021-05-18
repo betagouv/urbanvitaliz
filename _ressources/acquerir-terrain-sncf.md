@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Acquérir un foncier qui appartient à la SNCF
+phrase_catch : "Acquérir un foncier qui appartient à la SNCF"
 sous_titre: "Conditions fréquentes, conseils et contacts"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :

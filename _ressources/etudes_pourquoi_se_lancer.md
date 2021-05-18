@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Est-ce que ça vaut le coup d'investir dans des études ?
+phrase_catch : "Est-ce que ça vaut le coup d'investir dans des études ?"
 sous_titre: "Comment débloquer la décision de payer des études pour concevoir un projet sur la friche, en pressentant son opportunité et sa faisabilité technique et financière ?"
 etape : "3 - comment envisager le devenir du site ?"
 thematique :

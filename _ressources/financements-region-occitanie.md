@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Tiers-lieux, mobilité, culture, social... Financements Région Occitanie
+phrase_catch : "Tiers-lieux, mobilité, culture, social... Financements Région Occitanie"
 sous_titre: "La Région propose des dispositifs de financement non spécifiques aux friches mais qui peuvent s'y appliquer"
 etape : "3 - Comment envisager le devenir du site ?"
 thematique : "Financements, subventions et fiscalité"

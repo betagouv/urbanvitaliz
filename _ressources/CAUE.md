@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Faire appel au Conseil d'Architecture, d'Urbanisme et de l'environnement (CAUE) de votre département
+phrase_catch : "Faire appel au Conseil d'Architecture, d'Urbanisme et de l'environnement (CAUE) de votre département"
 sous_titre : "Votre CAUE départemental peut venir vous rencontrer et vous conseiller sur votre projet."
 etape : "1 - J’ai repéré un site à revitaliser, que dois-je faire ?"
 thematique : "Conseil & ingénerie"

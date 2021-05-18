@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Acquérir un foncier pollué - le principe du pollueur payeur
+phrase_catch : "Acquérir un foncier pollué - le principe du pollueur payeur"
 sous_titre: "Qu'implique ce principe lors de l'achat d'un site pollué ?"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :

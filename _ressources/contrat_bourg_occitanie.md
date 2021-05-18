@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Signer un contrat bourg-centre avec la Région Occitanie - 31 décembre 2021
+phrase_catch : "Signer un contrat bourg-centre avec la Région Occitanie - 31 décembre 2021"
 sous_titre: "Accompagnement des communes dans la définition et la mise en œuvre de leur projet de développement et de valorisation"
 etape : "3 - Comment envisager le devenir du site ?"
 thematique : "Financements, subventions et fiscalité"

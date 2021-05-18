@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Financer du logement social
+phrase_catch : "Financer du logement social"
 sous_titre: "Tour d'horizon des financements disponibles"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique : "Financements, subventions et fiscalité"

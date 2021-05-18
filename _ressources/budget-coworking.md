@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Modèle de budget prévisionnel pour un espace de coworking
+phrase_catch : "Modèle de budget prévisionnel pour un espace de coworking"
 sous_titre: "Calculer votre dépenses et recettes prévisionnelles avec ce modèle simplifié"
 etape : "3 - comment envisager le devenir du site ?"
 thematique :

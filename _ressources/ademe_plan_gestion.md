@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Site pollué - Tester différents scénarios d'aménagement au regard de la pollution du site via l'ADEME
+phrase_catch : "Site pollué - Tester différents scénarios d'aménagement au regard de la pollution du site via l'ADEME"
 etape : "3 - comment envisager le devenir du site ?"
 sous_titre : "Aide au recrutement d'un bureau d'études et co-financement, voire aide au recrutement d'une Assistance à Maîtrise d'Ouvrage, pour la réalisation d'un plan de gestion de la pollution en vue de la revitalisation du site."
 thematique :

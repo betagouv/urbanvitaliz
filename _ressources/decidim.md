@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Organiser la participation et la concertation citoyenne en montant un site internet
+phrase_catch : "Organiser la participation et la concertation citoyenne en montant un site internet"
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"
 ---

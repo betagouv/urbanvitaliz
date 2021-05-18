@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Enjeux agricoles ou écologiques - Etre accompagné.e par la SAFER
+phrase_catch : "Enjeux agricoles ou écologiques - Etre accompagné.e par la SAFER"
 sous_titre: "En territoire rural, la SAFER peut intervenir de la veille foncière à la définition d'un projet, l'acquisition et l'animation du foncier..."
 etape :
     - "1 - J’ai repéré un site à revitaliser, que dois-je faire ?"
@@ -26,18 +26,15 @@ Il existe une SAFER dans chaque région française, elles interviennent sur conv
 La SAFER peut intervenir à différents moments de la friche :
 
 - Connaissance du fonctionnement du territoire :
--
   - études de faisabilité foncière de projets,
   - veille foncière,
   - identification du foncier en déshérence et repérage des friches agricoles...
 
 - Acquisition du bien :
-
   - négociation foncière en zone ciblée,
   - création de réserves foncières,
 
 - Intervention foncière opérationnelle :
-
   - animation foncière pour le maintien ou l'installation d'agriculteurs,
   - gestion temporaire des biens en propriété des collectivités pour les mettre en valeur,
   - accompagnement dans la conduite de projets de développement agro touristique,

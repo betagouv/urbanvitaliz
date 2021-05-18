@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée
+phrase_catch : "Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
 thematique : "Financements, subventions et fiscalité"
 keywords : équipement, équipements publics, taxe d'aménagement, voirie, réseaux, fiscalité

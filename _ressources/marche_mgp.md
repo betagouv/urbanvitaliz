@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Accélérer la phase de conception du projet pour démarrer les travaux au plus vite
+phrase_catch : "Accélérer la phase de conception du projet pour démarrer les travaux au plus vite"
 sous_titre: "Besoin de coller à une échéance particulière ? Pensez au marché MGP pour regrouper la conception et la réalisation"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Conseil & ingénerie"

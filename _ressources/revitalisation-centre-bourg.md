@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Faites-vous accompagner pour un projet de redynamisation de votre centre-bourg
+phrase_catch : "Faites-vous accompagner pour un projet de redynamisation de votre centre-bourg"
 sous_titre: "Vous souhaitez être aider pour établir une stratégie de redynamisation de votre centre-bourg ?"
 etape : "3 - Comment envisager le devenir du site ?"
 thematique : "Conseil & ingénerie"

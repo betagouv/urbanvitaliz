@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Organiser la participation et la concertation citoyenne pour mon projet avec la Boussole de la participation
+phrase_catch : "Organiser la participation et la concertation citoyenne pour mon projet avec la Boussole de la participation"
 sous_titre : "Quelle que soit l'étape du projet, l'outil vous donne des pistes à suivre et vous permet d'évaluer votre démarche."
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Aide et subvention"

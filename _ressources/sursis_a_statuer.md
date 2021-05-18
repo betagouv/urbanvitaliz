@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Contrôler temporairement l'usage du foncier sans l'acquérir
+phrase_catch : "Contrôler temporairement l'usage du foncier sans l'acquérir"
 sous_titre: "Le sursis à statuer peut être mis en place pendant l'élaboration du PLU(i) pour une durée de 2 ans."
 etape : "3 - comment envisager le devenir du site ?"
 thematique : "Urbanisme réglementaire"

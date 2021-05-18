@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Problème d'occupation illégale sur des terrains à risques ? il existe des solutions !
+phrase_catch : "Problème d'occupation illégale sur des terrains à risques ? il existe des solutions !"
 sous_titre: "Que faire lorsque des constructions se font illégalement sur des terrains à risques"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :

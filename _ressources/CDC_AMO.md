@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Un peu d'aide pour la définition et la mise en place d’une première mission d’AMO
+phrase_catch : "Un peu d'aide pour la définition et la mise en place d’une première mission d’AMO"
 sous_titre: "Processus en 4 etapes pour conduire les études d’opportunité et de faisabilité d’un projet de réhabilitation de friche."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :

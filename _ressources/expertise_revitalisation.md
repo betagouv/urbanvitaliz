@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Bénéficier d'expertise pour la mise en oeuvre des projet de revitalisation
+phrase_catch : "Bénéficier d'expertise pour la mise en oeuvre des projet de revitalisation"
 sous_titre: "Accompagnement sur mesure du CEREMA et de l'ANCT"
 etape : "2 - Quelles informations rassembler pour avancer ?"
 thematique : "Conseil & ingénerie"

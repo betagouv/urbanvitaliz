@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Faire acquérir temporairement le site par un EPF (Etablissement Public Foncier)
+phrase_catch : "Faire acquérir temporairement le site par un EPF (Etablissement Public Foncier)"
 sous_titre: "Un EPF peut vous aider à acheter le foncier souhaité et à le réhabiliter."
 etape : "3 - comment envisager le devenir du site ?"
 thematique :

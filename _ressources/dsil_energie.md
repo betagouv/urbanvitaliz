@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Financer les travaux pour les projets d'équipement de la commune avec la DSIL
+phrase_catch : "Financer les travaux pour les projets d'équipement de la commune avec la DSIL"
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Financements, subventions et fiscalité"
 keywords : dotation, équipements, équipements publics, rénovation thermique, rénovation énergétique, mise aux normes, logement, mobilité, transports, numérique, école, scolaire, hébergements, contrat de ruralité,
