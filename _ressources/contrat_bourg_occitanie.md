@@ -14,8 +14,8 @@ Cet appel à candidatures se traduit par la mise à disposition de dispositifs q
 
 ## 📞 Contact et liens utiles
 
-✔ Toutes les informations sont disponibles [ici sur le site du Conseil Régional Occitanie](https://www.laregion.fr/appelsacandidatures-bourgscentres-occitanie)
+- Toutes les informations sont disponibles [ici sur le site du Conseil Régional Occitanie](https://www.laregion.fr/appelsacandidatures-bourgscentres-occitanie)
 
 Ou encore [ici sur le site d'Aides Territoires](https://aides-territoires.beta.gouv.fr/aides/4205-appel-a-candidatures-bourgs-centres-occitanie/)
 
-✔ Pour tout contact et demande de renseignement : bourgscentresoccitanie@laregion.fr
+- Pour tout contact et demande de renseignement : bourgscentresoccitanie@laregion.fr

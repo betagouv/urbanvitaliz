@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-title: Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée
+phrase_catch : "Booster le budget communal pour les équipements publics avec la Taxe d'Aménagement Majorée"
 etape : "1 - j’ai repéré un site à revitaliser, que dois-je faire ?"
 thematique : "Financements, subventions et fiscalité"
 keywords : équipement, équipements publics, taxe d'aménagement, voirie, réseaux, fiscalité
@@ -23,3 +23,4 @@ La délibération doit justifier le calcul du taux en fonction des besoins suppl
 
 [Pour en savoir plus sur la taxe d'aménagement en général](https://www.cohesion-territoires.gouv.fr/taxe-damenagement)
 [Pour trouver d'autres outils de financement des équipements publics](http://outil2amenagement.cerema.fr/fiche-outils-comparaison-des-principaux-outils-de-a2596.html)
+
