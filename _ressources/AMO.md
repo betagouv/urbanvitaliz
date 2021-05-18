@@ -55,7 +55,9 @@ Cette étape permet une sélection objective et encadrée, c’est une étape d�
 
 Cette étape permet un contrôle de la conception du projet et une meilleure organisation entre les différents intervenants techniques
 
-- Contrôle de la mise en œuvre et du bon déroulement ; Commissioning ; Assistance à la réception (test et bon fonctionnement)
+- Contrôle de la mise en œuvre et du bon déroulement ; 
+- Commissioning ; 
+- Assistance à la réception (test et bon fonctionnement)
 
 
 

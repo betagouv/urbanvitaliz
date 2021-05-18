@@ -15,7 +15,7 @@
         <div class="markdown-container">
             <h1>{ressource.phrase_catch}</h1>
             {#if ressource.sous_titre !== undefined}
-                <p>{ressource.sous_titre}</p>
+                <p><em>{ressource.sous_titre}</em></p>
             {/if}
             {@html ressource.output}
         </div>
@@ -45,45 +45,62 @@
 </Squelette>
 
 <style lang="scss">
-    @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
+ @import "../../node_modules/@gouvfr/dsfr/packages/schemes/src/styles/settings/_colors.scss";
 
-    .markdown-container h1{
-        color: $blue-france-500;
-        font-size: 28px;
-        line-height: 1.2em;
-    }
-    .markdown-container :global(p, li){
-        font-size: 16px;
-        line-height: 1.5em;
-    }
-    .markdown-container :global(img){
-        max-width: 100%;
-    }
-    .markdown-container{
-        max-width: 100%;
-    }
+ .markdown-container h1{
+     color: $blue-france-500;
+     font-size: 28px;
+     line-height: 1.75rem;
+ }
 
-    .ressource-side{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+ .markdown-container :global(h2) {
+     font-size: 24px !important;
+     line-height: 1.5rem;
+ }
+ .markdown-container :global(h3) {
+     font-size: 20px;
+     line-height: 1.1rem;
+ }
 
-        h4{
-            font-size: 20px;
-            color: $blue-france-500;
+ .markdown-container :global(p){
+     margin-bottom: 1.5em;
+ }
 
-            margin-top: 1em;
-        }
-        .smiley{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            img{
-                padding: 0.7rem;
-                margin-bottom: 0.6rem;
-            }
-        }
-         
-    }
+ .markdown-container :global(ul){
+     margin-bottom: 1.5em;
+ }
+
+ .markdown-container :global(p, li){
+     font-size: 16px;
+     line-height: 1.1rem;
+ }
+ .markdown-container :global(img){
+     max-width: 100%;
+ }
+ .markdown-container{
+     max-width: 100%;
+ }
+
+ .ressource-side{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+
+     h4{
+         font-size: 20px;
+         color: $blue-france-500;
+
+         margin-top: 1em;
+     }
+     .smiley{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         img{
+             padding: 0.7rem;
+             margin-bottom: 0.6rem;
+         }
+     }
+ }
 </style>
