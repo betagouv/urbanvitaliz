@@ -47,17 +47,17 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 
 - Dans le cahier des charges, n'oubliez surtout pas de : 
 
-        -   	Préciser les expertises spécifiques attendues dans la mission (foncier, viabilisation, dépollution des sols, financement...). 
+-- Préciser les expertises spécifiques attendues dans la mission (foncier, viabilisation, dépollution des sols, financement...). 
 
-        -   	Définir un prix forfaitaire pour chacune des phases 1 et 2, des prix unitaires pour les phases ultérieures (journée, réunion...)
+-- Définir un prix forfaitaire pour chacune des phases 1 et 2, des prix unitaires pour les phases ultérieures (journée, réunion...)
 
-        -   	Estimer le coût prévisionnel de la mission ou bien définir le budget maximum du marché qui sera passé (indiquer dans ce cas le budget maximum dans le cahier des charges)
+-- Estimer le coût prévisionnel de la mission ou bien définir le budget maximum du marché qui sera passé (indiquer dans ce cas le budget maximum dans le cahier des charges)
 
-        -   	Définir la procédure de consultation adaptée (privilégier la procédure restreinte, ainsi que la négociation)
+-- Définir la procédure de consultation adaptée (privilégier la procédure restreinte, ainsi que la négociation)
 
-        -   	Préciser les critères de sélection des offres (en cas de budget maximum, le critère prix devient accessoire et le critère « contenu et méthodologie » de l’offre devient prépondérant)
+-- Préciser les critères de sélection des offres (en cas de budget maximum, le critère prix devient accessoire et le critère « contenu et méthodologie » de l’offre devient prépondérant)
 
-        - Partager le CdC et le RC en comité de pilotage
+-- Partager le CdC et le RC en comité de pilotage
 
 **Consulter les bureaux d’études et passer le marché d’AMO**
 
