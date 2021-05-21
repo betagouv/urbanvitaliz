@@ -33,11 +33,11 @@ L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvr
 
 - Préciser la finalité des études d’opportunité/faisabilité phase par phase :
 
-       - Diagnostic/enjeux : les contraintes et opportunités, la future vocation du site (équipement public, logements, locaux d’activités...)
+-- Diagnostic/enjeux : les contraintes et opportunités, la future vocation du site (équipement public, logements, locaux d’activités...)
 
-       - Scénarios contrastés /opportunité : estimation du montant de l’acquisition
+-- Scénarios contrastés /opportunité : estimation du montant de l’acquisition
 
-       - Approfondissement du scénario retenu / faisabilité : schéma de programmation et de composition urbaine, délai/planning, dépenses/recettes pour la collectivité...
+-- Approfondissement du scénario retenu / faisabilité : schéma de programmation et de composition urbaine, délai/planning, dépenses/recettes pour la collectivité...
 
 **Rédiger le cahier des charges (CdC) et le règlement de consultation (RC)**
 
