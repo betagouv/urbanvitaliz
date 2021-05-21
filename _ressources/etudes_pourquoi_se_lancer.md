@@ -19,6 +19,6 @@ thematique :
 [Aides aux études pour la revitalisation des friches polluées via l'Ademe](https://betagouv.github.io/urbanvitaliz/TMP_resources/ademe_plan_gestion)
 
 
-![Image](./static/schema_etudes_projet.png?raw=true)
+![Image](./static/schema_etudes_projet.png)
 
 
