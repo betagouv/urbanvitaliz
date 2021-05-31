@@ -1,8 +1,8 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Un peu d'aide pour la définition et la mise en place d’une première mission d’AMO"
-sous_titre: "Processus en 4 etapes pour conduire les études d’opportunité et de faisabilité d’un projet de réhabilitation de friche."
+phrase_catch : "Ce que je dois faire concrètement pour faire appel à une Assistance à Maîtrise d'Ouvrage (AMO)"
+sous_titre: "Processus en 4 étapes pour bien choisir une AMO et caler ses missons."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Conseil & ingénerie"
