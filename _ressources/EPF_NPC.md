@@ -60,8 +60,8 @@ A titre exceptionnel, l'EPF peut acquérir de biens appartenant aux collectivit�
 - revente à un opérateur ou une collectivité autre que la collectivité initialement propriétaire du bien.
 
   
-L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.
-Si la collectivité manque de capacités d’ingénierie pour définir précisément son projet, l’EPF peut alors l’assister grâce à son expertise et celle des autres ressources présentes sur le territoire.
+L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.  
+Si la collectivité manque de capacités d’ingénierie pour définir précisément son projet, l’EPF peut alors l’assister grâce à son expertise et celle des autres ressources présentes sur le territoire.  
 Exceptionnellement, et pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
  
 Les projets de **production de logements** et de **nature en ville** sont éligibles au dispositif de **décote supplémentaire** sur la base des critères suivants :
