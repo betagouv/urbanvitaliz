@@ -65,13 +65,13 @@ Si la collectivité manque de capacités d’ingénierie pour définir précisé
 Exceptionnellement, et pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
  
 Les projets de **production de logements** et de **nature en ville** sont éligibles au dispositif de **décote supplémentaire** sur la base des critères suivants :
-• existence d’un **projet défini** (porteur de projet identifié, programmation, calendrier et budget prévisionnels établis)
-• qualité du projet    
-• mixité sociale         
-• complexité de l’opération 
-• adéquation du projet aux besoins du territoire, prise en compte du **marché foncier et immobilier**
-• cohérence du projet avec le **projet de territoire** et les actions engagées à l’échelle de l’EPCI
-• implication des collectivités et acteurs concernés par le projet (co-financements)
+- existence d’un **projet défini** (porteur de projet identifié, programmation, calendrier et budget prévisionnels établis)
+- qualité du projet    
+- mixité sociale         
+- complexité de l’opération 
+- adéquation du projet aux besoins du territoire, prise en compte du **marché foncier et immobilier**
+- cohérence du projet avec le **projet de territoire** et les actions engagées à l’échelle de l’EPCI
+- implication des collectivités et acteurs concernés par le projet (co-financements)
 
   
 
