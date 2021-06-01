@@ -54,7 +54,7 @@ Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d�
 
 ### →  Conditions d'éligibilité
 
-L’appui de l’EPF Nord-Pas-de-Calais s’adresse à des communes ou EPCI qui souhaitent acquérir ou faire acquérir à un opérateur de leur choix un foncier appartenant à un autre acteur (le plus souvent, un particulier ou une entreprise). 
+L’appui de l’EPF Nord-Pas-de-Calais s’adresse à des communes ou EPCI qui souhaitent acquérir ou faire acquérir à un opérateur de leur choix un foncier appartenant à un autre acteur (le plus souvent, un particulier ou une entreprise).   
 A titre exceptionnel, l'EPF peut acquérir de biens appartenant aux collectivités signataires des conventions, à une double condition : 
 - acquisition à un prix compatible avec l’équilibre de l’opération 
 - revente à un opérateur ou une collectivité autre que la collectivité initialement propriétaire du bien.
