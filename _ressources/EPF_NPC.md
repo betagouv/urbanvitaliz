@@ -26,26 +26,30 @@ Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d�
 - Négociation et **acquisition des biens** situés dans le périmètre foncier défini
 - **Gestion et mise en sécurité** des sites acquis (assurance, gardiennage, gestion des flux)
 - Réalisation de **travaux de requalification** si nécessaire (déconstruction, dépollution)
-_ **Cession du foncier** prêt à un nouvel usage à la collectivité ou à tout autre opérateur que celle-ci aura désigné
+- **Cession du foncier** prêt à un nouvel usage à la collectivité ou à tout autre opérateur que celle-ci aura désigné
 - **Suivi du projet** réalisé sur le foncier ayant fait l’objet de l’intervention de l’EPF
 
+  
 *Une expertise technique :*
 - Mise à disposition gratuite d’une **ingénierie foncière hautement qualifiée**, experte dans la gestion d’opérations complexes techniquement et juridiquement
 - Expertise technique dans le traitement de **sites dégradés ou pollués** ainsi que dans la prise en compte des enjeux de préservation et développement de la biodiversité
 - Accompagnement des collectivités dans la recherche de porteurs de projet, en guidant la **rédaction des cahiers des charges** ou en consultant directement les opérations (appels à manifestation d’intérêt ou appels à projet)
 - Analyse du périmètre d’opération et travail de qualification des sites pour **identifier les biens à valoriser** afin de faire du temps de portage un temps de projet
 
+  
 *Un soutien pour la mise en place d’études :*
 - Accompagnement des **études de référentiel foncier** à travers une expertise et un soutien financier complémentaire aux aides existantes, ne pouvant dépasser **50% du coût** de l’étude
 - Appui dans la réalisation des **études de programmation**, en complément d’autres financements et dans la limite de **80% du coût** des études, pour les communes disposant de moyens limités
 
+  
 *La participation aux travaux de proto-aménagement :*
 - **Maîtrise d’ouvrage d’études et de travaux** préparant le changement d’usage sur tout ou partie du foncier, préalable à la mise en œuvre du futur projet d’aménagement
 - Prise en charge à 80% maximum du coût de l’opération de travaux lorsque le projet (programme, bilan, calendrier prévisionnel, porteur de projet) est défini au moment de la contractualisation
 - Prise en charge à 50% maximum des travaux de proto-aménagement dans le cas d’une opération visant la mise en sécurité d’une friche, la constitution de réserves foncières ou encore la préservation d’un site Unesco, pour laquelle aucun projet n’est précisément défini
 
+  
 *Une aide financière :*
-- Mise en œuvre d’un **dispositif de décote** permettant, dans certains cas et sous conditions, de rapprocher le prix de cession du niveau de charge foncière admissible, en tenant notamment compte de l’effort financier consenti par la collectivité, avec un plafond situé à **50% du coût d’acquisition et de gestion**
+- Mise en œuvre d’un **dispositif de décote** permettant, dans certains cas et sous conditions, de rapprocher le prix de cession du niveau de charge foncière admissible, en tenant notamment compte de l’effort financier consenti par la collectivité, avec un plafond situé à **50% du coût d’acquisition et de gestion**  
 
 
 ### →  Conditions d'éligibilité
@@ -56,7 +60,7 @@ A titre exceptionnel, l'EPF peut acquérir de biens appartenant aux collectivit�
 - revente à un opérateur ou une collectivité autre que la collectivité initialement propriétaire du bien.
 
   
-L’EPF priorise **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.
+L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.
 Si la collectivité manque de capacités d’ingénierie pour définir précisément son projet, l’EPF peut alors l’assister grâce à son expertise et celle des autres ressources présentes sur le territoire.
 Exceptionnellement, et pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
  
@@ -69,14 +73,16 @@ Les projets de **production de logements** et de **nature en ville** sont éligi
 • cohérence du projet avec le **projet de territoire** et les actions engagées à l’échelle de l’EPCI
 • implication des collectivités et acteurs concernés par le projet (co-financements)
 
+  
 
 ## ⚡ Passez à l'action !
 
 ### →  Contact
 
 📧 Email : contact@epf-npdc.fr  
+
 📞 Service opérationnel : 03 28 07 25 79  
-Accueil : 03 28 07 25 00  
+    Accueil : 03 28 07 25 00  
   
 [Formulaire de contact](https://www.epf-npdc.fr/lepf-pratique/contact "Contact EPF Nord-Pas-de-Calais")
 
