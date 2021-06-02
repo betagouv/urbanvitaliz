@@ -12,7 +12,7 @@ thematique :
 
 L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.
 L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.
-
+Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impact d'une AMO dans votre situation ? Rendez-vous en bas de page pour passer à l'action !
 
 
 ## 🚀 Plus d'info ? c'est par ici !
@@ -59,12 +59,22 @@ Cette étape permet un contrôle de la conception du projet et une meilleure org
 - Commissioning ; 
 - Assistance à la réception (test et bon fonctionnement)
 
+Vous pouvez retrouver un guide explicatif des 52 missions d'AMO pour vos projets, élaboré par le SYPAA : [ici](https://www.choisirsonamo.fr/)
 
+## ⚡ Passez à l'action !
 
-Si vous souhaitez en savoir plus, prenez contact directement avec le Syndicat des programmistes en architecture et urbanisme :
+### →  Contact
+
+Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impact d'une AMO dans votre situation ?  
+Vous pouvez prendre contact avec les syndicats d'AMO nationaux pour qu'un représentant local puisse échanger avec vous. 
+
+→ Syndicat des programmistes en architecture et urbanisme (SYPAA), rattaché à la CINOV :  
+Serge Roul / serge.roul@ap-management.fr / 04 82 53 49 46 - 06 15 27 41 94
+
+→ Fédération SYNTEC, ingéniérie : 
+https://www.syntec-ingenierie.fr/contact/ / 01 44 30 49 56
 
 ### -> A propos :
 
-Cette ressource a été créée en collaboration avec le **Syndicat des programmistes en architecture et urbanisme**
-
-- Vous pouvez retrouver leur guide explicatif des 52 missions d'AMO pour vos projets : [ici](https://www.choisirsonamo.fr/)
+Cette ressource a été créée en collaboration avec le **Syndicat des programmistes en architecture et urbanisme**.  
+Si vous êtes un syndicat national d'AMO et souhaitez figurer sur cette page, contactez-nous !
