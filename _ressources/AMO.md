@@ -2,7 +2,7 @@
 layout: single-page-app
 
 phrase_catch : "Ce que peut faire un Assistant à Maîtrise d'Ouvrage (AMO)"
-sous_titre: "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet? Voici un éclaircissement sur ce qu'une AMO peut faire pour vous."
+sous_titre : "Vous n'avez pas toute l'ingénerie en interne pour gérer entièrement votre projet? Voici un éclaircissement sur ce qu'une AMO peut faire pour vous."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Conseil & ingénerie"
