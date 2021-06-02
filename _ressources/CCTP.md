@@ -3,7 +3,7 @@ layout: single-page-app
 
 phrase_catch : "Laissez vous guider pour bien rédiger un cahier des charges pour prestations intellectuelles"
 sous_titre : "Besoin d'inspiration pour rédiger votre de cahier des charges ? Voici une version à compléter!"
-etape : "3 - "Comment envisager le devenir du site ?"
+etape : "3 - Comment envisager le devenir du site ?"
 thematique : "Documents-type"
 keywords: études, ingénierie, cahiers des charges, redaction, exemple
 ---
