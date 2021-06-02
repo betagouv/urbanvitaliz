@@ -22,4 +22,4 @@ Avant de modifier les éléments : *fichier > télécharger > Microsoft Word .do
 Les éléments en rouge seront à supprimer, ceux en gris à compléter.
 Pour tout renseignement sur les Marchés publics de prestations intellectuelles → **[par ici](http://www.marche-public.fr/Marches-publics/Textes/CCAG/CCAG-PI/CCAG-PI.htm)**
 
---> Si vous souhaitez être aidé spécifiquement sur l'écriture d'un cahier des charges plus thématique, n'hésitez pas à vous rapprocher de votre Direction Départementale des Territoires
+**-->** Si vous souhaitez être aidé spécifiquement sur l'écriture d'un cahier des charges plus thématique, n'hésitez pas à vous rapprocher de votre Direction Départementale des Territoires
