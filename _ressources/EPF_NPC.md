@@ -5,12 +5,12 @@ phrase_catch : "Préparer l'arrivée d'un nouvel usage sur un site en faisant ac
 sous_titre : "L’EPF Nord-Pas-de-Calais peut avancer les fonds pour l’achat du foncier et préparer les opérations d’aménagement."
 etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
 thematique : "Financements, subventions et fiscalité"
-keywords: portage, achat, études, proto-aménagement, ingénierie, cahiers des charges, travaux
+keywords: portage, achat, études, proto-aménagement, ingénierie, cahiers des charges, travaux, terrain
 ---
 
 ## 💡 Saviez-vous que :
 
-Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d’un tiers) des terrains qui serviront à des projets ayant un caractère d’intérêt général. Pendant une période prédéfinie, l’EPF Nord-Pas-de-Calais possède, gère, requalifie et sécurise le foncier. Notamment dans le cas d’une friche, il peut commencer à le pré-aménager (démolition des bâtiments existants, dépollution, etc.).  
+Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d’un tiers) des terrains pour permettre la réalisation d’opérations d’aménagement répondant aux besoins multiples des territoires (développer l’offre de logements, accueillir de nouvelles activités économiques, renforcer l’offre de services, améliorer le cadre de vie, maîtriser les risques industriels ou naturels, favoriser la biodiversité…). Pendant une période prédéfinie avec la collectivité, l’EPF Nord-Pas-de-Calais possède, gère, requalifie et sécurise le foncier. Notamment dans le cas d’une friche, il peut commencer à le pré-aménager (démolition des bâtiments existants, traitement des sources de pollution concentrée, etc.).  
 
 **Il le revendra obligatoirement** à la collectivité ou à un opérateur qu’elle désigne à la fin de la période de portage (3 à 10 ans). Le portage foncier permet à la collectivité de disposer du bien au moment opportun, sans apport financier immédiat.  
 
@@ -62,7 +62,7 @@ A titre exceptionnel, l'EPF peut acquérir de biens appartenant aux collectivit�
   
 L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.  
 Si la collectivité manque de capacités d’ingénierie pour définir précisément son projet, l’EPF peut alors l’assister grâce à son expertise et celle des autres ressources présentes sur le territoire.  
-Exceptionnellement, et pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
+Pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
  
 Les projets de **production de logements** et de **nature en ville** sont éligibles au dispositif de **décote supplémentaire** sur la base des critères suivants :
 - existence d’un **projet défini** (porteur de projet identifié, programmation, calendrier et budget prévisionnels établis)
