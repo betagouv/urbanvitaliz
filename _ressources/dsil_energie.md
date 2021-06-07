@@ -32,7 +32,7 @@ keywords : dotation, équipements, équipements publics, rénovation thermique, 
 La procédure d’attribution est définie au niveau local par les préfectures.   
 [Retrouvez ici le contact de la préfecture de votre département pour déposer un dossier](https://lannuaire.service-public.fr/navigation/prefecture)
 
-Il est possible qu'il faille passer l'intercommunalité pour réaliser la demande auprès de la Direction Départementale des Territoires.
+Il est possible qu'il faille passer par l'intercommunalité pour réaliser la demande auprès de la Direction Départementale des Territoires.
 
 
 ## ❓ Ressources associées:
