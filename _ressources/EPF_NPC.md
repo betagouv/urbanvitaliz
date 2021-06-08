@@ -54,14 +54,17 @@ Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d�
 
 ### →  Conditions d'éligibilité
 
-L’appui de l’EPF Nord-Pas-de-Calais s’adresse à des communes ou EPCI qui souhaitent acquérir ou faire acquérir à un opérateur de leur choix un foncier appartenant à un autre acteur (le plus souvent, un particulier ou une entreprise).   
+L’appui de l’EPF Nord-Pas-de-Calais s’adresse à des communes ou EPCI qui souhaitent acquérir ou faire acquérir à un opérateur de leur choix un foncier appartenant à un autre acteur (le plus souvent, un particulier ou une entreprise).  
+
 A titre exceptionnel, l'EPF peut acquérir de biens appartenant aux collectivités signataires des conventions, à une double condition : 
 - acquisition à un prix compatible avec l’équilibre de l’opération 
 - revente à un opérateur ou une collectivité autre que la collectivité initialement propriétaire du bien.
 
   
-L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.  
+L’EPF privilégie **les projets matures**, dont la faisabilité opérationnelle, juridique et financière a été préalablement étudiée, de manière à assurer un recyclage foncier efficace.    
+
 Si la collectivité manque de capacités d’ingénierie pour définir précisément son projet, l’EPF peut alors l’assister grâce à son expertise et celle des autres ressources présentes sur le territoire.  
+
 Pour des **sites identifiés comme “stratégiques”**, l’EPF peut faciliter la constitution de **réserves foncières** sur des sites sur lesquels aucun projet d’aménagement n’est envisageable à court/moyen terme.  
  
 Les projets de **production de logements** et de **nature en ville** sont éligibles au dispositif de **décote supplémentaire** sur la base des critères suivants :
