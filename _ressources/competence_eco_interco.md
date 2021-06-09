@@ -7,7 +7,7 @@ thematique : "Urbansime réglementaire"
 keywords: compétences, collectivités, intercommunalité, zone économique, PLU,
 ---
 
-## Quelques questions 
+## Questions 
 
 Dans le cadre où la commune à un PLU et qu'elle a une zone économie qu'elle souhaite aménager, quelles sont les obligations qui incombes à l'intercommunalité qui elle, a la compétence zone économique ? 
 
