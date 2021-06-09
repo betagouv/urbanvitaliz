@@ -1,10 +1,12 @@
 ---
 layout: emptyWithLogin
+styles:
+- href: "./assets/css/stats.css"
 ---
 
 # UrbanVitaliz recrute une personne en stage en urbanisme/aménagement pour orienter les collectivités sur leurs projets friches
 
-*Le 10/05/2021*
+*Le 09/06/2021*
 
 ## UrbanVitaliz, kesako ?
 
@@ -19,17 +21,19 @@ Le service est en construction depuis septembre 2020, il n'est pas achevé.
 
 ### 💃🏻🕺🏼 Qui est derrière UrbanVitaliz ?
 Ce service est porté par le Cerema, et créé au sein de beta.gouv.fr, l'incubateur de la Direction Interministérielle du Numérique.
-Actuellement, nous sommes une équipe de 5 personnes sur le sujet : Perrine, l'intrapreneur du Cerema, Salomé (urbaniste), Guillaume (développeur), Raphaël (développeur) et Sabine (coach), de beta.gouv.fr, qui construisent le service avec elle.
+Actuellement, nous sommes une équipe de 6 personnes sur le sujet : Perrine, l'intrapreneur du Cerema, Salomé et Anouk (urbanistes) Guillaume et Raphaël (développeurs),et Sabine (coach).
 
 ### 🕵️‍♂️Comment nous travaillons 
 Notre fonctionnement avec les collectivités est le suivant :
-1- Nous etudions leur situation et comprenons leurs besoins et blocages,
-2- Nous fléchons des ressources présentes sur la plateforme si elles sont pertinentes,
-3- Si nous n'avons pas les ressources nécessaires, nous faisons des recherches et documentons ces apprentissages pour de futurs besoins,
-4- Nous fléchons ces ressources nouvellement créées à la collectivité,
-5- Nous faisons un suivi, pour savoir si nos recommandations ont été utiles et si d'autres besoins émergent.
+
+1. Nous etudions leur situation et comprenons leurs besoins et blocages,
+2. Nous fléchons des ressources présentes sur la plateforme si elles sont pertinentes,
+3. Si nous n'avons pas les ressources nécessaires, nous faisons des recherches et créons des "ressources" correspondantes pour de futurs besoins,
+4. Nous fléchons ces ressources nouvellement créées à la collectivité,
+5. Nous faisons un suivi, pour savoir si nos recommandations ont été utiles et si d'autres besoins émergent.
 
 Le service étant en phase de construction, nous avons encore un travail important de recherche et création de ressources.
+
 Exemples de ressources existantes :
 - Faire appel à un AMO pour m'aider à définir et gérer mon projet de A à Z
 - Projet d'expansion des crues - Solliciter l'EPF Occitanie
@@ -38,11 +42,13 @@ Exemples de ressources existantes :
 - Enjeux agricoles ou écologiques - Etre accompagné.e par la SAFER
 
 ## 📝 La mission pour laquelle on recrute
-Accompagner l'urbaniste de l'équipe dans la réponse aux collectivités :
+Accompagner les urbanistes de l'équipe dans la réponse aux collectivités :
 - Effectuer les recherches pour répondre aux collectivités (comprendre le fonctionnement d'un acteur, trouver des financements pour un type de projet, trouver des outils juridiques actionnables etc.),
 - Echanger avec des acteurs des territoires (EPF, DDT, Agences de l'eau) pour les connaître et potentiellement travailler avec eux,
 - Créer des fiches ressources courtes et faciles à lire à partir de ces recherches,
 - Faire un suivi des collectivités.
+
+**Le gros de la mission est donc de faire des recherches pour répondre aux collectivités et de documenter ces apprentissages en créant des fiches-ressource.**
 
 ## 🤩 Le profil qu'on recherche
 - Avant tout, quelqu'un d'enthousiaste et autonome, qui a envie d'apprendre et d'aider les collectivités dans leurs projets,
@@ -52,9 +58,9 @@ Accompagner l'urbaniste de l'équipe dans la réponse aux collectivités :
 - Formation en urbanisme ou aménagement.
 
 ## 🤖 Les conditions
-- Stage de 3 mois minimum
-- En télétravail : l'équipe est entre Lille et Montpellier, donc on travaille essentiellement à distance.
-- Rémunération : indemnité légale de stage
+- Stage de 3 mois
+- En télétravail : l'équipe est entre Lille, Paris et Montpellier, donc on travaille essentiellement à distance.
+- Rémunération : 600€ /mois
 - Début : dès que possible.
 
 ## 💌 Comment postuler 
