@@ -59,3 +59,9 @@ Sur l'unité territoriale de Rodez, votre interlocutrice est :
 - anne.trouche@eau-adour-garonne.fr
 - 05 65 75 56 08
 
+Sur l'unité territoriale de la Charente, votre interlocuteur est : 
+
+- Thomas Cusange
+- thomas.cusange@eau-adour-garonne.fr
+- 05 56 11 63 50
+
