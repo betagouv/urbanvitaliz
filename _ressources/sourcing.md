@@ -1,8 +1,8 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Préparer son appel d’offres avec le Sourcing"
-sous_titre : "Le Sourcing vous permet de dialoguer avec les entreprises avant de rédiger votre cahier des charges."
+phrase_catch : "Recevoir de l'aide pour rédiger son cahier des charges en discutant avec les prestataires en amont : le "sourcing" "
+sous_titre : "Le "sourcing" vous permet de dialoguer avec les entreprises avant de rédiger votre cahier des charges : savoir ce qui peut être fait, ce qui ne doit pas être oublié, etc."
 etape : "3 - Comment envisager le devenir du site ?"
 thematique : 
  - Conseil & ingénerie
