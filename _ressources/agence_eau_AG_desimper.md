@@ -48,6 +48,7 @@ Il convient d’associer l’ensemble des services concernés de la collectivit�
 
 Vous pouvez également retrouver des [informations complémentaires ici.](https://eau-grandsudouest.fr/usages-enjeux-eau/activites-economiques-amenagements/eau-urbanisme/repenser-eau-dans-ville)
 
+Pour connaitre le programme des appels à projets de l'agence de l'eau c'est [ici](http://www.11eme-adour-garonne.fr/appels-a-projets/)
 Si vous souhaitez en savoir plus, prenez contact directement avec l'agence de l'eau Adour Garonne :
 
 ## 📞 Contacts :
