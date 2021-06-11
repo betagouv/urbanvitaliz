@@ -1,7 +1,7 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Si la commune à un PLU, qu'est-ce que l'intercommunalité, qui a la compétence des zones économiques, peut faire ?"
+phrase_catch : "Faites appel à l'Evaluation du Domaine afin de connaitre la valeur d'un bien"
 etape : "2 -  Quelles informations rassembler pour avancer ?"
 thematique : "Acquérir un foncier"
 keywords: prix, collectivités, bati, évaluation, negociation, foncier, proprétaire, propriété, Domaine
