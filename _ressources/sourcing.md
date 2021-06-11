@@ -1,8 +1,8 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Recevoir de l'aide pour rédiger son cahier des charges en discutant avec les prestataires en amont : le "sourcing" "
-sous_titre : "Le "sourcing" vous permet de dialoguer avec les entreprises avant de rédiger votre cahier des charges : savoir ce qui peut être fait, ce qui ne doit pas être oublié, etc."
+phrase_catch : "Recevoir de l'aide pour rédiger son cahier des charges en discutant avec les prestataires en amont : le sourcing"
+sous_titre : "Le sourcing vous permet de dialoguer avec les entreprises avant de rédiger votre cahier des charges : savoir ce qui peut être fait, ce qui ne doit pas être oublié, etc."
 etape : "3 - Comment envisager le devenir du site ?"
 thematique : 
  - Conseil & ingénerie
@@ -10,10 +10,11 @@ thematique :
 keywords : sourcing, cahier des charges, appel d'offres, marché, rédiger, rédaction, bureau d'études, bureaux d'études
 ---
 
-## 💡 Vous pouvez consulter les entreprises spécialisées avant de lancer votre appel d’offres
+## 💡 Saviez-vous que :
 
+**Vous pouvez consulter les entreprises spécialisées avant de lancer votre appel d’offres.**  
 Vous ne savez pas quoi indiquer ou demander dans votre cahier des charges ? Vous souhaitez identifier les acteurs susceptibles d’y répondre et dialoguer avec eux en amont ?
-
+  
 Le Sourcing (aussi appelé Sourçage, Consultation préalable ou Collecte d’informations) vous permet d’identifier des prestataires potentiels et d’échanger avec eux afin :
 - d’évaluer leurs compétences en vue d’un marché public,
 - d'expliquer les enjeux de la collectivité, le contexte, et leur demander ce qu'ils proposeraient pour y répondre (techniques, délais etc.)
