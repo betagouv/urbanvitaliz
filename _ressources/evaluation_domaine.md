@@ -13,7 +13,7 @@ Les collectivités territoriales, leurs groupements, leurs établissements publi
 
 L’intervention du Domaine donne également aux décideurs locaux des informations objectives et neutres dans le cadre d’opérations immobilières, souvent sensibles au niveau local.
 
->*La valeur vénale d’un bien est constituée par le prix qui pourrait en être obtenu par le jeu de l’offre et de la demande, dans un marché réel, compte tenu de l’état dans lequel il se trouve avant la mutation et des clauses de l’acte de vente. 
+>**La valeur vénale d’un bien est constituée par le prix qui pourrait en être obtenu par le jeu de l’offre et de la demande, dans un marché réel, compte tenu de l’état dans lequel il se trouve avant la mutation et des clauses de l’acte de vente.* 
 
 
 ## 🚀 Plus d'info ? c'est par ici !
