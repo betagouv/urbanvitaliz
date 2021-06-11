@@ -35,12 +35,16 @@ Le Portail "Consultation du Domaine" permet désormais de dématérialiser la pr
 
 Pour y accéder c’est juste [ici!](https://www.demarches-simplifiees.fr/commencer/consultation-du-domaine)
 
+Cette démarche est gérée par :
 
+Direction générale des Finances Publiques
+Direction de l'immobilier de l'État
+120, rue de Bercy,75572 Paris, Cedex 12
 
 ### →  Contact
 
 Besoin d’aide pour remplir votre dossier ?
-Contactez directement l’administration : **Ne@nt**
+Contactez directement l’administration : Cf. contacts en première page du formulaire de demande d'avis
  
 
 ### → A propos :
