@@ -39,7 +39,7 @@ Cette démarche est gérée par :
 
 Direction générale des Finances Publiques
 Direction de l'immobilier de l'État
-120, rue de Bercy,75572 Paris, Cedex 12
+120, rue de Bercy, 75572 Paris, Cedex 12
 
 ### →  Contact
 
