@@ -3,7 +3,7 @@ layout: single-page-app
 
 phrase_catch : "Préparer l'arrivée d'un nouvel usage sur un site en faisant acheter le foncier par l'EPF Nord-Pas-de-Calais"
 sous_titre : "L’EPF Nord-Pas-de-Calais peut avancer les fonds pour l’achat du foncier et préparer les opérations d’aménagement."
-etape : "4 - J’ai fait mon choix d’aménagement, comment consolider le projet avant d’attaquer les travaux ?"
+etape : "2 - Quelles informations rassembler pour avancer ?"
 thematique : "Financements, subventions et fiscalité"
 keywords: portage, achat, études, proto-aménagement, ingénierie, cahiers des charges, travaux, terrain
 ---
