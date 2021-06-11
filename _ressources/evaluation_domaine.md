@@ -26,7 +26,7 @@ Sauf cas exceptionnel, évitez de saisir le Domaine plusieurs fois sur un même 
 → Votre interlocuteur est le pôle évaluation du Domaine de la Direction régionale ou départementale des finances publiques (DR-DFiP) territorialement compétente. 
 
 
->**Le Domaine doit rendre son avis dans un délai d’un mois à compter de la réception de votre dossier. Le délai court si le dossier est complet et si la visite, lorsqu’elle s’avère nécessaire, est organisée dans des délais rapides. Dans le cadre d’une déclaration d’intention d’aliéner (DIA), la consultation doit intervenir au plus tôt afin de permettre au service d’instruire normalement votre demande.
+>**Le Domaine doit rendre son avis dans un délai d’un mois à compter de la réception de votre dossier. Le délai court si le dossier est complet et si la visite, lorsqu’elle s’avère nécessaire, est organisée dans des délais rapides. Dans le cadre d’une déclaration d’intention d’aliéner (DIA), la consultation doit intervenir au plus tôt afin de permettre au service d’instruire normalement votre demande.*
 
 
 ## ⚡ Passez à l'action !
