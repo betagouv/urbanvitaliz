@@ -33,7 +33,7 @@ Sauf cas exceptionnel, évitez de saisir le Domaine plusieurs fois sur un même 
 
 Le Portail "Consultation du Domaine" permet désormais de dématérialiser la procédure d'avis du Domaine : saisie et envoi des formulaires de demande d'évaluation au pôle d'évaluation domaniale (PED) compétent par le consultant, échanges entre le PED et le consultant via la messagerie intégrée, envoi des avis d'évaluation par le PED au consultant.
 
-Pour y accéder c’est juste [ici](https://www.demarches-simplifiees.fr/commencer/consultation-du-domaine)
+Pour y accéder c’est juste [ici!](https://www.demarches-simplifiees.fr/commencer/consultation-du-domaine)
 
 
 
@@ -45,8 +45,8 @@ Contactez directement l’administration : **Ne@nt**
 
 ### → A propos :
 
-Vous trouverez juste [ici](https://www.portail-immo.gouv.fr/documentations/d/fe50ca9e6b43490fa615/files/?p=/Notice%20explicative%20du%20formulaire%20de%20saisine%20DS%20-%20Version%20mars%202020.pdf) une note explicative du formulaire de saisine.
+Vous trouverez [ici](https://www.portail-immo.gouv.fr/documentations/d/fe50ca9e6b43490fa615/files/?p=/Notice%20explicative%20du%20formulaire%20de%20saisine%20DS%20-%20Version%20mars%202020.pdf) une note explicative du formulaire de saisine.
 
-Les informations de cette fiche ressource sont tirées directement de la [Charte de l’évaluation du Domaine](https://www.amf.asso.fr/m/document/fichier.php?FTP=AMF_24263TELECHARGER_LA_CHARTE.pdf&id=24263) publiée par l’Association des Maires de France et la DGFIP.
+*Les informations de cette fiche ressource sont tirées directement de la [Charte de l’évaluation du Domaine](https://www.amf.asso.fr/m/document/fichier.php?FTP=AMF_24263TELECHARGER_LA_CHARTE.pdf&id=24263) publiée par l’Association des Maires de France et la DGFIP.*
 
 
