@@ -69,7 +69,7 @@ Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impac
 Vous pouvez prendre contact avec les syndicats d'AMO nationaux pour qu'un représentant local puisse échanger avec vous. 
 
 → Syndicat des programmistes en architecture et urbanisme (SYPAA), rattaché à la CINOV :  
-Christiane Crosnier / Téléphone : 01 44 30 49 39 / mail : sypaa@cinov.fr  
+Christine Crosnier / Téléphone : 01 44 30 49 39 / mail : sypaa@cinov.fr  
 https://www.sypaa.org/  
 
 → Fédération SYNTEC, ingéniérie : 
