@@ -14,24 +14,26 @@ keywords : sourcing, cahier des charges, appel d'offres, marché, rédiger, réd
 
 **Vous pouvez consulter les entreprises spécialisées avant de lancer votre appel d’offres.**  
 Vous ne savez pas quoi indiquer ou demander dans votre cahier des charges ? Vous souhaitez identifier les acteurs susceptibles d’y répondre et dialoguer avec eux en amont ?
-  
-Le Sourcing (aussi appelé Sourçage, Consultation préalable ou Collecte d’informations) vous permet d’identifier des prestataires potentiels et d’échanger avec eux afin :
+
+Le sourcing (aussi appelé sourçage, consultation préalable ou collecte d’informations) vous permet d’identifier des prestataires potentiels et d’échanger avec eux afin :
 - d’évaluer leurs compétences en vue d’un marché public,
 - d'expliquer les enjeux de la collectivité, le contexte, et leur demander ce qu'ils proposeraient pour y répondre (techniques, délais etc.)
 
-## 📆 Quelle durée prévoir ?
+## 🚀 Plus d'info ? c'est par ici !
 
-La durée dépend de si vous ouvrez la consultation publiquement, ou si vous vous adressez uniquement à certains prestataires directement sélectionnés par vous.
+### →  📆 Quelle durée prévoir ?
 
-En Sourcing « ouvert » : 
+La durée dépend de si vous ouvrez la consultation publiquement, ou si vous vous adressez uniquement à certains prestataires que vous sélectionnez directement.
+
+En sourcing « ouvert » : 
 - appel à sourcing : minimum 2 semaines pour que les candidats manifestent leur participation,
 - échanges : 1 à 2 semaines.
 
-En Sourcing « restreint », la collectivité échange directement avec quelques bureaux d’étude sélectionnés par elle (1 à 2 semaines).
+En sourcing « restreint », la collectivité échange directement avec quelques bureaux d’étude sélectionnés par elle (1 à 2 semaines).
 
-Ensuite, vient la phase de rédaction du cahier des charges grâce aux apprentissages du Sourcing.
+Ensuite, vient la phase de rédaction du cahier des charges grâce aux apprentissages du sourcing.
 
-## ⚠️ ️ Quelles précautions prendre vis-à-vis des entreprises ?
+### →  ⚠️ ️ Quelles précautions prendre vis-à-vis des entreprises ?
 
 Afin de ne pas rompre l’égalité de traitement des candidats, la collectivité a l’obligation de :
 - prendre ses distances avec les résultats du sourcing,
@@ -39,12 +41,14 @@ Afin de ne pas rompre l’égalité de traitement des candidats, la collectivit�
 
 **Il est recommandé de passer par l’écrit autant que possible**, et de consigner les comptes-rendus d’échanges oraux éventuels, utiles en cas de contestation.
 
-## Où trouver les prestataires à consulter ?
+## ⚡ Passez à l'action !
 
-Les plateformes « marchés publics » comme Selenee disposent de la fonctionnalité Sourcing. 
-Le Sourcing peut aussi être mis en oeuvre sans plateforme, soit en « ouvert » (avec une publication), soit en « restreint » en allant identifier les entreprises « sachantes » dans les annuaires comme celui du SYPAA.
+### →  Où trouver les prestataires à consulter ?
 
-## 🚀 Des liens pour approfondir
+Les plateformes « marchés publics » comme [Selenee](https://selenee.fr/blog/) disposent de la fonctionnalité sourcing. 
+Le sourcing peut aussi être mis en oeuvre sans plateforme, soit en « ouvert » (avec une publication), soit en « restreint » en allant identifier les entreprises « sachantes » dans les annuaires des syndicats de bureaux d'études et entreprises.
+
+### →  Pour approfondir
 
 - [Sur la Gazette de Communes](https://www.lagazettedescommunes.com/554207/pratiquer-le-sourcing-dans-les-marches-publics-en-5-etapes/)
 - [Sur le site du BOAMP (Bulletin officiel des annonces des marchés publics)](https://www.boamp.fr/Espace-acheteurs/Bien-acheter-avec-le-BOAMP/Le-sourcing-ou-la-collecte-d-informations)
