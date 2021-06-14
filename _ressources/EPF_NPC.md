@@ -10,7 +10,7 @@ keywords: portage, achat, études, proto-aménagement, ingénierie, cahiers des 
 
 ## 💡 Saviez-vous que :
 
-Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d’un tiers) des terrains pour permettre la réalisation d’opérations d’aménagement répondant aux besoins multiples des territoires (développer l’offre de logements, accueillir de nouvelles activités économiques, renforcer l’offre de services, améliorer le cadre de vie, maîtriser les risques industriels ou naturels, favoriser la biodiversité…). Pendant une période prédéfinie avec la collectivité, l’EPF Nord-Pas-de-Calais possède, gère, requalifie et sécurise le foncier. Notamment dans le cas d’une friche, il peut commencer à le pré-aménager (démolition des bâtiments existants, traitement des sources de pollution concentrée, etc.).  
+Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d’un tiers) des terrains en vue d'accueillir un projet répondant aux besoins multiples des territoires (développer l’offre de logements, accueillir de nouvelles activités économiques, renforcer l’offre de services, améliorer le cadre de vie, maîtriser les risques industriels ou naturels, favoriser la biodiversité…). Pendant une période prédéfinie avec la collectivité, l’EPF Nord-Pas-de-Calais possède, gère, requalifie et sécurise le foncier. Notamment dans le cas d’une friche, il peut commencer à le pré-aménager (démolition des bâtiments existants, traitement des sources de pollution concentrée, etc.).  
 
 **Il le revendra obligatoirement** à la collectivité ou à un opérateur qu’elle désigne à la fin de la période de portage (3 à 10 ans). Le portage foncier permet à la collectivité de disposer du bien au moment opportun, sans apport financier immédiat.  
 
@@ -24,21 +24,21 @@ Le métier de l’EPF est de porter (c’est-à-dire acquérir pour le compte d�
 *Le portage foncier : une intervention en 6 étapes :*
 - **Contractualisation** avec les collectivités territoriales (signature d’une convention pré-opérationnelle ou opérationnelle)
 - Négociation et **acquisition des biens** situés dans le périmètre foncier défini
-- **Gestion et mise en sécurité** des sites acquis (assurance, gardiennage, gestion des flux)
+- **Gestion et mise en sécurité** des sites acquis (assurance, gardiennage, gestion des réseaux, paiement des taxes foncières...)
 - Réalisation de **travaux de requalification** si nécessaire (déconstruction, dépollution)
 - **Cession du foncier** prêt à un nouvel usage à la collectivité ou à tout autre opérateur que celle-ci aura désigné
 - **Suivi du projet** réalisé sur le foncier ayant fait l’objet de l’intervention de l’EPF
 
   
 *Une expertise technique :*
-- Mise à disposition gratuite d’une **ingénierie foncière hautement qualifiée**, experte dans la gestion d’opérations complexes techniquement et juridiquement
+- Mise à disposition gratuite d’une **ingénierie foncière qualifiée**, experte dans la gestion d’opérations complexes techniquement et juridiquement
 - Expertise technique dans le traitement de **sites dégradés ou pollués** ainsi que dans la prise en compte des enjeux de préservation et développement de la biodiversité
-- Accompagnement des collectivités dans la recherche de porteurs de projet, en guidant la **rédaction des cahiers des charges** ou en consultant directement les opérations (appels à manifestation d’intérêt ou appels à projet)
-- Analyse du périmètre d’opération et travail de qualification des sites pour **identifier les biens à valoriser** afin de faire du temps de portage un temps de projet
+- Accompagnement des collectivités dans la recherche de porteurs de projet, en guidant la **rédaction des cahiers des charges** ou en consultant directement les opérateurs (appels à manifestation d’intérêt ou appels à projet)
+- **Identification des biens à valoriser** le temps de l'intervention (usages transitoires ou temporaires) afin de faire du temps de portage un temps de projet
 
   
 *Un soutien pour la mise en place d’études :*
-- Accompagnement des **études de référentiel foncier** à travers une expertise et un soutien financier complémentaire aux aides existantes, ne pouvant dépasser **50% du coût** de l’étude
+- Accompagnement des **études de référentiel foncier** à travers une expertise et un soutien financier complémentaire aux aides existantes, jusqu'à **50% du coût** de l’étude
 - Appui dans la réalisation des **études de programmation**, en complément d’autres financements et dans la limite de **80% du coût** des études, pour les communes disposant de moyens limités
 
   
