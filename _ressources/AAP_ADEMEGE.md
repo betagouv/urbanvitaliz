@@ -29,7 +29,7 @@ Cet appel à projets a vocation à financer des études et techniques exemplaire
 - Techniques incluant une approche « économie circulaire » notamment pour la gestion des terres
   
   
-*Une « friche industrielle » est un site*
+*Une « friche industrielle » est un site :*
 - Ayant autrefois accueilli des activités potentiellement polluantes (activité ICPE ou équivalente)
 - Aujourd’hui à l’abandon
 - Susceptible de subir un changement d’usage dans le cadre d’un projet de reconversion
