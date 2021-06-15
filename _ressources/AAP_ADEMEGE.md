@@ -51,7 +51,7 @@ Cet appel à projets est complémentaire et articulé avec les autres financemen
 
   
   
- ### →  Calendrier
+### →  Calendrier
  
  Deux sessions de candidatures auront lieu.  
  Les dates limites de dépôt des dossiers de candidature sont fixées au :
