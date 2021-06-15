@@ -49,8 +49,6 @@ Cet appel à projets a vocation à financer des études et techniques exemplaire
    
 Cet appel à projets est complémentaire et articulé avec les autres financements, notamment ceux du plan de relance Friches.
 
-  
-  
 ### →  Calendrier
  
  Deux sessions de candidatures auront lieu.  
