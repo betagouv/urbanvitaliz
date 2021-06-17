@@ -1,11 +1,12 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Site pollué - réaliser et financer une étude d'état et d'historique du site avec l'ADEME Occitanie"
+phrase_catch : "Site pollué - réaliser et financer une étude d'état et d'historique du site avec l'ADEME"
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Pollution"
     - " Aide et subvention"
+keywords: inventaire, histoire, recherche, pollué, recherche, documentaire, archives, histoire
 ---
 
 ## 💡 Qu'est-ce que c'est, un Inventaire Historique et Urbain (IHU) ?
@@ -24,13 +25,17 @@ Elle permet notamment de connaître :
 - l’utilisation du foncier,
 - les études à objectifs environnementaux,
 - les opérations de réhabilitation, etc.
+  
+
+L'IHU est très utile pour intégrer la problématique pollution au stade de la **définition de projets et d’aménagements**. C'est un outil d’aide à la décision qui permet de qualifier et anticiper les **contraintes liées au sol et au sous-sol** à l'échelle du site dans son ensemble.   
+Cette étude globale, documentaire et historique, est particulièrement importante si le projet est ensuite fragmenté entre différents usages et porteurs de projet.  
 
 
 ## 🚀 Comment la réaliser ? Comment la faire financer ?
 
-Elle est généralement réalisée par un bureau d'étude. L'ADEME Occitanie peut vous aider à la rédaction du cahier des charges et vous accompagner dans la relation avec lui.
+Elle est généralement réalisée par un bureau d'étude. L'ADEME peut vous aider à la rédaction du cahier des charges et vous accompagner dans la relation avec lui. 
 
-Par ailleurs, **l'ADEME peut financer jusqu’à 70% de l'étude**, avec un plafond d’assiette à 100k€ (montant maximum du devis accepté)
+Par ailleurs, **l'ADEME peut financer jusqu’à 70% de l'étude**, avec un plafond d’assiette à 100k€ (montant maximum du devis accepté).
 
 Quelques conditions à respecter :
 
@@ -43,11 +48,17 @@ Quelques conditions à respecter :
 
 Le dépôt de la demande se fait en ligne sur : https://agirpourlatransition.ademe.fr/entreprises/dispositif-aide/aide-etudes-prealables-reconversion-friches-urbaines
 
-A noter : L’attribution n’est pas systématique.
+A noter : L’attribution n’est pas systématique.  
 
-En amont de tout dépôt de dossier, contactez vos correspondants régionaux à l'ADEME Occitanie :
 
+En amont de tout dépôt de dossier, contactez vos correspondants régionaux :  
+  
+
+ADEME Occitanie
 - Marc Arguillat - marc.arguillat@ademe.fr - 04 67 99 89 60
 - Pierre Vignaud - pierre.vignaud@ademe.fr - 04 67 99 89 73
 
-
+ADEME Grand Est
+- Franck Le Moing - franck.lemoing@ademe.fr - 03 88 15 58 90
+- Alice Renault - alice.renault@ademe.fr - 03 88 15 58 93
+- Arnaud Millet - arnaud.millet@ademe.fr
