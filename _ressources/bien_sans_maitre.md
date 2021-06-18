@@ -31,14 +31,14 @@ Quelle est la procédure pour que la commune devienne propriétaire ?
 
 A l’issue d’une enquête permettant de s’assurer que le bien qu’elle se propose d’appréhender est effectivement sans maître, la commune doit déterminer la procédure à mettre en œuvre pour incorporer le bien dans son domaine.
 
--> S’il s’agit d’un bien issu d’une succession : aucune formalité particulière n’est requise. Mais pour éviter toute difficulté ultérieure, les collectivités ont intérêt à prendre une délibération permettant de formaliser cette acquisition.
+# → S’il s’agit d’un bien issu d’une succession : aucune formalité particulière n’est requise. Mais pour éviter toute difficulté ultérieure, les collectivités ont intérêt à prendre une délibération permettant de formaliser cette acquisition.
 
 Étapes à suivre : 
 -	Délibération du conseil municipal autorisant le maire à procéder à l’acquisition des biens. 
 -	Prise de possession formalisée par un procès verbale établi par le maire, précisant le bien concerné et affiché en mairie.
 
 
--> S’il s’agit d’un bien dont le propriétaire n’est pas connu, plusieurs étapes doivent être suivies :
+# → S’il s’agit d’un bien dont le propriétaire n’est pas connu, plusieurs étapes doivent être suivies :
 
 - un premier arrêté du maire constatant la réunion des conditions d’un bien présumé sans maître.
 
