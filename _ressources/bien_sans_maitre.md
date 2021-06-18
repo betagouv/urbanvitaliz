@@ -2,7 +2,7 @@
 layout: single-page-app
 
 phrase_catch : "Collectivités : Procédure de bien vacant sans maître"
-sous-titre : "Comment faire pour devenir propriétaire d'un bien qui semble abandonné"
+sous_titre : "Comment faire pour devenir propriétaire d'un bien qui semble abandonné"
 etape : "2 -  Quelles informations rassembler pour avancer ?"
 thematique : "Acquérir un foncier"
 keywords: collectivités, bati, foncier, proprétaire, propriété, achat, bien sans maître, succession
