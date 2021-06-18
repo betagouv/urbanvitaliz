@@ -20,23 +20,15 @@ Les biens sans maître sont des biens immobiliers vacants, dont le propriétaire
 
 Deux situations sont à distinguer :
 
-*1er cas* Les immeubles vacants sans maître qui font partie d’une succession ouverte depuis plus de trente ans et pour laquelle aucun successible ne s’est présenté. Dans ce cas, le bien est incorporé dans le domaine de la commune, de droit. Si la commune renonce à ce droit, la propriété du bien est transférée à l’Etat ;
+**1er cas** : Les immeubles vacants sans maître qui font partie d’une succession ouverte depuis plus de trente ans et pour laquelle aucun successible ne s’est présenté. Dans ce cas, le bien est incorporé dans le domaine de la commune, de droit. Si la commune renonce à ce droit, la propriété du bien est transférée à l’Etat ;
 
-*2e cas* Les immeubles vacants sans maître qui n’ont pas de propriétaires connus ou joignables et pour lesquels les taxes foncières n’ont pas été acquittés depuis plus de trois ans (ou ont été acquittées par un tiers). Dans ce cas, le bien est incorporé dans le domaine de la commune selon une procédure spécifique.
-
-
-**Les biens des successions vacantes ou en déshérence sont-ils concernés ?
-Non. Les communes ne peuvent acquérir un bien dont le propriétaire est décédé depuis moins de trente ans.
-
-Une succession est vacante lorsque :
-- le défunt ne laisse aucun héritier, aucun légataire (pas de testament au profit d'un tiers) ;
-- la totalité des héritiers a renoncé à la succession ;
-- les héritiers n'ont pas exercé leur option successorale dans un délai de 6 mois à compter de l'ouverture de la succession.**
+**2e cas** : Les immeubles vacants sans maître qui n’ont pas de propriétaires connus ou joignables et pour lesquels les taxes foncières n’ont pas été acquittés depuis plus de trois ans (ou ont été acquittées par un tiers). Dans ce cas, le bien est incorporé dans le domaine de la commune selon une procédure spécifique.
 
 
 ## ⚡ Passez à l'action !
 
 Quelle est la procédure pour que la commune devienne propriétaire ?
+
 A l’issue d’une enquête permettant de s’assurer que le bien qu’elle se propose d’appréhender est effectivement sans maître, la commune doit déterminer la procédure à mettre en œuvre pour incorporer le bien dans son domaine.
 
 -> S’il s’agit d’un bien issu d’une succession : aucune formalité particulière n’est requise. Mais pour éviter toute difficulté ultérieure, les collectivités ont intérêt à prendre une délibération permettant de formaliser cette acquisition.
@@ -58,7 +50,7 @@ A l’issue d’une enquête permettant de s’assurer que le bien qu’elle se 
 
 - Si un propriétaire ne s’est pas fait connaitre dans un délai de 6 mois, l’immeuble est présumé sans maître.
 
-- Un arrêté constatant l’entrée du bien dans le patrimoine de la commune. Le caractère définitif de cet arrêté s’opposera à toute action postérieure à l’expiration des délais de recours contre l’arrêté. Toutefois, il est nécessaire que l’ensemble des mesures de publicité (et notamment la notification de l’arrêté au propriétaire) ait été accompli pour que le délai de recours commence à courir.   
+- Un arrêté constatant l’entrée du bien dans le patrimoine de la commune. Le caractère définitif de cet arrêté s’opposera à toute action postérieure à l’expiration des délais de recours contre l’arrêté. Toutefois, il est nécessaire que l’ensemble des mesures de publicité (et notamment la notification de l’arrêté au propriétaire) ait été accompli pour que le délai de recours commence à courir.
 
 A l’issue de la procédure, si le bien incorpore le domaine communal, les règles propres à la publicité foncière impliquent le dépôt de pièces auprès du conservateur des hypothèques.
 Pour ce dépôt, les communes peuvent solliciter leur notaire.
@@ -67,6 +59,8 @@ Pour ce dépôt, les communes peuvent solliciter leur notaire.
 ### → A propos :
 
 •	Acquisition de biens vacants et sans maître : articles L. 1123-2 du code général de la propriété des personnes publiques (CG3P) et 713 du code civil.
+
 •	Déclaration de parcelle en l’état d’abandon manifeste : articles L. 2243-1 et suivants du code général des collectivités territoriales (CGCT),
+
 •	Procédure de péril : articles L. 511-1 et suivants du code de la construction et de l’habitation,
 
