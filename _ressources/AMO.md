@@ -10,8 +10,8 @@ thematique :
 
 ## 💡 Saviez-vous que :
 
-L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.
-L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.
+L’Assistance à Maîtrise d’Ouvrage (AMO) a pour but de vous aider de la phase études à la phase travaux. Elle est force de conseils et de propositions pour vous guider et garantir la réussite de votre projet.  
+L’AMO est neutre, elle peut donc garantir la gestion de la maîtrise d’œuvre et la bonne traduction des besoins entre de la maîtrise d’ouvrage.  Elle est également garante de la faisabilité du projet et du respect des délais et du budget.  
 Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impact d'une AMO dans votre situation ? Rendez-vous en bas de page pour passer à l'action !
 
 
@@ -65,7 +65,9 @@ Vous pouvez retrouver un guide explicatif des 52 missions d'AMO pour vos projets
 
 ### →  Contact
 
-Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impact d'une AMO dans votre situation ?  
+Il existe des **acteurs publics proposant de l'AMO** : demandez l'aide de l'équipe UrbanVitaliz pour savoir à qui vous pouvez vous adresser !  
+
+Vous avez besoin qu'une personne vienne à votre rencontre pour étudier l'impact d'une **AMO privée** dans votre situation ?  
 Vous pouvez prendre contact avec les syndicats d'AMO nationaux pour qu'un représentant local puisse échanger avec vous. 
 
 → Syndicat des programmistes en architecture et urbanisme (SYPAA), rattaché à la CINOV :  
