@@ -8,11 +8,11 @@ thematique : "aa"
 keywords: aaa, aaa, aaa
 ---
 
-## 💡 Saviez-vous que :
+## 💡 En bref :
 
 aaaaaaaa
 
-## 🚀 Plus d'info ? c'est par ici !
+## 🚀 Plus de détails !
 
 ### →  L'appui proposé
 
