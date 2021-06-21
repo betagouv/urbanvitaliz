@@ -8,15 +8,17 @@ thematique : "Définir son projet"
 keywords : tiers lieu, tiers-lieu, tiers-lieux, coworking, association, économie sociale et solidaire, ESS, collectif, communauté
 ---
 
-## 💡 Un tiers-lieu, qu'est-ce que c'est exactement ?
+## 💡 En bref ?
 
+### →  Un tiers-lieu, qu'est-ce que c'est exactement ?**  
 "Un tiers-lieu est une démarche collective d’intérêt général, qui s’inscrit dans la coopération territoriale dès sa conception. Par nature uniques, les tiers-lieux sont non réplicables. Ils émanent d’un collectif d’acteurs, qui ensemble souhaitent créer de nouvelles dynamiques économiques ou sociales en réponse aux enjeux de leur territoire.
 
 C’est en réunissant les habitants et futurs usagers du lieu, dessinant ainsi sa communauté active, que les activités du lieu vont se définir et que le projet va s’ajuster."
 _Source : francetierslieux.fr_
 
+## ⚡ Passez à l'action !
 
-## 🚀 Ressources et liens utiles
+### →  Ressources et liens utiles
 
 - Contactez le référent France Tiers-Lieux de votre territoire, il pourra vous proposer de nombreux outils et accompagnement. [Voir ici la carte des référents territoriaux.](https://francetierslieux.fr/formation/reseaux-regionaux/)
 - [Movilab, l'encyclopédie des tiers-lieux](https://movilab.org/wiki/Accueil)
