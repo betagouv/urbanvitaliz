@@ -10,10 +10,11 @@ keywords : tiers lieu, tiers-lieu, tiers-lieux, coworking, association, économi
 
 ## 💡 En bref ?
 
-### →  Un tiers-lieu, qu'est-ce que c'est exactement ?**  
+### →  Un tiers-lieu, qu'est-ce que c'est exactement ?  
 "Un tiers-lieu est une démarche collective d’intérêt général, qui s’inscrit dans la coopération territoriale dès sa conception. Par nature uniques, les tiers-lieux sont non réplicables. Ils émanent d’un collectif d’acteurs, qui ensemble souhaitent créer de nouvelles dynamiques économiques ou sociales en réponse aux enjeux de leur territoire.
 
-C’est en réunissant les habitants et futurs usagers du lieu, dessinant ainsi sa communauté active, que les activités du lieu vont se définir et que le projet va s’ajuster."
+C’est en réunissant les habitants et futurs usagers du lieu, dessinant ainsi sa communauté active, que les activités du lieu vont se définir et que le projet va s’ajuster."  
+
 _Source : francetierslieux.fr_
 
 ## ⚡ Passez à l'action !
