@@ -12,7 +12,7 @@ thematique :
 keywords: renaturation, sols naturels, gestion de l'eau, eau, imperméabilisation
 ---
 
-## 🚀 Saviez-vous que :
+## 💡 En bref :
 
 L'agence de l'eau Adour Garonne peuvent vous aider à financer les études et les travaux sur des projets de recyclage foncier pour :
 
@@ -21,7 +21,9 @@ L'agence de l'eau Adour Garonne peuvent vous aider à financer les études et le
 50% de subvention possible (jusqu'à 70% avec le plan de relance !)
 L'agence de l'eau peut vous conseiller dans les études à faire réaliser auprès d'un bureau d'étude compétent.
 
-## Quelques conditions :
+## 🚀 Plus de détails !
+
+### →  Quelques conditions :
 
 * Le projet doit concerner un aménagement existant qui est imperméabilisé (pas d’aide pour des projets nouveaux).
 * Saisir l'agence de l'eau avant d'avoir déjà sélectionné le bureau d'études ou démarré les travaux.
@@ -30,7 +32,7 @@ L'agence de l'eau peut vous conseiller dans les études à faire réaliser aupr�
 * Pour les travaux de renaturation, la sélection des projets est priorisée selon l'impact pour la collectivité, la taille du site, les problématiques locales de gestion de l'eau.
 * Pour les travaux de renaturation, la collectivité doit être propriétaire du site. Il existe d'autres aides pour les industries et entreprises qui souhaitent désimperméabiliser leur site.
 
-## 🛠 A propos des études
+### →  🛠 A propos des études
 
 Il est important de privilégier les études pour permettre une vision globale et réaliser les bons choix en faveur de l'infiltration des eaux, avec le choix des matériaux et aménagements (les différents bitumes, caillebotis, mélanges pierre-terre, adapter à l’usage la conception des parkings, etc.).
 
@@ -39,7 +41,7 @@ L’objectif est de pouvoir avoir différents scénarii techniques comparatifs (
 
 Il convient d’associer l’ensemble des services concernés de la collectivité : voirie, espaces, verts, urbanisme, assainissement.
 
-## 💡 Infos complémentaires
+### →  💡 Infos complémentaires
 
 * L'agence de l'eau vous conseille la lecture du [guide infiltrabilité du Cerema](./static/Guide_infiltrabilite_des_sols.pdf).
 * L'agence de l'eau vous fournit ce [mémo des études préalables](./static/EP_Minimum_Etudes_pjt_amenagement_VD.PDF) à réaliser sur le sujet infiltration au sein d'un projet d'aménagement.
@@ -51,7 +53,7 @@ Vous pouvez également retrouver des [informations complémentaires ici.](https:
 Pour connaitre le programme des appels à projets de l'agence de l'eau c'est [ici](http://www.11eme-adour-garonne.fr/appels-a-projets/)
 Si vous souhaitez en savoir plus, prenez contact directement avec l'agence de l'eau Adour Garonne :
 
-## 📞 Contacts :
+## ⚡ Passez à l'action !
 
 Il faut contacter l'unité territoriale et demander la personne qui intervient sur le cycle court de l'eau.
 Sur l'unité territoriale de Rodez, votre interlocutrice est :
