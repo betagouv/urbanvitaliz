@@ -1,15 +1,16 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Site pollué - réaliser et financer une étude d'état et d'historique du site avec l'ADEME"
+phrase_catch : "Identifier les contraintes liées au sol et à la pollution grâce une étude d'état et d'historique du site "
+sous_titre : "L’ADEME peut vous accompagner et financer un inventaire historique urbain sur l'ensemble du site."
 etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Pollution"
     - " Aide et subvention"
-keywords: inventaire, histoire, recherche, pollué, recherche, documentaire, archives, histoire
+keywords: inventaire, histoire, recherche, pollué, recherche, documentaire, archives, histoire, historique, pollution
 ---
 
-## 💡 Qu'est-ce que c'est, un Inventaire Historique et Urbain (IHU) ?
+## 💡 Qu'est-ce que c'est, un Inventaire Historique Urbain (IHU) ?
 
 C'est une étude qui porte sur un foncier donné avec pollution avérée ou suspectée.
 
