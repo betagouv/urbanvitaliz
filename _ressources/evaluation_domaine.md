@@ -27,13 +27,6 @@ Le Domaine peut évaluer :
 - **les conditions financières** : en cas d’expropriation, le Domaine détermine l’indemnité principale destinée à compenser le préjudice subi par l’exproprié 
   
   
-Les principales **méthodes d’évaluation** du Domaine sont :
-- la méthode par comparaison : à partir de biens comparables (secteur proche et règles d’urbanisme similaires) et en fonction du prix du marché immobilier local  
-- les méthodes par le revenu : en fonction du revenu que le bien génère ou qu’il peut générer
-- la méthodes par le compte à rebours : en fonction des prévisions de recettes et dépenses de l’aménageur ou du promoteur
-- des méthodes spécifiques 
-  
-
 Évitez de saisir le Domaine plusieurs fois sur un même bien : plusieurs avis avec des valeurs différentes liées à l’évolution du projet ou des règles d’urbanisme peuvent susciter des incompréhensions. Si le projet est conduit avec un opérateur immobilier qui est également soumis à l’obligation de saisine du Domaine, une **saisine conjointe** est recommandée.
 
 
@@ -44,7 +37,8 @@ Cette obligation est valable :
 - Pour les acquisitions amiables (⩾ 180 000€) et les prises à bail d’immeubles ou de fonds de commerce (loyer annuel ⩾ 24 000€)
 - Pour les acquisitions par voie de préemption (⩾ 180 000 € ou dès 1€ pour l’exercice du droit de préemption urbain renforcé ou en pré-ZAD et ZAD) 
 - Pour les acquisitions par voie d’expropriation pour cause d’utilité publique (sans condition de montant)
-- Pour les cessions immobilières (sans condition de montant, sauf pour les communes de moins de 2000 habitants qui en sont dispensées)
+- Pour les cessions immobilières (sans condition de montant, sauf pour les communes de moins de 2000 habitants qui en sont dispensées)  
+  
 
 Les collectivités locales peuvent, à titre dérogatoire, solliciter une **évaluation facultative** du Domaine si les conditions suivantes sont toutes respectées :
 - Caractéristiques du bien : immeubles affectés à un usage professionnel ou immeubles non bâtis 
