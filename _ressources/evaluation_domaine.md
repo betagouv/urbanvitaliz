@@ -1,7 +1,8 @@
 ---
 layout: single-page-app
 
-phrase_catch : "Faites appel à l'Evaluation du Domaine afin de connaitre la valeur d'un bien"
+phrase_catch : "Evaluer la valeur d’un foncier"
+sous_titre : "France Domaine vous fournit gratuitement une estimation officielle du prix de vente ou de location."
 etape : "2 -  Quelles informations rassembler pour avancer ?"
 thematique : "Acquérir un foncier"
 keywords: prix, collectivités, bati, évaluation, negociation, foncier, proprétaire, propriété, Domaine, estimation, financier
@@ -9,37 +10,62 @@ keywords: prix, collectivités, bati, évaluation, negociation, foncier, propré
 
 ## 💡 Saviez-vous que :
 
-Les collectivités territoriales, leurs groupements, leurs établissements publics et les personnes privées qui en dépendent sont tenus de consulter le Domaine pour connaître la valeur d’un bien préalablement à la réalisation de leurs opérations immobilières. Dans ce cadre, le Domaine doit émettre un avis sur la valeur vénale* ou locative du bien susceptible d’être acquis, vendu ou pris à bail par la collectivité territoriale.
+Le Domaine intervient pour **estimer la valeur d’un bien** susceptible d’être acquis, vendu ou pris à bail par une collectivité territoriale dans le cadre d’une opération immobilière.  
 
-L’intervention du Domaine donne également aux décideurs locaux des informations objectives et neutres dans le cadre d’opérations immobilières, souvent sensibles au niveau local.
+C’est une **prestation gratuite**.   
+Le Domaine doit rendre son avis dans un **délai d’un mois** à compter de la réception de votre dossier (quand le dossier est complet et que la visite, si nécessaire, est organisée rapidement).
 
->**La valeur vénale d’un bien est constituée par le prix qui pourrait en être obtenu par le jeu de l’offre et de la demande, dans un marché réel, compte tenu de l’état dans lequel il se trouve avant la mutation et des clauses de l’acte de vente.* 
 
 
 ## 🚀 Plus d'info ? c'est par ici !
 
-Il est indispensable que vous disposiez de l’avis avant de mener vos négociations financières. Il convient donc de saisir le Domaine dès que votre projet est suffisamment avancé et que vous disposez de tous les éléments nécessaires pour permettre d’instruire votre demande dans le délai d’un mois*. Saisissez-le suffisamment en amont de l’opération immobilière envisagée. L’avis du Domaine ne peut pas en effet valider a posteriori un projet dont tous les éléments financiers ont été préalablement négociés.
+L’avis du Domaine est indispensable avant de mener des négociations financières, il faut donc le saisir dès que vous disposez des éléments nécessaires, avant toute négociation.  
 
-Sauf cas exceptionnel, évitez de saisir le Domaine plusieurs fois sur un même bien : la communication de plusieurs avis avec des valeurs différentes en fonction de l’évolution du projet ou des règles d’urbanisme peut susciter des incompréhensions de la part des parties prenantes au projet. Si votre projet est conduit avec un opérateur immobilier qui est également soumis à l’obligation de saisine du Domaine, il est recommandé d’effectuer une saisine conjointe.
+Le Domaine peut évaluer :
+- **la valeur vénale** : c’est le prix qui pourrait être obtenu pour le bien par le jeu de l’offre et de la demande, dans un marché réel, compte tenu de l’état dans lequel il se trouve. Contrairement au prix, c’est une valeur probable, non certaine.
+- **la valeur locative** :  c’est la contrepartie financière annuelle susceptible d’être obtenue dans le cadre d’un contrat de location
+- **les conditions financières** : en cas d’expropriation, le Domaine détermine l’indemnité principale destinée à compenser le préjudice subi par l’exproprié 
+  
+  
+Les principales **méthodes d’évaluation** du Domaine sont :
+- la méthode par comparaison : à partir de biens comparables (secteur proche et règles d’urbanisme similaires) et en fonction du prix du marché immobilier local  
+- les méthodes par le revenu : en fonction du revenu que le bien génère ou qu’il peut générer
+- la méthodes par le compte à rebours : en fonction des prévisions de recettes et dépenses de l’aménageur ou du promoteur
+- des méthodes spécifiques 
+  
+
+Évitez de saisir le Domaine plusieurs fois sur un même bien : plusieurs avis avec des valeurs différentes liées à l’évolution du projet ou des règles d’urbanisme peuvent susciter des incompréhensions. Si le projet est conduit avec un opérateur immobilier qui est également soumis à l’obligation de saisine du Domaine, une **saisine conjointe** est recommandée.
 
 
-→ Votre interlocuteur est le pôle évaluation du Domaine de la Direction régionale ou départementale des finances publiques (DR-DFiP) territorialement compétente. 
+### →  Conditions d'éligibilité
 
+Les collectivités territoriales, leurs groupements, leurs établissements publics et les personnes privées qui en dépendent **sont tenus de consulter le Domaine** pour connaître la valeur d’un bien préalablement à la réalisation de leurs opérations immobilières, pour garantir une plus grande transparence de l’action publique et une meilleure maîtrise de la dépense publique grâce à des informations objectives et neutres.   
+Cette obligation est valable : 
+- Pour les acquisitions amiables (⩾ 180 000€) et les prises à bail d’immeubles ou de fonds de commerce (loyer annuel ⩾ 24 000€)
+- Pour les acquisitions par voie de préemption (⩾ 180 000 € ou dès 1€ pour l’exercice du droit de préemption urbain renforcé ou en pré-ZAD et ZAD) 
+- Pour les acquisitions par voie d’expropriation pour cause d’utilité publique (sans condition de montant)
+- Pour les cessions immobilières (sans condition de montant, sauf pour les communes de moins de 2000 habitants qui en sont dispensées)
 
->**Le Domaine doit rendre son avis dans un délai d’un mois à compter de la réception de votre dossier. Le délai court si le dossier est complet et si la visite, lorsqu’elle s’avère nécessaire, est organisée dans des délais rapides. Dans le cadre d’une déclaration d’intention d’aliéner (DIA), la consultation doit intervenir au plus tôt afin de permettre au service d’instruire normalement votre demande.*
+Les collectivités locales peuvent, à titre dérogatoire, solliciter une **évaluation facultative** du Domaine si les conditions suivantes sont toutes respectées :
+- Caractéristiques du bien : immeubles affectés à un usage professionnel ou immeubles non bâtis 
+- Collectivité consultante : communes de moins de 2000 habitants, EPCI de moins de 15000 habitants et syndicats mixtes 
+- Nombre de consultations officieuses : les demandes facultatives sont limitées à 2 saisines par an et par collectivité
+
 
 
 ## ⚡ Passez à l'action !
 
-Le Portail "Consultation du Domaine" permet désormais de dématérialiser la procédure d'avis du Domaine : saisie et envoi des formulaires de demande d'évaluation au pôle d'évaluation domaniale (PED) compétent par le consultant, échanges entre le PED et le consultant via la messagerie intégrée, envoi des avis d'évaluation par le PED au consultant.
-
+Le Portail "Consultation du Domaine" permet désormais de dématérialiser la procédure d'avis du Domaine.  
 Pour y accéder c’est juste [ici!](https://www.demarches-simplifiees.fr/commencer/consultation-du-domaine)
 
-Cette démarche est gérée par :
-
-Direction générale des Finances Publiques
-Direction de l'immobilier de l'État
+Cette démarche est gérée par :  
+Direction générale des Finances Publiques  
+Direction de l'immobilier de l'État  
 120, rue de Bercy, 75572 Paris, Cedex 12
+
+  
+→ Votre interlocuteur est le pôle évaluation du Domaine de la Direction régionale ou départementale des finances publiques (DR-DDFiP) territorialement compétente. 
+
 
 ### →  Contact
 
