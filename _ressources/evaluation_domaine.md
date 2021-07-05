@@ -12,7 +12,7 @@ keywords: prix, collectivités, bati, évaluation, negociation, foncier, propré
 
 Le Domaine intervient pour **estimer la valeur d’un bien** susceptible d’être acquis, vendu ou pris à bail par une collectivité territoriale dans le cadre d’une opération immobilière.  
 
-C’est une **prestation gratuite**.   
+C’est une **prestation gratuite**, gérée par la Direction Générale des Finances Publiques.  
 Le Domaine doit rendre son avis dans un **délai d’un mois** à compter de la réception de votre dossier (quand le dossier est complet et que la visite, si nécessaire, est organisée rapidement).
 
 
