@@ -7,7 +7,7 @@ etape : "2 - quelles informations rassembler pour avancer ?"
 thematique :
     - "Pollution"
     - " Aide et subvention"
-keywords: inventaire, histoire, recherche, pollué, recherche, documentaire, archives, histoire, historique, pollution
+keywords: inventaire, histoire, recherche, pollué, documentaire, archives, historique, pollution, sols
 ---
 
 ## 💡 Qu'est-ce que c'est, un Inventaire Historique Urbain (IHU) ?
@@ -64,3 +64,6 @@ En amont de tout dépôt de dossier, contactez vos **correspondants régionaux**
 - Franck Le Moing - franck.lemoing@ademe.fr - 03 88 15 58 90
 - Alice Renault - alice.renault@ademe.fr - 03 88 15 58 93
 - Arnaud Millet - arnaud.millet@ademe.fr
+
+**ADEME Bourgogne-Franche-Comté**  
+- Laure Fontaine - laure.fontaine@ademe.fr - 03 81 25 50 00 
