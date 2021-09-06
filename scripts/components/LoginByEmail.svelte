@@ -13,9 +13,9 @@
 </script>
 
 {#if person === undefined}
-    <button class="rf-btn rf-fi-account-fill rf-btn--icon-left" aria-expanded="false" aria-controls="rf-modal-login">
+    <a href="https://urbanvitaliz.fr/login/" class="rf-btn rf-fi-account-fill rf-btn--icon-left" aria-expanded="false">
         Se connecter
-    </button>
+    </a>
 {:else}
     <strong class="rf-fi-account-fill rf-btn--icon-left">{person.emails[0]}</strong>
 {/if}
