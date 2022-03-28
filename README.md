@@ -1,3 +1,7 @@
+**CECI EST L'ANCIEN DEPOT ET N'EST PLUS UTILISÉ**
+
+Veuillez utiliser urbanvitaliz-django à la place !
+
 # Urban Vitaliz
 
 ## Dev
