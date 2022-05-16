@@ -1,6 +1,6 @@
-# UrbanVitaliz recrute un.e chargé.e de déploiement - candidatures ouvertes jusqu'au 23/11/2020
+# UrbanVitaliz recrute un.e développeur.se front end / intégrateur.trice
 
-*Le 12/11/2020*
+*Le 16/05/2022*
 
 Nous recrutons une personne pour nous aider à construire et à déployer notre outil UrbanVitaliz. Et le timing de ce recrutement est serré 😬
 
@@ -21,42 +21,29 @@ Ce service est porté par le Cerema, et créé au sein de beta.gouv.fr, l'incuba
 Actuellement, nous sommes une équipe de 4 personnes sur le sujet : Perrine, l'intrapreneur du Cerema, et David, Karel et Sabine, de beta.gouv.fr, qui construisent le service avec elle.
 
 ## La mission pour laquelle on recrute
-On a beaucoup de travail devant nous : 
-- Cartographier les acteurs de la revitalisation et leurs interventions sur les départements où on se déploie : les trouver, leur parler, synthétiser ce qu'ils font, en faire un contenu compréhensible à publier sur notre site,
-- Faire connaître l'outil aux collectivités de ces territoires, pour qu'il soit utilisé : trouver des relais sur les territoires, contacter des gens, être créatif.ves pour diffuser notre message aux bonnes personnes au sein des collctivités,
-- Orienter ces collectivités utilisatrices : réaliser notre promesse de valeur ! Leur pointer les contacts, étapes et financements qui peuvent les aider selon où elles en sont avec leur friche.
-- Etre à l'écoute des utilisateurs et proposer des évolutions du service en fonction. Puis les mettre en place avec le reste de l'équipe !
+Nous recherchons un·e front-end dev / intégrateur à temps partiel (freelance) pour 2 jours par semaine.
 
+Notre base d'usagers grandissant et notre produit devenant de plus en plus complexe, nous recherchons un nouveau membre 
+pour renforcer la partie développement. Ta mission sera de travailler aux côtés de Rahman pour la partie design et de Guillaume pour ce qui est du backend.
+Les missions principales sont d'intégrer les maquettes, maintenir l'existant et d'améliorer notre transition vers des pages plus interactives.
+Les technologies utilisées sont (s)css, alpineJS et Django/python. Une attention pour la qualité de code et la maîtrise des tests est un plus non négligeable.
 
-D'une manière générale, on cherche une personne enthousiaste, touche-à-tout, qui a envie de faire avancer ce sujet. Que ça implique de passer 15 coups de téléphone par jour, de rassembler et synthétiser les aides existantes sur un territoire, d'étudier le cas d'une friche spécifique pour l'orienter, ou de défendre auprès du reste de l'équipe un nouveau service que l'outil pourrait proposer pour faciliter la réhabilitation des friches.
+Enfin et non des moindres, l'intégralité de l'équipe est en permanence à l'écoute de nos utilisateurs, nous n'avons pas peur de construire pour déconstruire si nécessaire et nous nous remettons en cause très régulièrement. Un état d'esprit compatible est donc nécessaire :-)
+A côté de ça, l'ambiance est sérieuse, néanmoins détendue et nous fonctionnons dans un équilibre confiance / autonomie, ce que nous recherchons évidemment aussi chez la nouvelle recrue !
 
 ## Le profil qu'on recherche
-- Avant tout, quelqu'un d'enthousiaste et autonome, qui a envie de faire avancer notre sujet, proactif et dynamique !
-- Quelqu'un qui aime travailler en équipe, car on fait quasiment tout à plusieurs, on binôme autant que possible.
-- Quelqu'un de flexible : s'il faut changer d'orientation du produit, changer de mission etc.
-- Quelqu'un à l'aise à l'oral, à l'écrit, au téléphone, par email. Très à l'aise avec les outils numériques.
-- Idéalement, quelqu'un qui a une expérience en urbanisme ou aménagement.
-- Idéalement, quelqu'un qui comprend comment fonctionne l'administration, les collectivités (expérience ou formation)
+?
 
 ## Les conditions
-- Pour commencer, c'est un CDD de 6 mois au sein de la Direction Interministérielle du Numérique. En pratique, on s'attend à ce que ça soit au moins pour un an, idéalement plus.
-- C'est un temps complet.
-- C'est plutôt en télétravail : l'équipe est entre Lille et Montpellier, donc on travaille essentiellement à distance. La DINUM a ses locaux à Paris dans le 7ème, où tu pourras aller travailler si cela t'arrange. On s'y retrouve tou.te.s de temps en temps en présentiel.
-- Rémunération : jusqu'à 5 ans d'expérience, 2.500€ net /mois. Au delà de 5 ans d'expérience : 3.000€ net /mois.
-- Début : lundi 4 janvier 2021
+- 2 jours par semaine en moyenne, en freelance.
+- C'est plutôt en télétravail : l'équipe est entre Lille, Paris et Montpellier, donc on travaille essentiellement à distance. La DINUM a ses locaux à Paris dans le 7ème, où tu pourras aller travailler si cela t'arrange. On se retrouve tou.te.s de temps en temps en présentiel là où cela nous arrange (souvent autour de Lille).
+- Rémunération : taux journalier entre 400 € et 600 € selon expérience
+- Début : Quand tu peux :)
 
-## Comment postuler - AVANT le 23/11/2020
-Ce poste s'inscrit dans une 'vague' de recrutements plus large au sein de beta.gouv.fr.
+## Comment postuler - AVANT le 10/06/2022
 
-On te suggère de lire ces posts qui te donneront plus d'infos sur le cadre, la communauté beta.gouv.fr :
-- [sur la "vague de recrutement en question et la communauté betagouv](https://blog.beta.gouv.fr/dinsic/2020/11/10/nous-recrutons-une-brigade-numerique/)
-- [sur les postes "déploiement/bizdev" plus spécifiquement](https://beta.gouv.fr/recrutement/2020/11/04/recrutement-bizdevs-beta.html)
-
-
-Le dépôt de candidature doit *absolument* se faire sur [ce formulaire ici sur demarches-simplifiées](https://www.demarches-simplifiees.fr/commencer/rejoigneznous) pour être pris en compte. Date butoir pour candidater : 23/11/2020.
-
-
-Tu peux aussi nous écrire pour toute question ou prise de contact, par email à friches@beta.gouv.fr (il faudra quand même passer par le formulaire ci-dessus pour candidater "officiellement").
+N'hésite pas à nous écrire pour toute question ou prise de contact, par email à friches@beta.gouv.fr 
+Un petit CV, et on discute !
 
 
 A bientôt peut-être :)
