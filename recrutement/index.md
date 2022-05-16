@@ -35,18 +35,20 @@ Une personne qui...
 - aime travailler en équipe, y compris avec des non-techs,
 - est à l'aise à télétravailler la plupart du temps,
 - n'a pas peur des rétrospectives d'équipe où on parle de comment on va, nos émotions, nos besoins etc.
+- sait dire quand elle ne sait pas faire quelque chose, quand elle galère.
 
 ## Les conditions
 - 2 jours par semaine en moyenne, pour commencer (on verra comment ça évolue...)
-- statut freelance (qui peut émettre des factures tous les mois)
-- en télétravail : l'équipe est entre Lille, Paris et Montpellier. On se retrouve en présentiel une fois par mois.
+- Durée : on imagine au moins 6 mois si ça se passe bien, peut-être plus selon financement de l'équipe
+- Statut freelance (capacité d'émettre des factures tous les mois)
+- En télétravail : l'équipe actuelle est entre Lille, Paris et Montpellier. On se retrouve en présentiel une fois par mois.
 - Rémunération : taux journalier entre 400 € et 600 € selon expérience
-- Début : Quand tu peux :)
+- Début : dès que tu peux :)
 
 ## Comment postuler
 
-N'hésite pas à nous écrire pour toute question ou prise de contact, par email à guillaume.libersat@beta.gouv.fr + friches@beta.gouv.fr
-Tu peux nous envoyer une adresse vers un ou plusieurs projets libres publiés.
+N'hésite pas à nous écrire pour toute question ou prise de contact, par email à guillaume.libersat@beta.gouv.fr + friches@beta.gouv.fr.
+Envoie-nous une URL vers un ou plusieurs de tes projets libres publiés.
 
 A bientôt peut-être :)
 L'équipe UrbanVitaliz
