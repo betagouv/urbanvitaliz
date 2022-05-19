@@ -12,7 +12,6 @@ Les missions principales sont d'intégrer les maquettes, maintenir l'existant et
 **Les technologies utilisées sont (s)css, alpineJS et Django/python**. Une attention pour la qualité de code et la maîtrise des tests est un plus non négligeable.
 
 Enfin et non des moindres, l'intégralité de l'équipe est en permanence à l'écoute de nos utilisateurs, nous n'avons pas peur de construire pour déconstruire si nécessaire et nous nous remettons en cause très régulièrement. Un état d'esprit compatible est donc nécessaire :)
-A côté de ça, l'ambiance est sérieuse, néanmoins détendue et nous fonctionnons dans un équilibre confiance / autonomie, ce que nous recherchons évidemment aussi chez la nouvelle recrue !
 
 ## UrbanVitaliz, kesako ?
 
@@ -20,11 +19,11 @@ A côté de ça, l'ambiance est sérieuse, néanmoins détendue et nous fonction
 **Réhabiliter une friche, ça n'est pas une mince affaire.**
 Déjà, une friche ? On parle de tout terrain qui a été artificialisé (construit, ou pollué) puis qui a perdu son usage, et qui se retrouve aujourd'hui à l'abandon. Friches industrielles donc, mais aussi friches commerciales, artisanales, ferroviaires, d'habitation...
 
-Réhabiliter une friche donc, cela prend des années, et beaucoup de démarches techniques, juridiques, financières... Les grandes villes et agglos ont généralement des équipes suffisamment importantes pour gérer ça. Par contre, la plupart des "petites" collectivités sont démunies quand elles doivent gérer un tel terrain à l'abandon : par où commencer ? qui peut m'aider ? comment je peux faire financer ? etc.
+Réhabiliter une friche donc, cela prend des années, et beaucoup de démarches techniques, juridiques, financières... La plupart des "petites" collectivités sont démunies quand elles doivent gérer un tel terrain à l'abandon : par où commencer ? qui peut m'aider ? comment je peux faire financer ? etc.
 
 ### La solution qu'on crée
 UrbanVitaliz est un service numérique qui appuie les petites et moyennes collectivités pour lancer leurs projets de revitalisation des friches.
-L'outil, qui se construit depuis septembre 2020, guide les collectivités dans les étapes à suivre, propose les contacts, outils et financement pertinents en fonction du contexte et de l'usage souhaité du site. Les autres acteurs publics des territoire interviennent aussi sur les dossiers directement sur UrbanVitaliz.
+L'outil, qui se construit depuis septembre 2020, guide les collectivités dans les étapes à suivre, propose les contacts, outils et financements pertinents en fonction du contexte et de l'usage souhaité du site. Les autres acteurs publics des territoire interviennent aussi sur les dossiers directement sur UrbanVitaliz.
 
 ### Qui est derrière UrbanVitaliz ?
 Ce service est porté par le Cerema (un établissement public), et créé au sein de beta.gouv.fr, l'incubateur de la Direction Interministérielle du Numérique.
@@ -34,7 +33,7 @@ Actuellement, nous sommes une équipe de 7 personnes sur le sujet : Perrine, l'i
 Une personne qui... 
 - aime travailler en équipe, y compris avec des non-techs,
 - est à l'aise à télétravailler la plupart du temps,
-- n'a pas peur des rétrospectives d'équipe où on parle de comment on va, nos émotions, nos besoins etc.
+- n'est pas rebutée par les rétrospectives d'équipe hebdomadaires, où on parle de comment on va, nos émotions, nos besoins etc.
 - sait dire quand elle ne sait pas faire quelque chose, quand elle galère.
 
 ## Les conditions
