@@ -1,17 +1,10 @@
-# UrbanVitaliz recrute un.e développeur·se front end / intégrateur·rice
+# UrbanVitaliz recrute un.e chargé.e de déploiement
 
-*Le 16/05/2022*
+*Le 20/06/2022*
 
 
 ## La mission pour laquelle on recrute
-Nous recherchons un·e front-end dev / intégrateur·rice à temps partiel (freelance) pour 2 jours par semaine.
 
-Notre base d'usagers grandissant et notre produit devenant de plus en plus complexe, nous recherchons un nouveau membre 
-pour renforcer la partie développement. Ta mission sera de travailler aux côtés de Rahman pour la partie design et de Guillaume pour ce qui est du backend.
-Les missions principales sont d'intégrer les maquettes, maintenir l'existant et d'améliorer notre transition vers des pages plus interactives.
-**Les technologies utilisées sont (s)css, alpineJS et Django/python**. Une attention pour la qualité de code et la maîtrise des tests est un plus non négligeable.
-
-Enfin et non des moindres, l'intégralité de l'équipe est en permanence à l'écoute de nos utilisateurs, nous n'avons pas peur de construire pour déconstruire si nécessaire et nous nous remettons en cause très régulièrement. Un état d'esprit compatible est donc nécessaire :)
 
 ## UrbanVitaliz, kesako ?
 
@@ -37,12 +30,7 @@ Une personne qui...
 - sait dire quand elle ne sait pas faire quelque chose, quand elle galère.
 
 ## Les conditions
-- 2 jours par semaine en moyenne, pour commencer (on verra comment ça évolue...)
-- Durée : on imagine au moins 6 mois si ça se passe bien, peut-être plus selon financement de l'équipe
-- Statut freelance (capacité d'émettre des factures tous les mois)
-- En télétravail : l'équipe actuelle est entre Lille, Paris et Montpellier. On se retrouve en présentiel une fois par mois.
-- Rémunération : taux journalier entre 400 € et 600 € selon expérience
-- Début : dès que tu peux :)
+
 
 ## Comment postuler
 
